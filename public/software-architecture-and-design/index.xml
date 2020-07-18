@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software-architecture-and-designs on My New Hugo Site</title>
+    <link>http://localhost:1313/software-architecture-and-design/</link>
+    <description>Recent content in Software-architecture-and-designs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/software-architecture-and-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Design Patterns</title>
+      <link>http://localhost:1313/software-architecture-and-design/design-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software-architecture-and-design/design-patterns/</guid>
+      <description>Factory Adapter Active Record Observer Decorator Repository Service Locator Singleton Strategy Facade  Factory In this pattern, the Factory class is responsible for instantiating the defined models. If in future you would like to exchange the model or change the way the model is instantiated
+Example:
+class Book { private $isbn; private $title; private $author;
+public function \_\_construct($isbn, $title, $author) { $this-&amp;gt;isbn = $isbn; $this-&amp;gt;title = $title; $this-&amp;gt;author = $author; }  }</description>
+    </item>
+    
+    <item>
+      <title>Important Concepts Every Developer should know</title>
+      <link>http://localhost:1313/software-architecture-and-design/important-concepts-every-dev-should-know/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software-architecture-and-design/important-concepts-every-dev-should-know/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

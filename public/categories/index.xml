@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My New Hugo Site</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2019 23:14:05 +0400</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Certified SAA</title>
+      <link>http://localhost:1313/categories/aws-certified-saa/</link>
+      <pubDate>Wed, 17 Apr 2019 23:14:05 +0400</pubDate>
+      
+      <guid>http://localhost:1313/categories/aws-certified-saa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random</title>
+      <link>http://localhost:1313/categories/random/</link>
+      <pubDate>Sat, 30 Sep 2017 18:38:38 +0400</pubDate>
+      
+      <guid>http://localhost:1313/categories/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheets</title>
+      <link>http://localhost:1313/categories/cheat-sheets/</link>
+      <pubDate>Sat, 30 Sep 2017 00:25:45 +0400</pubDate>
+      
+      <guid>http://localhost:1313/categories/cheat-sheets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML Neural Networks</title>
+      <link>http://localhost:1313/categories/ml-neural-networks/</link>
+      <pubDate>Mon, 23 Jan 2017 23:17:13 +0400</pubDate>
+      
+      <guid>http://localhost:1313/categories/ml-neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://localhost:1313/categories/events/</link>
+      <pubDate>Thu, 29 Sep 2016 13:25:20 +0400</pubDate>
+      
+      <guid>http://localhost:1313/categories/events/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

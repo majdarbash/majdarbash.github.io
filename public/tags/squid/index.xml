@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>squid on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/squid/</link>
+    <description>Recent content in squid on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/tags/squid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Setup Squid proxy on Ubuntu Server?</title>
+      <link>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</guid>
+      <description>In order to install a proxy service on Ubuntu Server edition, please execute the following commands:
+Installing Squid:
+sudo aptitude -y install squid3
+Editing the configuration file:
+sudo vim /etc/squid3/squid.conf // add a line in order to enable global access: http_access allow all
+Restart the squid to reflect the newly changed configuration settings
+initctl restart squid3
+As the squid is running now, you can access the proxy by setting the default port as 3128 and using the host ip address.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/blockchain/blockchain-foundation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/data-stores/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-cmls/2019-11-7-elements-of-data-science/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/1-python-introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ml-neural-networks/neural-networks-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/blockchain/blockchain-the-technical-side/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/networking/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ml-neural-networks/neural-networks-types-of-learning/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/2-python-basics-variables-strings-date-and-time/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-cmls/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-cmls/2019-11-6-crisp-dm-on-aws/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/3-python-built-in-functions-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ml-neural-networks/machine-learning-python/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/security/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-cmls/2019-11-21-isolation-forest-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/genetic-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/migrations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ml-neural-networks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/4-python-conditional-control-flows/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/</loc>
+    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/architecting-to-scale/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-cmls/2019-11-11-developing-ml-apps/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/5-python-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/business-continuity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/deployment-and-operations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/cost-management/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/blockchain/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/aws-applications/</loc>
+    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/aws-certified-saa/</loc>
+    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/ha-arhictecture-high-availability/</loc>
+    <lastmod>2019-04-17T23:12:01+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/route53/</loc>
+    <lastmod>2019-04-17T23:11:58+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/iam/</loc>
+    <lastmod>2019-04-17T23:11:56+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/databases/</loc>
+    <lastmod>2019-04-17T23:11:53+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/serverless/</loc>
+    <lastmod>2019-04-17T23:11:51+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/aws-cloud-best-practices/</loc>
+    <lastmod>2019-04-17T23:11:40+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/ec2/</loc>
+    <lastmod>2019-04-17T23:11:03+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/17/aws-certification-solution-architect-iam-s3/</loc>
+    <lastmod>2019-04-17T23:11:01+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</loc>
+    <lastmod>2017-09-30T18:38:38+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/random/</loc>
+    <lastmod>2017-09-30T18:38:38+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</loc>
+    <lastmod>2017-09-30T18:35:27+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/cheat-sheets/</loc>
+    <lastmod>2017-09-30T00:25:45+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/09/30/markdown-cheat-sheet/</loc>
+    <lastmod>2017-09-30T00:25:45+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/09/29/docker-cheat-sheet/</loc>
+    <lastmod>2017-09-29T23:58:24+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/08/19/best-safest-way-upgrade-wordpress-site/</loc>
+    <lastmod>2017-08-19T13:49:34+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/06/27/angularjs-seo-implications/</loc>
+    <lastmod>2017-06-27T22:49:42+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/03/15/php-coding-style-fixer/</loc>
+    <lastmod>2017-03-15T12:39:27+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/02/08/testing-installed-ssl-certificate/</loc>
+    <lastmod>2017-02-08T00:41:19+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/01/23/learning-algorithm-neuron/</loc>
+    <lastmod>2017-01-23T23:17:13+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/ml-neural-networks/</loc>
+    <lastmod>2017-01-23T23:17:13+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/01/15/perceptrons/</loc>
+    <lastmod>2017-01-15T23:31:43+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2016/12/05/downloading-m3u8-videos/</loc>
+    <lastmod>2016-12-05T00:12:32+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2016/10/20/react-native-the-shoe-app/</loc>
+    <lastmod>2016-10-20T10:18:13+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/events/</loc>
+    <lastmod>2016-09-29T13:25:20+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2016/09/29/facebook-developers-29th-september-2016-dubai/</loc>
+    <lastmod>2016-09-29T13:25:20+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/.svn/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/.svn-files/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/genetic-algorithm/01-algorithm-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/genetic-algorithm/02-problem-specification/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/genetic-algorithm/03-user-manual/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/genetic-algorithm/04-future-vision-for-optimality/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/accessing-docker-with-non-root-user-privileges/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/account/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/angular/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/angular-js-core-concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/apache/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/apache2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/assets/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/asynchronous-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/aws-applications/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/aws-cloud-best-practices/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/aws-organizations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/backlinks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/browser/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ci/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/clock/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/commands/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/concept/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/continuous-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/crossdomain/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/mysql-grant-privelleges/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/some-useful-commands-for-ubuntu-terminal/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/data-fixtures/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/data-science/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/database/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/databases/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/software-architecture-and-design/design-patterns/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/design-patterns/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/devops/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/doctrine/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/ec2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/encore/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/error/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/event-emitter/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/event-driven/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/event-driven-architectures/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/filter/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/fixtures/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/flash-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/for-loop/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/form/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/form-class/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/formbuilder/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ftp-server/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/fuzzy-text-search/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/genetics-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/github/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/glossary/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/google/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/ha-arhictecture-high-availability/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/accessing-multiple-github-accounts-from-one-computer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/backing-mysql-database/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/find-backlinks-for-your-site/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/levenshtein-distance-in-mysql-measuring-distance-between-the-strings/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/password-protect-directory-apache-configurations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/running-apache-2-proxy-mod_proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/docker-network-conflicts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/transferring-wordpress-one-domain-another/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/htaccess-how-to-redirect-non-www-url-to-www/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/iam/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/software-architecture-and-design/important-concepts-every-dev-should-know/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/quickbooks-php-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/ubuntu-vsftpd-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/hybrid-app-development-testing-on-google-chrome/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ionicframework/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/js/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/installing-apache2-mysql-php-on-ubuntu/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/levenshtein-distance/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/log/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/migration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mysql/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/neural-networks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/node-js-npm-package-manager/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/node-js-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csap/notes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/notice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/password-protect/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/php/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/php-running-scripts-as-root/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/pybrain/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/python/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/python-exercise-pyglatin-translator/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/python-file-input-output/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/python-importing-modules/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/python-lambda-and-bitwise-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/python-lists-dictionaries/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/python-loops/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/python-for-data-science/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/python-2.7/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ready/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/reinforced/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/remove-svn-files-unverison-subversion-working-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/review/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/deploybot-com-review/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/route53/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/s3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/exam-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/school-timetabling-problem/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/security/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/seo/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/server/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/serverless/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/service/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/shell/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/software-development/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/software-architecture-and-design/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/solution-architect/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/squid/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/subversion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/supervised/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/svn-commands/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/symfony/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-assets/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-basics/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-controllers-routing-views/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-data-fixtures/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-error-handling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-flash-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-forms/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfony-services/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfonycode-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/symfony/symfonytwig-reference/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/template/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/template-inheritance/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/templates/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/terminal/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/testing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/the-netflix-simian-army/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/travis/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/travis-ci/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/twig/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/twig-filter/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/twig-inheritance/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/types-of-learning/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ubuntu/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ubuntu-server/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/ubuntu-server-clock-synchronisation-using-ntpd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/create-user-using-terminal-ubuntu/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/unsupervised/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/validation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/vcs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/version-control-system/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/aws-csaa/vpcs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/vsftpd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/web-server/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/webpack/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/random/how-captcha-works/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/wordpress/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/x-forwarded-for/</loc>
+  </url>
+  
+</urlset>

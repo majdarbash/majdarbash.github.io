@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/github/</link>
+    <description>Recent content in github on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to accessing multiple Git accounts from the same computer using different private keys?</title>
+      <link>http://localhost:1313/random/accessing-multiple-github-accounts-from-one-computer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/accessing-multiple-github-accounts-from-one-computer/</guid>
+      <description>In order to access multiple github accounts from one computer you need to :
+ generate ssh keys add ssh keys to your github account create a configuration file to manage the separate keys update stored identities  Step 1 - Generating SSH keys:
+cd ~/.ssh ssh-keygen -t rsa -C &amp;quot;[email associated with your github account #1]&amp;quot; # save it as id_rsa_git_account1 when prompted ssh-keygen -t rsa -C &amp;quot;[email associated with your github account #2]&amp;quot; # save it as id_rsa_git_account2 when prompted As the result of executing these commands, the following files will be generated:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS Certified SAA on My New Hugo Site</title>
+    <link>http://localhost:1313/categories/aws-certified-saa/</link>
+    <description>Recent content in AWS Certified SAA on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2019 23:14:05 +0400</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/aws-certified-saa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Applications</title>
+      <link>http://localhost:1313/2019/04/17/aws-applications/</link>
+      <pubDate>Wed, 17 Apr 2019 23:14:05 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/aws-applications/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>HA Arhictecture: High Availability</title>
+      <link>http://localhost:1313/2019/04/17/ha-arhictecture-high-availability/</link>
+      <pubDate>Wed, 17 Apr 2019 23:12:01 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/ha-arhictecture-high-availability/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Route53</title>
+      <link>http://localhost:1313/2019/04/17/route53/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:58 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/route53/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/2019/04/17/iam/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:56 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/iam/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:1313/2019/04/17/databases/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:53 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/databases/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>http://localhost:1313/2019/04/17/serverless/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:51 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/serverless/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Cloud Best Practices</title>
+      <link>http://localhost:1313/2019/04/17/aws-cloud-best-practices/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:40 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/aws-cloud-best-practices/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>EC2</title>
+      <link>http://localhost:1313/2019/04/17/ec2/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:03 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/ec2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>http://localhost:1313/2019/04/17/aws-certification-solution-architect-iam-s3/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:01 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/aws-certification-solution-architect-iam-s3/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/google/</link>
+    <description>Recent content in google on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to find the backlinks to your site which are indexed by Google?</title>
+      <link>http://localhost:1313/random/find-backlinks-for-your-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/find-backlinks-for-your-site/</guid>
+      <description>I was trying to find backlinks for my site on google search. The best way to do this was to do a search, using the following parameters:
+[your Keywords or your Sitename] -site:yoursitename.com
+Basically this will located all the words which match the search terms, excluding your own site -&amp;gt; which are actually the backlinks to your site.
+Publish Date: 2014-10-19
+ </description>
+    </item>
+    
+  </channel>
+</rss>

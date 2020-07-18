@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS Certified SAA on My New Hugo Site</title>
+    <link>http://localhost:1313/aws-csaa/</link>
+    <description>Recent content in AWS Certified SAA on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/aws-csaa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Applications</title>
+      <link>http://localhost:1313/aws-csaa/aws-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/aws-applications/</guid>
+      <description>SQS (Simple Queue Service)  the first AWS service distributed queue system temporary repository for messages that are waiting for processing one component in the application queues messages to be consumed by another component in the application can be used to decouple the components of an application messages can contain up to 256 kb of text
+you can store up to 2GB per message, however, it will be stored and retrieved from S3 in this case messages can be retrieved using AWS SQS API auto-scaling events can be configured based on queue sizes as well pull-based, not pushed based</description>
+    </item>
+    
+    <item>
+      <title>AWS Cloud Best Practices</title>
+      <link>http://localhost:1313/aws-csaa/aws-cloud-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/aws-cloud-best-practices/</guid>
+      <description>Difference between Traditional and Cloud Computing Environments  IT Assets as Provisioned Resources  Quick deployment time No hardware commitment   Global, Available, and Scalable Capacity Higher-Level Managed Services
+In addition to EC2 instances, you can benefit from a lot of great services which will be provisioned and maintained with minimum effort. Built-In Security Architecting for Cost  AWS provides fine-grained billing, which enables you to track the costs associated with all aspects of your solutions   Operations on AWS  Infrastructure as Code Higher levels of automation of the operational processes as the supporting services, e.</description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:1313/aws-csaa/databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/databases/</guid>
+      <description>Relational Database on AWS: (RDS) used for OLTP (Online Transaction Processing)  Supported Types  SQL Server Oracle MySQL Server PostgreSQL Aurora MariaDB   Run on virtual machines You cannot log in to these operating systems however Patching of the RDS Operating System and DB is Amazon&amp;rsquo;s responsibility RDS is NOT Serverless Aurora Serverless is Serverless  Read-Replicas vs Muti-AZ  Multi-AZ  For Disaster Recovery AWS handles cross-region replication AWS does an automatic failover of the instance Available for SQL Server, Oracle, MySQL Server, PostgreSQL, MariaDB You can force a failover from one AZ to another by rebooting the RDS instance.</description>
+    </item>
+    
+    <item>
+      <title>EC2</title>
+      <link>http://localhost:1313/aws-csaa/ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/ec2/</guid>
+      <description>Amazon EC2 is a web service that provides resizable compute capacity in the cloud. Amazon EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
+EC2 Pricing Models   On Demand
+Allows you to pay a fixed rate by the hour with no commitment.
+  no up-front payment required</description>
+    </item>
+    
+    <item>
+      <title>HA Arhictecture: High Availability</title>
+      <link>http://localhost:1313/aws-csaa/ha-arhictecture-high-availability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/ha-arhictecture-high-availability/</guid>
+      <description>ELB, ALB (Elastic Load Balancer, Application Load Balancer)  a physical/virtual device designed to balance network load across multiple web servers at least 2 public Subnets are required when provisioning a load balancer ELBs do not have a pre-defined IPv4 addresses; you resolve to them using a DNS name types of load balancers  Application Load Balancers  Best suited for HTTP / HTTPS traffic Operates at Layer 7 Application-aware Advanced request routing, sending specified requests to specific web servers Register target groups Load balancing rules are supported   Network Load Balancers  Load balancing TCP traffic Operates at Layer 4 Capable of handling millions of requests per seconds with ultra-low latencies   Classic Load Balancers  Legacy / previous generation load balancers HTTP / HTTPS / TCP traffic Operates at layer 4, supports Layer-7 specific features, such as X-Forwarded and sticky sessions Errors: 504 - Gateway timeout - ec2 instances are not responding Registers instances     Health Checks  Checks the instance health by talking to it Instances are reported as InService, OutofService LBs have their own DNS name.</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/aws-csaa/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/iam/</guid>
+      <description>IAM (Identity Access Management)
+ Centralized control of your AWS account Shared Access to your AWS account Granular Permissions Identity Federation (including Active Directory, Facebook, etc&amp;hellip;) Multifactor Authentication Temporary access to users/devices and services Password rotation policy PCI DSS Compliance  Models:
+ Users Groups Policies Roles  AWS provides IAM Pre-defined Roles per Job Function, otherwise custom roles and policies can be defined.
+ IAM is universal. It does not apply to regions.</description>
+    </item>
+    
+    <item>
+      <title>Route53</title>
+      <link>http://localhost:1313/aws-csaa/route53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/route53/</guid>
+      <description>Route53 gets its name from port 53 of DNS server IPv4 space is 32 bit fields having over 4 billion different addresses. IPv6 solves the depletion issue and has as address space of 128 bits For each public hosted zone Route 53 automatically created NS record and SOA record (Start of Authority Record) NS Record - is used by Top Level Domain servers to direct traffic to the Content DNS server which contains the authoritative DNS records When creating a public hosted zone, Route 53 gives you NS records in different Top-Level Domains.</description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>http://localhost:1313/aws-csaa/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/s3/</guid>
+      <description>Billing S3 (Simple Storage Service) Storage Classes S3 Glacier S3 Billing Access &amp;amp; Encryption Versioning Lifecycle Management Tools &amp;amp; Glacier Cross Region Replication Amazon S3 Transfer Acceleration CloudFront Snowball Storage Gateway FAQs  Billing  Billing Alarms can be created from CloudWatch. Billing Notifications should be enabled from the Billing Preferences section.  S3 (Simple Storage Service)  Provides developers and IT teams with secure, durable, highly scalable object storage Provides simple web services interface to store and retrieve data S3 is a safe place to store the files S3 and Glacier are not block storages S3 is Object-Based - allows you to upload files Files can be 0 bytes to 5TB Successful uploads will generate an HTTP 200 code Unlimited storage Files are stored in Buckets Objects consist of:  Key (name of the object) Value (the data) Version ID (important for versioning) Metadata (data about data you are storing) Subresources  Access Control List Torrent     Files can be from 0 Bytes to 5TB There is unlimited storage Files are stored in Buckets S3 is a universal namespace.</description>
+    </item>
+    
+    <item>
+      <title>SAA Exam Overview</title>
+      <link>http://localhost:1313/aws-csaa/exam-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/exam-overview/</guid>
+      <description>Intended for people performing a Solutions Architect role. Valid for 2 years. Question Domains  Design Resilient Architectures Define Performant Solutions Specify Secure Applications and Architectures Design Cost-optimized Architectures Define Operationally Excellent Architectures   Multiple choice questions  single selection multiple selection    Design Resilient Architectures  Choose reliable/resilient storage Determine how to design decoupling mechanisms using AWS services Determine how to design a multi-tier arhictecture solution Determine how to design high availability and/or fault tolerant solutions  High Availability vs Fault Tolerance</description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>http://localhost:1313/aws-csaa/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/serverless/</guid>
+      <description>Lambda  Compute service to upload and run your code AWS Lambda takes care of provisioning and managing the underlying infrastructure Lambda scales out (not up) automatically Usage  Event-driven compute service which runs code in response to events. Events could be internal AWS events. Compute service to run your code in response to HTTP requests using AWS API Gateway or API calls made using AWS SDKs.   Lambda functions are independent, 1 event = 1 function Lambda is serverless Lambda functions can trigger other lambda functions, 1 event can trigger multiple functions Architectures can get extremely complicated, AWS X-ray allows you to debug what is happening Lambda can do things globally, you can use it to back up S3 buckets to other S3 buckets, etc Lambda is cost effective No servers, no maintenance is required  Lambda is the Ultimate Extraction Layer  Data Centres Hardware Assembly Code/Protocols High-Level Languages Operating Systems Application Layer/AWS APIs AWS Lambda  Languages supported by Lambda  Node.</description>
+    </item>
+    
+    <item>
+      <title>VPCs</title>
+      <link>http://localhost:1313/aws-csaa/vpcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/vpcs/</guid>
+      <description>VPC Components  Virtual Private Cloud Subnet Internet Gateway NAT Gateway Virtual Private Gateway Peering Connection VPC Endpoints Egress-only Internet Gateway  VPC (Virtual Private Cloud)  VPC (Virtual Private Cloud) is a virtual private network dedicated to your AWS account. Logically isolated from other virtual networks in AWS Cloud VPC is defined on Region level VPC Tenancy  Default Dedicated   By default, VPC is created with Route Table, Network ACL and Security Group Availability Zones a, b and c are randomized per account Default VPC  All Subnets in default VPC have a route out to the internet Each EC2 instance has both a public and private IP address    Subnet  Subnet is defined on AZ level IP Ranges which can be assigned to Subnets  10.</description>
+    </item>
+    
+  </channel>
+</rss>

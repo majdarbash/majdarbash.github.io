@@ -1,0 +1,5206 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Symfony 3: Services :: My New Hugo Site</title>
+
+    
+    <link href="/css/nucleus.css?1595111774" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1595111774" rel="stylesheet">
+    <link href="/css/hybrid.css?1595111774" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1595111774" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1595111774" rel="stylesheet">
+    <link href="/css/auto-complete.css?1595111774" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1595111774" rel="stylesheet">
+    <link href="/css/theme.css?1595111774" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1595111774" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1595111774" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1595111774"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </head>
+  <body class="" data-url="/symfony/symfony-services/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://localhost:1313/">
+  <svg id="grav-logo" style="width:100%; height:100%;" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path d="M235.832,71.564l-7.98,-0.001c-1.213,0.001 -2.197,0.987 -2.197,2.204l0,15.327l-0.158,0.132c-4.696,3.962 -10.634,6.14 -16.719,6.14c-14.356,0 -26.034,-11.68 -26.034,-26.037c0,-14.358 11.678,-26.035 26.034,-26.035c5.582,0 10.919,1.767 15.437,5.113c0.877,0.649 2.093,0.56 2.866,-0.211l5.69,-5.69c0.444,-0.442 0.675,-1.055 0.639,-1.681c-0.034,-0.627 -0.336,-1.206 -0.828,-1.597c-6.76,-5.363 -15.214,-8.314 -23.805,-8.314c-21.18,0 -38.414,17.233 -38.414,38.415c0,21.183 17.234,38.415 38.414,38.415c10.937,0 21.397,-4.705 28.698,-12.914c0.358,-0.403 0.556,-0.921 0.556,-1.46l0,-19.603c0,-1.217 -0.985,-2.203 -2.2,-2.203"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M502.794,34.445c-0.408,-0.616 -1.1,-0.989 -1.838,-0.989l-8.684,0c-0.879,0 -1.673,0.522 -2.022,1.329l-24.483,56.839l-24.92,-56.852c-0.352,-0.799 -1.142,-1.316 -2.012,-1.316l-8.713,0c-0.744,0 -1.44,0.373 -1.843,0.995c-0.408,0.623 -0.476,1.408 -0.174,2.09l30.186,68.858c0.352,0.799 1.143,1.317 2.017,1.317l10.992,0c0.879,0 1.673,-0.527 2.021,-1.329l29.655,-68.861c0.289,-0.68 0.222,-1.461 -0.182,-2.081"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M388.683,34.772c-0.353,-0.798 -1.142,-1.316 -2.017,-1.316l-10.988,0c-0.879,0 -1.673,0.522 -2.021,1.329l-29.655,68.861c-0.294,0.675 -0.226,1.46 0.182,2.077c0.407,0.619 1.096,0.993 1.838,0.993l8.684,0c0.879,0 1.673,-0.526 2.022,-1.329l24.478,-56.842l24.92,56.854c0.353,0.798 1.143,1.317 2.013,1.317l8.717,0c0.744,0 1.44,-0.374 1.843,-0.993c0.408,-0.624 0.471,-1.41 0.174,-2.094l-30.19,-68.857Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M309.196,81.525l0.476,-0.229c8.675,-4.191 14.279,-13.087 14.279,-22.667c0,-13.881 -11.295,-25.174 -25.176,-25.174l-31.863,0c-1.214,0 -2.199,0.988 -2.199,2.202l0,68.855c0,1.219 0.985,2.204 2.199,2.204l7.979,0c1.214,0 2.2,-0.985 2.2,-2.204l0,-58.679l21.684,0c7.059,0 12.799,5.739 12.799,12.796c0,5.885 -3.996,10.989 -9.728,12.408c-1.032,0.261 -2.064,0.393 -3.071,0.393l-7.977,0c-0.829,0 -1.585,0.467 -1.959,1.205c-0.378,0.74 -0.305,1.625 0.187,2.296l22.62,30.884c0.412,0.566 1.07,0.901 1.771,0.901l9.915,0c0.827,0 1.587,-0.467 1.96,-1.207c0.378,-0.742 0.302,-1.629 -0.186,-2.296l-15.91,-21.688Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M107.191,80.969c-7.255,-4.794 -11.4,-8.845 -15.011,-16.109c-2.47,4.977 -8.236,12.376 -17.962,18.198c-4.856,15.106 -27.954,44.015 -35.43,39.916c-2.213,-1.212 -2.633,-2.808 -2.133,-4.456c0.536,-4.129 9.078,-13.62 9.078,-13.62c0,0 0.18,1.992 2.913,6.187c-3.609,-11.205 5.965,-25.031 8.5,-29.738c3.985,-1.269 4.274,-6.387 4.274,-6.387c0.255,-7.909 -3.278,-13.635 -6.701,-17.059c2.459,3.002 3.255,7.539 3.372,11.694l0,0.023c0.012,0.469 0.012,0.93 0.011,1.39c-0.117,3.439 -1.157,8.19 -3.383,8.19l0.006,0.03c-2.289,-0.098 -5.115,0.391 -7.639,1.18l-5.582,1.334c0,0 2.977,-0.136 4.584,1.252c-1.79,2.915 -5.769,6.533 -10.206,8.588c-6.457,2.995 -8.312,-2.964 -5.034,-6.838c0.805,-0.946 1.618,-1.745 2.387,-2.399c-0.495,-0.513 -0.807,-1.198 -0.889,-2.068c-0.001,-0.005 -0.004,-0.009 -0.005,-0.013c-0.45,-1.977 -0.202,-4.543 2.596,-8.623c0.551,-0.863 1.214,-1.748 2.007,-2.647c0.025,-0.031 0.046,-0.059 0.072,-0.089c0.034,-0.042 0.072,-0.08 0.108,-0.121c0.02,-0.023 0.039,-0.045 0.059,-0.068c0.2,-0.228 0.413,-0.45 0.639,-0.663c3.334,-3.414 8.599,-6.966 16.897,-10.152c9.675,-14.223 13.219,-16.89 13.219,-16.89c1.071,-1.096 2.943,-2.458 3.632,-2.805c-5.053,-8.781 -6.074,-21.158 -4.75,-24.493c-0.107,0.18 -0.206,0.365 -0.287,0.556c0.49,-1.143 0.819,-1.509 1.328,-2.111c1.381,-1.632 6.058,-2.488 7.737,0.971c0.895,1.844 1.063,4.232 1.034,6.023c-3.704,-0.193 -7.063,4.036 -7.063,4.036c0,0 3.067,-1.448 6.879,-1.473c0,0 1.015,0.883 2.283,2.542c-1.712,3.213 -4.524,10.021 -2.488,17.168c0.338,1.408 0.849,2.619 1.483,3.648c0.024,0.045 0.044,0.089 0.069,0.135c0.051,0.066 0.096,0.122 0.144,0.183c3.368,5.072 9.542,5.665 9.542,5.665c-2.906,-1.45 -5.274,-3.76 -6.816,-6.56c-0.8,-1.498 -1.291,-2.762 -1.592,-3.761c-1.636,-6.313 0.771,-9.999 2.149,-12.471c3.17,-4.917 8.944,-7.893 15.151,-7.185c8.712,0.995 14.968,8.862 13.973,17.571c-0.608,5.321 -3.781,9.723 -8.142,12.117c1.049,2.839 -0.073,6.28 -0.073,6.28c2.642,3.323 2.758,5.238 2.667,7.017c-3.357,-0.565 -6.618,1.701 -6.618,1.701c0,0 6.476,-1.546 10.238,1.81c2.446,2.631 4.078,5.009 5.051,6.766c1.393,2.505 7.859,2.683 7.123,7.188c-0.737,4.499 -5.669,4.542 -13.401,-0.56M69.571,0c-38.424,0 -69.571,31.148 -69.571,69.567c0,38.422 31.147,69.573 69.571,69.573c38.42,0 69.568,-31.151 69.568,-69.573c0,-38.42 -31.148,-69.567 -69.568,-69.567"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M73.796,51.693c0.813,-0.814 0.813,-2.134 0,-2.947c-0.815,-0.814 -2.133,-0.814 -2.947,0c-0.815,0.813 -0.815,2.133 0,2.947c0.814,0.813 2.132,0.813 2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M66.445,53.149c-0.814,0.813 -0.814,2.133 0,2.947c0.813,0.814 2.133,0.814 2.947,0c0.813,-0.814 0.813,-2.134 0,-2.947c-0.814,-0.813 -2.134,-0.813 -2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M79.231,54.233c-1.274,-1.274 -3.339,-1.272 -4.611,0l-2.713,2.712c-1.274,1.275 -1.274,3.339 0,4.612l2.978,2.978c1.274,1.275 3.338,1.274 4.611,0l2.712,-2.712c1.274,-1.274 1.274,-3.339 0,-4.612l-2.977,-2.978Z" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M95.759,41.445c-2.151,-2.578 1.869,-7.257 4.391,-4.463c4.645,5.148 -2.237,7.041 -4.391,4.463M105.004,44.132c3.442,-6.553 -1.427,-10.381 -4.773,-13.523c-5.36,-5.039 -10.706,-7.217 -16.811,-0.241c-6.102,6.977 -2.226,15.068 3.356,19.061c5.584,3.994 14.782,1.255 18.228,-5.297"
+      style="fill:#000;fill-rule:nonzero;"></path>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1595111774"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1595111774"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1595111774"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws-csap/" title="AWS Certified SAP" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/aws-csap/">
+          AWS Certified SAP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/data-stores/" title="Data Stores" class="dd-item ">
+        <a href="/aws-csap/data-stores/">
+        Data Stores
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/networking/" title="Networking" class="dd-item ">
+        <a href="/aws-csap/networking/">
+        Networking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/security/" title="Security" class="dd-item ">
+        <a href="/aws-csap/security/">
+        Security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/migrations/" title="Migrations" class="dd-item ">
+        <a href="/aws-csap/migrations/">
+        Migrations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/architecting-to-scale/" title="Architecting to Scale" class="dd-item ">
+        <a href="/aws-csap/architecting-to-scale/">
+        Architecting to Scale
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/business-continuity/" title="Business Continuity" class="dd-item ">
+        <a href="/aws-csap/business-continuity/">
+        Business Continuity
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/deployment-and-operations/" title="Deployment and Operations Management" class="dd-item ">
+        <a href="/aws-csap/deployment-and-operations/">
+        Deployment and Operations Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/cost-management/" title="Cost Management" class="dd-item ">
+        <a href="/aws-csap/cost-management/">
+        Cost Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/glossary/" title="Glossary" class="dd-item ">
+        <a href="/aws-csap/glossary/">
+        Glossary
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csap/notes/" title="Notes" class="dd-item ">
+        <a href="/aws-csap/notes/">
+        Notes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws-csaa/" title="AWS Certified SAA" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/aws-csaa/">
+          AWS Certified SAA
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/aws-applications/" title="AWS Applications" class="dd-item ">
+        <a href="/aws-csaa/aws-applications/">
+        AWS Applications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/aws-cloud-best-practices/" title="AWS Cloud Best Practices" class="dd-item ">
+        <a href="/aws-csaa/aws-cloud-best-practices/">
+        AWS Cloud Best Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/databases/" title="Databases" class="dd-item ">
+        <a href="/aws-csaa/databases/">
+        Databases
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/ec2/" title="EC2" class="dd-item ">
+        <a href="/aws-csaa/ec2/">
+        EC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/ha-arhictecture-high-availability/" title="HA Arhictecture: High Availability" class="dd-item ">
+        <a href="/aws-csaa/ha-arhictecture-high-availability/">
+        HA Arhictecture: High Availability
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/iam/" title="IAM" class="dd-item ">
+        <a href="/aws-csaa/iam/">
+        IAM
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/route53/" title="Route53" class="dd-item ">
+        <a href="/aws-csaa/route53/">
+        Route53
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/s3/" title="S3" class="dd-item ">
+        <a href="/aws-csaa/s3/">
+        S3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/exam-overview/" title="SAA Exam Overview" class="dd-item ">
+        <a href="/aws-csaa/exam-overview/">
+        SAA Exam Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/serverless/" title="Serverless" class="dd-item ">
+        <a href="/aws-csaa/serverless/">
+        Serverless
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-csaa/vpcs/" title="VPCs" class="dd-item ">
+        <a href="/aws-csaa/vpcs/">
+        VPCs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/aws-cmls/" title="AWS Certified MLS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/aws-cmls/">
+          AWS Certified MLS
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-cmls/2019-11-7-elements-of-data-science/" title="Elements of Data Science" class="dd-item ">
+        <a href="/aws-cmls/2019-11-7-elements-of-data-science/">
+        Elements of Data Science
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/" title="ML Building Blocks: Services and Terminology" class="dd-item ">
+        <a href="/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/">
+        ML Building Blocks: Services and Terminology
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-cmls/2019-11-6-crisp-dm-on-aws/" title="CRISP-DM on AWS" class="dd-item ">
+        <a href="/aws-cmls/2019-11-6-crisp-dm-on-aws/">
+        CRISP-DM on AWS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-cmls/2019-11-21-isolation-forest-algorithm/" title="Anomaly Detection: Isolation Forest Algorithm" class="dd-item ">
+        <a href="/aws-cmls/2019-11-21-isolation-forest-algorithm/">
+        Anomaly Detection: Isolation Forest Algorithm
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws-cmls/2019-11-11-developing-ml-apps/" title="Developing Machine Learning Applications" class="dd-item ">
+        <a href="/aws-cmls/2019-11-11-developing-ml-apps/">
+        Developing Machine Learning Applications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/genetic-algorithm/" title="Genetic Algorithm" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/genetic-algorithm/">
+          Genetic Algorithm
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/genetic-algorithm/01-algorithm-overview/" title="1.1 - Genetics Algorithm - Algorithm Overview" class="dd-item ">
+        <a href="/genetic-algorithm/01-algorithm-overview/">
+        1.1 - Genetics Algorithm - Algorithm Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/genetic-algorithm/02-problem-specification/" title="1.2 - Genetics Algorithm - Problem Specification" class="dd-item ">
+        <a href="/genetic-algorithm/02-problem-specification/">
+        1.2 - Genetics Algorithm - Problem Specification
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/genetic-algorithm/03-user-manual/" title="1.3 - Genetics Algorithm - User Manual" class="dd-item ">
+        <a href="/genetic-algorithm/03-user-manual/">
+        1.3 - Genetics Algorithm - User Manual
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/genetic-algorithm/04-future-vision-for-optimality/" title="1.4 - Genetics Algorithm - Future Vision for Optimality" class="dd-item ">
+        <a href="/genetic-algorithm/04-future-vision-for-optimality/">
+        1.4 - Genetics Algorithm - Future Vision for Optimality
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ml-neural-networks/" title="Neural Networks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ml-neural-networks/">
+          Neural Networks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ml-neural-networks/neural-networks-overview/" title="What are Neural Networks? Why do we use them?" class="dd-item ">
+        <a href="/ml-neural-networks/neural-networks-overview/">
+        What are Neural Networks? Why do we use them?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ml-neural-networks/neural-networks-types-of-learning/" title="Neural Networks: Supervised, Unsupervised &amp; Reinforcement Learning Types of Learning" class="dd-item ">
+        <a href="/ml-neural-networks/neural-networks-types-of-learning/">
+        Neural Networks: Supervised, Unsupervised &amp; Reinforcement Learning Types of Learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ml-neural-networks/machine-learning-python/" title="Python 2.7: Setting up Neural Network with PyBrain" class="dd-item ">
+        <a href="/ml-neural-networks/machine-learning-python/">
+        Python 2.7: Setting up Neural Network with PyBrain
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/random/" title="Random" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/random/">
+          Random
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/aws-applications/" title="AWS Applications" class="dd-item ">
+        <a href="/2019/04/17/aws-applications/">
+        AWS Applications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/ha-arhictecture-high-availability/" title="HA Arhictecture: High Availability" class="dd-item ">
+        <a href="/2019/04/17/ha-arhictecture-high-availability/">
+        HA Arhictecture: High Availability
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/route53/" title="Route53" class="dd-item ">
+        <a href="/2019/04/17/route53/">
+        Route53
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/iam/" title="IAM" class="dd-item ">
+        <a href="/2019/04/17/iam/">
+        IAM
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/databases/" title="Databases" class="dd-item ">
+        <a href="/2019/04/17/databases/">
+        Databases
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/serverless/" title="Serverless" class="dd-item ">
+        <a href="/2019/04/17/serverless/">
+        Serverless
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/aws-cloud-best-practices/" title="AWS Cloud Best Practices" class="dd-item ">
+        <a href="/2019/04/17/aws-cloud-best-practices/">
+        AWS Cloud Best Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/ec2/" title="EC2" class="dd-item ">
+        <a href="/2019/04/17/ec2/">
+        EC2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2019/04/17/aws-certification-solution-architect-iam-s3/" title="S3" class="dd-item ">
+        <a href="/2019/04/17/aws-certification-solution-architect-iam-s3/">
+        S3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/" title="How to build Docker Image for NGINX using Chef (chef-solo)?" class="dd-item ">
+        <a href="/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/">
+        How to build Docker Image for NGINX using Chef (chef-solo)?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/09/30/docker-provisioning-docker-container-with-chef-solo/" title="How to provision Docker Images using Chef-Solo?" class="dd-item ">
+        <a href="/2017/09/30/docker-provisioning-docker-container-with-chef-solo/">
+        How to provision Docker Images using Chef-Solo?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/09/30/markdown-cheat-sheet/" title="CS: Markdown" class="dd-item ">
+        <a href="/2017/09/30/markdown-cheat-sheet/">
+        CS: Markdown
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/09/29/docker-cheat-sheet/" title="CS: Docker Commands" class="dd-item ">
+        <a href="/2017/09/29/docker-cheat-sheet/">
+        CS: Docker Commands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/08/19/best-safest-way-upgrade-wordpress-site/" title="How to upgrade Wordpress? Best and safest way to upgrade" class="dd-item ">
+        <a href="/2017/08/19/best-safest-way-upgrade-wordpress-site/">
+        How to upgrade Wordpress? Best and safest way to upgrade
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/06/27/angularjs-seo-implications/" title="Overcoming SEO challenges with AngularJS 1-based Applications" class="dd-item ">
+        <a href="/2017/06/27/angularjs-seo-implications/">
+        Overcoming SEO challenges with AngularJS 1-based Applications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/03/15/php-coding-style-fixer/" title="CI Pipeline: Unifying and automating code using Coding Style Fixer" class="dd-item ">
+        <a href="/2017/03/15/php-coding-style-fixer/">
+        CI Pipeline: Unifying and automating code using Coding Style Fixer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/02/08/testing-installed-ssl-certificate/" title="How to test your SSL installation?" class="dd-item ">
+        <a href="/2017/02/08/testing-installed-ssl-certificate/">
+        How to test your SSL installation?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/01/23/learning-algorithm-neuron/" title="Closer look into Learning Algorithm of a Neuron" class="dd-item ">
+        <a href="/2017/01/23/learning-algorithm-neuron/">
+        Closer look into Learning Algorithm of a Neuron
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/01/15/perceptrons/" title="First Generation of Neural Networks: Perceptrons" class="dd-item ">
+        <a href="/2017/01/15/perceptrons/">
+        First Generation of Neural Networks: Perceptrons
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2016/12/05/downloading-m3u8-videos/" title="How to download the streaming m3u8 videos formats?" class="dd-item ">
+        <a href="/2016/12/05/downloading-m3u8-videos/">
+        How to download the streaming m3u8 videos formats?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2016/10/20/react-native-the-shoe-app/" title="React Native: Building the &#34;Shoes&#34; App" class="dd-item ">
+        <a href="/2016/10/20/react-native-the-shoe-app/">
+        React Native: Building the &#34;Shoes&#34; App
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2016/09/29/facebook-developers-29th-september-2016-dubai/" title="Facebook For Developers - 29th September 2016, Dubai" class="dd-item ">
+        <a href="/2016/09/29/facebook-developers-29th-september-2016-dubai/">
+        Facebook For Developers - 29th September 2016, Dubai
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/accessing-docker-with-non-root-user-privileges/" title="Accessing Docker with non-root user privileges" class="dd-item ">
+        <a href="/random/accessing-docker-with-non-root-user-privileges/">
+        Accessing Docker with non-root user privileges
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/angular-js-core-concepts/" title="AngularJS 1: Core concepts" class="dd-item ">
+        <a href="/random/angular-js-core-concepts/">
+        AngularJS 1: Core concepts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/aws-organizations/" title="AWS Organizations - Setting Up and Configuring User Accounts" class="dd-item ">
+        <a href="/random/aws-organizations/">
+        AWS Organizations - Setting Up and Configuring User Accounts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/mysql-grant-privelleges/" title="CS: MySQL" class="dd-item ">
+        <a href="/random/mysql-grant-privelleges/">
+        CS: MySQL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/some-useful-commands-for-ubuntu-terminal/" title="CS: Ubuntu Commands" class="dd-item ">
+        <a href="/random/some-useful-commands-for-ubuntu-terminal/">
+        CS: Ubuntu Commands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/event-driven-architectures/" title="Event-Driven Architecture" class="dd-item ">
+        <a href="/random/event-driven-architectures/">
+        Event-Driven Architecture
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/accessing-multiple-github-accounts-from-one-computer/" title="How to accessing multiple Git accounts from the same computer using different private keys?" class="dd-item ">
+        <a href="/random/accessing-multiple-github-accounts-from-one-computer/">
+        How to accessing multiple Git accounts from the same computer using different private keys?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/backing-mysql-database/" title="How to Backup MySQL database using Percona&#39;s innobackupex" class="dd-item ">
+        <a href="/random/backing-mysql-database/">
+        How to Backup MySQL database using Percona&#39;s innobackupex
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/find-backlinks-for-your-site/" title="How to find the backlinks to your site which are indexed by Google?" class="dd-item ">
+        <a href="/random/find-backlinks-for-your-site/">
+        How to find the backlinks to your site which are indexed by Google?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/levenshtein-distance-in-mysql-measuring-distance-between-the-strings/" title="How to measure distance between strings? What is Levenstein Distance?" class="dd-item ">
+        <a href="/random/levenshtein-distance-in-mysql-measuring-distance-between-the-strings/">
+        How to measure distance between strings? What is Levenstein Distance?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/" title="How to properly log ClientIP on Apache2 behind Load Balancer?" class="dd-item ">
+        <a href="/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/">
+        How to properly log ClientIP on Apache2 behind Load Balancer?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/password-protect-directory-apache-configurations/" title="How to protect directory with a password in Apache2?" class="dd-item ">
+        <a href="/random/password-protect-directory-apache-configurations/">
+        How to protect directory with a password in Apache2?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/running-apache-2-proxy-mod_proxy/" title="How to run Apache2 as proxy using modproxy module?" class="dd-item ">
+        <a href="/random/running-apache-2-proxy-mod_proxy/">
+        How to run Apache2 as proxy using modproxy module?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/setting-squid-proxy-on-ubuntu-server/" title="How to Setup Squid proxy on Ubuntu Server?" class="dd-item ">
+        <a href="/random/setting-squid-proxy-on-ubuntu-server/">
+        How to Setup Squid proxy on Ubuntu Server?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/docker-network-conflicts/" title="How to solve Network IP conflict when running Docker?" class="dd-item ">
+        <a href="/random/docker-network-conflicts/">
+        How to solve Network IP conflict when running Docker?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/transferring-wordpress-one-domain-another/" title="How to transfer a Wordpress site from one domain to another?" class="dd-item ">
+        <a href="/random/transferring-wordpress-one-domain-another/">
+        How to transfer a Wordpress site from one domain to another?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/htaccess-how-to-redirect-non-www-url-to-www/" title="htaccess : how to redirect non-www url to www" class="dd-item ">
+        <a href="/random/htaccess-how-to-redirect-non-www-url-to-www/">
+        htaccess : how to redirect non-www url to www
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/quickbooks-php-integration/" title="Initial steps towards successful integration Quickbooks &amp; PHP?" class="dd-item ">
+        <a href="/random/quickbooks-php-integration/">
+        Initial steps towards successful integration Quickbooks &amp; PHP?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/ubuntu-vsftpd-installation/" title="Installing VsFTPd on Ubuntu Server" class="dd-item ">
+        <a href="/random/ubuntu-vsftpd-installation/">
+        Installing VsFTPd on Ubuntu Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/hybrid-app-development-testing-on-google-chrome/" title="Ionic app testing - Cross domain issues" class="dd-item ">
+        <a href="/random/hybrid-app-development-testing-on-google-chrome/">
+        Ionic app testing - Cross domain issues
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/installing-apache2-mysql-php-on-ubuntu/" title="LAMP Installation on Ubuntu Server" class="dd-item ">
+        <a href="/random/installing-apache2-mysql-php-on-ubuntu/">
+        LAMP Installation on Ubuntu Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/node-js-npm-package-manager/" title="NodeJS 8: NPM - Package Manager" class="dd-item ">
+        <a href="/random/node-js-npm-package-manager/">
+        NodeJS 8: NPM - Package Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/node-js-notes/" title="NodeJS 8: Overview" class="dd-item ">
+        <a href="/random/node-js-notes/">
+        NodeJS 8: Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/php-running-scripts-as-root/" title="PHP - Running scripts as root" class="dd-item ">
+        <a href="/random/php-running-scripts-as-root/">
+        PHP - Running scripts as root
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/python-for-data-science/" title="Python for Data Science" class="dd-item ">
+        <a href="/random/python-for-data-science/">
+        Python for Data Science
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/remove-svn-files-unverison-subversion-working-copy/" title="Remove .svn files - unverison subversion working copy" class="dd-item ">
+        <a href="/random/remove-svn-files-unverison-subversion-working-copy/">
+        Remove .svn files - unverison subversion working copy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/deploybot-com-review/" title="Review of DeployBot.com" class="dd-item ">
+        <a href="/random/deploybot-com-review/">
+        Review of DeployBot.com
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/svn-commands/" title="SVN commands" class="dd-item ">
+        <a href="/random/svn-commands/">
+        SVN commands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/the-netflix-simian-army/" title="The Netflix Simian Army: reliability, security, resiliency and recoverability" class="dd-item ">
+        <a href="/random/the-netflix-simian-army/">
+        The Netflix Simian Army: reliability, security, resiliency and recoverability
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/travis-ci/" title="Travis CI Review" class="dd-item ">
+        <a href="/random/travis-ci/">
+        Travis CI Review
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/ubuntu-server-clock-synchronisation-using-ntpd/" title="Ubuntu Server clock synchronisation using NTP" class="dd-item ">
+        <a href="/random/ubuntu-server-clock-synchronisation-using-ntpd/">
+        Ubuntu Server clock synchronisation using NTP
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/create-user-using-terminal-ubuntu/" title="Ubuntu Terminal - adding user with SSH access" class="dd-item ">
+        <a href="/random/create-user-using-terminal-ubuntu/">
+        Ubuntu Terminal - adding user with SSH access
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/random/how-captcha-works/" title="What is Captcha? How does it work?" class="dd-item ">
+        <a href="/random/how-captcha-works/">
+        What is Captcha? How does it work?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/symfony/" title="Symfony 3" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/symfony/">
+          Symfony 3
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-assets/" title="Symfony 3: Assets" class="dd-item ">
+        <a href="/symfony/symfony-assets/">
+        Symfony 3: Assets
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-basics/" title="Symfony 3: Basics" class="dd-item ">
+        <a href="/symfony/symfony-basics/">
+        Symfony 3: Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-configuration/" title="Symfony 3: Configuration" class="dd-item ">
+        <a href="/symfony/symfony-configuration/">
+        Symfony 3: Configuration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-controllers-routing-views/" title="Symfony 3: Controllers, Routing, Views" class="dd-item ">
+        <a href="/symfony/symfony-controllers-routing-views/">
+        Symfony 3: Controllers, Routing, Views
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-data-fixtures/" title="Symfony 3: Data fixtures" class="dd-item ">
+        <a href="/symfony/symfony-data-fixtures/">
+        Symfony 3: Data fixtures
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-error-handling/" title="Symfony 3: Error Handling" class="dd-item ">
+        <a href="/symfony/symfony-error-handling/">
+        Symfony 3: Error Handling
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-flash-messages/" title="Symfony 3: Flash messages" class="dd-item ">
+        <a href="/symfony/symfony-flash-messages/">
+        Symfony 3: Flash messages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-forms/" title="Symfony 3: Forms" class="dd-item ">
+        <a href="/symfony/symfony-forms/">
+        Symfony 3: Forms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-overview/" title="Symfony 3: Overview" class="dd-item ">
+        <a href="/symfony/symfony-overview/">
+        Symfony 3: Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfony-services/" title="Symfony 3: Services" class="dd-item active">
+        <a href="/symfony/symfony-services/">
+        Symfony 3: Services
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfonycode-structure/" title="Symfony 3:[Code Structure]" class="dd-item ">
+        <a href="/symfony/symfonycode-structure/">
+        Symfony 3:[Code Structure]
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/symfony/symfonytwig-reference/" title="Symfony 3:[Twig]: Reference" class="dd-item ">
+        <a href="/symfony/symfonytwig-reference/">
+        Symfony 3:[Twig]: Reference
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/blockchain/" title="Blockchain" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blockchain/">
+          Blockchain
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/blockchain/blockchain-foundation/" title="1 - Blockchain Foundation" class="dd-item ">
+        <a href="/blockchain/blockchain-foundation/">
+        1 - Blockchain Foundation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/blockchain/blockchain-the-technical-side/" title="2 - Blockchain - The Technical Side" class="dd-item ">
+        <a href="/blockchain/blockchain-the-technical-side/">
+        2 - Blockchain - The Technical Side
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/python-2.7/" title="Python-2.7s" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/python-2.7/">
+          Python-2.7s
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/1-python-introduction/" title="Python 2.7: Introduction" class="dd-item ">
+        <a href="/python-2.7/1-python-introduction/">
+        Python 2.7: Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/2-python-basics-variables-strings-date-and-time/" title="Python 2.7: Basics: Variables, Strings, Date and Time" class="dd-item ">
+        <a href="/python-2.7/2-python-basics-variables-strings-date-and-time/">
+        Python 2.7: Basics: Variables, Strings, Date and Time
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/3-python-built-in-functions-examples/" title="Python 2.7: Built-in Functions, Examples" class="dd-item ">
+        <a href="/python-2.7/3-python-built-in-functions-examples/">
+        Python 2.7: Built-in Functions, Examples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/4-python-conditional-control-flows/" title="Python 2.7: Conditional &amp; Control Flows" class="dd-item ">
+        <a href="/python-2.7/4-python-conditional-control-flows/">
+        Python 2.7: Conditional &amp; Control Flows
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/5-python-classes/" title="Python 2.7: Classes" class="dd-item ">
+        <a href="/python-2.7/5-python-classes/">
+        Python 2.7: Classes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/python-exercise-pyglatin-translator/" title="Python 2.7: Exercise: PygLatin Translator" class="dd-item ">
+        <a href="/python-2.7/python-exercise-pyglatin-translator/">
+        Python 2.7: Exercise: PygLatin Translator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/python-file-input-output/" title="Python 2.7: File Input / Output" class="dd-item ">
+        <a href="/python-2.7/python-file-input-output/">
+        Python 2.7: File Input / Output
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/python-importing-modules/" title="Python 2.7: Importing Modules" class="dd-item ">
+        <a href="/python-2.7/python-importing-modules/">
+        Python 2.7: Importing Modules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/python-lambda-and-bitwise-operators/" title="Python 2.7: Lambda and Bitwise Operators" class="dd-item ">
+        <a href="/python-2.7/python-lambda-and-bitwise-operators/">
+        Python 2.7: Lambda and Bitwise Operators
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/python-lists-dictionaries/" title="Python 2.7: Lists &amp; Dictionaries" class="dd-item ">
+        <a href="/python-2.7/python-lists-dictionaries/">
+        Python 2.7: Lists &amp; Dictionaries
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/python-2.7/python-loops/" title="Python 2.7: Loops" class="dd-item ">
+        <a href="/python-2.7/python-loops/">
+        Python 2.7: Loops
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/software-architecture-and-design/" title="Software-architecture-and-designs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/software-architecture-and-design/">
+          Software-architecture-and-designs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/software-architecture-and-design/design-patterns/" title="Design Patterns" class="dd-item ">
+        <a href="/software-architecture-and-design/design-patterns/">
+        Design Patterns
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/software-architecture-and-design/important-concepts-every-dev-should-know/" title="Important Concepts Every Developer should know" class="dd-item ">
+        <a href="/software-architecture-and-design/important-concepts-every-dev-should-know/">
+        Important Concepts Every Developer should know
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Docs</a> > <a href='/symfony/'>Symfony 3</a> > Symfony 3: Services
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#servicesyaml">services.yaml</a></li>
+      </ul>
+    </li>
+    <li><a href="#auto-wire">Auto-Wire</a></li>
+    <li><a href="#auto-configure">Auto-Configure</a></li>
+    <li><a href="#public--private-services">Public / Private Services</a></li>
+    <li><a href="#tags">Tags</a></li>
+    <li><a href="#manual-service-wiring-parameter-binding">Manual service wiring, parameter binding</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Symfony 3: Services
+            </h1>
+          
+
+        
+
+
+<p>Let&rsquo;s get some terminology straight.</p>
+<p>Service is an object which performs specific function - sending email, caching, etc. Service container will control how services are constructured and are used in Dependency Injection.</p>
+<p>Based on DI practices objects will be passed, which makes the code cleaner and writing tests easier.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Displays full list of defined services</span>
+php bin/console debug:container
+</code></pre></div><h3 id="servicesyaml">services.yaml</h3>
+<p>Contains service configuration. Here you will find paths defined to be used as services. In addition you can use services_[env].yaml for environment specific configuration.</p>
+<p>Service is a class which represents the business logic. To utilize Dependency Injection, Interfaces classes are passed as arguments to the class constructors. In this aspect symfony will choose appropriate Service which implements an interface and inject this dependency.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Displays what service is associated with the interface</span>
+php bin/console debug:autowiring LoggerInterface
+
+<span style="color:#75715e"># Displays all services and corresponding interfaces</span>
+php bin/console debug:autowiring
+
+<span style="color:#75715e"># Displays information about the service</span>
+php bin/console debug:container monolog.logger
+</code></pre></div><h2 id="auto-wire">Auto-Wire</h2>
+<p>Autowiring is responsible for injecting dependencies in your services. By default you will find autowiring enabled (services.yaml). If autowiring is disabled you will have to inject dependencies manually through defining them in services.yaml as:</p>
+<p><code>[Class name]: [Injected Dependency Name]</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># Injects Greeting service to BlogController</span>
+<span style="color:#66d9ef">App\Controller\BlogController</span>: [<span style="color:#e6db74">&#39;@App\Service\Greeting&#39;</span>]
+
+<span style="color:#75715e"># Injects Logger service to Greeting service (constructor)</span>
+<span style="color:#66d9ef">App\Service\Greeting</span>: [<span style="color:#e6db74">&#39;@monolog.logger&#39;</span>]
+</code></pre></div><h2 id="auto-configure">Auto-Configure</h2>
+<p>When set to true symfony automatically adds tags to classes implementing certain interfaces. In addition symfony automatically registers your services as commands, event subscribers, etc.</p>
+<p>Sample services.yaml file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># This file is the entry point to configure your own services.</span>
+<span style="color:#75715e"># Files in the packages/ subdirectory configure your dependencies.</span>
+
+<span style="color:#75715e"># Put parameters here that don&#39;t need to change on each machine where the app is deployed</span>
+<span style="color:#75715e"># https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration</span>
+<span style="color:#66d9ef">parameters</span>:
+<span style="color:#66d9ef">locale</span>: <span style="color:#e6db74">&#39;en&#39;</span>
+
+<span style="color:#66d9ef">services</span>:
+<span style="color:#75715e"># default configuration for services in *this* file</span>
+  <span style="color:#66d9ef">_defaults</span>:
+    <span style="color:#66d9ef">autowire</span>: <span style="color:#66d9ef">true</span>       <span style="color:#75715e"># Automatically injects dependencies in your services.</span>
+    <span style="color:#66d9ef">autoconfigure</span>: <span style="color:#66d9ef">true</span>  <span style="color:#75715e"># Automatically registers your services as commands, event subscribers, etc.</span>
+    <span style="color:#66d9ef">public</span>: <span style="color:#66d9ef">false</span>        <span style="color:#75715e"># Allows optimizing the container by removing unused services; this also means</span>
+                         <span style="color:#75715e"># fetching services directly from the container via $container-&gt;get() won&#39;t work.</span>
+                         <span style="color:#75715e"># The best practice is to be explicit about your dependencies anyway.</span>
+
+<span style="color:#75715e"># makes classes in src/ available to be used as services</span>
+<span style="color:#75715e"># this creates a service per class whose id is the fully-qualified class name</span>
+<span style="color:#66d9ef">App\</span>:
+  <span style="color:#66d9ef">resource</span>: <span style="color:#e6db74">&#39;../src/*&#39;</span>
+  <span style="color:#66d9ef">exclude</span>: <span style="color:#e6db74">&#39;../src/{Entity,Migrations,Tests,Kernel.php}&#39;</span>
+
+<span style="color:#75715e"># controllers are imported separately to make sure services can be injected</span>
+<span style="color:#75715e"># as action arguments even if you don&#39;t extend any base controller class</span>
+<span style="color:#66d9ef">App\Controller\</span>:
+  <span style="color:#66d9ef">resource</span>: <span style="color:#e6db74">&#39;../src/Controller&#39;</span>
+  <span style="color:#66d9ef">tags</span>: [<span style="color:#e6db74">&#39;controller.service_arguments&#39;</span>]
+
+<span style="color:#75715e"># add more service definitions when explicit configuration is needed</span>
+<span style="color:#75715e"># please note that last definitions always *replace* previous ones</span>
+</code></pre></div><h2 id="public--private-services">Public / Private Services</h2>
+<p>By default, services are private (public: false).</p>
+<p>If you try to fetch the service using the container, service should be defined as public. This example is demonstrated as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/**
+ * @required
+ */
+public function setContainer(ContainerInterface $container = null){
+  $container-&gt;get(MyService::class);
+}
+</code></pre></div><p>In such example <code>MyService</code> should be a public service. The better way is just to use dependency injection which will make it possible to inject private services.</p>
+<h2 id="tags">Tags</h2>
+<p>Service tags are a way to tell Symfony or other third-party bundles that your service should be registered in specific way. For example, if tagged in with specific way we can fetch all services which are responsible for sending mail, based on the common tag used. Tags can be explicitly defined in services.yaml file under services block.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">services</span>:
+  <span style="color:#66d9ef">Swift_SmtpTransport</span>:
+    <span style="color:#66d9ef">tags</span>: [<span style="color:#e6db74">&#39;app.mail_transport&#39;</span>]
+
+  <span style="color:#66d9ef">Swift_SendmailTransport</span>:
+    <span style="color:#66d9ef">tags</span>: [<span style="color:#e6db74">&#39;app.mail_transport&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">public function process(ContainerBuilder $container)
+{
+  $taggedServices = $container-&gt;findTaggedServiceIds(&#39;app.mail_transport&#39;);
+}
+</code></pre></div><p>Another way is when symfony defines the tags based on autoconfigure option being set to true. In such case, command extending from Console\Command will automatically be tagged with console.command tag, tag makes it available under <code>php bin/console</code> command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+
+<span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">App\Command</span>;
+
+<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">pre</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">pre</span><span style="color:#f92672">&gt;</span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Symfony\Component\Console\Command\Command</span>;
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UtilsCommand</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Command</span>
+{
+  <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">configure</span>(){
+    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setName</span>(<span style="color:#e6db74">&#39;app:utils&#39;</span>)
+         <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setDescription</span>(<span style="color:#e6db74">&#39;Utils to be run in console&#39;</span>)
+         <span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">addArgument</span>(<span style="color:#e6db74">&#39;name&#39;</span>, <span style="color:#a6e22e">InputArgument</span><span style="color:#f92672">::</span><span style="color:#a6e22e">REQUIRED</span>);
+  }
+
+  <span style="color:#f92672">..</span>
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># UtilsCommand is tagged with console.command</span>
+php bin/console debug:container <span style="color:#e6db74">&#39;App\Command\UtilsCommand&#39;</span>
+
+<span style="color:#75715e"># app:utils is displayed based on share console.command tag</span>
+php bin/console
+</code></pre></div><h2 id="manual-service-wiring-parameter-binding">Manual service wiring, parameter binding</h2>
+<p>Example below demonstrates wiring $message argument in the Greeting service.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+
+<span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">App\Service</span>;
+
+<span style="color:#66d9ef">use</span> <span style="color:#a6e22e">Psr\Log\LoggerInterface</span>;
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Greeting</span>
+{
+
+  <span style="color:#e6db74">/**
+</span><span style="color:#e6db74">   * @var LoggerInterface
+</span><span style="color:#e6db74">   */</span>
+  <span style="color:#66d9ef">private</span> $logger;
+  <span style="color:#e6db74">/**
+</span><span style="color:#e6db74">   * @var string
+</span><span style="color:#e6db74">   */</span>
+  <span style="color:#66d9ef">private</span> $message;
+
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __construct(<span style="color:#a6e22e">LoggerInterface</span> $logger, <span style="color:#a6e22e">string</span> $message)
+  {
+    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> $logger;
+    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> $message;
+  }
+
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">greeting</span>(<span style="color:#a6e22e">string</span> $name)<span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>
+  {
+    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">logger</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>$this-&gt;message<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">$name</span><span style="color:#e6db74">&#34;</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Hello </span><span style="color:#e6db74">$name</span><span style="color:#e6db74">&#34;</span>;
+  }
+}<span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">pre</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Wiring</span> <span style="color:#a6e22e">service</span><span style="color:#f92672">:&lt;/</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">pre</span><span style="color:#f92672">&gt;</span><span style="color:#75715e"># config/services.yaml
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">services</span><span style="color:#f92672">:</span>
+  <span style="color:#a6e22e">App\Service\Greeting</span><span style="color:#f92672">:</span>
+    <span style="color:#a6e22e">arguments</span><span style="color:#f92672">:</span>
+      $message<span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;hello from service&#39;</span>
+</code></pre></div><p>Inject our service using parameter:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># config/services.yaml</span>
+<span style="color:#66d9ef">parameters</span>:
+  <span style="color:#66d9ef">locale</span>: <span style="color:#e6db74">&#39;en&#39;</span>
+  <span style="color:#66d9ef">hello_message</span>: <span style="color:#e6db74">&#39;hello from service&#39;</span>
+
+<span style="color:#66d9ef">services</span>:
+  <span style="color:#66d9ef">App\Service\Greeting</span>:
+    <span style="color:#66d9ef">arguments</span>:
+      <span style="color:#66d9ef">$message</span>: <span style="color:#e6db74">&#39;%hello_message%&#39;</span>
+</code></pre></div><p>Binding (in this case all the parameters in any service will be wired automatically):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># config/services.yaml</span>
+<span style="color:#66d9ef">parameters</span>:
+  <span style="color:#66d9ef">locale</span>: <span style="color:#e6db74">&#39;en&#39;</span>
+  <span style="color:#66d9ef">hello_message</span>: <span style="color:#e6db74">&#39;hello from service&#39;</span>
+
+<span style="color:#66d9ef">services</span>:
+  <span style="color:#66d9ef">_defaults</span>:
+    <span style="color:#66d9ef">autowire</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#66d9ef">autoconfigure</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#66d9ef">public</span>: <span style="color:#66d9ef">false</span>
+
+    <span style="color:#66d9ef">bind</span>:
+      <span style="color:#66d9ef">$message</span>: <span style="color:#e6db74">&#39;%hello_message%&#39;</span>&lt;/pre&gt;
+&lt;p&gt;Another great feature allow wiring based on type:&lt;/p&gt;
+&lt;pre&gt;<span style="color:#75715e"># config/services.yaml</span>
+<span style="color:#66d9ef">services</span>:
+  <span style="color:#66d9ef">_defaults</span>:
+    <span style="color:#66d9ef">autowire</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#66d9ef">autoconfigure</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#66d9ef">public</span>: <span style="color:#66d9ef">false</span>
+
+    <span style="color:#66d9ef">bind</span>:
+      <span style="color:#66d9ef">App\Service\SomeInterface</span>: <span style="color:#e6db74">&#39;@some_service&#39;</span>
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/symfony/symfony-overview/" title="Symfony 3: Overview"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/symfony/symfonycode-structure/" title="Symfony 3:[Code Structure]" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1595111774"></script>
+    <script src="/js/perfect-scrollbar.min.js?1595111774"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1595111774"></script>
+    <script src="/js/jquery.sticky.js?1595111774"></script>
+    <script src="/js/featherlight.min.js?1595111774"></script>
+    <script src="/js/highlight.pack.js?1595111774"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1595111774"></script>
+    <script src="/js/learn.js?1595111774"></script>
+    <script src="/js/hugo-learn.js?1595111774"></script>
+
+    <link href="/mermaid/mermaid.css?1595111774" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1595111774"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script type="text/javascript">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+  </body>
+</html>
+

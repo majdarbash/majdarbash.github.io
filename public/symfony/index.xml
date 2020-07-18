@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Symfony 3 on My New Hugo Site</title>
+    <link>http://localhost:1313/symfony/</link>
+    <description>Recent content in Symfony 3 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/symfony/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Symfony 3: Assets</title>
+      <link>http://localhost:1313/symfony/symfony-assets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-assets/</guid>
+      <description>Composer manages PHP dependencies NPM or Yarn would be used for Frontend assets  Webpack
+Webpack is a node.js library which can bundle your javascript and CSS files into bundles. You can ready detailed documentation about it on https://webpack.js.org.
+Encore
+Encore is a recommended library which is built on top of webpack. Encore is also written in node.js. This library makes it simpler to integrate webpack into your Symfony application.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Basics</title>
+      <link>http://localhost:1313/symfony/symfony-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-basics/</guid>
+      <description>Installation sudo mkdir -p /usr/local/bin sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony sudo chmod a+x /usr/local/bin/symfony Checking requirements php ./bin/symfony_requirements </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Configuration</title>
+      <link>http://localhost:1313/symfony/symfony-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-configuration/</guid>
+      <description># Will print the bundle names and aliases php bin/console config:dump-reference # Dumps configuration options for specific bundle php bin/console config:dump-reference [extension alias] php bin/console config:dump-reference framework </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Controllers, Routing, Views</title>
+      <link>http://localhost:1313/symfony/symfony-controllers-routing-views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-controllers-routing-views/</guid>
+      <description>This example demonstrates routing using annotation as well as different ways to pass arguments to the controller.
+&amp;lt;?php // src/Service/TestService.php namespace App\Service; class TestService { public function message($name) { return &amp;quot;Hello $name&amp;quot;; } } &amp;lt;?php // src/Controller/TestController namespace App\Controller; use Symfony\Component\HttpFoundation\Request; use Symfony\Component\HttpFoundation\Response; use Symfony\Component\Routing\Annotation\Route; use App\Service\TestService; use Symfony\Bundle\FrameworkBundle\Controller\AbstractController; class TestController extends AbstractController { /** * @var TestService */ private $testService; /** * TestController constructor. */ public function __construct(TestService $testService) { $this-&amp;gt;testService = $testService; } /** * @Route(&amp;quot;/test1&amp;quot;, name=&amp;quot;test1&amp;quot;) * @param Request $request * @return Response */ public function test1(Request $request) { return new Response($this-&amp;gt;testService-&amp;gt;message( $request-&amp;gt;get(&#39;name&#39;) )); } /** * @Route(&amp;quot;/test2/{name}&amp;quot;, name=&amp;quot;test2&amp;quot;) * @param $name * @return Response */ public function test2($name) { return new Response($this-&amp;gt;testService-&amp;gt;message($name)); } } Annotation configuration can be done from:</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Data fixtures</title>
+      <link>http://localhost:1313/symfony/symfony-data-fixtures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-data-fixtures/</guid>
+      <description>1) Installation
+composer require --dev doctrine/doctrine-fixtures-bundle 2) Fixtures class
+&amp;lt;?php # ./src/DataFixtures/PostFixtures.php namespace App\DataFixtures; use App\Entity\Post; use Doctrine\Bundle\FixturesBundle\Fixture; use Doctrine\Common\Persistence\ObjectManager; class PostFixtures extends Fixture { public function load(ObjectManager $manager) { $plan = new Post(); $plan-&amp;gt;setName(&#39;My first post&#39;); $plan-&amp;gt;setDescription(&#39;This is my first post&#39;); $manager-&amp;gt;persist($plan); $manager-&amp;gt;flush(); } } 3) Loading fixtures
+php bin/console doctrine:fixtures:load php bin/console doctrine:fixtures:load --purge-with-truncate </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Error Handling</title>
+      <link>http://localhost:1313/symfony/symfony-error-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-error-handling/</guid>
+      <description>throw new NotFoundHttpException(&#39;Post not found&#39;);
+This exception will be handled using default exception handler, which will try to locate a template from twig-bundle/Resources/views/Exception/error...html.twig.
+It will first try to locate a template using the following order:
+error[error_code].html.twig error.json.twig error.html.twig These templates can be customized when mimic the structure of the bundle templates.
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #} {% extends &#39;base.html.twig %} {% block body %} &amp;lt;h1&amp;gt;Page not found.&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;{{ status_text }}, {{status_code}}&amp;lt;/p&amp;gt; {% endblock %} </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Flash messages</title>
+      <link>http://localhost:1313/symfony/symfony-flash-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-flash-messages/</guid>
+      <description>1) Setting the message
+&amp;lt;?php namespace App\Controller; use Symfony\Bundle\FrameworkBundle\Controller\Controller; use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface; class FlashBagController extends Controller { /** * @var FlashBag */ private $flashBag; public function __construct(FlashBagInterface $flashBag) { $this-&amp;gt;flashBag = $flashBag; } /** * @Route(&#39;/index&#39;, name=&amp;quot;flash_index&amp;quot;) */ public function index() { return $this-&amp;gt;render(&#39;flash/index.html.twig&#39;); } /** * @Route(&#39;/setFlash&#39;) */ public function setFlashMessage() { $this-&amp;gt;flashBag-&amp;gt;add(&#39;notice&#39;, &#39;Here is the flash message.&#39;); $this-&amp;gt;redirectToRoute(&#39;flash_index&#39;); } } 2) Reading the message in the template
+{# ./templates/flash/index.html.twig #} {% for message in app.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Forms</title>
+      <link>http://localhost:1313/symfony/symfony-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-forms/</guid>
+      <description>The code-snippets in this article are obtained from: https://symfony.com/doc/current/forms.html
+1) Installation
+composer require symfony/form 2) Building form in controller
+&amp;lt;?php // src/Entity/Task.php namespace App\Entity; class Task { protected $task; protected $dueDate; public function getTask() { return $this-&amp;gt;task; } public function setTask($task) { $this-&amp;gt;task = $task; } public function getDueDate() { return $this-&amp;gt;dueDate; } public function setDueDate(\DateTime $dueDate = null) { $this-&amp;gt;dueDate = $dueDate; } } &amp;lt;?php // src/Controller/DefaultController.php namespace App\Controller; use App\Entity\Task; use Symfony\Bundle\FrameworkBundle\Controller\Controller; use Symfony\Component\HttpFoundation\Request; use Symfony\Component\Form\Extension\Core\Type\TextType; use Symfony\Component\Form\Extension\Core\Type\DateType; use Symfony\Component\Form\Extension\Core\Type\SubmitType; class DefaultController extends Controller { public function new(Request $request) { // creates a task and gives it some dummy data for this example  $task = new Task(); $task-&amp;gt;setTask(&amp;#39;Write a blog post&amp;#39;); $task-&amp;gt;setDueDate(new \DateTime(&amp;#39;tomorrow&amp;#39;)); $form = $this-&amp;gt;createFormBuilder($task) -&amp;gt;add(&amp;#39;task&amp;#39;, TextType::class) -&amp;gt;add(&amp;#39;dueDate&amp;#39;, DateType::class) -&amp;gt;add(&amp;#39;save&amp;#39;, SubmitType::class, array(&amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Create Task&amp;#39;)) -&amp;gt;getForm(); $form-&amp;gt;handleRequest($request); if ($form-&amp;gt;isSubmitted() &amp;amp;amp;&amp;amp;amp; $form-&amp;gt;isValid()) { // $form-&amp;gt;getData() holds the submitted values  // but, the original `$task` variable has also been updated  $task = $form-&amp;gt;getData(); // .</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Overview</title>
+      <link>http://localhost:1313/symfony/symfony-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-overview/</guid>
+      <description>Symfony is a PHP framework for creating websites and web applications. Symfony provides you with a set of reusable components: Validators, HTTP Kernel, etc. Symfony Embraces best software development practices.
+Symfony was first released in 2005. The framework releases have got LTS - Long Term Support and with the help of the huge community and documentaion you are not alone! What is noticably great is that symfony uses best practices for application development.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Services</title>
+      <link>http://localhost:1313/symfony/symfony-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-services/</guid>
+      <description>Let&amp;rsquo;s get some terminology straight.
+Service is an object which performs specific function - sending email, caching, etc. Service container will control how services are constructured and are used in Dependency Injection.
+Based on DI practices objects will be passed, which makes the code cleaner and writing tests easier.
+# Displays full list of defined services php bin/console debug:container services.yaml Contains service configuration. Here you will find paths defined to be used as services.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3:[Code Structure]</title>
+      <link>http://localhost:1313/symfony/symfonycode-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfonycode-structure/</guid>
+      <description>myproject/ config/ src/ Controller/ Entity/ Form/ Migrations/ Model/ Repository/ Service/ [components] templates/ Description:
+Entity/: Refers to the Persistence Layer
+Example:
+Let&amp;rsquo;s assume we have an entity Product, consisting of id and name.
+1) Start by creating Product directory
+A bundle is simply a structured set of files within a directory that implement a single feature. Each directory contains everything related to that feature, including PHP files, templates, stylesheets, JavaScripts, tests and anything else.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3:[Twig]: Reference</title>
+      <link>http://localhost:1313/symfony/symfonytwig-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfonytwig-reference/</guid>
+      <description>Template file name
+[template_name].html.twig {# comment #} Template block
+{% block [block_name] %} [block_content] {% endblock %} Extending twig template
+{% extends [template_name] %} Output a variable
+{{ [variable_name] }} For loop
+{% for post in posts %} {{ post.title }}:&amp;amp;nbsp;{{ post.text }} {% endfor %} Generate URL from annotated route name
+{{ path([route_name]) }} Twig Filters
+# Uppercase conversion: {{ post.title|upper }} # Date conversion: {{ post.data|date(&#39;H:i:s&#39;) }} Environment variables</description>
+    </item>
+    
+  </channel>
+</rss>

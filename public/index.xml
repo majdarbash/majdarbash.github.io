@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Docs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2019 23:14:05 +0400</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1 - Blockchain Foundation</title>
+      <link>http://localhost:1313/blockchain/blockchain-foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blockchain/blockchain-foundation/</guid>
+      <description>Consensys developer program
+academy.consensys.net/developer
+History of blockchain
+1990s Stuart Haber / Scott Stornetta
+How to keep the past data secure and keep digital information safe and resistant to tampering
+ 1991 - First paper outlined the use of a chain of cryptographically secured blocks to preserve the integrity of past information and protect it. 1993 - Spam countermeasures 2008 - Bitcoin is born
+Satoshi Nakamoto
+Released whitepaper:
+“Bitcoin: A Peer-to-Peer Electornic Cash System” 2014 - Ethereum</description>
+    </item>
+    
+    <item>
+      <title>Data Stores</title>
+      <link>http://localhost:1313/aws-csap/data-stores/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/data-stores/</guid>
+      <description>Amazon S3 Amazon EBS (Elastic Block Storage) Amazon EFS (Elastic File System) Amazon Storage Gateway Amazon WorkDocs Database on EC2 Amazon RDS Amazon DynamoDB Amazon Redshift Amazon Neptune Amazon Elasticache Other Database Options  Amazon Athena Amazon Quantum Ledger Database Amazon Managed Blockchain Amazon Timestream Database Amazon DocumentDB Amazon ElasticSearch   Database Comparison   Amazon S3 &amp;ldquo;Secure, durable, highly scalable object storage at a very low cost.1 You can store and retrieve any amount of data, at any time, from anywhere on the web through a simple web service interface.</description>
+    </item>
+    
+    <item>
+      <title>Elements of Data Science</title>
+      <link>http://localhost:1313/aws-cmls/2019-11-7-elements-of-data-science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-cmls/2019-11-7-elements-of-data-science/</guid>
+      <description>What is Data Science?  Types of Learning Key Issues in ML Supervised Methods  Linear Methods Logistic Regression and Linear Separability Linear Separability     Problem Formulation and Exploratory Data Analysis  Data collection  Data Sampling Data Labeling   Exploratory Data Analysis  Domain Knowledge Data Schema Data Statistics Correlations Data Issues     Data Processing and Feature Engineering  Encoding Categorical Variables  Encoding Ordinals Encoding Nominals   Handling Missing Values Feature Engineering  Filtering and Scaling Transformation Text-Based Features     Model Training, Tuning, and Debugging  Supervised Learning: Neural Networks Supervised Learning: K-Nearest Neighbors Supervised Learning: Linear and Non-Linear Support Vector Machines Supervised Learning: Decision Trees and Random Forests Model Training: Validation Set  Splitting Data: Training, Testing, Validation**   Model Training: Bias Variance Tradeoff Model Debugging: Error Analysis Model Tuning: Regularization  Regularization Techniques   Model Tuning: Hyperparameter Tuning Model Tuning  Training Data Tuning Feature Set Tuning   Model Tuning: Feature Extraction Model Tuning: Bagging/Boosting   Model Evaluation and Model Productionizing  Using ML Models in Production Model Evaluation Metrics  Confusion Matrix Metrics Cross Validation K-Fold Cross Validation Leave-one Out Cross Validation Stratified K-fold Cross Validation   Metrics for Linear Regression Using ML Models in Production: Storage  Model and Pipeline Persistence Model Deployment   Using ML Models in Production: Monitoring and Maintenance Using ML Models in Production: Using AWS Common Mistakes    What is Data Science?</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Introduction</title>
+      <link>http://localhost:1313/python-2.7/1-python-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/1-python-introduction/</guid>
+      <description>Python installation:
+You can install python by using this link:
+https://www.python.org
+Documentation can be downloaded from:
+https://www.python.org/doc
+As I will be using Mac, i will install python from:
+https://www.python.org/download/mac/
+You can run python using command:
+$ python Following flags can be provided
+-v - verbose output You can use PyCharm - a python IDE provided by JetBrain - has some really cool features. Just google PyCharm and download the community / professional edition.</description>
+    </item>
+    
+    <item>
+      <title>What are Neural Networks? Why do we use them?</title>
+      <link>http://localhost:1313/ml-neural-networks/neural-networks-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ml-neural-networks/neural-networks-overview/</guid>
+      <description>Why do we use neural networks? Neural networks help us solve a lot of complicated problems when there&amp;rsquo;s no clear way to solve it. Sometimes problems can be complicated enough where we don&amp;rsquo;t know how to solve it, or solving them in conventional way will lead to very complicated algorithms which cannot adapt to changes.
+Neural networks play essential role in acting like human brain - helping us solving problems which we are good at: speech recognition, object recognition, pattern recognition, classification, etc&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>2 - Blockchain - The Technical Side</title>
+      <link>http://localhost:1313/blockchain/blockchain-the-technical-side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blockchain/blockchain-the-technical-side/</guid>
+      <description>Public an private keys are large integer numbers and they are represented using a separate Wallet Import Format (WIF), consisting of letters and numbers.
+
+Private key is used to generate a signature for each blockchain transaction a user sends out. It is used to confirm that the transaction has come from the user and also prevents the transaction from being altered by anyone once it has been issued.
+You sign the cryptocurrencies you send to others using a private key.</description>
+    </item>
+    
+    <item>
+      <title>ML Building Blocks: Services and Terminology</title>
+      <link>http://localhost:1313/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</guid>
+      <description>Terminology Stages Data Process / ML Workflow  ML Problem Framing Data Collection / Integration Data Preparation  Data Cleaning Shuffling Training Data Test-Validation-Train Split Cross Validation   Data Visualization &amp;amp; Analysis Feature Engineering Model Training  Parameter Turning   Model Evaluation Business Goal Evaluation  Feature and Data Augmentation   Prediction    Terminology Stages  Training  Refers to how machine uses historical data sets to build its prediction algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/aws-csap/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/networking/</guid>
+      <description>Ephermal Ports Reserved IP Addresses in VPC Network to VPC Connectivity  AWS Managed VPN AWS Direct Connect AWS Direct Connect Plus VPN AWS CloudHub VPN Software VPN Transit VPC   VPC to VPC Connectivity  VPC Peering AWS PrivateLink VPC Endpoints   Internet Gateways  Internet Gateway Egress-Only Internet Gateway NAT Instance NAT Gateway NAT Instances vs. Nat Gateways   Routing  Routing Tables Border Gateway Protocol (BGP)   Enhanced Networking  Placement Groups   Route 53  Route 53 Routing Policies   CloudFront Elastic Load Balancer  Read more on VPCs from AWS CSAA</description>
+    </item>
+    
+    <item>
+      <title>Neural Networks: Supervised, Unsupervised &amp; Reinforcement Learning Types of Learning</title>
+      <link>http://localhost:1313/ml-neural-networks/neural-networks-types-of-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ml-neural-networks/neural-networks-types-of-learning/</guid>
+      <description>There are 3 types of learning
+ Supervised learning Reinforcement learning Unsupervised learning  Supervised Learning In supervised learning we try to predict an output when given an input vector. Input and target are clear in supervised learning.
+Regression - target ouptut is a real numbers or a vector of real numbers
+Classification - target output is a class label
+Model-class is a function:
+\begin{equation} y = f(x; W) \end{equation}</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Basics: Variables, Strings, Date and Time</title>
+      <link>http://localhost:1313/python-2.7/2-python-basics-variables-strings-date-and-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/2-python-basics-variables-strings-date-and-time/</guid>
+      <description>Variables x = 10 This statement will create a variable called x which will store a number 10. By assigned value python understands that this variable will store numeric data. We can also store other data types, by assigning different types of values:
+x_int = 1 x_float = 1.23 x_bool = True Note that booleans should have an uppercase in the beginning. (True and not true, False and not false)</description>
+    </item>
+    
+    <item>
+      <title>CRISP-DM on AWS</title>
+      <link>http://localhost:1313/aws-cmls/2019-11-6-crisp-dm-on-aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-cmls/2019-11-6-crisp-dm-on-aws/</guid>
+      <description>CRISP-DM  Stands for Cross Industry Standard Process - Data Mining Is a framework to Data Science Project  Phases of CRISP-DM  Business Understanding Data Understanding Data Preparation Modeling Evaluation Deployment   Business Understanding  Understanding business requirements   Questions from the business perspective which need answering Highlight project&amp;rsquo;s critical features People and resources required  Analyzing supporting information   List required resources and assumptions Analyze associated risks Plan for contengencies Compare costs and benefits  Converting to a Data Mining or Machine Learning problem   Review machine learning question Create technical data mining objective Define the criteria for successful outcome of the project  Preparing a preliminar plan   Number and duration of stages Dependencies Risks Goals Evaluation methods Tools and techniques   Data Understanding  Data collection  Detail Various sources and steps to extract data Analyze data for additional requirements Consider other data sources   Data properties  Describe the data, amount of data used, and metadata properties Fidn key features and relationshps in the data Use tools and techniques to explore data properties   Quality  Verifying attributes Identifying missing data Reveal inconsitencies Report solution    AWS tools for Data Understanding</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Built-in Functions, Examples</title>
+      <link>http://localhost:1313/python-2.7/3-python-built-in-functions-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/3-python-built-in-functions-examples/</guid>
+      <description>Python provides you with a great variety of built-in functions and modules. We wil display a bit of interesting examples here, using some built-in functions.
+def biggest_number(*args): return max(*args) As you noticed, we can pass multiple inputs to our function using *args syntax.
+# output: 6 print max(4,2,6) # output: 3 print min(3,6,7) # output: 98 print abs(-98) Determining the type of variabel and using it: # output: displays the types of variables: int, str, float x_int = 52 x_string = &amp;quot;hello&amp;quot; x_float = 2.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Setting up Neural Network with PyBrain</title>
+      <link>http://localhost:1313/ml-neural-networks/machine-learning-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ml-neural-networks/machine-learning-python/</guid>
+      <description>Today, I&amp;rsquo;m experimenting machine learning concepts in python. For this purchase I&amp;rsquo;m using PyBrain. If you would like to have a better idea about Python, I suggest having a quick glance at posts 1-10 in Python category.
+PyBrain is a Machine Learning library for Python. PyBrain stands for Python-Based Reinforcemnet Learning, Artificial Intelligence and Neural Network Library.
+For complete guide on installation you can get complete details from:
+http://pybrain.org/docs/
+In the example below, based on pybrain.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/aws-csap/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/security/</guid>
+      <description>Security Concepts  Shared Responsibility Model Principle of Least Privillege** Security Facets Typical Components SAML 2.0, OAuth 2.0, OpenID Connect AWS Artifact   Multi-Account Management Network Controls and Security Groups AWS Directory Services Credentials and Access Management Encryption  Key Management Service (KMS) CloudHSM (Hardware Security Module) AWS Certificate Manager   Distributed Denial of Services Attacks IDS and IPS AWS Service Catalog  AWS Service Catalog Constraints     Security Concepts Shared Responsibility Model  AWS - Reponsbility for Security of the Cloud Customer - Responsibility for Security in the Cloud  Principle of Least Privillege**  Give users (or services) nothing more than those privileges required to perform their intended function.</description>
+    </item>
+    
+    <item>
+      <title>Anomaly Detection: Isolation Forest Algorithm</title>
+      <link>http://localhost:1313/aws-cmls/2019-11-21-isolation-forest-algorithm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-cmls/2019-11-21-isolation-forest-algorithm/</guid>
+      <description>Defining the Anomaly Detection Problem  Methods to Resolve Anomaly Detection Problem Well Defined Anomaly Distribution Assumption   Isolation Forest Algorithm  Algorithm Steps Example     Defining the Anomaly Detection Problem  Data is set of vectors in d-dimensional space  $x_1$, &amp;hellip; $x_n$ each $x_i$ $\epsilon$ $R^d$   Mixture of nominal points and anomaly points Anomaly points are generated by different generative process than the normal points  Solutions</description>
+    </item>
+    
+    <item>
+      <title>Migrations</title>
+      <link>http://localhost:1313/aws-csap/migrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/migrations/</guid>
+      <description>Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase Abandon existing and purchase new. (Drop and Shop) Rearchitect Redesign application in a cloud-native manner, e.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Conditional &amp; Control Flows</title>
+      <link>http://localhost:1313/python-2.7/4-python-conditional-control-flows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/4-python-conditional-control-flows/</guid>
+      <description>Python supports:
+ Standard comparison operators: &amp;lt;, &amp;gt;, ==, !=, &amp;lt;=, &amp;gt;=. Logical operators: and, or, not (not is evaluated first, then and and then or)  Conditional Clause if [condition]: [statements ...] else: [statements ...] More sofisticated example, would be:
+if [condition 1]: [statements ...] elif [condition 2]: [statements ...] else: [statements ...] Beware of the indentation as it will indicate how many statements to be executed within the condition success block.</description>
+    </item>
+    
+    <item>
+      <title>Architecting to Scale</title>
+      <link>http://localhost:1313/aws-csap/architecting-to-scale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/architecting-to-scale/</guid>
+      <description>Architectural Patterns  Loosely Coupled Architecture Horizontal Scaling vs. Vertical Scaling   Auto-Scaling  Type of Auto-Scaling Amazon EC2 Auto-Scaling Options Auto-Scaling Policy Scaling Cooldown Period   AWS Kinesis DynamoDB Scaling  DDB Terminology DDB Partitions and Scaling DynamoDB Accelerator - DAX   CloudFront SNS (Simple Notification Service) SQS  Queue Types   Amazon MQ AWS Lambda, Serverless Application Manager and EventBridge  AWS Serverless Application Model (AWS SAM)   Amazon EventBridge Simple Workflow Service (SWF) AWS Step Functions AWS Batch Elastic MapReduce  Components of Elastic MapReduce    Architectural Patterns Loosely Coupled Architecture Components can stand independently and require little or no knowledge of the inner workings of the other components.</description>
+    </item>
+    
+    <item>
+      <title>Developing Machine Learning Applications</title>
+      <link>http://localhost:1313/aws-cmls/2019-11-11-developing-ml-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-cmls/2019-11-11-developing-ml-apps/</guid>
+      <description>AWS SageMaker  Notebook Instance   AWS SageMaker Neo Machine Learning Algorithms  Linear Supervised Algorithms Non-Linear Supervised Algorithms Unsupervised Learning Algorithms Deep Learning  Convolutional Neural Networks (CNNs) Recurrent Neural Networks (RNNs)     Automatic Model Tuning  Hyperparameters Tuning Hyperparameters  Manual Brute Force Meta model SageMaker&amp;rsquo;s method     Advanced Analytics with Amazon SageMaker  Building and Training Machine Learning Models with Amazon SageMaker and Apache Spark  Building Machine Learning Pipelines using Spark and SageMaker      Anomaly Detection on AWS  Random Cut Forest Algorithm Architecture   Building Recommendation Systems with MXNet and GluOn  Collaborative Filtering  Matrix Factorization How to Choose a Model      AWS SageMaker AWS SageMaker is a fully managed service that allows the users to build, train and deploy machine learning models.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Classes</title>
+      <link>http://localhost:1313/python-2.7/5-python-classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/5-python-classes/</guid>
+      <description>In the example below of class syntax, the class in parantheses indicate the clsaas from which the new class inherits - in the current case it&amp;rsquo;s object.
+class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;quot;&amp;quot; def __init__(self, name, phone, gender): self.name = name self.phone = phone self.gender = gender def description(self): print &amp;quot;Name: %s, phone: %s, gender %s&amp;quot; % (self.name, self.phone, self.gender) def is_male(self): if self.gender == &#39;male&#39;: return True else: return False def is_female(self): if self.</description>
+    </item>
+    
+    <item>
+      <title>Business Continuity</title>
+      <link>http://localhost:1313/aws-csap/business-continuity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/business-continuity/</guid>
+      <description>Concepts Disaster Recovery Architectures Storage Options Compute Options HA Approaches for Databases Network Options Failure mode and Effects Analysis (FMEA)  Concepts  Business Continuity (BC)  Seeks to minimize business activity disruption when something unexpected happens   Disaster Recovery (DR)  Act of responding to these events that threaten business continuity   High Availability  Designing in redundancies to reduce the chance of impacting service levels   Fault Tolerance  Design in the ability to tolerate faults   Service Level Argreement (SLA)  An agreed goal or target for a given service on its performance or availability   Recovery Time Objective (RTO)  Time taken after disruption to restore business processes to their levels   Recovery Point Objective (RPO)  Acceptable amount of data loss measured in time.</description>
+    </item>
+    
+    <item>
+      <title>Deployment and Operations Management</title>
+      <link>http://localhost:1313/aws-csap/deployment-and-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/deployment-and-operations/</guid>
+      <description>Software Deployments CI, CD, CD Elastic Beanstalk CloudFormation Elastic Container Service API Gateway Management Tools Enterprise Applications AWS Machine Learning Landscape  AI Services ML Services ML Frameworks &amp;amp; Infrastructure    Software Deployments Types of Deployment:
+ Big Bang Phased Rollout Parallel Adoption  Deployment Strategies:
+ Rolling Deployment  Changing launch configuration to specific version will rollout the changes   A/B Testing  Using Route53 we can specific the ALB which gets the traffic   Canary Release  Deploy new version on production - if no errors are detected, deploy the rest   Blue-Green Deployment  Create new ALB and ASG with new version Switch to the new version using Route53 Switch back to the old version using Route53 The goal of blue/green deployment is to achieve immutable infrastructure - you don&amp;rsquo;t make changes to your application after it&amp;rsquo;s deployed but redeploy altogether How to achieve Blue-Green Deployment on AWS:  Update DNS with Route53 to point to new ELB or instance Swap ASG of new instances behind the ELB Change ASG LC to use new AMI and terminate old instances Swap environment URL on Elastic Beanstalk Clone stack using AWS Opswork and update DNS      Blue-Green Deployments are not recommended:</description>
+    </item>
+    
+    <item>
+      <title>Cost Management</title>
+      <link>http://localhost:1313/aws-csap/cost-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/cost-management/</guid>
+      <description>Concepts Cost Optimization Strategies  Appropriate Provisioning Right-Sizing Purchase Options Managed Services Optimized Data Transfer   Tagging and Resource Groups  Resource Groups Resource Groups   Spot Instances and Reserved Instances  Reserved Instances Spot Instances   Cost Management Tools  Concepts  CapEx (Capital Expenses) OpEx (Operational Expenses) Total Cost of Ownership (TCO)  A comprehensive look at the entire cost model of a given decision or option often including both hard costs and soft costs.</description>
+    </item>
+    
+    <item>
+      <title>AWS Applications</title>
+      <link>http://localhost:1313/2019/04/17/aws-applications/</link>
+      <pubDate>Wed, 17 Apr 2019 23:14:05 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/aws-applications/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>HA Arhictecture: High Availability</title>
+      <link>http://localhost:1313/2019/04/17/ha-arhictecture-high-availability/</link>
+      <pubDate>Wed, 17 Apr 2019 23:12:01 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/ha-arhictecture-high-availability/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Route53</title>
+      <link>http://localhost:1313/2019/04/17/route53/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:58 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/route53/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/2019/04/17/iam/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:56 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/iam/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:1313/2019/04/17/databases/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:53 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/databases/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>http://localhost:1313/2019/04/17/serverless/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:51 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/serverless/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Cloud Best Practices</title>
+      <link>http://localhost:1313/2019/04/17/aws-cloud-best-practices/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:40 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/aws-cloud-best-practices/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>EC2</title>
+      <link>http://localhost:1313/2019/04/17/ec2/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:03 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/ec2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>http://localhost:1313/2019/04/17/aws-certification-solution-architect-iam-s3/</link>
+      <pubDate>Wed, 17 Apr 2019 23:11:01 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/17/aws-certification-solution-architect-iam-s3/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to build Docker Image for NGINX using Chef (chef-solo)?</title>
+      <link>http://localhost:1313/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</link>
+      <pubDate>Sat, 30 Sep 2017 18:38:38 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to provision Docker Images using Chef-Solo?</title>
+      <link>http://localhost:1313/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</link>
+      <pubDate>Sat, 30 Sep 2017 18:35:27 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>CS: Markdown</title>
+      <link>http://localhost:1313/2017/09/30/markdown-cheat-sheet/</link>
+      <pubDate>Sat, 30 Sep 2017 00:25:45 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/30/markdown-cheat-sheet/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>CS: Docker Commands</title>
+      <link>http://localhost:1313/2017/09/29/docker-cheat-sheet/</link>
+      <pubDate>Fri, 29 Sep 2017 23:58:24 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/29/docker-cheat-sheet/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to upgrade Wordpress? Best and safest way to upgrade</title>
+      <link>http://localhost:1313/2017/08/19/best-safest-way-upgrade-wordpress-site/</link>
+      <pubDate>Sat, 19 Aug 2017 13:49:34 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/08/19/best-safest-way-upgrade-wordpress-site/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overcoming SEO challenges with AngularJS 1-based Applications</title>
+      <link>http://localhost:1313/2017/06/27/angularjs-seo-implications/</link>
+      <pubDate>Tue, 27 Jun 2017 22:49:42 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/06/27/angularjs-seo-implications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI Pipeline: Unifying and automating code using Coding Style Fixer</title>
+      <link>http://localhost:1313/2017/03/15/php-coding-style-fixer/</link>
+      <pubDate>Wed, 15 Mar 2017 12:39:27 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/03/15/php-coding-style-fixer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to test your SSL installation?</title>
+      <link>http://localhost:1313/2017/02/08/testing-installed-ssl-certificate/</link>
+      <pubDate>Wed, 08 Feb 2017 00:41:19 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/02/08/testing-installed-ssl-certificate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Closer look into Learning Algorithm of a Neuron</title>
+      <link>http://localhost:1313/2017/01/23/learning-algorithm-neuron/</link>
+      <pubDate>Mon, 23 Jan 2017 23:17:13 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/01/23/learning-algorithm-neuron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First Generation of Neural Networks: Perceptrons</title>
+      <link>http://localhost:1313/2017/01/15/perceptrons/</link>
+      <pubDate>Sun, 15 Jan 2017 23:31:43 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/01/15/perceptrons/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to download the streaming m3u8 videos formats?</title>
+      <link>http://localhost:1313/2016/12/05/downloading-m3u8-videos/</link>
+      <pubDate>Mon, 05 Dec 2016 00:12:32 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2016/12/05/downloading-m3u8-videos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React Native: Building the &#34;Shoes&#34; App</title>
+      <link>http://localhost:1313/2016/10/20/react-native-the-shoe-app/</link>
+      <pubDate>Thu, 20 Oct 2016 10:18:13 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2016/10/20/react-native-the-shoe-app/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;run-your-app-on-android&#34;&gt;run your app on Android&lt;/h1&gt;
+&lt;p&gt;react-native run-android&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;directory--listing&#34;&gt;directory  listing&lt;/h1&gt;
+&lt;p&gt;ls -F&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Facebook For Developers - 29th September 2016, Dubai</title>
+      <link>http://localhost:1313/2016/09/29/facebook-developers-29th-september-2016-dubai/</link>
+      <pubDate>Thu, 29 Sep 2016 13:25:20 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2016/09/29/facebook-developers-29th-september-2016-dubai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1.1 - Genetics Algorithm - Algorithm Overview</title>
+      <link>http://localhost:1313/genetic-algorithm/01-algorithm-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/01-algorithm-overview/</guid>
+      <description>1.1.1 – Introduction 
+Genetic Algorithm is a directed search algorithms based on the mechanics of biological evolution developed by John Holland, University of Michigan (1970’s) to understand the adaptive processes of natural systems and design artificial systems software that retains the robustness of natural systems this algorithms provide efficient, effective techniques for optimization and machine learning applications so it is widely used today in business, scientific and engineering circles.</description>
+    </item>
+    
+    <item>
+      <title>1.2 - Genetics Algorithm - Problem Specification</title>
+      <link>http://localhost:1313/genetic-algorithm/02-problem-specification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/02-problem-specification/</guid>
+      <description>1.2.1 - Introduction We have a set of teachers who needs a schedule for a set of subjects over a set of periods, this schedule must take into account characteristics of periods of week, the limited availability of teacher and rooms, and some constraints which should be fulfilled.
+The problem of assigning teachers to subjects and groups for timetabling problem has been studied by many authors. Tillet (1975) was the first to address it, using an integer linear programming model.</description>
+    </item>
+    
+    <item>
+      <title>1.3 - Genetics Algorithm - User Manual</title>
+      <link>http://localhost:1313/genetic-algorithm/03-user-manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/03-user-manual/</guid>
+      <description>1.3.1 - Operation Specification The program should be executed as follows:
+Data entries for the program should be supplied within the tables in the “genalgo.accdb” database file. These tables contain the teacher definitions, teacher available times, subjects, teacher subjects mapping, rooms and corresponding room types. From all these tables in the preprocessing stage, the groups and then the cells tables are created, which will be used then as an input to our program.</description>
+    </item>
+    
+    <item>
+      <title>1.4 - Genetics Algorithm - Future Vision for Optimality</title>
+      <link>http://localhost:1313/genetic-algorithm/04-future-vision-for-optimality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/04-future-vision-for-optimality/</guid>
+      <description>We are proud to see amazing results for the timetabling problem. As stated in the section before, that the maximum time for satisfying essential hard constraints was 15 minutes. This time is good enough, but in worse cases, the performance will be worse of course. This is why we introduce a new area for improvement in future – we would consider that it may be really efficient if we define and implement new heuristics within the HeuristicSwitcher, which might help us a lot in finding solution faster.</description>
+    </item>
+    
+    <item>
+      <title>Accessing Docker with non-root user privileges</title>
+      <link>http://localhost:1313/random/accessing-docker-with-non-root-user-privileges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/accessing-docker-with-non-root-user-privileges/</guid>
+      <description>Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+Does this error look familiar?
+What is happening is that docker client is communicating with the engine using socket file. As docker service is launched using root user and socket file is accessible to every user in &amp;ldquo;docker&amp;rdquo; group, you will not be able to connect to this file from docker client executed launched with your current user access.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS 1: Core concepts</title>
+      <link>http://localhost:1313/random/angular-js-core-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/angular-js-core-concepts/</guid>
+      <description>Core Concepts  Directives - HTML annotations that trigger Javascript behaviors Modules - Where our application components live Controllers - Where we add application behaviour Expressions - How values get displayed within the page  Module / Controller Initialization var app = angular.module(‘store’, \[\]); ng-app=&amp;quot;store&amp;quot;&amp;gt; … this way the html inside the body tag will be treated as a part of angular application
+{{ expression }} - this will be evaluated using the javascript</description>
+    </item>
+    
+    <item>
+      <title>AWS Applications</title>
+      <link>http://localhost:1313/aws-csaa/aws-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/aws-applications/</guid>
+      <description>SQS (Simple Queue Service)  the first AWS service distributed queue system temporary repository for messages that are waiting for processing one component in the application queues messages to be consumed by another component in the application can be used to decouple the components of an application messages can contain up to 256 kb of text
+you can store up to 2GB per message, however, it will be stored and retrieved from S3 in this case messages can be retrieved using AWS SQS API auto-scaling events can be configured based on queue sizes as well pull-based, not pushed based</description>
+    </item>
+    
+    <item>
+      <title>AWS Cloud Best Practices</title>
+      <link>http://localhost:1313/aws-csaa/aws-cloud-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/aws-cloud-best-practices/</guid>
+      <description>Difference between Traditional and Cloud Computing Environments  IT Assets as Provisioned Resources  Quick deployment time No hardware commitment   Global, Available, and Scalable Capacity Higher-Level Managed Services
+In addition to EC2 instances, you can benefit from a lot of great services which will be provisioned and maintained with minimum effort. Built-In Security Architecting for Cost  AWS provides fine-grained billing, which enables you to track the costs associated with all aspects of your solutions   Operations on AWS  Infrastructure as Code Higher levels of automation of the operational processes as the supporting services, e.</description>
+    </item>
+    
+    <item>
+      <title>AWS Organizations - Setting Up and Configuring User Accounts</title>
+      <link>http://localhost:1313/random/aws-organizations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/aws-organizations/</guid>
+      <description>Setting Up Organizations on AWS Account Granting User Permissions to Access Resources Accessing Cross-Account Resources using AWS CLI Example  1. Creating AWS Accounts Hierarchy under Organization 2. Create Users and Groups in the Root Account 3. Managing Root Account User Permissions in the Child Account 4. Accessing Child Account resources using AWSCLI    Setting Up Organizations on AWS Account AWS Orgnizations provides you with an efficient way to better manage and organize your AWS accounts.</description>
+    </item>
+    
+    <item>
+      <title>CS: MySQL</title>
+      <link>http://localhost:1313/random/mysql-grant-privelleges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/mysql-grant-privelleges/</guid>
+      <description>Couple of useful sql queries we always search about for user management in mySQL:
+# creating a user in mysql CREATE USER &#39;_username_&#39;@&#39;%&#39; IDENTIFIED BY &#39;_password_&#39;; # give user select access on all tables in the database GRANT SELECT ON _database_.* TO &#39;_username_&#39;@&#39;%&#39;; # give user full access on all tables in the database GRANT ALL PRIVILLEGES ON _database_.* TO &#39;_username_&#39;@&#39;%&#39;; # grant special access to user for specific tables GRANT UPDATE ON _database_.</description>
+    </item>
+    
+    <item>
+      <title>CS: Ubuntu Commands</title>
+      <link>http://localhost:1313/random/some-useful-commands-for-ubuntu-terminal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/some-useful-commands-for-ubuntu-terminal/</guid>
+      <description># Checking the current version of installed ubuntu OS: lsb _release -a # checking disk space usage: df -h # checking disk space usage in a directory du -hs * # changing the password of the user: passwd [username ] # listing the cronjobs: crontab -l # editing cronjobs: crontab -e # tailing logs tail -f [filePath ] # tailing last 100 lines of the log file tail -f -n 100 [filePath ] # displaying contents of the file cat [filePath ] more [filePath ] less [filePath ] # showing only lines which have the string &amp;quot;testString&amp;quot; grep &amp;quot;testString&amp;quot; [file ] # grep with OR grep &amp;quot;pattern1 |pattern2&amp;quot; [file ] # extended grep (below does the same like grep with OR, however escaping characters is not required here) grep -e &amp;quot;pattern1|pattern2&amp;quot; [file ] # egrep (same like grep -e, which is extended grep) egrep &#39;pattern1|pattern2&#39; [file ] # show location in terminal shell prompt (you can add this to ~/.</description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:1313/aws-csaa/databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/databases/</guid>
+      <description>Relational Database on AWS: (RDS) used for OLTP (Online Transaction Processing)  Supported Types  SQL Server Oracle MySQL Server PostgreSQL Aurora MariaDB   Run on virtual machines You cannot log in to these operating systems however Patching of the RDS Operating System and DB is Amazon&amp;rsquo;s responsibility RDS is NOT Serverless Aurora Serverless is Serverless  Read-Replicas vs Muti-AZ  Multi-AZ  For Disaster Recovery AWS handles cross-region replication AWS does an automatic failover of the instance Available for SQL Server, Oracle, MySQL Server, PostgreSQL, MariaDB You can force a failover from one AZ to another by rebooting the RDS instance.</description>
+    </item>
+    
+    <item>
+      <title>Design Patterns</title>
+      <link>http://localhost:1313/software-architecture-and-design/design-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software-architecture-and-design/design-patterns/</guid>
+      <description>Factory Adapter Active Record Observer Decorator Repository Service Locator Singleton Strategy Facade  Factory In this pattern, the Factory class is responsible for instantiating the defined models. If in future you would like to exchange the model or change the way the model is instantiated
+Example:
+class Book { private $isbn; private $title; private $author;
+public function \_\_construct($isbn, $title, $author) { $this-&amp;gt;isbn = $isbn; $this-&amp;gt;title = $title; $this-&amp;gt;author = $author; }  }</description>
+    </item>
+    
+    <item>
+      <title>EC2</title>
+      <link>http://localhost:1313/aws-csaa/ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/ec2/</guid>
+      <description>Amazon EC2 is a web service that provides resizable compute capacity in the cloud. Amazon EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
+EC2 Pricing Models   On Demand
+Allows you to pay a fixed rate by the hour with no commitment.
+  no up-front payment required</description>
+    </item>
+    
+    <item>
+      <title>Event-Driven Architecture</title>
+      <link>http://localhost:1313/random/event-driven-architectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/event-driven-architectures/</guid>
+      <description>Structures:
+ Command Bus  Command Command Handler   Event Store Event Bus  Event Event Handler    Event-Driven Systems:
+ Event Notification
+Will help decouple received from the sender, however it makes it difficult to understand overall behavior of the system. Event-carried State Transfer
+Decouples and reduces load from supplier by each system keeping a copy of the data it requires in its storage. Due to the fact that data is replicated, higher availability will lead to Eventual Consistency.</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>http://localhost:1313/aws-csap/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/glossary/</guid>
+      <description> Fault Tolerance High Availability Storage Gateway AWS Trusted Advisor  </description>
+    </item>
+    
+    <item>
+      <title>HA Arhictecture: High Availability</title>
+      <link>http://localhost:1313/aws-csaa/ha-arhictecture-high-availability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/ha-arhictecture-high-availability/</guid>
+      <description>ELB, ALB (Elastic Load Balancer, Application Load Balancer)  a physical/virtual device designed to balance network load across multiple web servers at least 2 public Subnets are required when provisioning a load balancer ELBs do not have a pre-defined IPv4 addresses; you resolve to them using a DNS name types of load balancers  Application Load Balancers  Best suited for HTTP / HTTPS traffic Operates at Layer 7 Application-aware Advanced request routing, sending specified requests to specific web servers Register target groups Load balancing rules are supported   Network Load Balancers  Load balancing TCP traffic Operates at Layer 4 Capable of handling millions of requests per seconds with ultra-low latencies   Classic Load Balancers  Legacy / previous generation load balancers HTTP / HTTPS / TCP traffic Operates at layer 4, supports Layer-7 specific features, such as X-Forwarded and sticky sessions Errors: 504 - Gateway timeout - ec2 instances are not responding Registers instances     Health Checks  Checks the instance health by talking to it Instances are reported as InService, OutofService LBs have their own DNS name.</description>
+    </item>
+    
+    <item>
+      <title>How to accessing multiple Git accounts from the same computer using different private keys?</title>
+      <link>http://localhost:1313/random/accessing-multiple-github-accounts-from-one-computer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/accessing-multiple-github-accounts-from-one-computer/</guid>
+      <description>In order to access multiple github accounts from one computer you need to :
+ generate ssh keys add ssh keys to your github account create a configuration file to manage the separate keys update stored identities  Step 1 - Generating SSH keys:
+cd ~/.ssh ssh-keygen -t rsa -C &amp;quot;[email associated with your github account #1]&amp;quot; # save it as id_rsa_git_account1 when prompted ssh-keygen -t rsa -C &amp;quot;[email associated with your github account #2]&amp;quot; # save it as id_rsa_git_account2 when prompted As the result of executing these commands, the following files will be generated:</description>
+    </item>
+    
+    <item>
+      <title>How to Backup MySQL database using Percona&#39;s innobackupex</title>
+      <link>http://localhost:1313/random/backing-mysql-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/backing-mysql-database/</guid>
+      <description>Backup using innobackupex This script backups your database and uploads it to Amazon S3:
+#!/bin/bash
+timestamp=`date &amp;ldquo;+%Y-%m-%d_%H-%M-%S&amp;rdquo;`
+innobackupex &amp;ndash;user=[username] &amp;ndash;password=[password] &amp;ndash;parallel=3 &amp;ndash;safe-slave-backup &amp;ndash;slave-info &amp;ndash;no-timestamp /data/backup/${timestamp}_slave innobackupex &amp;ndash;user=[username] &amp;ndash;password=[password] &amp;ndash;apply-log /data/backup/${timestamp}_slave/
+tar czf /data/backup/${timestamp}_slave.tgz /data/backup/${timestamp}_slave
+/usr/local/bin/aws &amp;ndash;region [region] s3 cp /data/backup/${timestamp}_slave.tgz s3://[bucket]/[backup-path]/`date &amp;ldquo;+%Y&amp;rdquo;`/`date &amp;ldquo;+%m&amp;rdquo;`/`date &amp;ldquo;+%d&amp;rdquo;`/
+rm -rf /data/backup/${timestamp}_slave rm -f /data/backup/${timestamp}_slave.tgz
+You can easily write this script in backup.sh and schedule a cronjob using crontab -e for performing this backup on the daily basis</description>
+    </item>
+    
+    <item>
+      <title>How to find the backlinks to your site which are indexed by Google?</title>
+      <link>http://localhost:1313/random/find-backlinks-for-your-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/find-backlinks-for-your-site/</guid>
+      <description>I was trying to find backlinks for my site on google search. The best way to do this was to do a search, using the following parameters:
+[your Keywords or your Sitename] -site:yoursitename.com
+Basically this will located all the words which match the search terms, excluding your own site -&amp;gt; which are actually the backlinks to your site.
+Publish Date: 2014-10-19
+ </description>
+    </item>
+    
+    <item>
+      <title>How to measure distance between strings? What is Levenstein Distance?</title>
+      <link>http://localhost:1313/random/levenshtein-distance-in-mysql-measuring-distance-between-the-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/levenshtein-distance-in-mysql-measuring-distance-between-the-strings/</guid>
+      <description>Levenshtein distance function can be used to measure distance between the strings. Smaller distance will mean that string 1 is closer to string 2. This function can be used to implement &amp;ldquo;fuzzy&amp;rdquo; text search in mySQL where you can search for records and order by levenshtein distance in ascending order. In this case the closest matches (more relevant results) will appear on top and then the less relevant ones.
+DELIMITER ;; DROP FUNCTION IF EXISTS `levenshtein`;; CREATE FUNCTION `levenshtein`(s1 VARCHAR(255), s2 VARCHAR(255)) RETURNS INT(11) DETERMINISTIC BEGIN DECLARE s1_len, s2_len, i, j, c, c_temp, cost INT; DECLARE s1_char CHAR; DECLARE cv0, cv1 VARBINARY(256); SET s1_len = CHAR_LENGTH(s1), s2_len = CHAR_LENGTH(s2), cv1 = 0x00, j = 1, i = 1, c = 0; IF s1 = s2 THEN RETURN 0; ELSEIF s1_len = 0 THEN RETURN s2_len; ELSEIF s2_len = 0 THEN RETURN s1_len; ELSE WHILE j &amp;lt;= s2_len DO SET cv1 = CONCAT(cv1, UNHEX(HEX(j))), j = j + 1; END WHILE; WHILE i &amp;lt;= s1_len DO SET s1_char = SUBSTRING(s1, i, 1), c = i, cv0 = UNHEX(HEX(i)), j = 1; WHILE j &amp;lt;= s2_len DO SET c = c + 1; IF s1_char = SUBSTRING(s2, j, 1) THEN SET cost = 0; ELSE SET cost = 1; END IF; SET c_temp = CONV(HEX(SUBSTRING(cv1, j, 1)), 16, 10) + cost; IF c c_temp THEN SET c = c_temp; END IF; SET c_temp = CONV(HEX(SUBSTRING(cv1, j + 1, 1)), 16, 10) + 1; IF c c_temp THEN SET c = c_temp; END IF; SET cv0 = CONCAT(cv0, UNHEX(HEX(c))), j = j + 1; END WHILE; SET cv1 = cv0, i = i + 1; END WHILE; END IF; RETURN c; END;; DELIMITER ;  Publish Date: 2014-09-12</description>
+    </item>
+    
+    <item>
+      <title>How to properly log ClientIP on Apache2 behind Load Balancer?</title>
+      <link>http://localhost:1313/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</guid>
+      <description>This case will help you to log to apache server any traffic coming from the load balancer, proxy or any IDS.
+LogFormat &amp;quot;%h %l %u %t &amp;quot;%r&amp;quot; %&amp;gt;s %b &amp;quot;%{Referer}i&amp;quot; &amp;quot;%{User-Agent}i&amp;quot;&amp;quot; combined LogFormat &amp;quot;%{X-Forwarded-For}i %l %u %t &amp;quot;%r&amp;quot; %&amp;gt;s %b &amp;quot;%{Referer}i&amp;quot; &amp;quot;%{User-Agent}i&amp;quot;&amp;quot; proxy SetEnvIf X-Forwarded-For &amp;quot;^.*..*..*..*&amp;quot; forwarded CustomLog ${APACHE_LOG_DIR}/access_log combined env=!forwarded CustomLog ${APACHE_LOG_DIR}/access_log proxy env=forwarded Where are Apache2 Logs? The default location of apache log files on ubuntu server apache2 installation is:</description>
+    </item>
+    
+    <item>
+      <title>How to protect directory with a password in Apache2?</title>
+      <link>http://localhost:1313/random/password-protect-directory-apache-configurations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/password-protect-directory-apache-configurations/</guid>
+      <description>A usual scenario encountered by every web server is administrator is to password protect specific directory and all it&amp;rsquo;s resources. We need to add some lines in the configuration file where our web server / virtual host is defined. This is how we do it:
+Creating the password file: (the system will ask you to enter the password which will be saved in encrypted format)
+sudo htpasswd -c [filename] [username] Apache BASIC HTTP Authentication using the created password file</description>
+    </item>
+    
+    <item>
+      <title>How to run Apache2 as proxy using modproxy module?</title>
+      <link>http://localhost:1313/random/running-apache-2-proxy-mod_proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/running-apache-2-proxy-mod_proxy/</guid>
+      <description>One other way to fix CORS issue and prevent your API endpoints to be exposed is to configure Apache2 web server to proxy certain requests, thus making it serve the requests to different domain through the apache installation of the current domain. The other application I can think about would be to hide the web service endpoint.
+In order to make apache act as a &amp;ldquo;proxy&amp;rdquo; you need to make sure that proxy_http extension is there.</description>
+    </item>
+    
+    <item>
+      <title>How to Setup Squid proxy on Ubuntu Server?</title>
+      <link>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</guid>
+      <description>In order to install a proxy service on Ubuntu Server edition, please execute the following commands:
+Installing Squid:
+sudo aptitude -y install squid3
+Editing the configuration file:
+sudo vim /etc/squid3/squid.conf // add a line in order to enable global access: http_access allow all
+Restart the squid to reflect the newly changed configuration settings
+initctl restart squid3
+As the squid is running now, you can access the proxy by setting the default port as 3128 and using the host ip address.</description>
+    </item>
+    
+    <item>
+      <title>How to solve Network IP conflict when running Docker?</title>
+      <link>http://localhost:1313/random/docker-network-conflicts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/docker-network-conflicts/</guid>
+      <description>Sometimes docker container networks created will conflict with the network configuration you have.
+To fix it, I&amp;rsquo;m using the following configuration on my local machine:
+# /etc/docker/daemon.json { &amp;quot;bip&amp;quot;: &amp;quot;192.168.199.1/28&amp;quot;, &amp;quot;dns&amp;quot;: [&amp;quot;8.8.8.8&amp;quot;, &amp;quot;8.8.4.4&amp;quot;] } This configuration will limit the IP addresses of the docker containers to 192.168.199.1 CIDR block. In addition you may want to troubleshoot. This may help you identify any potential conflict between your network / DNS server addresses and your existing networks / bridges created by docker.</description>
+    </item>
+    
+    <item>
+      <title>How to transfer a Wordpress site from one domain to another?</title>
+      <link>http://localhost:1313/random/transferring-wordpress-one-domain-another/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/transferring-wordpress-one-domain-another/</guid>
+      <description>Explanation Other than uploading your wordpress sites to the new domain, you will need to do some changes in your database. Therefore, when you want to move the wordpress website to a new domain, you will find out that existing database records are still pointing at the old domain. So how do we properly migrate our wordpress site to the new domain name?
+I have seen a lot of developers going straight to the database and updating records to a new domain.</description>
+    </item>
+    
+    <item>
+      <title>htaccess : how to redirect non-www url to www</title>
+      <link>http://localhost:1313/random/htaccess-how-to-redirect-non-www-url-to-www/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/htaccess-how-to-redirect-non-www-url-to-www/</guid>
+      <description>Place the following configuration in your .htaccess file:
+RewriteEngine On RewriteCond %{HTTP_HOST} !^www\. RewriteCond %{HTTP_HOST} !=localhost RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+This line is placed to make sure that redirection does not occur on your localhost during the development process. You can remove this line if you want to place the .htaccess configuration directly on your production server. Otherwise you can leave it and change &amp;ldquo;localhost&amp;rdquo; to any other local web server you are running.</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/aws-csaa/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/iam/</guid>
+      <description>IAM (Identity Access Management)
+ Centralized control of your AWS account Shared Access to your AWS account Granular Permissions Identity Federation (including Active Directory, Facebook, etc&amp;hellip;) Multifactor Authentication Temporary access to users/devices and services Password rotation policy PCI DSS Compliance  Models:
+ Users Groups Policies Roles  AWS provides IAM Pre-defined Roles per Job Function, otherwise custom roles and policies can be defined.
+ IAM is universal. It does not apply to regions.</description>
+    </item>
+    
+    <item>
+      <title>Important Concepts Every Developer should know</title>
+      <link>http://localhost:1313/software-architecture-and-design/important-concepts-every-dev-should-know/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software-architecture-and-design/important-concepts-every-dev-should-know/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Initial steps towards successful integration Quickbooks &amp; PHP?</title>
+      <link>http://localhost:1313/random/quickbooks-php-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/quickbooks-php-integration/</guid>
+      <description>Integration: PHP and Quickbooks using v3-php-sdk-2.0.5
+This was a bit of headache. In this article I explain how to configure your quickbooks php sdk, issues faced, fixes until successful integration.
+Some useful references to accomplish php / quickbook integration using the php sdk.
+- download php sdk
+http://bit.ly/IppPhpSdkV3
+- PHP SDK for QuickBooks V3 documentation and getting started
+https://developer.intuit.com/docs/0100_accounting/0500_developer_kits/0210_ipp_php_sdk_for_quickbooks_v3
+*** Trying to Integrate
+After download the v3-php-sdk-2.0.5 in order to accomplish the quickbooks integration, i have faced some serious problems to be able to integrate.</description>
+    </item>
+    
+    <item>
+      <title>Installing VsFTPd on Ubuntu Server</title>
+      <link>http://localhost:1313/random/ubuntu-vsftpd-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/ubuntu-vsftpd-installation/</guid>
+      <description>A small tutorial on how to install vsftpd and setup a separate user.
+Please follow these steps to install vsftpd service on your ubuntu machine.
+# adding a new local user useradd -g ubuntu ftpuser # change the password of the new user passwd ftpuser # checking the user information id ftpuser # checking the user group groups ftpuser # changing the group of the user usermod -g ubuntu ftpuser # installing and configuring vsftpd sudo apt-get install vsftpd sudo vim /etc/vsftpd.</description>
+    </item>
+    
+    <item>
+      <title>Ionic app testing - Cross domain issues</title>
+      <link>http://localhost:1313/random/hybrid-app-development-testing-on-google-chrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/hybrid-app-development-testing-on-google-chrome/</guid>
+      <description>I have encountered this issue several times while I was trying to run my hybrid mobile app on google chrome browser. In particular, an app based on ionic framework was used. Basically, I was building the HTML part of the hybrid app, using cordova and phonegap. The app is accessing the web service using jquery calls: $.ajax. The issue was that in order to test the app on my google chrome browser, I had to bypass the cross domain request restriction.</description>
+    </item>
+    
+    <item>
+      <title>LAMP Installation on Ubuntu Server</title>
+      <link>http://localhost:1313/random/installing-apache2-mysql-php-on-ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/installing-apache2-mysql-php-on-ubuntu/</guid>
+      <description>Found it useful to include these command I&amp;rsquo;m always using whenever I need to create an ec2 instance:
+sudo apt-get update sudo apt-get install apache2 sudo apt-get install libapache2-mod-php5 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql # installing php / curl sudo apt-get install php5-curl other php modules sudo apt-get update sudo apt-cache search php5  Publish Date: 2014-10-04
+ </description>
+    </item>
+    
+    <item>
+      <title>NodeJS 8: NPM - Package Manager</title>
+      <link>http://localhost:1313/random/node-js-npm-package-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/node-js-npm-package-manager/</guid>
+      <description>NPM - Node Package Manager : npm makes it easy for JavaScript developers to share and reuse code, and it makes it easy to update the code that you&amp;rsquo;re sharing.
+The official documention is available at : http://docs.npmjs.com
+https://www.npmjs.org - centralized repository of public modules
+NPM modes of operation global / local - Node modules can be installed locally or globally. Global installation of modules makes them available throughout any NodeJS Application you are writing on the same system.</description>
+    </item>
+    
+    <item>
+      <title>NodeJS 8: Overview</title>
+      <link>http://localhost:1313/random/node-js-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/node-js-notes/</guid>
+      <description>Introduction Node.js is an open source, cross-platform runtime environment for server-side and networking applications. Node.js is becoming more and more popular as NodeJS applications are written in JavaScript, and can be run within the Node.js runtime on any operating system.
+The main features of Node JS area:
+Event-driven / asynchronous programming
+Instead of retuning values for the functions and determining the program-flow, you basically define functions that are called by the system when an interesting event occurs (event callbacks).</description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>http://localhost:1313/aws-csap/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csap/notes/</guid>
+      <description>Datastore
+ Files stored in S3 can be served over Bittorrent to decrease costs File Gateway (Storage Gateway) can expose S3 bucket files in the office through NFS http://registry.opendata.aws contains publically open databases AWS Glue allows you to extract data from S3 Bucket to a Table that can be queried using AWS Athena Graph databases are best a storing complex relationship data and AWS Neptune is a graph database. While other options might be able to work, none would work as well as a true graph database and we can run such a database like SAP HANA or Neo4j on EC2.</description>
+    </item>
+    
+    <item>
+      <title>PHP - Running scripts as root</title>
+      <link>http://localhost:1313/random/php-running-scripts-as-root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/php-running-scripts-as-root/</guid>
+      <description>Very simple situation and very simple fix.
+Whether you are using apache of php-fpm, you need to grant your web server with sudo privilege. This can be done by adding the following line to /etc/sudoers file:
+apache ALL=NOPASSWD: /usr/local/bin/my_command.sh
+Done !</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Exercise: PygLatin Translator</title>
+      <link>http://localhost:1313/python-2.7/python-exercise-pyglatin-translator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/python-exercise-pyglatin-translator/</guid>
+      <description>I was reviewing python tutorials in codeacademy which I really recommend as a great beginning to get yourself familiar with any language. These guys have got some interactive tutorials and exercises which makes it pleasure to start with something new.
+Of course you will need some broader sources and reference informaiton after completing the tutotrials in codeacademy. So I got this exercise from codeacademy - let&amp;rsquo;s see how we can solve it.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: File Input / Output</title>
+      <link>http://localhost:1313/python-2.7/python-file-input-output/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/python-file-input-output/</guid>
+      <description>Writing to file Following example will populate the output.txt file with the squares of numbers from 1 - 10.
+my_list = [i**2 for i in range(1,11)]
+Generates a list of squares of the numbers 1 - 10 f = open(&amp;ldquo;output.txt&amp;rdquo;, &amp;ldquo;w&amp;rdquo;)
+for item in my_list: f.write(str(item) + &amp;ldquo;\n&amp;rdquo;)
+f.close()
+You have probably noticed that we are opening the file in &amp;ldquo;w&amp;rdquo; mode, i.e. for writing. We can use &amp;ldquo;r+&amp;rdquo; flag if we would like to read and write from the file.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Importing Modules</title>
+      <link>http://localhost:1313/python-2.7/python-importing-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/python-importing-modules/</guid>
+      <description>Modules make your code reusable and sharable amount different files. Module is a file that contains definitions - including variables and functions - that you can use once its imported.
+Some modules are built-in and will expose you to their functions once imported. Example below shows how sqrt function becomes available once the math module is imported:
+# importing math module import math print math.sqrt(25)
+importing specific functions / variables frmo math module from math import sqrt print sqrt(25)</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Lambda and Bitwise Operators</title>
+      <link>http://localhost:1313/python-2.7/python-lambda-and-bitwise-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/python-lambda-and-bitwise-operators/</guid>
+      <description>Lambda functions Using lambda functions we can create functions in runtime, and use them as we go. Here&amp;rsquo;s an example of lambda function and how it is used to filter the array. filter() function takes the lambda function as the first parameter, passes items of the list sequentially and filters the list to retain the items which pass the filtration function passed as first argument.
+# will assign a range of numbers from 0 to 15 to numbers list numbers = range(16)</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Lists &amp; Dictionaries</title>
+      <link>http://localhost:1313/python-2.7/python-lists-dictionaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/python-lists-dictionaries/</guid>
+      <description>Lists Lists are the same as arrays in other programming languages. List can be defined using assigment:
+fruits = [&amp;ldquo;banana&amp;rdquo;, &amp;ldquo;apple&amp;rdquo;, &amp;ldquo;strawberry&amp;rdquo;]
+and can be accessed by indices, similar to any other programming language:
+# output: strawberry print fruits[2]
+substitution of existing element will replace apple with kiwi in fruits list fruits[1] = &amp;ldquo;kiwi&amp;rdquo;
+defining an empty list:
+vegetables = []
+appending items to the existing list:
+vegetables.append(&amp;ldquo;cucumber&amp;rdquo;) vegetables.append(&amp;ldquo;eggplant&amp;rdquo;)
+obtaining the length of the list, i.</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Loops</title>
+      <link>http://localhost:1313/python-2.7/python-loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/python-2.7/python-loops/</guid>
+      <description>While Loops count = 0
+output: 0,1,2,3,4 while count &amp;lt; 5: print count count += 1
+couple of empty lines print print
+count = 0 while count &amp;lt; 5: if count == 3: count +=1 continue print count count += 1
+output: 0,1,2,4 - will skip the number 3 print print
+count = 0 while True: if count == 8: break print &amp;ldquo;Count %s&amp;rdquo; % count count += 1
+Python supports while &amp;hellip; else structure.</description>
+    </item>
+    
+    <item>
+      <title>Python for Data Science</title>
+      <link>http://localhost:1313/random/python-for-data-science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/python-for-data-science/</guid>
+      <description>ipython - Interactive Python Interpreter
+Variables  type(var_name) returns the type of the variable, e.g. float, string, &amp;hellip;  Type Conversion  str(var_name) float(var_name)  Math  Exponentiation 4**2 will give 16 Modulo 18 % 7 will give 4  Generating Output  print(string)  Publish Date: 2019-12-02
+ </description>
+    </item>
+    
+    <item>
+      <title>Remove .svn files - unverison subversion working copy</title>
+      <link>http://localhost:1313/random/remove-svn-files-unverison-subversion-working-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/remove-svn-files-unverison-subversion-working-copy/</guid>
+      <description>In order to remove .svn files you need to execute the following command on your terminal:
+find . -name .svn -exec rm -rf {};  Publish Date: 2015-01-02
+ </description>
+    </item>
+    
+    <item>
+      <title>Review of DeployBot.com</title>
+      <link>http://localhost:1313/random/deploybot-com-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/deploybot-com-review/</guid>
+      <description>There&amp;rsquo;s tons of deployment tools available these days. Deploybot.com (previously known as Dploy.io) is one of the nice tools I used since a while.
+Basically the tool offered as capability to configure SSH connection to statically defined instances, perform code upload, apply configuration, run before and after install scripts and trigger other deployments. In addition they provide what they call &amp;ldquo;Atomic&amp;rdquo; deployment. This assures zero downtime and code consistency throughout the deployment nodes as the document root is switched from one release to another using softlink.</description>
+    </item>
+    
+    <item>
+      <title>Route53</title>
+      <link>http://localhost:1313/aws-csaa/route53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/route53/</guid>
+      <description>Route53 gets its name from port 53 of DNS server IPv4 space is 32 bit fields having over 4 billion different addresses. IPv6 solves the depletion issue and has as address space of 128 bits For each public hosted zone Route 53 automatically created NS record and SOA record (Start of Authority Record) NS Record - is used by Top Level Domain servers to direct traffic to the Content DNS server which contains the authoritative DNS records When creating a public hosted zone, Route 53 gives you NS records in different Top-Level Domains.</description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>http://localhost:1313/aws-csaa/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/s3/</guid>
+      <description>Billing S3 (Simple Storage Service) Storage Classes S3 Glacier S3 Billing Access &amp;amp; Encryption Versioning Lifecycle Management Tools &amp;amp; Glacier Cross Region Replication Amazon S3 Transfer Acceleration CloudFront Snowball Storage Gateway FAQs  Billing  Billing Alarms can be created from CloudWatch. Billing Notifications should be enabled from the Billing Preferences section.  S3 (Simple Storage Service)  Provides developers and IT teams with secure, durable, highly scalable object storage Provides simple web services interface to store and retrieve data S3 is a safe place to store the files S3 and Glacier are not block storages S3 is Object-Based - allows you to upload files Files can be 0 bytes to 5TB Successful uploads will generate an HTTP 200 code Unlimited storage Files are stored in Buckets Objects consist of:  Key (name of the object) Value (the data) Version ID (important for versioning) Metadata (data about data you are storing) Subresources  Access Control List Torrent     Files can be from 0 Bytes to 5TB There is unlimited storage Files are stored in Buckets S3 is a universal namespace.</description>
+    </item>
+    
+    <item>
+      <title>SAA Exam Overview</title>
+      <link>http://localhost:1313/aws-csaa/exam-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/exam-overview/</guid>
+      <description>Intended for people performing a Solutions Architect role. Valid for 2 years. Question Domains  Design Resilient Architectures Define Performant Solutions Specify Secure Applications and Architectures Design Cost-optimized Architectures Define Operationally Excellent Architectures   Multiple choice questions  single selection multiple selection    Design Resilient Architectures  Choose reliable/resilient storage Determine how to design decoupling mechanisms using AWS services Determine how to design a multi-tier arhictecture solution Determine how to design high availability and/or fault tolerant solutions  High Availability vs Fault Tolerance</description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>http://localhost:1313/aws-csaa/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/serverless/</guid>
+      <description>Lambda  Compute service to upload and run your code AWS Lambda takes care of provisioning and managing the underlying infrastructure Lambda scales out (not up) automatically Usage  Event-driven compute service which runs code in response to events. Events could be internal AWS events. Compute service to run your code in response to HTTP requests using AWS API Gateway or API calls made using AWS SDKs.   Lambda functions are independent, 1 event = 1 function Lambda is serverless Lambda functions can trigger other lambda functions, 1 event can trigger multiple functions Architectures can get extremely complicated, AWS X-ray allows you to debug what is happening Lambda can do things globally, you can use it to back up S3 buckets to other S3 buckets, etc Lambda is cost effective No servers, no maintenance is required  Lambda is the Ultimate Extraction Layer  Data Centres Hardware Assembly Code/Protocols High-Level Languages Operating Systems Application Layer/AWS APIs AWS Lambda  Languages supported by Lambda  Node.</description>
+    </item>
+    
+    <item>
+      <title>SVN commands</title>
+      <link>http://localhost:1313/random/svn-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/svn-commands/</guid>
+      <description>Adding all un-versioned files under the current directory to the SVN:
+command 1:
+svn add `svn status .|grep &amp;quot;^?&amp;quot;|awk &#39;{print $2}&#39;` command 2:
+svn add . --force Adding specific files to subversion:
+svn add file1 file2 folder1 path/to/folder2 Commit specific folder in svn:
+svn ci -m &amp;quot;commit message&amp;quot; file1 file2 folder1 path/to/folder2  Publish Date: 2014-10-12
+ </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Assets</title>
+      <link>http://localhost:1313/symfony/symfony-assets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-assets/</guid>
+      <description>Composer manages PHP dependencies NPM or Yarn would be used for Frontend assets  Webpack
+Webpack is a node.js library which can bundle your javascript and CSS files into bundles. You can ready detailed documentation about it on https://webpack.js.org.
+Encore
+Encore is a recommended library which is built on top of webpack. Encore is also written in node.js. This library makes it simpler to integrate webpack into your Symfony application.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Basics</title>
+      <link>http://localhost:1313/symfony/symfony-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-basics/</guid>
+      <description>Installation sudo mkdir -p /usr/local/bin sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony sudo chmod a+x /usr/local/bin/symfony Checking requirements php ./bin/symfony_requirements </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Configuration</title>
+      <link>http://localhost:1313/symfony/symfony-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-configuration/</guid>
+      <description># Will print the bundle names and aliases php bin/console config:dump-reference # Dumps configuration options for specific bundle php bin/console config:dump-reference [extension alias] php bin/console config:dump-reference framework </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Controllers, Routing, Views</title>
+      <link>http://localhost:1313/symfony/symfony-controllers-routing-views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-controllers-routing-views/</guid>
+      <description>This example demonstrates routing using annotation as well as different ways to pass arguments to the controller.
+&amp;lt;?php // src/Service/TestService.php namespace App\Service; class TestService { public function message($name) { return &amp;quot;Hello $name&amp;quot;; } } &amp;lt;?php // src/Controller/TestController namespace App\Controller; use Symfony\Component\HttpFoundation\Request; use Symfony\Component\HttpFoundation\Response; use Symfony\Component\Routing\Annotation\Route; use App\Service\TestService; use Symfony\Bundle\FrameworkBundle\Controller\AbstractController; class TestController extends AbstractController { /** * @var TestService */ private $testService; /** * TestController constructor. */ public function __construct(TestService $testService) { $this-&amp;gt;testService = $testService; } /** * @Route(&amp;quot;/test1&amp;quot;, name=&amp;quot;test1&amp;quot;) * @param Request $request * @return Response */ public function test1(Request $request) { return new Response($this-&amp;gt;testService-&amp;gt;message( $request-&amp;gt;get(&#39;name&#39;) )); } /** * @Route(&amp;quot;/test2/{name}&amp;quot;, name=&amp;quot;test2&amp;quot;) * @param $name * @return Response */ public function test2($name) { return new Response($this-&amp;gt;testService-&amp;gt;message($name)); } } Annotation configuration can be done from:</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Data fixtures</title>
+      <link>http://localhost:1313/symfony/symfony-data-fixtures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-data-fixtures/</guid>
+      <description>1) Installation
+composer require --dev doctrine/doctrine-fixtures-bundle 2) Fixtures class
+&amp;lt;?php # ./src/DataFixtures/PostFixtures.php namespace App\DataFixtures; use App\Entity\Post; use Doctrine\Bundle\FixturesBundle\Fixture; use Doctrine\Common\Persistence\ObjectManager; class PostFixtures extends Fixture { public function load(ObjectManager $manager) { $plan = new Post(); $plan-&amp;gt;setName(&#39;My first post&#39;); $plan-&amp;gt;setDescription(&#39;This is my first post&#39;); $manager-&amp;gt;persist($plan); $manager-&amp;gt;flush(); } } 3) Loading fixtures
+php bin/console doctrine:fixtures:load php bin/console doctrine:fixtures:load --purge-with-truncate </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Error Handling</title>
+      <link>http://localhost:1313/symfony/symfony-error-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-error-handling/</guid>
+      <description>throw new NotFoundHttpException(&#39;Post not found&#39;);
+This exception will be handled using default exception handler, which will try to locate a template from twig-bundle/Resources/views/Exception/error...html.twig.
+It will first try to locate a template using the following order:
+error[error_code].html.twig error.json.twig error.html.twig These templates can be customized when mimic the structure of the bundle templates.
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #} {% extends &#39;base.html.twig %} {% block body %} &amp;lt;h1&amp;gt;Page not found.&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;{{ status_text }}, {{status_code}}&amp;lt;/p&amp;gt; {% endblock %} </description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Flash messages</title>
+      <link>http://localhost:1313/symfony/symfony-flash-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-flash-messages/</guid>
+      <description>1) Setting the message
+&amp;lt;?php namespace App\Controller; use Symfony\Bundle\FrameworkBundle\Controller\Controller; use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface; class FlashBagController extends Controller { /** * @var FlashBag */ private $flashBag; public function __construct(FlashBagInterface $flashBag) { $this-&amp;gt;flashBag = $flashBag; } /** * @Route(&#39;/index&#39;, name=&amp;quot;flash_index&amp;quot;) */ public function index() { return $this-&amp;gt;render(&#39;flash/index.html.twig&#39;); } /** * @Route(&#39;/setFlash&#39;) */ public function setFlashMessage() { $this-&amp;gt;flashBag-&amp;gt;add(&#39;notice&#39;, &#39;Here is the flash message.&#39;); $this-&amp;gt;redirectToRoute(&#39;flash_index&#39;); } } 2) Reading the message in the template
+{# ./templates/flash/index.html.twig #} {% for message in app.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Forms</title>
+      <link>http://localhost:1313/symfony/symfony-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-forms/</guid>
+      <description>The code-snippets in this article are obtained from: https://symfony.com/doc/current/forms.html
+1) Installation
+composer require symfony/form 2) Building form in controller
+&amp;lt;?php // src/Entity/Task.php namespace App\Entity; class Task { protected $task; protected $dueDate; public function getTask() { return $this-&amp;gt;task; } public function setTask($task) { $this-&amp;gt;task = $task; } public function getDueDate() { return $this-&amp;gt;dueDate; } public function setDueDate(\DateTime $dueDate = null) { $this-&amp;gt;dueDate = $dueDate; } } &amp;lt;?php // src/Controller/DefaultController.php namespace App\Controller; use App\Entity\Task; use Symfony\Bundle\FrameworkBundle\Controller\Controller; use Symfony\Component\HttpFoundation\Request; use Symfony\Component\Form\Extension\Core\Type\TextType; use Symfony\Component\Form\Extension\Core\Type\DateType; use Symfony\Component\Form\Extension\Core\Type\SubmitType; class DefaultController extends Controller { public function new(Request $request) { // creates a task and gives it some dummy data for this example  $task = new Task(); $task-&amp;gt;setTask(&amp;#39;Write a blog post&amp;#39;); $task-&amp;gt;setDueDate(new \DateTime(&amp;#39;tomorrow&amp;#39;)); $form = $this-&amp;gt;createFormBuilder($task) -&amp;gt;add(&amp;#39;task&amp;#39;, TextType::class) -&amp;gt;add(&amp;#39;dueDate&amp;#39;, DateType::class) -&amp;gt;add(&amp;#39;save&amp;#39;, SubmitType::class, array(&amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Create Task&amp;#39;)) -&amp;gt;getForm(); $form-&amp;gt;handleRequest($request); if ($form-&amp;gt;isSubmitted() &amp;amp;amp;&amp;amp;amp; $form-&amp;gt;isValid()) { // $form-&amp;gt;getData() holds the submitted values  // but, the original `$task` variable has also been updated  $task = $form-&amp;gt;getData(); // .</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Overview</title>
+      <link>http://localhost:1313/symfony/symfony-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-overview/</guid>
+      <description>Symfony is a PHP framework for creating websites and web applications. Symfony provides you with a set of reusable components: Validators, HTTP Kernel, etc. Symfony Embraces best software development practices.
+Symfony was first released in 2005. The framework releases have got LTS - Long Term Support and with the help of the huge community and documentaion you are not alone! What is noticably great is that symfony uses best practices for application development.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3: Services</title>
+      <link>http://localhost:1313/symfony/symfony-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfony-services/</guid>
+      <description>Let&amp;rsquo;s get some terminology straight.
+Service is an object which performs specific function - sending email, caching, etc. Service container will control how services are constructured and are used in Dependency Injection.
+Based on DI practices objects will be passed, which makes the code cleaner and writing tests easier.
+# Displays full list of defined services php bin/console debug:container services.yaml Contains service configuration. Here you will find paths defined to be used as services.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3:[Code Structure]</title>
+      <link>http://localhost:1313/symfony/symfonycode-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfonycode-structure/</guid>
+      <description>myproject/ config/ src/ Controller/ Entity/ Form/ Migrations/ Model/ Repository/ Service/ [components] templates/ Description:
+Entity/: Refers to the Persistence Layer
+Example:
+Let&amp;rsquo;s assume we have an entity Product, consisting of id and name.
+1) Start by creating Product directory
+A bundle is simply a structured set of files within a directory that implement a single feature. Each directory contains everything related to that feature, including PHP files, templates, stylesheets, JavaScripts, tests and anything else.</description>
+    </item>
+    
+    <item>
+      <title>Symfony 3:[Twig]: Reference</title>
+      <link>http://localhost:1313/symfony/symfonytwig-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/symfony/symfonytwig-reference/</guid>
+      <description>Template file name
+[template_name].html.twig {# comment #} Template block
+{% block [block_name] %} [block_content] {% endblock %} Extending twig template
+{% extends [template_name] %} Output a variable
+{{ [variable_name] }} For loop
+{% for post in posts %} {{ post.title }}:&amp;amp;nbsp;{{ post.text }} {% endfor %} Generate URL from annotated route name
+{{ path([route_name]) }} Twig Filters
+# Uppercase conversion: {{ post.title|upper }} # Date conversion: {{ post.data|date(&#39;H:i:s&#39;) }} Environment variables</description>
+    </item>
+    
+    <item>
+      <title>The Netflix Simian Army: reliability, security, resiliency and recoverability</title>
+      <link>http://localhost:1313/random/the-netflix-simian-army/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/the-netflix-simian-army/</guid>
+      <description>Along with price and scalability, redundancy and fault-tolerance are possibly the most important triggers driving cloud migration. The cloud architecture should allow failure without affecting the availability of the entire system. We want to be able to test the failure scenarios.  Chaos Monkey  Randomly disables production instances Testing ability to survive the failure without overall impact on the service Leads to building automatic recovery mechanism to deal with system failures  Latency Monkey  Induces artificial delays to RESTful client-server communication layer to simulate service degradation.</description>
+    </item>
+    
+    <item>
+      <title>Travis CI Review</title>
+      <link>http://localhost:1313/random/travis-ci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/travis-ci/</guid>
+      <description>Is Travis CI a good CI tool? Travis CI is a very popular and widely used tool. I was personally using Travis for quite a while and had a good experience.
+There are few things you should consider before starting with Travis. It&amp;rsquo;s very easy to start with Travis. I cannot imagine a faster integration with a CI tool.
+All you have to do in order to start is to add your github repo to travis.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Server clock synchronisation using NTP</title>
+      <link>http://localhost:1313/random/ubuntu-server-clock-synchronisation-using-ntpd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/ubuntu-server-clock-synchronisation-using-ntpd/</guid>
+      <description>NTP is Network Time Protocol. This protocol is used for clock synchronisation between computer systems. NTP is one of the oldest protocols which are still used on the Internet.
+The scenario below explains the use of NTP:
+While the server is running, the system clock will gradually slow or run faster which will lead to clock misalignment. Whether you are running multiple systems over a load balancer, or just multiple systems in parallel, it&amp;rsquo;s very important to make sure that they are all on the same clock, interpreting and processing the records with the same current time.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Terminal - adding user with SSH access</title>
+      <link>http://localhost:1313/random/create-user-using-terminal-ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/create-user-using-terminal-ubuntu/</guid>
+      <description>Objective In the following example I&amp;rsquo;m doing the following
+ create a new user using ubuntu terminal add my public key to authorized keys add user to sudoers (to be able to use sudo) enable ssh access for this user  Scripts # creating user adduser [username]
+adding user to sudo (administrative privelleges) visudo
+search for a line &amp;ldquo;root ALL=(ALL:ALL) ALL&amp;rdquo; and add a new line there [username] ALL=(ALL:ALL) ALL</description>
+    </item>
+    
+    <item>
+      <title>VPCs</title>
+      <link>http://localhost:1313/aws-csaa/vpcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aws-csaa/vpcs/</guid>
+      <description>VPC Components  Virtual Private Cloud Subnet Internet Gateway NAT Gateway Virtual Private Gateway Peering Connection VPC Endpoints Egress-only Internet Gateway  VPC (Virtual Private Cloud)  VPC (Virtual Private Cloud) is a virtual private network dedicated to your AWS account. Logically isolated from other virtual networks in AWS Cloud VPC is defined on Region level VPC Tenancy  Default Dedicated   By default, VPC is created with Route Table, Network ACL and Security Group Availability Zones a, b and c are randomized per account Default VPC  All Subnets in default VPC have a route out to the internet Each EC2 instance has both a public and private IP address    Subnet  Subnet is defined on AZ level IP Ranges which can be assigned to Subnets  10.</description>
+    </item>
+    
+    <item>
+      <title>What is Captcha? How does it work?</title>
+      <link>http://localhost:1313/random/how-captcha-works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/how-captcha-works/</guid>
+      <description>In this article I&amp;rsquo;m explaining the generic concept of captcha in technical and non-technical terms, what are the possible threats of insecure captcha and how to make sure the captcha is secure enough.
+CAPTCHA is defined as a Completely Automated Public Turing test. The main purpose of captcha is to distinguish automated requests from natural human behavior.
+By using the visual ability of people to distinguish patterns in the images, we can distinguish humans from the computers and bad bots which are trying to flood our databases.</description>
+    </item>
+    
+  </channel>
+</rss>

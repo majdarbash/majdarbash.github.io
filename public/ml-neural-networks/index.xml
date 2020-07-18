@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neural Networks on My New Hugo Site</title>
+    <link>http://localhost:1313/ml-neural-networks/</link>
+    <description>Recent content in Neural Networks on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/ml-neural-networks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What are Neural Networks? Why do we use them?</title>
+      <link>http://localhost:1313/ml-neural-networks/neural-networks-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ml-neural-networks/neural-networks-overview/</guid>
+      <description>Why do we use neural networks? Neural networks help us solve a lot of complicated problems when there&amp;rsquo;s no clear way to solve it. Sometimes problems can be complicated enough where we don&amp;rsquo;t know how to solve it, or solving them in conventional way will lead to very complicated algorithms which cannot adapt to changes.
+Neural networks play essential role in acting like human brain - helping us solving problems which we are good at: speech recognition, object recognition, pattern recognition, classification, etc&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Neural Networks: Supervised, Unsupervised &amp; Reinforcement Learning Types of Learning</title>
+      <link>http://localhost:1313/ml-neural-networks/neural-networks-types-of-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ml-neural-networks/neural-networks-types-of-learning/</guid>
+      <description>There are 3 types of learning
+ Supervised learning Reinforcement learning Unsupervised learning  Supervised Learning In supervised learning we try to predict an output when given an input vector. Input and target are clear in supervised learning.
+Regression - target ouptut is a real numbers or a vector of real numbers
+Classification - target output is a class label
+Model-class is a function:
+\begin{equation} y = f(x; W) \end{equation}</description>
+    </item>
+    
+    <item>
+      <title>Python 2.7: Setting up Neural Network with PyBrain</title>
+      <link>http://localhost:1313/ml-neural-networks/machine-learning-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ml-neural-networks/machine-learning-python/</guid>
+      <description>Today, I&amp;rsquo;m experimenting machine learning concepts in python. For this purchase I&amp;rsquo;m using PyBrain. If you would like to have a better idea about Python, I suggest having a quick glance at posts 1-10 in Python category.
+PyBrain is a Machine Learning library for Python. PyBrain stands for Python-Based Reinforcemnet Learning, Artificial Intelligence and Neural Network Library.
+For complete guide on installation you can get complete details from:
+http://pybrain.org/docs/
+In the example below, based on pybrain.</description>
+    </item>
+    
+  </channel>
+</rss>

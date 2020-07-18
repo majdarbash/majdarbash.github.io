@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheat Sheets on My New Hugo Site</title>
+    <link>http://localhost:1313/categories/cheat-sheets/</link>
+    <description>Recent content in Cheat Sheets on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Sep 2017 00:25:45 +0400</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/cheat-sheets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CS: Markdown</title>
+      <link>http://localhost:1313/2017/09/30/markdown-cheat-sheet/</link>
+      <pubDate>Sat, 30 Sep 2017 00:25:45 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/30/markdown-cheat-sheet/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>CS: Docker Commands</title>
+      <link>http://localhost:1313/2017/09/29/docker-cheat-sheet/</link>
+      <pubDate>Fri, 29 Sep 2017 23:58:24 +0400</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/29/docker-cheat-sheet/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

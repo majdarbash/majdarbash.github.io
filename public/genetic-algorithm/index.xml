@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genetic Algorithm on My New Hugo Site</title>
+    <link>http://localhost:1313/genetic-algorithm/</link>
+    <description>Recent content in Genetic Algorithm on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/genetic-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1.1 - Genetics Algorithm - Algorithm Overview</title>
+      <link>http://localhost:1313/genetic-algorithm/01-algorithm-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/01-algorithm-overview/</guid>
+      <description>1.1.1 – Introduction 
+Genetic Algorithm is a directed search algorithms based on the mechanics of biological evolution developed by John Holland, University of Michigan (1970’s) to understand the adaptive processes of natural systems and design artificial systems software that retains the robustness of natural systems this algorithms provide efficient, effective techniques for optimization and machine learning applications so it is widely used today in business, scientific and engineering circles.</description>
+    </item>
+    
+    <item>
+      <title>1.2 - Genetics Algorithm - Problem Specification</title>
+      <link>http://localhost:1313/genetic-algorithm/02-problem-specification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/02-problem-specification/</guid>
+      <description>1.2.1 - Introduction We have a set of teachers who needs a schedule for a set of subjects over a set of periods, this schedule must take into account characteristics of periods of week, the limited availability of teacher and rooms, and some constraints which should be fulfilled.
+The problem of assigning teachers to subjects and groups for timetabling problem has been studied by many authors. Tillet (1975) was the first to address it, using an integer linear programming model.</description>
+    </item>
+    
+    <item>
+      <title>1.3 - Genetics Algorithm - User Manual</title>
+      <link>http://localhost:1313/genetic-algorithm/03-user-manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/03-user-manual/</guid>
+      <description>1.3.1 - Operation Specification The program should be executed as follows:
+Data entries for the program should be supplied within the tables in the “genalgo.accdb” database file. These tables contain the teacher definitions, teacher available times, subjects, teacher subjects mapping, rooms and corresponding room types. From all these tables in the preprocessing stage, the groups and then the cells tables are created, which will be used then as an input to our program.</description>
+    </item>
+    
+    <item>
+      <title>1.4 - Genetics Algorithm - Future Vision for Optimality</title>
+      <link>http://localhost:1313/genetic-algorithm/04-future-vision-for-optimality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/genetic-algorithm/04-future-vision-for-optimality/</guid>
+      <description>We are proud to see amazing results for the timetabling problem. As stated in the section before, that the maximum time for satisfying essential hard constraints was 15 minutes. This time is good enough, but in worse cases, the performance will be worse of course. This is why we introduce a new area for improvement in future – we would consider that it may be really efficient if we define and implement new heuristics within the HeuristicSwitcher, which might help us a lot in finding solution faster.</description>
+    </item>
+    
+  </channel>
+</rss>

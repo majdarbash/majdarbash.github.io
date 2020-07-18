@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu server on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/ubuntu-server/</link>
+    <description>Recent content in ubuntu server on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/tags/ubuntu-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to protect directory with a password in Apache2?</title>
+      <link>http://localhost:1313/random/password-protect-directory-apache-configurations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/password-protect-directory-apache-configurations/</guid>
+      <description>A usual scenario encountered by every web server is administrator is to password protect specific directory and all it&amp;rsquo;s resources. We need to add some lines in the configuration file where our web server / virtual host is defined. This is how we do it:
+Creating the password file: (the system will ask you to enter the password which will be saved in encrypted format)
+sudo htpasswd -c [filename] [username] Apache BASIC HTTP Authentication using the created password file</description>
+    </item>
+    
+    <item>
+      <title>Installing VsFTPd on Ubuntu Server</title>
+      <link>http://localhost:1313/random/ubuntu-vsftpd-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/random/ubuntu-vsftpd-installation/</guid>
+      <description>A small tutorial on how to install vsftpd and setup a separate user.
+Please follow these steps to install vsftpd service on your ubuntu machine.
+# adding a new local user useradd -g ubuntu ftpuser # change the password of the new user passwd ftpuser # checking the user information id ftpuser # checking the user group groups ftpuser # changing the group of the user usermod -g ubuntu ftpuser # installing and configuring vsftpd sudo apt-get install vsftpd sudo vim /etc/vsftpd.</description>
+    </item>
+    
+  </channel>
+</rss>
