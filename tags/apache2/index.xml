@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apache2 on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/apache2/</link>
+    <link>https://majdarbash.github.io/tags/apache2/</link>
     <description>Recent content in apache2 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/apache2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/apache2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to properly log ClientIP on Apache2 behind Load Balancer?</title>
-      <link>http://localhost:1313/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</link>
+      <link>https://majdarbash.github.io/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</guid>
+      <guid>https://majdarbash.github.io/random/apache-configuration-logging-traffic-from-x-forwarded-for-header/</guid>
       <description>This case will help you to log to apache server any traffic coming from the load balancer, proxy or any IDS.
 LogFormat &amp;quot;%h %l %u %t &amp;quot;%r&amp;quot; %&amp;gt;s %b &amp;quot;%{Referer}i&amp;quot; &amp;quot;%{User-Agent}i&amp;quot;&amp;quot; combined LogFormat &amp;quot;%{X-Forwarded-For}i %l %u %t &amp;quot;%r&amp;quot; %&amp;gt;s %b &amp;quot;%{Referer}i&amp;quot; &amp;quot;%{User-Agent}i&amp;quot;&amp;quot; proxy SetEnvIf X-Forwarded-For &amp;quot;^.*..*..*..*&amp;quot; forwarded CustomLog ${APACHE_LOG_DIR}/access_log combined env=!forwarded CustomLog ${APACHE_LOG_DIR}/access_log proxy env=forwarded Where are Apache2 Logs? The default location of apache log files on ubuntu server apache2 installation is:</description>
     </item>
     
     <item>
       <title>LAMP Installation on Ubuntu Server</title>
-      <link>http://localhost:1313/random/installing-apache2-mysql-php-on-ubuntu/</link>
+      <link>https://majdarbash.github.io/random/installing-apache2-mysql-php-on-ubuntu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/installing-apache2-mysql-php-on-ubuntu/</guid>
+      <guid>https://majdarbash.github.io/random/installing-apache2-mysql-php-on-ubuntu/</guid>
       <description>Found it useful to include these command I&amp;rsquo;m always using whenever I need to create an ec2 instance:
 sudo apt-get update sudo apt-get install apache2 sudo apt-get install libapache2-mod-php5 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql # installing php / curl sudo apt-get install php5-curl other php modules sudo apt-get update sudo apt-cache search php5  Publish Date: 2014-10-04
  </description>

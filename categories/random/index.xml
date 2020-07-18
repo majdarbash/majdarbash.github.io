@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Random on My New Hugo Site</title>
-    <link>http://localhost:1313/categories/random/</link>
+    <link>https://majdarbash.github.io/categories/random/</link>
     <description>Recent content in Random on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Sep 2017 18:38:38 +0400</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/random/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/categories/random/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to build Docker Image for NGINX using Chef (chef-solo)?</title>
-      <link>http://localhost:1313/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</link>
+      <link>https://majdarbash.github.io/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</link>
       <pubDate>Sat, 30 Sep 2017 18:38:38 +0400</pubDate>
       
-      <guid>http://localhost:1313/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</guid>
+      <guid>https://majdarbash.github.io/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title>How to provision Docker Images using Chef-Solo?</title>
-      <link>http://localhost:1313/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</link>
+      <link>https://majdarbash.github.io/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</link>
       <pubDate>Sat, 30 Sep 2017 18:35:27 +0400</pubDate>
       
-      <guid>http://localhost:1313/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</guid>
+      <guid>https://majdarbash.github.io/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title>How to upgrade Wordpress? Best and safest way to upgrade</title>
-      <link>http://localhost:1313/2017/08/19/best-safest-way-upgrade-wordpress-site/</link>
+      <link>https://majdarbash.github.io/2017/08/19/best-safest-way-upgrade-wordpress-site/</link>
       <pubDate>Sat, 19 Aug 2017 13:49:34 +0400</pubDate>
       
-      <guid>http://localhost:1313/2017/08/19/best-safest-way-upgrade-wordpress-site/</guid>
+      <guid>https://majdarbash.github.io/2017/08/19/best-safest-way-upgrade-wordpress-site/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title>Overcoming SEO challenges with AngularJS 1-based Applications</title>
-      <link>http://localhost:1313/2017/06/27/angularjs-seo-implications/</link>
+      <link>https://majdarbash.github.io/2017/06/27/angularjs-seo-implications/</link>
       <pubDate>Tue, 27 Jun 2017 22:49:42 +0400</pubDate>
       
-      <guid>http://localhost:1313/2017/06/27/angularjs-seo-implications/</guid>
+      <guid>https://majdarbash.github.io/2017/06/27/angularjs-seo-implications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CI Pipeline: Unifying and automating code using Coding Style Fixer</title>
-      <link>http://localhost:1313/2017/03/15/php-coding-style-fixer/</link>
+      <link>https://majdarbash.github.io/2017/03/15/php-coding-style-fixer/</link>
       <pubDate>Wed, 15 Mar 2017 12:39:27 +0400</pubDate>
       
-      <guid>http://localhost:1313/2017/03/15/php-coding-style-fixer/</guid>
+      <guid>https://majdarbash.github.io/2017/03/15/php-coding-style-fixer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to test your SSL installation?</title>
-      <link>http://localhost:1313/2017/02/08/testing-installed-ssl-certificate/</link>
+      <link>https://majdarbash.github.io/2017/02/08/testing-installed-ssl-certificate/</link>
       <pubDate>Wed, 08 Feb 2017 00:41:19 +0400</pubDate>
       
-      <guid>http://localhost:1313/2017/02/08/testing-installed-ssl-certificate/</guid>
+      <guid>https://majdarbash.github.io/2017/02/08/testing-installed-ssl-certificate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to download the streaming m3u8 videos formats?</title>
-      <link>http://localhost:1313/2016/12/05/downloading-m3u8-videos/</link>
+      <link>https://majdarbash.github.io/2016/12/05/downloading-m3u8-videos/</link>
       <pubDate>Mon, 05 Dec 2016 00:12:32 +0400</pubDate>
       
-      <guid>http://localhost:1313/2016/12/05/downloading-m3u8-videos/</guid>
+      <guid>https://majdarbash.github.io/2016/12/05/downloading-m3u8-videos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React Native: Building the &#34;Shoes&#34; App</title>
-      <link>http://localhost:1313/2016/10/20/react-native-the-shoe-app/</link>
+      <link>https://majdarbash.github.io/2016/10/20/react-native-the-shoe-app/</link>
       <pubDate>Thu, 20 Oct 2016 10:18:13 +0400</pubDate>
       
-      <guid>http://localhost:1313/2016/10/20/react-native-the-shoe-app/</guid>
+      <guid>https://majdarbash.github.io/2016/10/20/react-native-the-shoe-app/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;

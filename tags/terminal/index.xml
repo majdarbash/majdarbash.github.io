@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>terminal on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/terminal/</link>
+    <link>https://majdarbash.github.io/tags/terminal/</link>
     <description>Recent content in terminal on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CS: MySQL</title>
-      <link>http://localhost:1313/random/mysql-grant-privelleges/</link>
+      <link>https://majdarbash.github.io/random/mysql-grant-privelleges/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/mysql-grant-privelleges/</guid>
+      <guid>https://majdarbash.github.io/random/mysql-grant-privelleges/</guid>
       <description>Couple of useful sql queries we always search about for user management in mySQL:
 # creating a user in mysql CREATE USER &#39;_username_&#39;@&#39;%&#39; IDENTIFIED BY &#39;_password_&#39;; # give user select access on all tables in the database GRANT SELECT ON _database_.* TO &#39;_username_&#39;@&#39;%&#39;; # give user full access on all tables in the database GRANT ALL PRIVILLEGES ON _database_.* TO &#39;_username_&#39;@&#39;%&#39;; # grant special access to user for specific tables GRANT UPDATE ON _database_.</description>
     </item>
     
     <item>
       <title>CS: Ubuntu Commands</title>
-      <link>http://localhost:1313/random/some-useful-commands-for-ubuntu-terminal/</link>
+      <link>https://majdarbash.github.io/random/some-useful-commands-for-ubuntu-terminal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/some-useful-commands-for-ubuntu-terminal/</guid>
+      <guid>https://majdarbash.github.io/random/some-useful-commands-for-ubuntu-terminal/</guid>
       <description># Checking the current version of installed ubuntu OS: lsb _release -a # checking disk space usage: df -h # checking disk space usage in a directory du -hs * # changing the password of the user: passwd [username ] # listing the cronjobs: crontab -l # editing cronjobs: crontab -e # tailing logs tail -f [filePath ] # tailing last 100 lines of the log file tail -f -n 100 [filePath ] # displaying contents of the file cat [filePath ] more [filePath ] less [filePath ] # showing only lines which have the string &amp;quot;testString&amp;quot; grep &amp;quot;testString&amp;quot; [file ] # grep with OR grep &amp;quot;pattern1 |pattern2&amp;quot; [file ] # extended grep (below does the same like grep with OR, however escaping characters is not required here) grep -e &amp;quot;pattern1|pattern2&amp;quot; [file ] # egrep (same like grep -e, which is extended grep) egrep &#39;pattern1|pattern2&#39; [file ] # show location in terminal shell prompt (you can add this to ~/.</description>
     </item>
     
     <item>
       <title>SVN commands</title>
-      <link>http://localhost:1313/random/svn-commands/</link>
+      <link>https://majdarbash.github.io/random/svn-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/svn-commands/</guid>
+      <guid>https://majdarbash.github.io/random/svn-commands/</guid>
       <description>Adding all un-versioned files under the current directory to the SVN:
 command 1:
 svn add `svn status .|grep &amp;quot;^?&amp;quot;|awk &#39;{print $2}&#39;` command 2:

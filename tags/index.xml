@@ -2,848 +2,848 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://majdarbash.github.io/tags/</link>
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>.svn</title>
-      <link>http://localhost:1313/tags/.svn/</link>
+      <link>https://majdarbash.github.io/tags/.svn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/.svn/</guid>
+      <guid>https://majdarbash.github.io/tags/.svn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>.svn files</title>
-      <link>http://localhost:1313/tags/.svn-files/</link>
+      <link>https://majdarbash.github.io/tags/.svn-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/.svn-files/</guid>
+      <guid>https://majdarbash.github.io/tags/.svn-files/</guid>
       <description></description>
     </item>
     
     <item>
       <title>account</title>
-      <link>http://localhost:1313/tags/account/</link>
+      <link>https://majdarbash.github.io/tags/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/account/</guid>
+      <guid>https://majdarbash.github.io/tags/account/</guid>
       <description></description>
     </item>
     
     <item>
       <title>angular</title>
-      <link>http://localhost:1313/tags/angular/</link>
+      <link>https://majdarbash.github.io/tags/angular/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/angular/</guid>
+      <guid>https://majdarbash.github.io/tags/angular/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apache</title>
-      <link>http://localhost:1313/tags/apache/</link>
+      <link>https://majdarbash.github.io/tags/apache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/apache/</guid>
+      <guid>https://majdarbash.github.io/tags/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apache2</title>
-      <link>http://localhost:1313/tags/apache2/</link>
+      <link>https://majdarbash.github.io/tags/apache2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/apache2/</guid>
+      <guid>https://majdarbash.github.io/tags/apache2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>artificial intelligence</title>
-      <link>http://localhost:1313/tags/artificial-intelligence/</link>
+      <link>https://majdarbash.github.io/tags/artificial-intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/artificial-intelligence/</guid>
+      <guid>https://majdarbash.github.io/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>assets</title>
-      <link>http://localhost:1313/tags/assets/</link>
+      <link>https://majdarbash.github.io/tags/assets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/assets/</guid>
+      <guid>https://majdarbash.github.io/tags/assets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>asynchronous programming</title>
-      <link>http://localhost:1313/tags/asynchronous-programming/</link>
+      <link>https://majdarbash.github.io/tags/asynchronous-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/asynchronous-programming/</guid>
+      <guid>https://majdarbash.github.io/tags/asynchronous-programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>aws</title>
-      <link>http://localhost:1313/tags/aws/</link>
+      <link>https://majdarbash.github.io/tags/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/aws/</guid>
+      <guid>https://majdarbash.github.io/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>backlinks</title>
-      <link>http://localhost:1313/tags/backlinks/</link>
+      <link>https://majdarbash.github.io/tags/backlinks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/backlinks/</guid>
+      <guid>https://majdarbash.github.io/tags/backlinks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>browser</title>
-      <link>http://localhost:1313/tags/browser/</link>
+      <link>https://majdarbash.github.io/tags/browser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/browser/</guid>
+      <guid>https://majdarbash.github.io/tags/browser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ci</title>
-      <link>http://localhost:1313/tags/ci/</link>
+      <link>https://majdarbash.github.io/tags/ci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ci/</guid>
+      <guid>https://majdarbash.github.io/tags/ci/</guid>
       <description></description>
     </item>
     
     <item>
       <title>clock</title>
-      <link>http://localhost:1313/tags/clock/</link>
+      <link>https://majdarbash.github.io/tags/clock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/clock/</guid>
+      <guid>https://majdarbash.github.io/tags/clock/</guid>
       <description></description>
     </item>
     
     <item>
       <title>commands</title>
-      <link>http://localhost:1313/tags/commands/</link>
+      <link>https://majdarbash.github.io/tags/commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/commands/</guid>
+      <guid>https://majdarbash.github.io/tags/commands/</guid>
       <description></description>
     </item>
     
     <item>
       <title>concept</title>
-      <link>http://localhost:1313/tags/concept/</link>
+      <link>https://majdarbash.github.io/tags/concept/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/concept/</guid>
+      <guid>https://majdarbash.github.io/tags/concept/</guid>
       <description></description>
     </item>
     
     <item>
       <title>continuous integration</title>
-      <link>http://localhost:1313/tags/continuous-integration/</link>
+      <link>https://majdarbash.github.io/tags/continuous-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/continuous-integration/</guid>
+      <guid>https://majdarbash.github.io/tags/continuous-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>crossdomain</title>
-      <link>http://localhost:1313/tags/crossdomain/</link>
+      <link>https://majdarbash.github.io/tags/crossdomain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/crossdomain/</guid>
+      <guid>https://majdarbash.github.io/tags/crossdomain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data fixtures</title>
-      <link>http://localhost:1313/tags/data-fixtures/</link>
+      <link>https://majdarbash.github.io/tags/data-fixtures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/data-fixtures/</guid>
+      <guid>https://majdarbash.github.io/tags/data-fixtures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data-science</title>
-      <link>http://localhost:1313/tags/data-science/</link>
+      <link>https://majdarbash.github.io/tags/data-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/data-science/</guid>
+      <guid>https://majdarbash.github.io/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>http://localhost:1313/tags/database/</link>
+      <link>https://majdarbash.github.io/tags/database/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/database/</guid>
+      <guid>https://majdarbash.github.io/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design patterns</title>
-      <link>http://localhost:1313/tags/design-patterns/</link>
+      <link>https://majdarbash.github.io/tags/design-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/design-patterns/</guid>
+      <guid>https://majdarbash.github.io/tags/design-patterns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>devops</title>
-      <link>http://localhost:1313/tags/devops/</link>
+      <link>https://majdarbash.github.io/tags/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/devops/</guid>
+      <guid>https://majdarbash.github.io/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>doctrine</title>
-      <link>http://localhost:1313/tags/doctrine/</link>
+      <link>https://majdarbash.github.io/tags/doctrine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/doctrine/</guid>
+      <guid>https://majdarbash.github.io/tags/doctrine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>encore</title>
-      <link>http://localhost:1313/tags/encore/</link>
+      <link>https://majdarbash.github.io/tags/encore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/encore/</guid>
+      <guid>https://majdarbash.github.io/tags/encore/</guid>
       <description></description>
     </item>
     
     <item>
       <title>error</title>
-      <link>http://localhost:1313/tags/error/</link>
+      <link>https://majdarbash.github.io/tags/error/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/error/</guid>
+      <guid>https://majdarbash.github.io/tags/error/</guid>
       <description></description>
     </item>
     
     <item>
       <title>event emitter</title>
-      <link>http://localhost:1313/tags/event-emitter/</link>
+      <link>https://majdarbash.github.io/tags/event-emitter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/event-emitter/</guid>
+      <guid>https://majdarbash.github.io/tags/event-emitter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>event-driven</title>
-      <link>http://localhost:1313/tags/event-driven/</link>
+      <link>https://majdarbash.github.io/tags/event-driven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/event-driven/</guid>
+      <guid>https://majdarbash.github.io/tags/event-driven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>filter</title>
-      <link>http://localhost:1313/tags/filter/</link>
+      <link>https://majdarbash.github.io/tags/filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/filter/</guid>
+      <guid>https://majdarbash.github.io/tags/filter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fixtures</title>
-      <link>http://localhost:1313/tags/fixtures/</link>
+      <link>https://majdarbash.github.io/tags/fixtures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/fixtures/</guid>
+      <guid>https://majdarbash.github.io/tags/fixtures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flash messages</title>
-      <link>http://localhost:1313/tags/flash-messages/</link>
+      <link>https://majdarbash.github.io/tags/flash-messages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/flash-messages/</guid>
+      <guid>https://majdarbash.github.io/tags/flash-messages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>for loop</title>
-      <link>http://localhost:1313/tags/for-loop/</link>
+      <link>https://majdarbash.github.io/tags/for-loop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/for-loop/</guid>
+      <guid>https://majdarbash.github.io/tags/for-loop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>form</title>
-      <link>http://localhost:1313/tags/form/</link>
+      <link>https://majdarbash.github.io/tags/form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/form/</guid>
+      <guid>https://majdarbash.github.io/tags/form/</guid>
       <description></description>
     </item>
     
     <item>
       <title>form class</title>
-      <link>http://localhost:1313/tags/form-class/</link>
+      <link>https://majdarbash.github.io/tags/form-class/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/form-class/</guid>
+      <guid>https://majdarbash.github.io/tags/form-class/</guid>
       <description></description>
     </item>
     
     <item>
       <title>formBuilder</title>
-      <link>http://localhost:1313/tags/formbuilder/</link>
+      <link>https://majdarbash.github.io/tags/formbuilder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/formbuilder/</guid>
+      <guid>https://majdarbash.github.io/tags/formbuilder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ftp server</title>
-      <link>http://localhost:1313/tags/ftp-server/</link>
+      <link>https://majdarbash.github.io/tags/ftp-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ftp-server/</guid>
+      <guid>https://majdarbash.github.io/tags/ftp-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fuzzy text search</title>
-      <link>http://localhost:1313/tags/fuzzy-text-search/</link>
+      <link>https://majdarbash.github.io/tags/fuzzy-text-search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/fuzzy-text-search/</guid>
+      <guid>https://majdarbash.github.io/tags/fuzzy-text-search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>genetics algorithm</title>
-      <link>http://localhost:1313/tags/genetics-algorithm/</link>
+      <link>https://majdarbash.github.io/tags/genetics-algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/genetics-algorithm/</guid>
+      <guid>https://majdarbash.github.io/tags/genetics-algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>https://majdarbash.github.io/tags/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>https://majdarbash.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google</title>
-      <link>http://localhost:1313/tags/google/</link>
+      <link>https://majdarbash.github.io/tags/google/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/google/</guid>
+      <guid>https://majdarbash.github.io/tags/google/</guid>
       <description></description>
     </item>
     
     <item>
       <title>installation</title>
-      <link>http://localhost:1313/tags/installation/</link>
+      <link>https://majdarbash.github.io/tags/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/installation/</guid>
+      <guid>https://majdarbash.github.io/tags/installation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ionicframework</title>
-      <link>http://localhost:1313/tags/ionicframework/</link>
+      <link>https://majdarbash.github.io/tags/ionicframework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ionicframework/</guid>
+      <guid>https://majdarbash.github.io/tags/ionicframework/</guid>
       <description></description>
     </item>
     
     <item>
       <title>js</title>
-      <link>http://localhost:1313/tags/js/</link>
+      <link>https://majdarbash.github.io/tags/js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/js/</guid>
+      <guid>https://majdarbash.github.io/tags/js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>levenshtein distance</title>
-      <link>http://localhost:1313/tags/levenshtein-distance/</link>
+      <link>https://majdarbash.github.io/tags/levenshtein-distance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/levenshtein-distance/</guid>
+      <guid>https://majdarbash.github.io/tags/levenshtein-distance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>log</title>
-      <link>http://localhost:1313/tags/log/</link>
+      <link>https://majdarbash.github.io/tags/log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/log/</guid>
+      <guid>https://majdarbash.github.io/tags/log/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
+      <link>https://majdarbash.github.io/tags/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <guid>https://majdarbash.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>migration</title>
-      <link>http://localhost:1313/tags/migration/</link>
+      <link>https://majdarbash.github.io/tags/migration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/migration/</guid>
+      <guid>https://majdarbash.github.io/tags/migration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>http://localhost:1313/tags/mysql/</link>
+      <link>https://majdarbash.github.io/tags/mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/mysql/</guid>
+      <guid>https://majdarbash.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>neural networks</title>
-      <link>http://localhost:1313/tags/neural-networks/</link>
+      <link>https://majdarbash.github.io/tags/neural-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/neural-networks/</guid>
+      <guid>https://majdarbash.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nodejs</title>
-      <link>http://localhost:1313/tags/nodejs/</link>
+      <link>https://majdarbash.github.io/tags/nodejs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/nodejs/</guid>
+      <guid>https://majdarbash.github.io/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>notice</title>
-      <link>http://localhost:1313/tags/notice/</link>
+      <link>https://majdarbash.github.io/tags/notice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/notice/</guid>
+      <guid>https://majdarbash.github.io/tags/notice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>password protect</title>
-      <link>http://localhost:1313/tags/password-protect/</link>
+      <link>https://majdarbash.github.io/tags/password-protect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/password-protect/</guid>
+      <guid>https://majdarbash.github.io/tags/password-protect/</guid>
       <description></description>
     </item>
     
     <item>
       <title>php</title>
-      <link>http://localhost:1313/tags/php/</link>
+      <link>https://majdarbash.github.io/tags/php/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/php/</guid>
+      <guid>https://majdarbash.github.io/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>http://localhost:1313/tags/programming/</link>
+      <link>https://majdarbash.github.io/tags/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/programming/</guid>
+      <guid>https://majdarbash.github.io/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>proxy</title>
-      <link>http://localhost:1313/tags/proxy/</link>
+      <link>https://majdarbash.github.io/tags/proxy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/proxy/</guid>
+      <guid>https://majdarbash.github.io/tags/proxy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pybrain</title>
-      <link>http://localhost:1313/tags/pybrain/</link>
+      <link>https://majdarbash.github.io/tags/pybrain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/pybrain/</guid>
+      <guid>https://majdarbash.github.io/tags/pybrain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://majdarbash.github.io/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://majdarbash.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ready</title>
-      <link>http://localhost:1313/tags/ready/</link>
+      <link>https://majdarbash.github.io/tags/ready/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ready/</guid>
+      <guid>https://majdarbash.github.io/tags/ready/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reinforced</title>
-      <link>http://localhost:1313/tags/reinforced/</link>
+      <link>https://majdarbash.github.io/tags/reinforced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/reinforced/</guid>
+      <guid>https://majdarbash.github.io/tags/reinforced/</guid>
       <description></description>
     </item>
     
     <item>
       <title>review</title>
-      <link>http://localhost:1313/tags/review/</link>
+      <link>https://majdarbash.github.io/tags/review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/review/</guid>
+      <guid>https://majdarbash.github.io/tags/review/</guid>
       <description></description>
     </item>
     
     <item>
       <title>school timetabling problem</title>
-      <link>http://localhost:1313/tags/school-timetabling-problem/</link>
+      <link>https://majdarbash.github.io/tags/school-timetabling-problem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/school-timetabling-problem/</guid>
+      <guid>https://majdarbash.github.io/tags/school-timetabling-problem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>https://majdarbash.github.io/tags/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>https://majdarbash.github.io/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>seo</title>
-      <link>http://localhost:1313/tags/seo/</link>
+      <link>https://majdarbash.github.io/tags/seo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/seo/</guid>
+      <guid>https://majdarbash.github.io/tags/seo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>http://localhost:1313/tags/server/</link>
+      <link>https://majdarbash.github.io/tags/server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/server/</guid>
+      <guid>https://majdarbash.github.io/tags/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>service</title>
-      <link>http://localhost:1313/tags/service/</link>
+      <link>https://majdarbash.github.io/tags/service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/service/</guid>
+      <guid>https://majdarbash.github.io/tags/service/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>http://localhost:1313/tags/shell/</link>
+      <link>https://majdarbash.github.io/tags/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/shell/</guid>
+      <guid>https://majdarbash.github.io/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>software development</title>
-      <link>http://localhost:1313/tags/software-development/</link>
+      <link>https://majdarbash.github.io/tags/software-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/software-development/</guid>
+      <guid>https://majdarbash.github.io/tags/software-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>solution architect</title>
-      <link>http://localhost:1313/tags/solution-architect/</link>
+      <link>https://majdarbash.github.io/tags/solution-architect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/solution-architect/</guid>
+      <guid>https://majdarbash.github.io/tags/solution-architect/</guid>
       <description></description>
     </item>
     
     <item>
       <title>squid</title>
-      <link>http://localhost:1313/tags/squid/</link>
+      <link>https://majdarbash.github.io/tags/squid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/squid/</guid>
+      <guid>https://majdarbash.github.io/tags/squid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>subversion</title>
-      <link>http://localhost:1313/tags/subversion/</link>
+      <link>https://majdarbash.github.io/tags/subversion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/subversion/</guid>
+      <guid>https://majdarbash.github.io/tags/subversion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>supervised</title>
-      <link>http://localhost:1313/tags/supervised/</link>
+      <link>https://majdarbash.github.io/tags/supervised/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/supervised/</guid>
+      <guid>https://majdarbash.github.io/tags/supervised/</guid>
       <description></description>
     </item>
     
     <item>
       <title>symfony</title>
-      <link>http://localhost:1313/tags/symfony/</link>
+      <link>https://majdarbash.github.io/tags/symfony/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/symfony/</guid>
+      <guid>https://majdarbash.github.io/tags/symfony/</guid>
       <description></description>
     </item>
     
     <item>
       <title>template</title>
-      <link>http://localhost:1313/tags/template/</link>
+      <link>https://majdarbash.github.io/tags/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/template/</guid>
+      <guid>https://majdarbash.github.io/tags/template/</guid>
       <description></description>
     </item>
     
     <item>
       <title>template inheritance</title>
-      <link>http://localhost:1313/tags/template-inheritance/</link>
+      <link>https://majdarbash.github.io/tags/template-inheritance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/template-inheritance/</guid>
+      <guid>https://majdarbash.github.io/tags/template-inheritance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>http://localhost:1313/tags/templates/</link>
+      <link>https://majdarbash.github.io/tags/templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/templates/</guid>
+      <guid>https://majdarbash.github.io/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>terminal</title>
-      <link>http://localhost:1313/tags/terminal/</link>
+      <link>https://majdarbash.github.io/tags/terminal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/terminal/</guid>
+      <guid>https://majdarbash.github.io/tags/terminal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
+      <link>https://majdarbash.github.io/tags/testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/testing/</guid>
+      <guid>https://majdarbash.github.io/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>travis</title>
-      <link>http://localhost:1313/tags/travis/</link>
+      <link>https://majdarbash.github.io/tags/travis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/travis/</guid>
+      <guid>https://majdarbash.github.io/tags/travis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>twig</title>
-      <link>http://localhost:1313/tags/twig/</link>
+      <link>https://majdarbash.github.io/tags/twig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/twig/</guid>
+      <guid>https://majdarbash.github.io/tags/twig/</guid>
       <description></description>
     </item>
     
     <item>
       <title>twig filter</title>
-      <link>http://localhost:1313/tags/twig-filter/</link>
+      <link>https://majdarbash.github.io/tags/twig-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/twig-filter/</guid>
+      <guid>https://majdarbash.github.io/tags/twig-filter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>twig inheritance</title>
-      <link>http://localhost:1313/tags/twig-inheritance/</link>
+      <link>https://majdarbash.github.io/tags/twig-inheritance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/twig-inheritance/</guid>
+      <guid>https://majdarbash.github.io/tags/twig-inheritance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>types of learning</title>
-      <link>http://localhost:1313/tags/types-of-learning/</link>
+      <link>https://majdarbash.github.io/tags/types-of-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/types-of-learning/</guid>
+      <guid>https://majdarbash.github.io/tags/types-of-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ubuntu</title>
-      <link>http://localhost:1313/tags/ubuntu/</link>
+      <link>https://majdarbash.github.io/tags/ubuntu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <guid>https://majdarbash.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ubuntu server</title>
-      <link>http://localhost:1313/tags/ubuntu-server/</link>
+      <link>https://majdarbash.github.io/tags/ubuntu-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ubuntu-server/</guid>
+      <guid>https://majdarbash.github.io/tags/ubuntu-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>unsupervised</title>
-      <link>http://localhost:1313/tags/unsupervised/</link>
+      <link>https://majdarbash.github.io/tags/unsupervised/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/unsupervised/</guid>
+      <guid>https://majdarbash.github.io/tags/unsupervised/</guid>
       <description></description>
     </item>
     
     <item>
       <title>validation</title>
-      <link>http://localhost:1313/tags/validation/</link>
+      <link>https://majdarbash.github.io/tags/validation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/validation/</guid>
+      <guid>https://majdarbash.github.io/tags/validation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vcs</title>
-      <link>http://localhost:1313/tags/vcs/</link>
+      <link>https://majdarbash.github.io/tags/vcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/vcs/</guid>
+      <guid>https://majdarbash.github.io/tags/vcs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>version control system</title>
-      <link>http://localhost:1313/tags/version-control-system/</link>
+      <link>https://majdarbash.github.io/tags/version-control-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/version-control-system/</guid>
+      <guid>https://majdarbash.github.io/tags/version-control-system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vsftpd</title>
-      <link>http://localhost:1313/tags/vsftpd/</link>
+      <link>https://majdarbash.github.io/tags/vsftpd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/vsftpd/</guid>
+      <guid>https://majdarbash.github.io/tags/vsftpd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web server</title>
-      <link>http://localhost:1313/tags/web-server/</link>
+      <link>https://majdarbash.github.io/tags/web-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/web-server/</guid>
+      <guid>https://majdarbash.github.io/tags/web-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>webpack</title>
-      <link>http://localhost:1313/tags/webpack/</link>
+      <link>https://majdarbash.github.io/tags/webpack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/webpack/</guid>
+      <guid>https://majdarbash.github.io/tags/webpack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wordpress</title>
-      <link>http://localhost:1313/tags/wordpress/</link>
+      <link>https://majdarbash.github.io/tags/wordpress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/wordpress/</guid>
+      <guid>https://majdarbash.github.io/tags/wordpress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>X-Forwarded-For</title>
-      <link>http://localhost:1313/tags/x-forwarded-for/</link>
+      <link>https://majdarbash.github.io/tags/x-forwarded-for/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/x-forwarded-for/</guid>
+      <guid>https://majdarbash.github.io/tags/x-forwarded-for/</guid>
       <description></description>
     </item>
     

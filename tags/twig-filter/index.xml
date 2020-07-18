@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>twig filter on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/twig-filter/</link>
+    <link>https://majdarbash.github.io/tags/twig-filter/</link>
     <description>Recent content in twig filter on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/twig-filter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/twig-filter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Symfony 3:[Twig]: Reference</title>
-      <link>http://localhost:1313/symfony/symfonytwig-reference/</link>
+      <link>https://majdarbash.github.io/symfony/symfonytwig-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/symfony/symfonytwig-reference/</guid>
+      <guid>https://majdarbash.github.io/symfony/symfonytwig-reference/</guid>
       <description>Template file name
 [template_name].html.twig {# comment #} Template block
 {% block [block_name] %} [block_content] {% endblock %} Extending twig template

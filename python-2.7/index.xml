@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python-2.7s on My New Hugo Site</title>
-    <link>http://localhost:1313/python-2.7/</link>
+    <link>https://majdarbash.github.io/python-2.7/</link>
     <description>Recent content in Python-2.7s on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/python-2.7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/python-2.7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python 2.7: Introduction</title>
-      <link>http://localhost:1313/python-2.7/1-python-introduction/</link>
+      <link>https://majdarbash.github.io/python-2.7/1-python-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/1-python-introduction/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/1-python-introduction/</guid>
       <description>Python installation:
 You can install python by using this link:
 https://www.python.org
@@ -30,20 +30,20 @@ $ python Following flags can be provided
     
     <item>
       <title>Python 2.7: Basics: Variables, Strings, Date and Time</title>
-      <link>http://localhost:1313/python-2.7/2-python-basics-variables-strings-date-and-time/</link>
+      <link>https://majdarbash.github.io/python-2.7/2-python-basics-variables-strings-date-and-time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/2-python-basics-variables-strings-date-and-time/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/2-python-basics-variables-strings-date-and-time/</guid>
       <description>Variables x = 10 This statement will create a variable called x which will store a number 10. By assigned value python understands that this variable will store numeric data. We can also store other data types, by assigning different types of values:
 x_int = 1 x_float = 1.23 x_bool = True Note that booleans should have an uppercase in the beginning. (True and not true, False and not false)</description>
     </item>
     
     <item>
       <title>Python 2.7: Built-in Functions, Examples</title>
-      <link>http://localhost:1313/python-2.7/3-python-built-in-functions-examples/</link>
+      <link>https://majdarbash.github.io/python-2.7/3-python-built-in-functions-examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/3-python-built-in-functions-examples/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/3-python-built-in-functions-examples/</guid>
       <description>Python provides you with a great variety of built-in functions and modules. We wil display a bit of interesting examples here, using some built-in functions.
 def biggest_number(*args): return max(*args) As you noticed, we can pass multiple inputs to our function using *args syntax.
 # output: 6 print max(4,2,6) # output: 3 print min(3,6,7) # output: 98 print abs(-98) Determining the type of variabel and using it: # output: displays the types of variables: int, str, float x_int = 52 x_string = &amp;quot;hello&amp;quot; x_float = 2.</description>
@@ -51,10 +51,10 @@ def biggest_number(*args): return max(*args) As you noticed, we can pass multipl
     
     <item>
       <title>Python 2.7: Conditional &amp; Control Flows</title>
-      <link>http://localhost:1313/python-2.7/4-python-conditional-control-flows/</link>
+      <link>https://majdarbash.github.io/python-2.7/4-python-conditional-control-flows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/4-python-conditional-control-flows/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/4-python-conditional-control-flows/</guid>
       <description>Python supports:
  Standard comparison operators: &amp;lt;, &amp;gt;, ==, !=, &amp;lt;=, &amp;gt;=. Logical operators: and, or, not (not is evaluated first, then and and then or)  Conditional Clause if [condition]: [statements ...] else: [statements ...] More sofisticated example, would be:
 if [condition 1]: [statements ...] elif [condition 2]: [statements ...] else: [statements ...] Beware of the indentation as it will indicate how many statements to be executed within the condition success block.</description>
@@ -62,30 +62,30 @@ if [condition 1]: [statements ...] elif [condition 2]: [statements ...] else: [s
     
     <item>
       <title>Python 2.7: Classes</title>
-      <link>http://localhost:1313/python-2.7/5-python-classes/</link>
+      <link>https://majdarbash.github.io/python-2.7/5-python-classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/5-python-classes/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/5-python-classes/</guid>
       <description>In the example below of class syntax, the class in parantheses indicate the clsaas from which the new class inherits - in the current case it&amp;rsquo;s object.
 class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;quot;&amp;quot; def __init__(self, name, phone, gender): self.name = name self.phone = phone self.gender = gender def description(self): print &amp;quot;Name: %s, phone: %s, gender %s&amp;quot; % (self.name, self.phone, self.gender) def is_male(self): if self.gender == &#39;male&#39;: return True else: return False def is_female(self): if self.</description>
     </item>
     
     <item>
       <title>Python 2.7: Exercise: PygLatin Translator</title>
-      <link>http://localhost:1313/python-2.7/python-exercise-pyglatin-translator/</link>
+      <link>https://majdarbash.github.io/python-2.7/python-exercise-pyglatin-translator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/python-exercise-pyglatin-translator/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/python-exercise-pyglatin-translator/</guid>
       <description>I was reviewing python tutorials in codeacademy which I really recommend as a great beginning to get yourself familiar with any language. These guys have got some interactive tutorials and exercises which makes it pleasure to start with something new.
 Of course you will need some broader sources and reference informaiton after completing the tutotrials in codeacademy. So I got this exercise from codeacademy - let&amp;rsquo;s see how we can solve it.</description>
     </item>
     
     <item>
       <title>Python 2.7: File Input / Output</title>
-      <link>http://localhost:1313/python-2.7/python-file-input-output/</link>
+      <link>https://majdarbash.github.io/python-2.7/python-file-input-output/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/python-file-input-output/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/python-file-input-output/</guid>
       <description>Writing to file Following example will populate the output.txt file with the squares of numbers from 1 - 10.
 my_list = [i**2 for i in range(1,11)]
 Generates a list of squares of the numbers 1 - 10 f = open(&amp;ldquo;output.txt&amp;rdquo;, &amp;ldquo;w&amp;rdquo;)
@@ -96,10 +96,10 @@ You have probably noticed that we are opening the file in &amp;ldquo;w&amp;rdquo
     
     <item>
       <title>Python 2.7: Importing Modules</title>
-      <link>http://localhost:1313/python-2.7/python-importing-modules/</link>
+      <link>https://majdarbash.github.io/python-2.7/python-importing-modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/python-importing-modules/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/python-importing-modules/</guid>
       <description>Modules make your code reusable and sharable amount different files. Module is a file that contains definitions - including variables and functions - that you can use once its imported.
 Some modules are built-in and will expose you to their functions once imported. Example below shows how sqrt function becomes available once the math module is imported:
 # importing math module import math print math.sqrt(25)
@@ -108,20 +108,20 @@ importing specific functions / variables frmo math module from math import sqrt 
     
     <item>
       <title>Python 2.7: Lambda and Bitwise Operators</title>
-      <link>http://localhost:1313/python-2.7/python-lambda-and-bitwise-operators/</link>
+      <link>https://majdarbash.github.io/python-2.7/python-lambda-and-bitwise-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/python-lambda-and-bitwise-operators/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/python-lambda-and-bitwise-operators/</guid>
       <description>Lambda functions Using lambda functions we can create functions in runtime, and use them as we go. Here&amp;rsquo;s an example of lambda function and how it is used to filter the array. filter() function takes the lambda function as the first parameter, passes items of the list sequentially and filters the list to retain the items which pass the filtration function passed as first argument.
 # will assign a range of numbers from 0 to 15 to numbers list numbers = range(16)</description>
     </item>
     
     <item>
       <title>Python 2.7: Lists &amp; Dictionaries</title>
-      <link>http://localhost:1313/python-2.7/python-lists-dictionaries/</link>
+      <link>https://majdarbash.github.io/python-2.7/python-lists-dictionaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/python-lists-dictionaries/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/python-lists-dictionaries/</guid>
       <description>Lists Lists are the same as arrays in other programming languages. List can be defined using assigment:
 fruits = [&amp;ldquo;banana&amp;rdquo;, &amp;ldquo;apple&amp;rdquo;, &amp;ldquo;strawberry&amp;rdquo;]
 and can be accessed by indices, similar to any other programming language:
@@ -136,10 +136,10 @@ obtaining the length of the list, i.</description>
     
     <item>
       <title>Python 2.7: Loops</title>
-      <link>http://localhost:1313/python-2.7/python-loops/</link>
+      <link>https://majdarbash.github.io/python-2.7/python-loops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/python-2.7/python-loops/</guid>
+      <guid>https://majdarbash.github.io/python-2.7/python-loops/</guid>
       <description>While Loops count = 0
 output: 0,1,2,3,4 while count &amp;lt; 5: print count count += 1
 couple of empty lines print print

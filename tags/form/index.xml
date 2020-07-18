@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>form on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/form/</link>
+    <link>https://majdarbash.github.io/tags/form/</link>
     <description>Recent content in form on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/form/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/form/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Symfony 3: Forms</title>
-      <link>http://localhost:1313/symfony/symfony-forms/</link>
+      <link>https://majdarbash.github.io/symfony/symfony-forms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/symfony/symfony-forms/</guid>
+      <guid>https://majdarbash.github.io/symfony/symfony-forms/</guid>
       <description>The code-snippets in this article are obtained from: https://symfony.com/doc/current/forms.html
 1) Installation
 composer require symfony/form 2) Building form in controller

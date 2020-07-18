@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>crossdomain on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/crossdomain/</link>
+    <link>https://majdarbash.github.io/tags/crossdomain/</link>
     <description>Recent content in crossdomain on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/crossdomain/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/crossdomain/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ionic app testing - Cross domain issues</title>
-      <link>http://localhost:1313/random/hybrid-app-development-testing-on-google-chrome/</link>
+      <link>https://majdarbash.github.io/random/hybrid-app-development-testing-on-google-chrome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/hybrid-app-development-testing-on-google-chrome/</guid>
+      <guid>https://majdarbash.github.io/random/hybrid-app-development-testing-on-google-chrome/</guid>
       <description>I have encountered this issue several times while I was trying to run my hybrid mobile app on google chrome browser. In particular, an app based on ionic framework was used. Basically, I was building the HTML part of the hybrid app, using cordova and phonegap. The app is accessing the web service using jquery calls: $.ajax. The issue was that in order to test the app on my google chrome browser, I had to bypass the cross domain request restriction.</description>
     </item>
     

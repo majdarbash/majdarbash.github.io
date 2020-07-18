@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on My New Hugo Site</title>
-    <link>http://localhost:1313/blockchain/</link>
+    <link>https://majdarbash.github.io/blockchain/</link>
     <description>Recent content in Blockchain on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/blockchain/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/blockchain/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>1 - Blockchain Foundation</title>
-      <link>http://localhost:1313/blockchain/blockchain-foundation/</link>
+      <link>https://majdarbash.github.io/blockchain/blockchain-foundation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blockchain/blockchain-foundation/</guid>
+      <guid>https://majdarbash.github.io/blockchain/blockchain-foundation/</guid>
       <description>Consensys developer program
 academy.consensys.net/developer
 History of blockchain
@@ -29,10 +29,10 @@ Released whitepaper:
     
     <item>
       <title>2 - Blockchain - The Technical Side</title>
-      <link>http://localhost:1313/blockchain/blockchain-the-technical-side/</link>
+      <link>https://majdarbash.github.io/blockchain/blockchain-the-technical-side/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blockchain/blockchain-the-technical-side/</guid>
+      <guid>https://majdarbash.github.io/blockchain/blockchain-the-technical-side/</guid>
       <description>Public an private keys are large integer numbers and they are represented using a separate Wallet Import Format (WIF), consisting of letters and numbers.
 
 Private key is used to generate a signature for each blockchain transaction a user sends out. It is used to confirm that the transaction has come from the user and also prevents the transaction from being altered by anyone once it has been issued.

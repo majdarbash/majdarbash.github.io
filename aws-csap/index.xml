@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS Certified SAP on My New Hugo Site</title>
-    <link>http://localhost:1313/aws-csap/</link>
+    <link>https://majdarbash.github.io/aws-csap/</link>
     <description>Recent content in AWS Certified SAP on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/aws-csap/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/aws-csap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Stores</title>
-      <link>http://localhost:1313/aws-csap/data-stores/</link>
+      <link>https://majdarbash.github.io/aws-csap/data-stores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/data-stores/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/data-stores/</guid>
       <description>Amazon S3 Amazon EBS (Elastic Block Storage) Amazon EFS (Elastic File System) Amazon Storage Gateway Amazon WorkDocs Database on EC2 Amazon RDS Amazon DynamoDB Amazon Redshift Amazon Neptune Amazon Elasticache Other Database Options  Amazon Athena Amazon Quantum Ledger Database Amazon Managed Blockchain Amazon Timestream Database Amazon DocumentDB Amazon ElasticSearch   Database Comparison   Amazon S3 &amp;ldquo;Secure, durable, highly scalable object storage at a very low cost.1 You can store and retrieve any amount of data, at any time, from anywhere on the web through a simple web service interface.</description>
     </item>
     
     <item>
       <title>Networking</title>
-      <link>http://localhost:1313/aws-csap/networking/</link>
+      <link>https://majdarbash.github.io/aws-csap/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/networking/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/networking/</guid>
       <description>Ephermal Ports Reserved IP Addresses in VPC Network to VPC Connectivity  AWS Managed VPN AWS Direct Connect AWS Direct Connect Plus VPN AWS CloudHub VPN Software VPN Transit VPC   VPC to VPC Connectivity  VPC Peering AWS PrivateLink VPC Endpoints   Internet Gateways  Internet Gateway Egress-Only Internet Gateway NAT Instance NAT Gateway NAT Instances vs. Nat Gateways   Routing  Routing Tables Border Gateway Protocol (BGP)   Enhanced Networking  Placement Groups   Route 53  Route 53 Routing Policies   CloudFront Elastic Load Balancer  Read more on VPCs from AWS CSAA</description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/aws-csap/security/</link>
+      <link>https://majdarbash.github.io/aws-csap/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/security/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/security/</guid>
       <description>Security Concepts  Shared Responsibility Model Principle of Least Privillege** Security Facets Typical Components SAML 2.0, OAuth 2.0, OpenID Connect AWS Artifact   Multi-Account Management Network Controls and Security Groups AWS Directory Services Credentials and Access Management Encryption  Key Management Service (KMS) CloudHSM (Hardware Security Module) AWS Certificate Manager   Distributed Denial of Services Attacks IDS and IPS AWS Service Catalog  AWS Service Catalog Constraints     Security Concepts Shared Responsibility Model  AWS - Reponsbility for Security of the Cloud Customer - Responsibility for Security in the Cloud  Principle of Least Privillege**  Give users (or services) nothing more than those privileges required to perform their intended function.</description>
     </item>
     
     <item>
       <title>Migrations</title>
-      <link>http://localhost:1313/aws-csap/migrations/</link>
+      <link>https://majdarbash.github.io/aws-csap/migrations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/migrations/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/migrations/</guid>
       <description>Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase Abandon existing and purchase new. (Drop and Shop) Rearchitect Redesign application in a cloud-native manner, e.</description>
     </item>
     
     <item>
       <title>Architecting to Scale</title>
-      <link>http://localhost:1313/aws-csap/architecting-to-scale/</link>
+      <link>https://majdarbash.github.io/aws-csap/architecting-to-scale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/architecting-to-scale/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/architecting-to-scale/</guid>
       <description>Architectural Patterns  Loosely Coupled Architecture Horizontal Scaling vs. Vertical Scaling   Auto-Scaling  Type of Auto-Scaling Amazon EC2 Auto-Scaling Options Auto-Scaling Policy Scaling Cooldown Period   AWS Kinesis DynamoDB Scaling  DDB Terminology DDB Partitions and Scaling DynamoDB Accelerator - DAX   CloudFront SNS (Simple Notification Service) SQS  Queue Types   Amazon MQ AWS Lambda, Serverless Application Manager and EventBridge  AWS Serverless Application Model (AWS SAM)   Amazon EventBridge Simple Workflow Service (SWF) AWS Step Functions AWS Batch Elastic MapReduce  Components of Elastic MapReduce    Architectural Patterns Loosely Coupled Architecture Components can stand independently and require little or no knowledge of the inner workings of the other components.</description>
     </item>
     
     <item>
       <title>Business Continuity</title>
-      <link>http://localhost:1313/aws-csap/business-continuity/</link>
+      <link>https://majdarbash.github.io/aws-csap/business-continuity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/business-continuity/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/business-continuity/</guid>
       <description>Concepts Disaster Recovery Architectures Storage Options Compute Options HA Approaches for Databases Network Options Failure mode and Effects Analysis (FMEA)  Concepts  Business Continuity (BC)  Seeks to minimize business activity disruption when something unexpected happens   Disaster Recovery (DR)  Act of responding to these events that threaten business continuity   High Availability  Designing in redundancies to reduce the chance of impacting service levels   Fault Tolerance  Design in the ability to tolerate faults   Service Level Argreement (SLA)  An agreed goal or target for a given service on its performance or availability   Recovery Time Objective (RTO)  Time taken after disruption to restore business processes to their levels   Recovery Point Objective (RPO)  Acceptable amount of data loss measured in time.</description>
     </item>
     
     <item>
       <title>Deployment and Operations Management</title>
-      <link>http://localhost:1313/aws-csap/deployment-and-operations/</link>
+      <link>https://majdarbash.github.io/aws-csap/deployment-and-operations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/deployment-and-operations/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/deployment-and-operations/</guid>
       <description>Software Deployments CI, CD, CD Elastic Beanstalk CloudFormation Elastic Container Service API Gateway Management Tools Enterprise Applications AWS Machine Learning Landscape  AI Services ML Services ML Frameworks &amp;amp; Infrastructure    Software Deployments Types of Deployment:
  Big Bang Phased Rollout Parallel Adoption  Deployment Strategies:
  Rolling Deployment  Changing launch configuration to specific version will rollout the changes   A/B Testing  Using Route53 we can specific the ALB which gets the traffic   Canary Release  Deploy new version on production - if no errors are detected, deploy the rest   Blue-Green Deployment  Create new ALB and ASG with new version Switch to the new version using Route53 Switch back to the old version using Route53 The goal of blue/green deployment is to achieve immutable infrastructure - you don&amp;rsquo;t make changes to your application after it&amp;rsquo;s deployed but redeploy altogether How to achieve Blue-Green Deployment on AWS:  Update DNS with Route53 to point to new ELB or instance Swap ASG of new instances behind the ELB Change ASG LC to use new AMI and terminate old instances Swap environment URL on Elastic Beanstalk Clone stack using AWS Opswork and update DNS      Blue-Green Deployments are not recommended:</description>
@@ -77,28 +77,28 @@
     
     <item>
       <title>Cost Management</title>
-      <link>http://localhost:1313/aws-csap/cost-management/</link>
+      <link>https://majdarbash.github.io/aws-csap/cost-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/cost-management/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/cost-management/</guid>
       <description>Concepts Cost Optimization Strategies  Appropriate Provisioning Right-Sizing Purchase Options Managed Services Optimized Data Transfer   Tagging and Resource Groups  Resource Groups Resource Groups   Spot Instances and Reserved Instances  Reserved Instances Spot Instances   Cost Management Tools  Concepts  CapEx (Capital Expenses) OpEx (Operational Expenses) Total Cost of Ownership (TCO)  A comprehensive look at the entire cost model of a given decision or option often including both hard costs and soft costs.</description>
     </item>
     
     <item>
       <title>Glossary</title>
-      <link>http://localhost:1313/aws-csap/glossary/</link>
+      <link>https://majdarbash.github.io/aws-csap/glossary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/glossary/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/glossary/</guid>
       <description> Fault Tolerance High Availability Storage Gateway AWS Trusted Advisor  </description>
     </item>
     
     <item>
       <title>Notes</title>
-      <link>http://localhost:1313/aws-csap/notes/</link>
+      <link>https://majdarbash.github.io/aws-csap/notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-csap/notes/</guid>
+      <guid>https://majdarbash.github.io/aws-csap/notes/</guid>
       <description>Datastore
  Files stored in S3 can be served over Bittorrent to decrease costs File Gateway (Storage Gateway) can expose S3 bucket files in the office through NFS http://registry.opendata.aws contains publically open databases AWS Glue allows you to extract data from S3 Bucket to a Table that can be queried using AWS Athena Graph databases are best a storing complex relationship data and AWS Neptune is a graph database. While other options might be able to work, none would work as well as a true graph database and we can run such a database like SAP HANA or Neo4j on EC2.</description>
     </item>

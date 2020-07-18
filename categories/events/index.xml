@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events on My New Hugo Site</title>
-    <link>http://localhost:1313/categories/events/</link>
+    <link>https://majdarbash.github.io/categories/events/</link>
     <description>Recent content in Events on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Sep 2016 13:25:20 +0400</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/events/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/categories/events/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Facebook For Developers - 29th September 2016, Dubai</title>
-      <link>http://localhost:1313/2016/09/29/facebook-developers-29th-september-2016-dubai/</link>
+      <link>https://majdarbash.github.io/2016/09/29/facebook-developers-29th-september-2016-dubai/</link>
       <pubDate>Thu, 29 Sep 2016 13:25:20 +0400</pubDate>
       
-      <guid>http://localhost:1313/2016/09/29/facebook-developers-29th-september-2016-dubai/</guid>
+      <guid>https://majdarbash.github.io/2016/09/29/facebook-developers-29th-september-2016-dubai/</guid>
       <description></description>
     </item>
     

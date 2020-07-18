@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>https://majdarbash.github.io/tags/python/</link>
     <description>Recent content in python on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python 2.7: Setting up Neural Network with PyBrain</title>
-      <link>http://localhost:1313/ml-neural-networks/machine-learning-python/</link>
+      <link>https://majdarbash.github.io/ml-neural-networks/machine-learning-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ml-neural-networks/machine-learning-python/</guid>
+      <guid>https://majdarbash.github.io/ml-neural-networks/machine-learning-python/</guid>
       <description>Today, I&amp;rsquo;m experimenting machine learning concepts in python. For this purchase I&amp;rsquo;m using PyBrain. If you would like to have a better idea about Python, I suggest having a quick glance at posts 1-10 in Python category.
 PyBrain is a Machine Learning library for Python. PyBrain stands for Python-Based Reinforcemnet Learning, Artificial Intelligence and Neural Network Library.
 For complete guide on installation you can get complete details from:
@@ -25,10 +25,10 @@ In the example below, based on pybrain.</description>
     
     <item>
       <title>Python for Data Science</title>
-      <link>http://localhost:1313/random/python-for-data-science/</link>
+      <link>https://majdarbash.github.io/random/python-for-data-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/python-for-data-science/</guid>
+      <guid>https://majdarbash.github.io/random/python-for-data-science/</guid>
       <description>ipython - Interactive Python Interpreter
 Variables  type(var_name) returns the type of the variable, e.g. float, string, &amp;hellip;  Type Conversion  str(var_name) float(var_name)  Math  Exponentiation 4**2 will give 16 Modulo 18 % 7 will give 4  Generating Output  print(string)  Publish Date: 2019-12-02
  </description>

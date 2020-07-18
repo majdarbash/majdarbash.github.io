@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>service on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/service/</link>
+    <link>https://majdarbash.github.io/tags/service/</link>
     <description>Recent content in service on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/service/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/service/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Symfony 3: Controllers, Routing, Views</title>
-      <link>http://localhost:1313/symfony/symfony-controllers-routing-views/</link>
+      <link>https://majdarbash.github.io/symfony/symfony-controllers-routing-views/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/symfony/symfony-controllers-routing-views/</guid>
+      <guid>https://majdarbash.github.io/symfony/symfony-controllers-routing-views/</guid>
       <description>This example demonstrates routing using annotation as well as different ways to pass arguments to the controller.
 &amp;lt;?php // src/Service/TestService.php namespace App\Service; class TestService { public function message($name) { return &amp;quot;Hello $name&amp;quot;; } } &amp;lt;?php // src/Controller/TestController namespace App\Controller; use Symfony\Component\HttpFoundation\Request; use Symfony\Component\HttpFoundation\Response; use Symfony\Component\Routing\Annotation\Route; use App\Service\TestService; use Symfony\Bundle\FrameworkBundle\Controller\AbstractController; class TestController extends AbstractController { /** * @var TestService */ private $testService; /** * TestController constructor. */ public function __construct(TestService $testService) { $this-&amp;gt;testService = $testService; } /** * @Route(&amp;quot;/test1&amp;quot;, name=&amp;quot;test1&amp;quot;) * @param Request $request * @return Response */ public function test1(Request $request) { return new Response($this-&amp;gt;testService-&amp;gt;message( $request-&amp;gt;get(&#39;name&#39;) )); } /** * @Route(&amp;quot;/test2/{name}&amp;quot;, name=&amp;quot;test2&amp;quot;) * @param $name * @return Response */ public function test2($name) { return new Response($this-&amp;gt;testService-&amp;gt;message($name)); } } Annotation configuration can be done from:</description>
     </item>

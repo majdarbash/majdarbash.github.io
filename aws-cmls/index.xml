@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS Certified MLS on My New Hugo Site</title>
-    <link>http://localhost:1313/aws-cmls/</link>
+    <link>https://majdarbash.github.io/aws-cmls/</link>
     <description>Recent content in AWS Certified MLS on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/aws-cmls/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/aws-cmls/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Elements of Data Science</title>
-      <link>http://localhost:1313/aws-cmls/2019-11-7-elements-of-data-science/</link>
+      <link>https://majdarbash.github.io/aws-cmls/2019-11-7-elements-of-data-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-cmls/2019-11-7-elements-of-data-science/</guid>
+      <guid>https://majdarbash.github.io/aws-cmls/2019-11-7-elements-of-data-science/</guid>
       <description>What is Data Science?  Types of Learning Key Issues in ML Supervised Methods  Linear Methods Logistic Regression and Linear Separability Linear Separability     Problem Formulation and Exploratory Data Analysis  Data collection  Data Sampling Data Labeling   Exploratory Data Analysis  Domain Knowledge Data Schema Data Statistics Correlations Data Issues     Data Processing and Feature Engineering  Encoding Categorical Variables  Encoding Ordinals Encoding Nominals   Handling Missing Values Feature Engineering  Filtering and Scaling Transformation Text-Based Features     Model Training, Tuning, and Debugging  Supervised Learning: Neural Networks Supervised Learning: K-Nearest Neighbors Supervised Learning: Linear and Non-Linear Support Vector Machines Supervised Learning: Decision Trees and Random Forests Model Training: Validation Set  Splitting Data: Training, Testing, Validation**   Model Training: Bias Variance Tradeoff Model Debugging: Error Analysis Model Tuning: Regularization  Regularization Techniques   Model Tuning: Hyperparameter Tuning Model Tuning  Training Data Tuning Feature Set Tuning   Model Tuning: Feature Extraction Model Tuning: Bagging/Boosting   Model Evaluation and Model Productionizing  Using ML Models in Production Model Evaluation Metrics  Confusion Matrix Metrics Cross Validation K-Fold Cross Validation Leave-one Out Cross Validation Stratified K-fold Cross Validation   Metrics for Linear Regression Using ML Models in Production: Storage  Model and Pipeline Persistence Model Deployment   Using ML Models in Production: Monitoring and Maintenance Using ML Models in Production: Using AWS Common Mistakes    What is Data Science?</description>
     </item>
     
     <item>
       <title>ML Building Blocks: Services and Terminology</title>
-      <link>http://localhost:1313/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</link>
+      <link>https://majdarbash.github.io/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</guid>
+      <guid>https://majdarbash.github.io/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</guid>
       <description>Terminology Stages Data Process / ML Workflow  ML Problem Framing Data Collection / Integration Data Preparation  Data Cleaning Shuffling Training Data Test-Validation-Train Split Cross Validation   Data Visualization &amp;amp; Analysis Feature Engineering Model Training  Parameter Turning   Model Evaluation Business Goal Evaluation  Feature and Data Augmentation   Prediction    Terminology Stages  Training  Refers to how machine uses historical data sets to build its prediction algorithms.</description>
     </item>
     
     <item>
       <title>CRISP-DM on AWS</title>
-      <link>http://localhost:1313/aws-cmls/2019-11-6-crisp-dm-on-aws/</link>
+      <link>https://majdarbash.github.io/aws-cmls/2019-11-6-crisp-dm-on-aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-cmls/2019-11-6-crisp-dm-on-aws/</guid>
+      <guid>https://majdarbash.github.io/aws-cmls/2019-11-6-crisp-dm-on-aws/</guid>
       <description>CRISP-DM  Stands for Cross Industry Standard Process - Data Mining Is a framework to Data Science Project  Phases of CRISP-DM  Business Understanding Data Understanding Data Preparation Modeling Evaluation Deployment   Business Understanding  Understanding business requirements   Questions from the business perspective which need answering Highlight project&amp;rsquo;s critical features People and resources required  Analyzing supporting information   List required resources and assumptions Analyze associated risks Plan for contengencies Compare costs and benefits  Converting to a Data Mining or Machine Learning problem   Review machine learning question Create technical data mining objective Define the criteria for successful outcome of the project  Preparing a preliminar plan   Number and duration of stages Dependencies Risks Goals Evaluation methods Tools and techniques   Data Understanding  Data collection  Detail Various sources and steps to extract data Analyze data for additional requirements Consider other data sources   Data properties  Describe the data, amount of data used, and metadata properties Fidn key features and relationshps in the data Use tools and techniques to explore data properties   Quality  Verifying attributes Identifying missing data Reveal inconsitencies Report solution    AWS tools for Data Understanding</description>
     </item>
     
     <item>
       <title>Anomaly Detection: Isolation Forest Algorithm</title>
-      <link>http://localhost:1313/aws-cmls/2019-11-21-isolation-forest-algorithm/</link>
+      <link>https://majdarbash.github.io/aws-cmls/2019-11-21-isolation-forest-algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-cmls/2019-11-21-isolation-forest-algorithm/</guid>
+      <guid>https://majdarbash.github.io/aws-cmls/2019-11-21-isolation-forest-algorithm/</guid>
       <description>Defining the Anomaly Detection Problem  Methods to Resolve Anomaly Detection Problem Well Defined Anomaly Distribution Assumption   Isolation Forest Algorithm  Algorithm Steps Example     Defining the Anomaly Detection Problem  Data is set of vectors in d-dimensional space  $x_1$, &amp;hellip; $x_n$ each $x_i$ $\epsilon$ $R^d$   Mixture of nominal points and anomaly points Anomaly points are generated by different generative process than the normal points  Solutions</description>
     </item>
     
     <item>
       <title>Developing Machine Learning Applications</title>
-      <link>http://localhost:1313/aws-cmls/2019-11-11-developing-ml-apps/</link>
+      <link>https://majdarbash.github.io/aws-cmls/2019-11-11-developing-ml-apps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-cmls/2019-11-11-developing-ml-apps/</guid>
+      <guid>https://majdarbash.github.io/aws-cmls/2019-11-11-developing-ml-apps/</guid>
       <description>AWS SageMaker  Notebook Instance   AWS SageMaker Neo Machine Learning Algorithms  Linear Supervised Algorithms Non-Linear Supervised Algorithms Unsupervised Learning Algorithms Deep Learning  Convolutional Neural Networks (CNNs) Recurrent Neural Networks (RNNs)     Automatic Model Tuning  Hyperparameters Tuning Hyperparameters  Manual Brute Force Meta model SageMaker&amp;rsquo;s method     Advanced Analytics with Amazon SageMaker  Building and Training Machine Learning Models with Amazon SageMaker and Apache Spark  Building Machine Learning Pipelines using Spark and SageMaker      Anomaly Detection on AWS  Random Cut Forest Algorithm Architecture   Building Recommendation Systems with MXNet and GluOn  Collaborative Filtering  Matrix Factorization How to Choose a Model      AWS SageMaker AWS SageMaker is a fully managed service that allows the users to build, train and deploy machine learning models.</description>
     </item>
     

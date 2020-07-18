@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>proxy on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/proxy/</link>
+    <link>https://majdarbash.github.io/tags/proxy/</link>
     <description>Recent content in proxy on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Setup Squid proxy on Ubuntu Server?</title>
-      <link>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</link>
+      <link>https://majdarbash.github.io/random/setting-squid-proxy-on-ubuntu-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/setting-squid-proxy-on-ubuntu-server/</guid>
+      <guid>https://majdarbash.github.io/random/setting-squid-proxy-on-ubuntu-server/</guid>
       <description>In order to install a proxy service on Ubuntu Server edition, please execute the following commands:
 Installing Squid:
 sudo aptitude -y install squid3

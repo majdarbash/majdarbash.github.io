@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vsftpd on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/vsftpd/</link>
+    <link>https://majdarbash.github.io/tags/vsftpd/</link>
     <description>Recent content in vsftpd on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/vsftpd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://majdarbash.github.io/tags/vsftpd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing VsFTPd on Ubuntu Server</title>
-      <link>http://localhost:1313/random/ubuntu-vsftpd-installation/</link>
+      <link>https://majdarbash.github.io/random/ubuntu-vsftpd-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/random/ubuntu-vsftpd-installation/</guid>
+      <guid>https://majdarbash.github.io/random/ubuntu-vsftpd-installation/</guid>
       <description>A small tutorial on how to install vsftpd and setup a separate user.
 Please follow these steps to install vsftpd service on your ubuntu machine.
 # adding a new local user useradd -g ubuntu ftpuser # change the password of the new user passwd ftpuser # checking the user information id ftpuser # checking the user group groups ftpuser # changing the group of the user usermod -g ubuntu ftpuser # installing and configuring vsftpd sudo apt-get install vsftpd sudo vim /etc/vsftpd.</description>
