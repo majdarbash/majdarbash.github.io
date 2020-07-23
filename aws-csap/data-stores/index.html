@@ -12,21 +12,21 @@
     <title>Data Stores :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1595112138" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1595112138" rel="stylesheet">
-    <link href="/css/hybrid.css?1595112138" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1595112138" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1595112138" rel="stylesheet">
-    <link href="/css/auto-complete.css?1595112138" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1595112138" rel="stylesheet">
-    <link href="/css/theme.css?1595112138" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1595112138" rel="stylesheet">
+    <link href="/css/nucleus.css?1595465986" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1595465986" rel="stylesheet">
+    <link href="/css/hybrid.css?1595465986" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1595465986" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1595465986" rel="stylesheet">
+    <link href="/css/auto-complete.css?1595465986" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1595465986" rel="stylesheet">
+    <link href="/css/theme.css?1595465986" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1595465986" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1595112138" rel="stylesheet">
+    <link href="/css/theme-blue.css?1595465986" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1595112138"></script>
+    <script src="/js/jquery-3.3.1.min.js?1595465986"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -71,14 +71,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1595112138"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1595112138"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1595465986"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1595465986"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1595112138"></script>
+<script type="text/javascript" src="/js/search.js?1595465986"></script>
 
     
   </div>
@@ -1115,27 +1115,6 @@
       <li data-nav-id="/2019/04/17/aws-cloud-best-practices/" title="AWS Cloud Best Practices" class="dd-item ">
         <a href="/2019/04/17/aws-cloud-best-practices/">
         AWS Cloud Best Practices
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/2019/04/17/ec2/" title="EC2" class="dd-item ">
-        <a href="/2019/04/17/ec2/">
-        EC2
         
         </a>
     </li>
@@ -2908,7 +2887,11 @@
   <ul>
     <li><a href="#amazon-s3">Amazon S3</a></li>
     <li><a href="#amazon-ebs-elastic-block-storage">Amazon EBS (Elastic Block Storage)</a></li>
-    <li><a href="#amazon-efs-elastic-file-system">Amazon EFS (Elastic File System)</a></li>
+    <li><a href="#amazon-efs-elastic-file-system">Amazon EFS (Elastic File System)</a>
+      <ul>
+        <li><a href="#efs-performance-considerations">EFS Performance Considerations</a></li>
+      </ul>
+    </li>
     <li><a href="#amazon-storage-gateway">Amazon Storage Gateway</a></li>
     <li><a href="#amazon-workdocs">Amazon WorkDocs</a></li>
     <li><a href="#database-on-ec2">Database on EC2</a></li>
@@ -2955,7 +2938,11 @@
 <ul>
 <li><a href="#amazon-s3">Amazon S3</a></li>
 <li><a href="#amazon-ebs-elastic-block-storage">Amazon EBS (Elastic Block Storage)</a></li>
-<li><a href="#amazon-efs-elastic-file-system">Amazon EFS (Elastic File System)</a></li>
+<li><a href="#amazon-efs-elastic-file-system">Amazon EFS (Elastic File System)</a>
+<ul>
+<li><a href="#efs-performance-considerations">EFS Performance Considerations</a></li>
+</ul>
+</li>
 <li><a href="#amazon-storage-gateway">Amazon Storage Gateway</a></li>
 <li><a href="#amazon-workdocs">Amazon WorkDocs</a></li>
 <li><a href="#database-on-ec2">Database on EC2</a></li>
@@ -3004,7 +2991,8 @@ from zero to 5 TB of data.&rdquo;</p>
 <li>Multi-AZ storage</li>
 <li>Pay based on the usage</li>
 <li>Mount points in single or many AZs</li>
-<li>EFS in not an encrypted protocol, use in caution of mounting over the Internet
+<li>EFS in not an encrypted protocol, use in caution of mounting over the Internet</li>
+<li>EFS is as durable and availble as S3
 <ul>
 <li>Amazon DataSync - good alternative for syncrhonizing on-premise storage with EFS / S3</li>
 </ul>
@@ -3014,12 +3002,29 @@ from zero to 5 TB of data.&rdquo;</p>
 <li>EFS is about 3 times more expensive than EBS and about 20 times more expensive than S3</li>
 </ul>
 </li>
+</ul>
+<h3 id="efs-performance-considerations">EFS Performance Considerations</h3>
+<ul>
 <li>Burst credits are allocated over time to control throughput
 <ul>
 <li>starts from 2.1TiB with baseline rate of 50MiB/s and a burst rate of 100MiB/s</li>
+<li>Defined by <code>BurstCreditBalance</code> metric in AWS CloudWatch</li>
+</ul>
+</li>
+<li>Supports different 2 performance modes:
+<ul>
+<li>General purpose - default mode for FS with workload up to 7000 IOPS</li>
+<li>Max I/O - workloads demanding higher than 7000 IOPS, optimized for applications where tens / hundreds / thousands of EC2 instances are accessing the file system
+<ul>
+<li>Systems scale to higher level of aggregate throughput</li>
+<li>Tradeoff on slightly higher latencies for file operations</li>
 </ul>
 </li>
 </ul>
+</li>
+<li>If application can handle async writes, you can tradeoff consistency for speed, through enabling <strong>asynchronous writes</strong>.</li>
+</ul>
+<p><a href="/aws-csaa/ec2/">Read More&hellip;</a></p>
 <h2 id="amazon-storage-gateway">Amazon Storage Gateway</h2>
 <ul>
 <li>Virtual Machine that can run on premise or EC2</li>
@@ -3049,6 +3054,17 @@ from zero to 5 TB of data.&rdquo;</p>
 <li>Virtual media changer and tape library for use with existing backup software, uses iSCSI interface</li>
 </ul>
 </li>
+</ul>
+<p><strong>Cost Model</strong>
+Following cost model components should be considered when using AWS Storage Gateway:</p>
+<ul>
+<li>gateway usage</li>
+<li>snapshot storage usage</li>
+<li>volume storage usage</li>
+<li>virtual tape shelf storage</li>
+<li>virtual tape library storage</li>
+<li>retrieval from virtual tape shelf</li>
+<li>data transfer out</li>
 </ul>
 <h2 id="amazon-workdocs">Amazon WorkDocs</h2>
 <ul>
@@ -4840,22 +4856,6 @@ from zero to 5 TB of data.&rdquo;</p>
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -5377,19 +5377,19 @@ from zero to 5 TB of data.&rdquo;</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1595112138"></script>
-    <script src="/js/perfect-scrollbar.min.js?1595112138"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1595112138"></script>
-    <script src="/js/jquery.sticky.js?1595112138"></script>
-    <script src="/js/featherlight.min.js?1595112138"></script>
-    <script src="/js/highlight.pack.js?1595112138"></script>
+    <script src="/js/clipboard.min.js?1595465986"></script>
+    <script src="/js/perfect-scrollbar.min.js?1595465986"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1595465986"></script>
+    <script src="/js/jquery.sticky.js?1595465986"></script>
+    <script src="/js/featherlight.min.js?1595465986"></script>
+    <script src="/js/highlight.pack.js?1595465986"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1595112138"></script>
-    <script src="/js/learn.js?1595112138"></script>
-    <script src="/js/hugo-learn.js?1595112138"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1595465986"></script>
+    <script src="/js/learn.js?1595465986"></script>
+    <script src="/js/hugo-learn.js?1595465986"></script>
 
-    <link href="/mermaid/mermaid.css?1595112138" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1595112138"></script>
+    <link href="/mermaid/mermaid.css?1595465986" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1595465986"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

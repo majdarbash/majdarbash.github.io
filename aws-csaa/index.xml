@@ -45,10 +45,7 @@ In addition to EC2 instances, you can benefit from a lot of great services which
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-csaa/ec2/</guid>
-      <description>Amazon EC2 is a web service that provides resizable compute capacity in the cloud. Amazon EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
-EC2 Pricing Models   On Demand
-Allows you to pay a fixed rate by the hour with no commitment.
-  no up-front payment required</description>
+      <description>EC2 Instances  Security Groups   EBS Volumes  5 Types of EBS Storage   AMI&amp;rsquo;s CloudWatch AWS CLI IAM Roles Instance Metadata EFS (Elastic File System) FAQ Notes  Overview  Compute-Optimized Instances General-Purpose Instances High Memory Instances Previous Generation Instances Memory Optimized Instances Storage Optimized instances   Storage Networking and Security Management Billing Platform    Amazon EC2 is a web service that provides resizable compute capacity in the cloud.</description>
     </item>
     
     <item>
@@ -87,7 +84,7 @@ Allows you to pay a fixed rate by the hour with no commitment.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-csaa/s3/</guid>
-      <description>Billing S3 (Simple Storage Service) Storage Classes S3 Glacier S3 Billing Access &amp;amp; Encryption Versioning Lifecycle Management Tools &amp;amp; Glacier Cross Region Replication Amazon S3 Transfer Acceleration CloudFront Snowball Storage Gateway FAQs  Billing  Billing Alarms can be created from CloudWatch. Billing Notifications should be enabled from the Billing Preferences section.  S3 (Simple Storage Service)  Provides developers and IT teams with secure, durable, highly scalable object storage Provides simple web services interface to store and retrieve data S3 is a safe place to store the files S3 and Glacier are not block storages S3 is Object-Based - allows you to upload files Files can be 0 bytes to 5TB Successful uploads will generate an HTTP 200 code Unlimited storage Files are stored in Buckets Objects consist of:  Key (name of the object) Value (the data) Version ID (important for versioning) Metadata (data about data you are storing) Subresources  Access Control List Torrent     Files can be from 0 Bytes to 5TB There is unlimited storage Files are stored in Buckets S3 is a universal namespace.</description>
+      <description>Billing S3 (Simple Storage Service) Usage Patterns Storage Classes S3 Glacier S3 Billing Access &amp;amp; Encryption Versioning Lifecycle Management Tools &amp;amp; Glacier Cross Region Replication Amazon S3 Transfer Acceleration Amazon S3 Notifications CloudFront Snowball Storage Gateway FAQs  Billing  Billing Alarms can be created from CloudWatch. Billing Notifications should be enabled from the Billing Preferences section.  S3 (Simple Storage Service)  Provides developers and IT teams with secure, durable, highly scalable object storage Provides simple web services interface to store and retrieve data S3 is a safe place to store the files S3 and Glacier are not block storages S3 is Object-Based - allows you to upload files Files can be 0 bytes to 5TB Successful uploads will generate an HTTP 200 code Unlimited storage Files are stored in Buckets Objects consist of:  Key (name of the object) Value (the data) Version ID (important for versioning) Metadata (data about data you are storing) Subresources  Access Control List Torrent     Files can be from 0 Bytes to 5TB There is unlimited storage Files are stored in Buckets S3 is a universal namespace.</description>
     </item>
     
     <item>

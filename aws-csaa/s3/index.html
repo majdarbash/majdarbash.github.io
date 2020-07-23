@@ -12,21 +12,21 @@
     <title>S3 :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1595112138" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1595112138" rel="stylesheet">
-    <link href="/css/hybrid.css?1595112138" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1595112138" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1595112138" rel="stylesheet">
-    <link href="/css/auto-complete.css?1595112138" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1595112138" rel="stylesheet">
-    <link href="/css/theme.css?1595112138" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1595112138" rel="stylesheet">
+    <link href="/css/nucleus.css?1595465986" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1595465986" rel="stylesheet">
+    <link href="/css/hybrid.css?1595465986" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1595465986" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1595465986" rel="stylesheet">
+    <link href="/css/auto-complete.css?1595465986" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1595465986" rel="stylesheet">
+    <link href="/css/theme.css?1595465986" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1595465986" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1595112138" rel="stylesheet">
+    <link href="/css/theme-blue.css?1595465986" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1595112138"></script>
+    <script src="/js/jquery-3.3.1.min.js?1595465986"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -71,14 +71,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1595112138"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1595112138"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1595465986"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1595465986"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1595112138"></script>
+<script type="text/javascript" src="/js/search.js?1595465986"></script>
 
     
   </div>
@@ -1115,27 +1115,6 @@
       <li data-nav-id="/2019/04/17/aws-cloud-best-practices/" title="AWS Cloud Best Practices" class="dd-item ">
         <a href="/2019/04/17/aws-cloud-best-practices/">
         AWS Cloud Best Practices
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/2019/04/17/ec2/" title="EC2" class="dd-item ">
-        <a href="/2019/04/17/ec2/">
-        EC2
         
         </a>
     </li>
@@ -2908,6 +2887,7 @@
   <ul>
     <li><a href="#billing">Billing</a></li>
     <li><a href="#s3-simple-storage-service">S3 (Simple Storage Service)</a></li>
+    <li><a href="#usage-patterns">Usage Patterns</a></li>
     <li><a href="#storage-classes">Storage Classes</a></li>
     <li><a href="#s3-glacier">S3 Glacier</a></li>
     <li><a href="#s3-billing">S3 Billing</a></li>
@@ -2916,6 +2896,7 @@
     <li><a href="#lifecycle-management-tools--glacier">Lifecycle Management Tools &amp; Glacier</a></li>
     <li><a href="#cross-region-replication">Cross Region Replication</a></li>
     <li><a href="#amazon-s3-transfer-acceleration">Amazon S3 Transfer Acceleration</a></li>
+    <li><a href="#amazon-s3-notifications">Amazon S3 Notifications</a></li>
     <li><a href="#cloudfront">CloudFront</a></li>
     <li><a href="#snowball">Snowball</a></li>
     <li><a href="#storage-gateway">Storage Gateway</a></li>
@@ -2947,6 +2928,7 @@
 <ul>
 <li><a href="#billing">Billing</a></li>
 <li><a href="#s3-simple-storage-service">S3 (Simple Storage Service)</a></li>
+<li><a href="#usage-patterns">Usage Patterns</a></li>
 <li><a href="#storage-classes">Storage Classes</a></li>
 <li><a href="#s3-glacier">S3 Glacier</a></li>
 <li><a href="#s3-billing">S3 Billing</a></li>
@@ -2955,6 +2937,7 @@
 <li><a href="#lifecycle-management-tools--glacier">Lifecycle Management Tools &amp; Glacier</a></li>
 <li><a href="#cross-region-replication">Cross Region Replication</a></li>
 <li><a href="#amazon-s3-transfer-acceleration">Amazon S3 Transfer Acceleration</a></li>
+<li><a href="#amazon-s3-notifications">Amazon S3 Notifications</a></li>
 <li><a href="#cloudfront">CloudFront</a></li>
 <li><a href="#snowball">Snowball</a></li>
 <li><a href="#storage-gateway">Storage Gateway</a></li>
@@ -3013,7 +2996,15 @@ If you update an <strong>existing file</strong> or delete a file and read it imm
 <li>Allows cost saving when distributing content at high scale</li>
 </ul>
 </li>
+<li>Amazon S3 can be paired with Amazon CloudSearch / DynamoDB or RDS for ease of querying metadata and locating the object reference.</li>
 </ul>
+<h2 id="usage-patterns">Usage Patterns</h2>
+<ol>
+<li>Store and distribute static web content and media</li>
+<li>Host entire static website</li>
+<li>Data store for computation and large-scale analytics, allowing concurrent access to multiple computing nodes</li>
+<li>Highly durable, scalable and secure solution for backup and archiving of critical data</li>
+</ol>
 <h2 id="storage-classes">Storage Classes</h2>
 <ul>
 <li>S3 Standard
@@ -3069,6 +3060,7 @@ If you update an <strong>existing file</strong> or delete a file and read it imm
 <li>Can be integrated with CloudTrail to help control access</li>
 <li>Can be interfaces using REST web services, or as a storage class in S3</li>
 <li>Objects archived to Glacier using S3 Lifecycle policies can be accessed only from S3 API and not from Glacier API</li>
+<li>Amazon Glacier performs regular systematic data integrity checks and is built to be automatically self-healing</li>
 </ul>
 <h2 id="s3-billing">S3 Billing</h2>
 <ul>
@@ -3135,6 +3127,17 @@ If you update an <strong>existing file</strong> or delete a file and read it imm
 <li>can be tested using speed comparison tool:<br>
 (<a href="http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com">http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com</a>)</li>
 </ul>
+<p>Using S3 Transfer Acceleration:</p>
+<ol>
+<li>Enable Transfer Acceleration on S3 Bucket</li>
+<li>Modify Amazon S3 PUT and GET requests to use s3 accelerate endpoint domain name (<!-- raw HTML omitted -->.s3-accelerate.amazonaws.com) - Regular endpoint will still be accesible</li>
+<li>Some customers measured performance to exceed 500% percent</li>
+</ol>
+<h2 id="amazon-s3-notifications">Amazon S3 Notifications</h2>
+<ul>
+<li>Can be issued when certain events happen in your bucket</li>
+<li>Notifications can be issued to Amazon SQS, SNS Topics and Lambda functions</li>
+</ul>
 <h2 id="cloudfront">CloudFront</h2>
 <ul>
 <li><strong>Edge Location</strong> - the location where the content will be cached</li>
@@ -3184,6 +3187,12 @@ If you update an <strong>existing file</strong> or delete a file and read it imm
 <li>Can transfer up to 100 PB per SnowMobile, 45-foot long ruggedized shipping container, pulled by a semi-trailer truck.</li>
 </ul>
 </li>
+</ul>
+<p><strong>Cost Model</strong></p>
+<ul>
+<li>Service Fee (per job)</li>
+<li>Extra day charges as required (first 10 days of onsite usage are free)</li>
+<li>Data Transfer</li>
 </ul>
 <h2 id="storage-gateway">Storage Gateway</h2>
 <p>Connects on-premise software appliance with cloud-based storage to provide seamless and secure integration between an organization&rsquo;s on-premises IT environment and AWS&rsquo;s storage infrastructure.</p>
@@ -4751,22 +4760,6 @@ Tape gateway is preconfigured with a media changer and tape drives, which are av
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -5288,19 +5281,19 @@ Tape gateway is preconfigured with a media changer and tape drives, which are av
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1595112138"></script>
-    <script src="/js/perfect-scrollbar.min.js?1595112138"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1595112138"></script>
-    <script src="/js/jquery.sticky.js?1595112138"></script>
-    <script src="/js/featherlight.min.js?1595112138"></script>
-    <script src="/js/highlight.pack.js?1595112138"></script>
+    <script src="/js/clipboard.min.js?1595465986"></script>
+    <script src="/js/perfect-scrollbar.min.js?1595465986"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1595465986"></script>
+    <script src="/js/jquery.sticky.js?1595465986"></script>
+    <script src="/js/featherlight.min.js?1595465986"></script>
+    <script src="/js/highlight.pack.js?1595465986"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1595112138"></script>
-    <script src="/js/learn.js?1595112138"></script>
-    <script src="/js/hugo-learn.js?1595112138"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1595465986"></script>
+    <script src="/js/learn.js?1595465986"></script>
+    <script src="/js/hugo-learn.js?1595465986"></script>
 
-    <link href="/mermaid/mermaid.css?1595112138" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1595112138"></script>
+    <link href="/mermaid/mermaid.css?1595465986" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1595465986"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

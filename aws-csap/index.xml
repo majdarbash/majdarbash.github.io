@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-csap/data-stores/</guid>
-      <description>Amazon S3 Amazon EBS (Elastic Block Storage) Amazon EFS (Elastic File System) Amazon Storage Gateway Amazon WorkDocs Database on EC2 Amazon RDS Amazon DynamoDB Amazon Redshift Amazon Neptune Amazon Elasticache Other Database Options  Amazon Athena Amazon Quantum Ledger Database Amazon Managed Blockchain Amazon Timestream Database Amazon DocumentDB Amazon ElasticSearch   Database Comparison   Amazon S3 &amp;ldquo;Secure, durable, highly scalable object storage at a very low cost.1 You can store and retrieve any amount of data, at any time, from anywhere on the web through a simple web service interface.</description>
+      <description>Amazon S3 Amazon EBS (Elastic Block Storage) Amazon EFS (Elastic File System)  EFS Performance Considerations   Amazon Storage Gateway Amazon WorkDocs Database on EC2 Amazon RDS Amazon DynamoDB Amazon Redshift Amazon Neptune Amazon Elasticache Other Database Options  Amazon Athena Amazon Quantum Ledger Database Amazon Managed Blockchain Amazon Timestream Database Amazon DocumentDB Amazon ElasticSearch   Database Comparison   Amazon S3 &amp;ldquo;Secure, durable, highly scalable object storage at a very low cost.</description>
     </item>
     
     <item>
