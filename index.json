@@ -7,13 +7,6 @@
 	"content": "Consensys developer program\nacademy.consensys.net/developer\nHistory of blockchain\n1990s Stuart Haber / Scott Stornetta\nHow to keep the past data secure and keep digital information safe and resistant to tampering\n 1991 - First paper outlined the use of a chain of cryptographically secured blocks to preserve the integrity of past information and protect it. 1993 - Spam countermeasures 2008 - Bitcoin is born\nSatoshi Nakamoto\nReleased whitepaper:\n“Bitcoin: A Peer-to-Peer Electornic Cash System” 2014 - Ethereum\nCurrency transactions and can run computations.\nDistributed world computer running on a blockchain.\n“Ethereum Virtual Machine” (EVM) 2015-2017 - Financial interest in Bitcoin / Blockchain  From Bitcoin white paper\n\u0026ldquo;A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.”\nTriple Entry Accounting\nIn addition to standard entries in both books of transaction credit / transaction debit it includes additional entry of recording a transaction on distributed blockchain (similar to auditing).\nLedgers\nBook of transactions\nIf you want to confirm that transaction took place you have to look into books of 2 businesses - credit to one and debit to another. Here comes the concept of double entry accounting.\nDistributed Ledgers\nKeeping copies of ledgers across the internet with specific rules to manipulate them.\nConsensus: Consensus mechanisms ensure that the distributed ledgers of a blockchain stay synchronized.\nBlockchain\nIs a set of linearly connected information-containing blocks secured with cryptography.\nNodes: the computers that run the blockchain software.\nEthereum - free to download blockchain, can be programmed. These applications run across al the nodes of the blockchain - these applications are DApps - Decentralized Applications.\nTokenization - provides a set of instructions for creating digital representation of everything from physical objects to ideas.\nEther (ETH) is the token for Ethereum. Ether allows a user to pay for transactions on the Ethereum blockchain.\n"
 },
 {
-	"uri": "https://majdarbash.github.io/aws-csap/",
-	"title": "AWS Certified SAP",
-	"tags": [],
-	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
-},
-{
 	"uri": "https://majdarbash.github.io/aws-csap/data-stores/",
 	"title": "Data Stores",
 	"tags": [],
@@ -49,13 +42,6 @@
 	"content": "Public an private keys are large integer numbers and they are represented using a separate Wallet Import Format (WIF), consisting of letters and numbers.\n\nPrivate key is used to generate a signature for each blockchain transaction a user sends out. It is used to confirm that the transaction has come from the user and also prevents the transaction from being altered by anyone once it has been issued.\nYou sign the cryptocurrencies you send to others using a private key.\nPrivate key derives public key. With a has function public key is transformed to address visible to everyone. You can receive cryptocurrencies to your address.\nCryptographic Hash Functions\nCollision when two inputs to a hash function produce the same output is extremely unlikely to happen.\nHash functions are deterministic - the same input will always yield the same output.\nBitcoin uses a SHA-256. Ethereum blockchain uses a hashing algorithm called Ethash. Hash created with Ethash looks like this:\n0xb846300e188829d1b819389b31cef3b9cfaf335082ee66f830a875f1c1beb396\nWhen data is written to the block it’s hashed. This principle allows the nodes participating in the blockchain to detect any changes to data.\nHashed data is used to create a link between each specific block. Hash of each previous block is written into the block in the chain and then hashed - producing the current block’s hash. This means that the current block hash will contain the prior hash.\nData written for the blockchain is considered permanent, making blockchain immutable.\nBlockchain relies on public key cryptography to acknowledge the idea of ownership on the blockchain.\nProcess of miners verifying actions on the blockchain is known as a proof of work.\nMessage Encryption\nBob wants to send message to Alice\nBob uses Alice’s public key to encrypt the message\nAlice decrypts the message using her private key\nMessage Signing\nBob uses his private key to create digital signature of the message\nAlice uses Bob’s public key to verify the content of the message and that the message is from Bob\nMerkle Tree\nEvery 2 nodes in this binary tree will be hashed together and merged into a single hash. As the result hash root is obtained.\nVerifying that a data chunk is part of the bunch represented by a merkle root will require less computation.The Bitcoin blockchain uses Merkle proofs in order to store the transactions in every block.\nAnatomy of the Block\n Transactions (limited to 1mb in size, 1500 - 2000 transactions) Block height: unique, auto-incremental number, identifying block’s position Timetstamp Nonce Hash of each previous block is written into the block in theHash of the previous block in the chain  Validity: not all blocks are valid. Finding a valid block = mining. Blockchains have an arbitrary “difficulty” setting which changes how hard it is to find a block. The work required to create a valid block is where value comes from. Miners are rewarded financially for finding a block. This is the work in “proof of work”.\nBased on the set difficulty you have to find a nonce which will result in the block hash value to be below the threshold. As a result of this the block will become valid and you will receive a reward for your work - currently it’s 12.5 bitcoins.\nTampering a single transaction will invalidate all the subsequent transactions and will require someone to recalculate the valid nonces for them.\nBlockchain protocols work on peer-to-peer network model. (e.g. Ethereum network, Bitcoin and Bittorent). There are 3 types of nodes operating in blockchain network: Full Node, Light Node, Miners.\n"
 },
 {
-	"uri": "https://majdarbash.github.io/aws-csaa/",
-	"title": "AWS Certified SAA",
-	"tags": [],
-	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
-},
-{
 	"uri": "https://majdarbash.github.io/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/",
 	"title": "ML Building Blocks: Services and Terminology",
 	"tags": [],
@@ -82,13 +68,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Variables x = 10 This statement will create a variable called x which will store a number 10. By assigned value python understands that this variable will store numeric data. We can also store other data types, by assigning different types of values:\nx_int = 1 x_float = 1.23 x_bool = True Note that booleans should have an uppercase in the beginning. (True and not true, False and not false)\nTo print anything on the screen you can use the print function:\nprint x_float Whitespaces In python whitespaces have a significant meaning - they are used to structure code beyond the scope of indentation and formatting. Badly formatted code will result in IndentiationError.\nComments Single-line comments\n# my comment Multi-line comments\n\u0026quot;\u0026quot;\u0026quot; my comment - mutline line comment \u0026quot;\u0026quot;\u0026quot; Math Python will go beyond the standard math operators provided by the programming languages. In addition to operations like multiplication, addition, subtraction and division, python will provide you with some more interesting operators.\nLet\u0026rsquo;s assume you want to raise 2 to a power of 3. This is how we can do it in python:\nresult = 2 ** 3 Exponentiation is performed in python by using ** operator.\nStrings Similar to any other language:\nx_string = \u0026quot;John\u0026quot; # espace character x_string = 'This is John\\'s birthday' String is actually an array of characters. You can directly access characters by using indexes:\nx_string = \u0026quot;Python\u0026quot; # will display the character t print x_string[2] String operators: len() - returns the number of characters in a string\n# will print number 5 as a number of characters in the word hello print len(\u0026quot;hello\u0026quot;) string.lower() - this method is used to convert all characters to lowercase\n# output: hello print \u0026quot;Hello\u0026quot;.lower() string.upper() - converts all characters to uppercase\n# output: HELLO print \u0026quot;Hello\u0026quot;.upper() str() - converts non-strings to strings\n# creating a float variable pi pi = 3.14 # converting pi to string print str(pi) String Concatenation Strings can be concatenated using the summation operator +:\n# output: Times of our life print \u0026quot;Times \u0026quot; + \u0026quot; of \u0026quot; + \u0026quot; our \u0026quot; + \u0026quot; life \u0026quot; # output: My score is 50 x_int = 50 print \u0026quot;My score is \u0026quot; + str(x_int) Another way to print strings by doing string replacement is to format them with %\n# output: Jane and Mike were best friends since a long time string_1 = \u0026quot;Jane\u0026quot; string_2 = \u0026quot;Mike\u0026quot; print \u0026quot;%s and %s were best friends since a long time\u0026quot; % (string_1, string_2) This can be a more interesting exercise:\n# input: for first name: [Tom], for last name: [Hanks] # output: Dear Tom Hanks, please proceed to the registration counter first_name = raw_input(\u0026quot;What's your first name?\u0026quot;) last_name = raw_input(\u0026quot;What's your last name?\u0026quot;) print \u0026quot;Dear %s %s, please proceed to the registration counter\u0026quot; (first_name, last_name) Date and Time The code below displays the current time\n# output - will print current time in format of : 2016-11-10 18:18:31.379762 from datetime import datetime now = datetime.now() print now # output: current year, e.g. 2016 print now.year # output: current month, e.g. 11 print now.month # output: current day, e.g. 10 print now.day just like above, you can also use now.hour, now.minute and now.second\n"
-},
-{
-	"uri": "https://majdarbash.github.io/aws-cmls/",
-	"title": "AWS Certified MLS",
-	"tags": [],
-	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
 },
 {
 	"uri": "https://majdarbash.github.io/aws-cmls/2019-11-6-crisp-dm-on-aws/",
@@ -126,13 +105,6 @@
 	"content": " Defining the Anomaly Detection Problem  Methods to Resolve Anomaly Detection Problem Well Defined Anomaly Distribution Assumption   Isolation Forest Algorithm  Algorithm Steps Example     Defining the Anomaly Detection Problem  Data is set of vectors in d-dimensional space  $x_1$, \u0026hellip; $x_n$ each $x_i$ $\\epsilon$ $R^d$   Mixture of nominal points and anomaly points Anomaly points are generated by different generative process than the normal points  Solutions\n Supervised  Training data labeled with \u0026ldquo;nominal\u0026rdquo; or \u0026ldquo;anomaly\u0026rdquo;   Clean  Training data are all \u0026ldquo;nominal\u0026rdquo;, test data contaminated with \u0026ldquo;anomaly\u0026rdquo; points   Unsupervised  Training data consists of mixture of \u0026ldquo;nominal\u0026rdquo; and \u0026ldquo;anomaly\u0026rdquo; points    Methods to Resolve Anomaly Detection Problem  Density Based  DBSCAN LOF   Distance Based  KNN K-MEANS Regression hyperplane distance   Parametric  GMM Single Class SVMs Extreme value theory    Well Defined Anomaly Distribution Assumption   WDAD: the anomalies are drawn from a well-defined probability distribution\n  The WDAD assumption is often risky\n adversarial situations (fraud, insider threats, cyber security) diverse set of potential causes user\u0026rsquo;s notion of anomaly changes with time     Isolation Forest Algorithm  Builds an ensemble of random trees for a given data set Anomalies are points with the shortest average path length  Assumes that outliers takes less steps to isolate compared to normal point in any data set   Anomaly score is calculated for each point based on the formula: $2^{-E(h(x))/c(n)}$  $h(x)$ is the number of edges in a tree for a point $x$ $c(n)$ is a normalization constant for a data size of size $n$   Isolation score can be used in both supervised and unsupervised setting  Algorithm Steps  Sampling for Training  Choose a sampling proportion from the original data set   Generate a Binary Decision Tree  Split based on 2 random elements  Randomly choose an attribute Randomly choose a value of an attribute in its range of values   Perform a split to branch the tree   Repeat the process iteratively for the sub-data set After generating a Tree, repeat  Create a Forest, collection of Trees Stop when maximum number of Trees is reached   Feed data set an calculate anomaly score for each data point  Calculate anomaly score for a data point across Tree, using the equation:  $2^{-E(h(x))/c(n)}$   Average out the calculated anomaly scores   Score Interpretation  Anomalies will get a score closer to 1 Scores much smaller than 0.5 indicates normal observations If all scores are close to 0.5 then the entire sample doesn\u0026rsquo;t seem to have clearly distinct anomalies    Example In the following example we are using python\u0026rsquo;s sklearn library to experiment with the isolation forest algorithm. In the example below we are generating random data sets:\n Training Data Set  Required to fit an estimator   Test Data Set  Testing Accuracy of the Isolation Forest Estimator   Outlier Data Set  Testing Accuracy in detecting outliers    Generated Data:\n# importing libaries ---- import numpy as np import pandas as pd import matplotlib.pyplot as plt from pylab import savefig from sklearn.ensemble import IsolationForest # Instantiating container for Mersenne Twister pseudo-random number generator with a seed of int 42 rng = np.random.RandomState(42) # Generating 2 clusters of data using \u0026quot;Standard Normal\u0026quot; distribution # In Standard Normal distribution 95% of data lies within +-2 # Multiplying by 0.2 leaves 95% within +-0.4 X_train = 0.2 * rng.randn(1000, 2) print((abs(X_train[:, 0]) \u0026lt;= 0.4).sum() / len(X_train[:, 0]) * 100, \u0026quot; percent of data lies within 2 devitations from the mean\u0026quot;) # Generating second cluster of data (5,5) points away from the center of the first cluster in both axes X_train = np.r_[X_train + 5, X_train] # Generating the Dest Data using the same distribution of the training data X_test = 0.2 * rng.randn(100, 2) # Second cluster of the Test Data as well X_test = np.r_[X_test + 5, X_test] # Generating outliers spread throughout the plot using uniform distribution X_outlier = rng.uniform(low=-1, high=6, size=(50, 2)) # Visualizing the generated data sets: Training - blue, Test - green, Outliers - red plt.title(\u0026quot;Generated Data Sets\u0026quot;) plt.scatter(X_train[:, 0], X_train[:, 1], c='blue') plt.scatter(X_test[:, 0], X_test[:, 1], c='green') plt.scatter(X_outlier[:, 0], X_outlier[:, 1], c='red') plt.show() # Fitting the Isolation Forest Estimator with Training Data # Contamination factors indicates the percentage of data we believe to be outliers clf = IsolationForest(behaviour='new', max_samples=100, random_state=rng, contamination=0.1) clf.fit(X_train) # Running predictions on the Test and Outliers Data Sets using the estimator pred_test = clf.predict(X_test) pred_outlier = clf.predict(X_outlier) print(\u0026quot;Accuracy with Test Data: \u0026quot;, (pred_test == 1).sum() / len(pred_test)) print(\u0026quot;Accuracy In Outlier Detection: \u0026quot;, (pred_outlier == -1).sum() / len(pred_outlier)) "
 },
 {
-	"uri": "https://majdarbash.github.io/genetic-algorithm/",
-	"title": "Genetic Algorithm",
-	"tags": [],
-	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
-},
-{
 	"uri": "https://majdarbash.github.io/aws-csap/migrations/",
 	"title": "Migrations",
 	"tags": [],
@@ -140,25 +112,11 @@
 	"content": " Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase Abandon existing and purchase new. (Drop and Shop) Rearchitect Redesign application in a cloud-native manner, e.g. create Serverless version of legacy application. Retire Get rid of applications which are not needed. Retain Do nothing - decide to reevaluate at a future date.  Cloud Adoption Framework TOGAF The Open Group Architectural Framework\n Approach for designing, planning, implementing and governing enterprise IT architectures Started development in 1995 De-facto standard in Enterprise Architecture practice Favored EA framework for most Fortune 500 companies  Cloud Adoption Phases  Project Running projects to get familiar and experience the benefits from the cloud. Foundation Build foundation to scale the cloud adoption. Creating landing zone (pre-configured, secure, multi-account AWS environment), Cloud Center of Excellence (CCoE), operations model, as well as assuring security and compliance readiness. Migration Migrate existing applications including mission-critical applications or entire data centers to the cloud as you scale your adoption across a growing portion of your IT portfolio. Reinvention Focus on reinvention by taking advantage of the flexibility and capabilities of AWS to transform your business by speeding time to market and increasing the attention on innovation.  Holistic Approach to Cloud Adoption Framework:\n Business  Creation of a strong business case for Cloud Adoption Business goals are in harmony with cloud objectives Ability to measure benefits (ROI - Return on Investment, TCO - Total cost of Ownership)   People  Evaluate organizational roles and structures, new skills and process needs and identify gaps Incentives and Career Management aligned with evolving roles Training options appropriate for learning styles   Governance  Portfolio Management geared for determining cloud eligibility and priority Program and Project management more agile projects Align KPI\u0026rsquo;s with newly enabled business capabilities   Platform  Resource provisioning can happen with standardization Architecture patterns adjusted to leverage cloud-native New application development skills and processes enable more agility   Security  Identiy and Access Management modes change Logging and Audit capabilities evolve Shared Responsibility Model removes and adds some facets   Operations  Service monitoring has potential to be highly automated Performance management can scale as needed Business continuity and disaster recovery takes on new methods in the cloud    Hybrid Architectures  Using cloud resources along with on-prem resources First step as a pilot for cloud migrations VMWare - infrastructure can be extended to the cloud Integrations should be loosely coupled  Examples:\n Storage Gateway  Creates a bridge between on-prem and AWS Seamless to end users Common first step due to low risk and appealing economics   Middleware  Great way to leverage cloud services Loosely coupled, canonical-based Example: Can publish messages from Corporate Landscape to SQS to be consumed on the other side by a worker   VMWare vCenter Plugin  Allows transparent migration of VMs to and from AWS VMWare Cloud furthers this concept with more public-native features    Migration Tools  Storage Migration  AWS Storage Gateway AWS Snowball   Server Migration Service  Automates migration of on-prem VMWare vSphere or Microsoft Hyper-V/SCVMM virtual machines to AWS Replaces VMs to AWS, sync volumes and create periodic AMIs Minimizes cutover downtime by syncing VMs incrementally Supports Windows and Linux VMs only (like AWS) The Server Migration Connector is downloaded as a virtual appliance into your on-prem vSphere or Hyper-V setup   Database Migration Service (DMS)  Along with Schema Conversion Tool (SCT) helps customers migrate databases to AWS RDS or EC2-based databases SCT can copy database for homogenous migrations and covert schemas for heterogenous migrations DMS is used for smaller, simpler conversions and also supports MongoDB and DynamoDB SCT used for larger, more complex datasets like data warehouses DMS has replication function for on-prem to AWS or to Snowball or S3   Application Discovery Service  Gathers information about on-prem data centers to help in cloud migration planning Collects configs, usage and behavior data from your servers to help in estimating TCO of running on AWS Can run agent-less (VMWare Environment) or agent-based (non-VMWare Environment) Only supports those OSes that AWS Supports   AWS Migration Hub  Network Migrations and Cutovers  Ensure there\u0026rsquo;s no overlap between VPC and on-prem Most migrations start with VPN to AWS With higher usage, you may choose AWS Direct Connect and keep the VPN as backup Transition from VPN to Direct Connect can be done seamlessly using BGP (BGP weighing or static routes)  Amazon Snow Family  Evolution of AWS Import/Export process Move massive amount of data to and from AWS Data is encrypted at rest Data is encrypted at transit  Solutions:\n AWS Import/Export Ship an external hard drive to AWS. AWS plugs it in and copies the data to S3. AWS Snowball NAS in a box AWS ships to you. You can copy over 80TB of data and ship it back. Data will be available on S3. AWS Snowball Edge Similar to Snowball with some computing power, like Lambda and Clustering. AWS Snowmobile Shipping container full of storage (up to 100PB) and a truck to transport it.  "
 },
 {
-	"uri": "https://majdarbash.github.io/ml-neural-networks/",
-	"title": "Neural Networks",
-	"tags": [],
-	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
-},
-{
 	"uri": "https://majdarbash.github.io/python-2.7/4-python-conditional-control-flows/",
 	"title": "Python 2.7: Conditional &amp; Control Flows",
 	"tags": [],
 	"description": "",
 	"content": "Python supports:\n Standard comparison operators: \u0026lt;, \u0026gt;, ==, !=, \u0026lt;=, \u0026gt;=. Logical operators: and, or, not (not is evaluated first, then and and then or)  Conditional Clause if [condition]: [statements ...] else: [statements ...] More sofisticated example, would be:\nif [condition 1]: [statements ...] elif [condition 2]: [statements ...] else: [statements ...] Beware of the indentation as it will indicate how many statements to be executed within the condition success block. Example:\nx_int = 12 if not x_int \u0026gt; 20: print \u0026quot;The value of our variable is %s\u0026quot; % x_int print \u0026quot;We used an if condition here\u0026quot; Function Definition Function can be defined using the following syntax:\ndef [function name](): [statements ... ] Example of function definition:\n# function defintion - notice the indentation defining the scope def get_user_input(x_int): if x_int % 2 == 0: print \u0026quot;You've got an even number\u0026quot; else: print \u0026quot;You've got an odd number\u0026quot; # obtaining raw input represented as string x_string = raw_input(\u0026quot;Type your number: \u0026quot;) # converting the string to integer x_int = int(x_string) # calling the above defined function get_user_input(x_int) "
-},
-{
-	"uri": "https://majdarbash.github.io/random/",
-	"title": "Random",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "https://majdarbash.github.io/aws-csap/architecting-to-scale/",
@@ -189,13 +147,6 @@
 	"content": " Concepts Disaster Recovery Architectures Storage Options Compute Options HA Approaches for Databases Network Options Failure mode and Effects Analysis (FMEA)  Concepts  Business Continuity (BC)  Seeks to minimize business activity disruption when something unexpected happens   Disaster Recovery (DR)  Act of responding to these events that threaten business continuity   High Availability  Designing in redundancies to reduce the chance of impacting service levels   Fault Tolerance  Design in the ability to tolerate faults   Service Level Argreement (SLA)  An agreed goal or target for a given service on its performance or availability   Recovery Time Objective (RTO)  Time taken after disruption to restore business processes to their levels   Recovery Point Objective (RPO)  Acceptable amount of data loss measured in time.    Business Continuity Plan specify RTO and RPO. RTO and RPO metrics then define amouint of investment on High Availability to be made. They also define what is the process for Disaster Recovery.\nTypes of Disaster:\n Hardware Failure Deployment Failure Load Induced (e.g. DDOS attacks) Data Induced Credential Expiration Dependency Infrastructure Identifier Exhaustion  Disaster Recovery Architectures  Backup and Restore   Requires Minimum entry point into AWS Minimal effort to configure Least flexible, off-site backup storage  Pilot Light   Minimal environment on standby on AWS for failover Switching to AWS will require a manual intervention It may take several minutes or hours to spin an environment AMIs should be up-to-date with on-prem counterparts  Warm Standby   Services are already up and running Could be considered as a shadown environment or production staging Resources could scale up to meet the incoming demand Process can be automated  Multi-Site   Ready at all time to take full production load Fails over in seconds or less No or little intervention required to fail over Most expensive DR option: can be considered as wasteful option Can be automatically configured through Route53 health checks  Storage Options Amazon EBS\n Annual Failure rate less than 0.2% Availability target of 99.999% (replicated within a single AZ) Vulnerable to AZ failure Easy to snapshot which is stored on S3 and multi-AZ durable You can copy snapshots to other regions Supports RAID configurations  Due to the facts that EBS operates over network, it\u0026rsquo;s not recommended to operate higher than RAID1    EBS RAID Configurations\n RAID0 (Striping)  No Redundancy Highest Speed Reads and Writes Highest Capacity   RAID1 (Mirroring)  1 drive can safely fail Slight decrease in reads and writes Capacity reduced by 50% due to mirroring   RAID5  Redundancy: 1 drive can safely fail 2 drives will store the data 1 drive stores the parity bit to be able to recreate the data good reads (similar to RAID0), but low writes capacity of (n-1)/n   RAID6  2 drives can safely fail minimum of 4 drives needed (2 parity) Same reads as RAID0, but worst writes capacity of (n-2)/n    S3 Storage\n Standard: 99.99% availability = 52 minutes/year Standard Infrequent Access: 99.9% = 9 hours/year One-zone Infrequent Access: 99.5% availability = 2 days/year Eleven 9s of durability: 99.99999999999% Standard \u0026amp; Standard-IA have multi-AZ durability. One-zone only as single AZ durability S3 is a backing service for many AWS services  Amazon EFS\n Implementation of the NFS file system True file system as opposed to block EBS or object storage (S3) File locking, strong consistency, concurrently accessible Each file object and metadata is stored across multiple AZs Can be accessed from all AZs concurrently Mount targets are highly available  Other Options\n Amazon Storage Gateway Snowball Glacier  Compute Options  Up-to-Date AMIs are critical for rapid fail-over AMIs can be copied to other regions for safety or DR staging Horizontally scalable architectures are preferred Reserved instances is the only way to guarantee that resources will be available when needed Auto Scaling and Elastic Load Balancing work together to provide automatic recovery by maintaining minimum instances Route 53 Health Checks also provide \u0026ldquo;self-healing\u0026rdquo; redirection of traffic  HA Approaches for Databases  If possible, choose DDB over RDS because of inherent faul tolerance Choose Aurora because of redundancy and automatic recovery features If aurora can\u0026rsquo;t be used choose multi-AZ RDS Frequent RDS snapshots can protect against data corruption or failure - and they wont\u0026rsquo; impact performance of multi-AZ deployment Regional replication is also an option, but will not be strongly consistent If hosting database on EC2, you have to develop your own HA plan  Redshift\n Currently Redshift doesn\u0026rsquo;t support multi-AZ deployments Best HA option is to use multi-node cluster which supports replication and node recovery Single node Redshift cluster does not support data replication - in case of failure will have to restore an S3 snapshot  Memcached does not support replication\n Use multiple nodes in each shard to minimize data loss on node failure Launch multiple nodes across available AZs to minimize data loss on AZ failure  Redis\n Use multiple nodes in each shard and distribute the nodes across multiple AZs Enable multi-AZ on the replication group to permit automatic failover if the primary node fails Schedule regular backups of your Redis cluster  Network Options  Subnets should be created in different AZs, resources should be allocated in multiple AZs Create at least 2 VPN tunnels to your Virtual Private Gateway Direct connect is not HA by default, you need to establish a secondary connection via another Direct Connect (ideally use another provider) or use a VPN Route 53\u0026rsquo;s Health Checks provide basic level of redirecting DNS resolutions Elastic IPs allow you flexibility to change backing assets without impacting name resolution For mutli-AZ redundancy of NAT Gateway, create gateways in each AZ with routes for private subnets to use the local Gateway  Failure mode and Effects Analysis (FMEA) FMEA is a systematic process to examine:\n What could go wrong What impact it might have What is the likelyhood of it occurring What is our ability to detect and react  Severity * Proability * Detection = Risk Priorty Number (RPN)\nSteps\n Round up Possible Failures Assign scores for each failure mode: customer impact, likelihood, detect and react -\u0026gt; calculate RPN Prioritize on Risk - implement mitigation plan, additional redundancy  "
 },
 {
-	"uri": "https://majdarbash.github.io/symfony/",
-	"title": "Symfony 3",
-	"tags": [],
-	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
-},
-{
 	"uri": "https://majdarbash.github.io/aws-csap/deployment-and-operations/",
 	"title": "Deployment and Operations Management",
 	"tags": [],
@@ -210,11 +161,81 @@
 	"content": " Concepts Cost Optimization Strategies  Appropriate Provisioning Right-Sizing Purchase Options Managed Services Optimized Data Transfer   Tagging and Resource Groups  Resource Groups Resource Groups   Spot Instances and Reserved Instances  Reserved Instances Spot Instances   Cost Management Tools  Concepts  CapEx (Capital Expenses) OpEx (Operational Expenses) Total Cost of Ownership (TCO)  A comprehensive look at the entire cost model of a given decision or option often including both hard costs and soft costs.   Return on Investment (ROI)  The amount an entity can expect to receive back within a certain amount of time given an investment.    Cost Optimization Strategies Appropriate Provisioning  Provision the resources you need and nothing more Consolidate where possible for greater density and lower complexity (multi-database RDS, containers) CloudWatch can help by monitoring utilization  Right-Sizing  Using lowest-cost resource that still meets the technical specifications. Architecting for the most consistent use of resources is best versus spikes and valleys. Loosely coupled architectures using SNS, SQS, Lambda and DynamoDB can smooth demand and create more predictability and conistency.  Purchase Options  For permanent applications or needs, Reserved Instances provide the best cost advantage. Spot instances are best for temporary horizontal scaling. EC2 fleet lets you define target mix of On-Demand, Reserved and Spot instances to meet your needs. AWS Pricing can vary from region to region Consider potential savings by location resources in a remote region if local access is not required. Route53 and CloudFront can be used to reduce latency of a remote region.  Managed Services  Leverage managed services such as MySQL RDS over self-managed options such as MySQL on EC2 Cost savings gained through lower complexity and manual intervention (saving on soft costs)  Optimized Data Transfer  Data going out and between AWS regions can become a significant cost component. Direct Connect can be a more cost-effective option given data volume and speed.  Tagging and Resource Groups Resource Groups  Tags are arbitrary name/value pairs that you can assign to virtually all AWS assets to serve as metadata. Tagging strategies can be used for Cost Allocation, Security, Automation, and many other uses.  Example: tag used in IAM policy to implement access controls to certain resources.   Enforcing standardized tagging can be done via AWS Config Rules or custom scripts Most resources can have up to 50 tags.  Resource Groups  Resource Groups are grouping of AWS assets defined by tags. Create custom consoles to consolidated metrics, alarms and config details around given tags.  Common Resource Groupings:\n Environments - DEV,QA,PRD Project Resources Collection of resources supporting key business processes Resources allocated to various departments or cost centers  Spot Instances and Reserved Instances Reserved Instances  Purchase usage of EC2 instance in advance for a significant discount over On-Demand pricing Provides capacity reservation when used in a specific AZ AWS Billing automatically applies discounted rates when you launcgh an instance that matches your purchased RI. EC2 has three RI types: Standard, Convertible and Scheduled. RIs can be shared across multiple accounts within Consolidated Billing. If you find you don\u0026rsquo;t need your RI\u0026rsquo;s, you can try to sell them on the Reserved Instance Marketplace.  Standard vs. Convertiable Reserved Instances\n Terms: 1 / 3 year(s) Average Discount: Standard - 40%-60%, Convertible - 31%-54% Change AZ, Instance Size, Networking Type: yes Change instance family, OS, Tenancy, Payment Options: Standard - no, Convertible - yes Benefit from Price Reductions: Standard - no, Convertible - yes Sellable on RI Marketplace: Standard - yes, Convertible - coming soon  RI Attributes:\n Instance type Platform Tenancy - Defaul / shared Availability Zone (optional)  if zone is selected, discount applies to AZ - Zonal RI if no zone is specified, no reservation is created but the discount is applied to any instance in the family in any AZ in the region - Regional RI Zonal RI can be changed to Regional RI via console or AWS API Instance size flexibility is only available for Linux/Unix Regional RIs with default tenancy. Not available for Windows, RHEL, or SLES.    Spot Instances  Excess EC2 capacity that AWS tries to sell on a market exchange basis Customer creates a Spot Request and specifies AMI, desired instance types, and other key information Customer defines highest price willing to pay for instance. If capacity is constrained and others are willing to pay more, your instance might get terminated or stopped. Spot request can be a \u0026ldquo;fill and kill\u0026rdquo;, \u0026ldquo;maintain\u0026rdquo; or \u0026ldquo;duration-based\u0026rdquo; For \u0026ldquo;One-Time Request\u0026rdquo;, instance is terminated and ephemeral data is lost. For \u0026ldquo;Request and Maintain\u0026rdquo;, instance can be configured to Terminate, Stop or Hivernate until price point can be met again. Price and demand fluctuate between AZs  Dedicated Instances and Hosts Dedicated Instances:\n Dedicated instance is virtualized instances on hardware just for your AWS account May share hardware with other non-dedicated instances in the same account Available as On-Demand, Reserved Instances and Spot Instances Cost additional 2# per hour per region  Dedicated Host:\n Physical serveres dedicated to just your use You then have control over which instances anre deployed on that host. Available as On-Demand or with Dedicated Host Reservation Useful if you have server-bound software licenses that use metrics like per-core, per-socket or per-VM Each dedicated host can only run one EC2 instances size and type  Cost Management Tools  AWS Budgets  Set predefined limits and notifications Can be based on Cost, Usage, Reserved Instance Utilization or RI Coverage Useful as a method to distribute cost and usage awareness and responsibility to platform users   Consolidated Billing  Enable a single Payer account that\u0026rsquo;s locked down to only those who need access. Economies of scale by bringing together resource consumption across accounts.   Trusted Advisor  Run a series of checks on your resources and proposes suggested improvements Can help recommend cost optimization adjustments like RIs or scaling adjustments Core checks are available to all customers Full Trusted Advisor benefits require a Business or Enterprise support plan    "
 },
 {
+	"uri": "https://majdarbash.github.io/aws/",
+	"title": "AWS WhitePapers",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/aws-cmls/",
+	"title": "AWS Certified MLS",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/aws-csap/",
+	"title": "AWS Certified SAP",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/aws-csaa/",
+	"title": "AWS Certified SAA",
+	"tags": [],
+	"description": "",
+	"content": "Please note that the content below is based from my notes.\n"
+},
+{
+	"uri": "https://majdarbash.github.io/genetic-algorithm/",
+	"title": "Genetic Algorithm",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/ml-neural-networks/",
+	"title": "Neural Networks",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://majdarbash.github.io/blockchain/",
 	"title": "Blockchain",
 	"tags": [],
 	"description": "",
-	"content": "Please note that the content below is based from my notes.\n"
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/python-2.7/",
+	"title": "Python 2.7",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/symfony/",
+	"title": "Symfony 3",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/software-architecture-and-design/",
+	"title": "Software Architecture &amp; Design",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://majdarbash.github.io/random/",
+	"title": "Random",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://majdarbash.github.io/2019/04/17/aws-applications/",
@@ -980,6 +1001,13 @@
 	"content": ""
 },
 {
+	"uri": "https://majdarbash.github.io/aws/multi-tenant-saas-storage/",
+	"title": "Multi-Tenant SaaS Storage Strategies",
+	"tags": [],
+	"description": "",
+	"content": "The goal is to find the best intersection of your storage and tenant partitioning needs.\n"
+},
+{
 	"uri": "https://majdarbash.github.io/tags/mysql/",
 	"title": "mysql",
 	"tags": [],
@@ -1127,13 +1155,6 @@
 	"content": "ipython - Interactive Python Interpreter\nVariables  type(var_name) returns the type of the variable, e.g. float, string, \u0026hellip;  Type Conversion  str(var_name) float(var_name)  Math  Exponentiation 4**2 will give 16 Modulo 18 % 7 will give 4  Generating Output  print(string)  Publish Date: 2019-12-02\n "
 },
 {
-	"uri": "https://majdarbash.github.io/python-2.7/",
-	"title": "Python-2.7s",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://majdarbash.github.io/tags/ready/",
 	"title": "ready",
 	"tags": [],
@@ -1241,13 +1262,6 @@
 {
 	"uri": "https://majdarbash.github.io/tags/software-development/",
 	"title": "software development",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://majdarbash.github.io/software-architecture-and-design/",
-	"title": "Software-architecture-and-designs",
 	"tags": [],
 	"description": "",
 	"content": ""

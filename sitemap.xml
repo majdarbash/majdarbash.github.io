@@ -7,10 +7,6 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws-csap/</loc>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/aws-csap/data-stores/</loc>
   </url>
   
@@ -31,10 +27,6 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws-csaa/</loc>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/aws-cmls/2019-11-01-ml-building-blocks-services-and-terminology/</loc>
   </url>
   
@@ -48,10 +40,6 @@
   
   <url>
     <loc>https://majdarbash.github.io/python-2.7/2-python-basics-variables-strings-date-and-time/</loc>
-  </url>
-  
-  <url>
-    <loc>https://majdarbash.github.io/aws-cmls/</loc>
   </url>
   
   <url>
@@ -75,24 +63,11 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/genetic-algorithm/</loc>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/aws-csap/migrations/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/ml-neural-networks/</loc>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/python-2.7/4-python-conditional-control-flows/</loc>
-  </url>
-  
-  <url>
-    <loc>https://majdarbash.github.io/random/</loc>
-    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
   </url>
   
   <url>
@@ -112,10 +87,6 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/symfony/</loc>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/aws-csap/deployment-and-operations/</loc>
   </url>
   
@@ -124,7 +95,48 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws-cmls/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws-csap/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws-csaa/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/genetic-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/ml-neural-networks/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/blockchain/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/python-2.7/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/symfony/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/software-architecture-and-design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/random/</loc>
+    <lastmod>2019-04-17T23:14:05+04:00</lastmod>
   </url>
   
   <url>
@@ -592,6 +604,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/multi-tenant-saas-storage/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/mysql/</loc>
   </url>
   
@@ -676,10 +692,6 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/python-2.7/</loc>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/tags/ready/</loc>
   </url>
   
@@ -741,10 +753,6 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/software-development/</loc>
-  </url>
-  
-  <url>
-    <loc>https://majdarbash.github.io/software-architecture-and-design/</loc>
   </url>
   
   <url>
