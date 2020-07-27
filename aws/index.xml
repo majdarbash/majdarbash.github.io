@@ -16,7 +16,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws/multi-tenant-saas-storage/</guid>
-      <description>The goal is to find the best intersection of your storage and tenant partitioning needs.</description>
+      <description>SaaS Paritioning Models  Silo Model Pool Model Bridge Model   Migration and Multitenancy Security Considerations Management and Monitoring Tiered Storage Models Developer Experience Linked Account Silo Model Multitenancy on DynamoDB  Silo Model Bridge Model Pool Model   Mutlitenancy on RDS  Silo Model Bridge Model Pool Model Single Instance Limits   Mutlitenancy on Amazon Redshift  Silo Model Bridge Model Pool Model   Agility  The goal is to find the best intersection of your storage and tenant partitioning needs.</description>
+    </item>
+    
+    <item>
+      <title>Performance at Scale with Amazon ElastiCache</title>
+      <link>https://majdarbash.github.io/aws/elasticache-at-scale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/elasticache-at-scale/</guid>
+      <description>Memcached vs Redis ElastiCache for Memcached  Caching Design Patterns    Overview
+ ElastiCache deploys one or more cache clusters for your application ElastiCache automates resources provisioning, failure detection and recovery, and software patching Supports Redis and Memcached engines  Alternatives to ElastiCache
+ Amazon CloudFront - cache images, web pages, static data at the edge Amazon RDS Read Replicas - distributing data to remote apps On-host caching - this approach lacks of efficiency - cannot reuse existing cache entries and maintain consistency in validation of the cache keys across all hosts  Memcached vs Redis  Due to replication and persistence features of Redis, Redis is managed as relational database Memcached is designed as pure caching solution with no persistence - is managed as pool of nodes that can grow and shrink, similar to Amazon EC2 Auto Scaling Group  Important questions to consider impacting the choice of the caching engine:</description>
     </item>
     
   </channel>

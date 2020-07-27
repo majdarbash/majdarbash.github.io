@@ -22,21 +22,21 @@
     <title>Multi-Tenant SaaS Storage Strategies :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1595798914" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1595798914" rel="stylesheet">
-    <link href="/css/hybrid.css?1595798914" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1595798914" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1595798914" rel="stylesheet">
-    <link href="/css/auto-complete.css?1595798914" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1595798914" rel="stylesheet">
-    <link href="/css/theme.css?1595798914" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1595798914" rel="stylesheet">
+    <link href="/css/nucleus.css?1595887179" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1595887179" rel="stylesheet">
+    <link href="/css/hybrid.css?1595887179" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1595887179" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1595887179" rel="stylesheet">
+    <link href="/css/auto-complete.css?1595887179" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1595887179" rel="stylesheet">
+    <link href="/css/theme.css?1595887179" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1595887179" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1595798914" rel="stylesheet">
+    <link href="/css/theme-blue.css?1595887179" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1595798914"></script>
+    <script src="/js/jquery-3.3.1.min.js?1595887179"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -81,14 +81,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1595798914"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1595798914"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1595887179"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1595887179"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1595798914"></script>
+<script type="text/javascript" src="/js/search.js?1595887179"></script>
 
     
   </div>
@@ -136,6 +136,27 @@
       <li data-nav-id="/aws/multi-tenant-saas-storage/" title="Multi-Tenant SaaS Storage Strategies" class="dd-item active">
         <a href="/aws/multi-tenant-saas-storage/">
         Multi-Tenant SaaS Storage Strategies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/elasticache-at-scale/" title="Performance at Scale with Amazon ElastiCache" class="dd-item ">
+        <a href="/aws/elasticache-at-scale/">
+        Performance at Scale with Amazon ElastiCache
         
         </a>
     </li>
@@ -2948,7 +2969,46 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#saas-paritioning-models">SaaS Paritioning Models</a>
+      <ul>
+        <li><a href="#silo-model">Silo Model</a></li>
+        <li><a href="#pool-model">Pool Model</a></li>
+        <li><a href="#bridge-model">Bridge Model</a></li>
+      </ul>
+    </li>
+    <li><a href="#migration-and-multitenancy">Migration and Multitenancy</a></li>
+    <li><a href="#security-considerations">Security Considerations</a></li>
+    <li><a href="#management-and-monitoring">Management and Monitoring</a></li>
+    <li><a href="#tiered-storage-models">Tiered Storage Models</a></li>
+    <li><a href="#developer-experience">Developer Experience</a></li>
+    <li><a href="#linked-account-silo-model">Linked Account Silo Model</a></li>
+    <li><a href="#multitenancy-on-dynamodb">Multitenancy on DynamoDB</a>
+      <ul>
+        <li><a href="#silo-model-1">Silo Model</a></li>
+        <li><a href="#bridge-model-1">Bridge Model</a></li>
+        <li><a href="#pool-model-1">Pool Model</a></li>
+      </ul>
+    </li>
+    <li><a href="#mutlitenancy-on-rds">Mutlitenancy on RDS</a>
+      <ul>
+        <li><a href="#silo-model-2">Silo Model</a></li>
+        <li><a href="#bridge-model-2">Bridge Model</a></li>
+        <li><a href="#pool-model-2">Pool Model</a></li>
+        <li><a href="#single-instance-limits">Single Instance Limits</a></li>
+      </ul>
+    </li>
+    <li><a href="#mutlitenancy-on-amazon-redshift">Mutlitenancy on Amazon Redshift</a>
+      <ul>
+        <li><a href="#silo-model-3">Silo Model</a></li>
+        <li><a href="#bridge-model-3">Bridge Model</a></li>
+        <li><a href="#pool-model-3">Pool Model</a></li>
+      </ul>
+    </li>
+    <li><a href="#agility">Agility</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -2971,7 +3031,356 @@
         
 
 
-<p>The goal is to find the best intersection of your storage and tenant partitioning needs.</p>
+<ul>
+<li><a href="#saas-paritioning-models">SaaS Paritioning Models</a>
+<ul>
+<li><a href="#silo-model">Silo Model</a></li>
+<li><a href="#pool-model">Pool Model</a></li>
+<li><a href="#bridge-model">Bridge Model</a></li>
+</ul>
+</li>
+<li><a href="#migration-and-multitenancy">Migration and Multitenancy</a></li>
+<li><a href="#security-considerations">Security Considerations</a></li>
+<li><a href="#management-and-monitoring">Management and Monitoring</a></li>
+<li><a href="#tiered-storage-models">Tiered Storage Models</a></li>
+<li><a href="#developer-experience">Developer Experience</a></li>
+<li><a href="#linked-account-silo-model">Linked Account Silo Model</a></li>
+<li><a href="#multitenancy-on-dynamodb">Multitenancy on DynamoDB</a>
+<ul>
+<li><a href="#silo-model-1">Silo Model</a></li>
+<li><a href="#bridge-model-1">Bridge Model</a></li>
+<li><a href="#pool-model-1">Pool Model</a></li>
+</ul>
+</li>
+<li><a href="#mutlitenancy-on-rds">Mutlitenancy on RDS</a>
+<ul>
+<li><a href="#silo-model-2">Silo Model</a></li>
+<li><a href="#bridge-model-2">Bridge Model</a></li>
+<li><a href="#pool-model-2">Pool Model</a></li>
+<li><a href="#single-instance-limits">Single Instance Limits</a></li>
+</ul>
+</li>
+<li><a href="#mutlitenancy-on-amazon-redshift">Mutlitenancy on Amazon Redshift</a>
+<ul>
+<li><a href="#silo-model-3">Silo Model</a></li>
+<li><a href="#bridge-model-3">Bridge Model</a></li>
+<li><a href="#pool-model-3">Pool Model</a></li>
+</ul>
+</li>
+<li><a href="#agility">Agility</a></li>
+</ul>
+<p>The goal is to find the best intersection of your storage and tenant partitioning needs. Consider how the strategy impacts your ability to build, deliver and deploy versions in zero downtime environment. Assess the regulatory, business and legacy dimensions of a given environment.</p>
+<h2 id="saas-paritioning-models">SaaS Paritioning Models</h2>
+<ul>
+<li>Silo
+<ul>
+<li>Separate database for each tenant</li>
+<li>Addresses concerns on sharing infrastructure with other tenants</li>
+<li>Great for migration from existing solution to multi-tenant solution</li>
+</ul>
+</li>
+<li>Bridge
+<ul>
+<li>Single database, multiple schemas</li>
+</ul>
+</li>
+<li>Pool
+<ul>
+<li>Shared database, single schema</li>
+<li>Requires introduction of partitioning key to scope and control access to tenant data</li>
+<li>Fits with continuous delivery and agility goals that are essential to Saas providers</li>
+</ul>
+</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 650px;" src="/assets/images/aws/saas-partioning-models.png" alt="saas-partioning-models" />
+    
+    
+</figure>
+
+
+<h3 id="silo-model">Silo Model</h3>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Compliance alignment</li>
+<li>No cross-tenant impacts</li>
+<li>Tenant-level tuning</li>
+<li>Tenant-level availability</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Compromised agility</li>
+<li>Centralized management</li>
+<li>Deployment complexity
+<ul>
+<li>Automating creation and configuring database on per-tenant basis adds a layer of complexity and a potential point of failure in your SaaS environment.</li>
+</ul>
+</li>
+<li>Cost</li>
+</ul>
+<h3 id="pool-model">Pool Model</h3>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Agility</li>
+<li>Cost optimization</li>
+<li>Centralized management</li>
+<li>Simplified deployment</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Cross-tenant impacts</li>
+<li>Compliance challenges</li>
+<li>All or nothing availability</li>
+</ul>
+<h3 id="bridge-model">Bridge Model</h3>
+<ul>
+<li>Hybrid model combining pros and cons of both <strong>Silo</strong> and <strong>Pool</strong> model extremes.</li>
+</ul>
+<p><strong>Hybrid Silo/Pool Storage</strong></p>
+<ul>
+<li>One possible solution is to build a solution that fully supports pooled storage as your foundation. Then you can carve out a separate database for those tenants that demand a siloed storage solution.</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 450px;" src="/assets/images/aws/hybrid-model.png" alt="hybrid-model" />
+    
+    
+</figure>
+
+
+<h2 id="migration-and-multitenancy">Migration and Multitenancy</h2>
+<ul>
+<li>Minimize invasive changes</li>
+<li>Favor data changes which have backward compatibility with earlier changes</li>
+</ul>
+<p><strong>Silo/Bridge Models</strong></p>
+<ul>
+<li>Data can be migrated on tenant-by-tenant basis</li>
+<li>Allows careful migration of each SaaS tenant without exposing all tenants to possibility of migration error</li>
+<li>Introduces complexity into overall orchestration of your deployment lifecycle</li>
+</ul>
+<p><strong>Pool Model</strong></p>
+<ul>
+<li>Easier migration process, all tenants are migrated at once</li>
+<li>Any migration error would impact all tenants</li>
+</ul>
+<h2 id="security-considerations">Security Considerations</h2>
+<ul>
+<li>Robust security strategy to ensure that tenant data is effectively protected from unauthorized access</li>
+<li>Adopting common security patterns supported by AWS
+<ul>
+<li>encrypt data at rest</li>
+<li>utilize IAM policies to limit access to tenant data
+<ul>
+<li>works great with Silo and Bridge model to limit database access</li>
+<li>in Pool model responsibility shifts to authorization models of your application&rsquo;s services</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Research on how isolation is achieved on each of the used AWS Services</li>
+</ul>
+<h2 id="management-and-monitoring">Management and Monitoring</h2>
+<ul>
+<li>Building effective metrics and dashboard for aggregating storage trends
+<ul>
+<li>With siloed storage, data should be collected from each isolated database and aggregated in an aggregate model</li>
+</ul>
+</li>
+<li>Tenant-centric Views of Activity
+<ul>
+<li>represents the ability to drill down into tenant-centric storage activity</li>
+<li>Silo models align more naturaly with constructing this view</li>
+<li>Pool models will require some tenant-filtering mechanism</li>
+</ul>
+</li>
+<li>Policies and Alarms
+<ul>
+<li>More moving parts on a tenant-by-tenant basis will affect the complexity and manageability of your storage monitoring strategy</li>
+<li>Overall goal of the policies to set proactive rules to anticipate and react to health events</li>
+</ul>
+</li>
+</ul>
+<h2 id="tiered-storage-models">Tiered Storage Models</h2>
+<ul>
+<li>It&rsquo;s not uncommon to find a spectrum of different storage solutions in use across the set of microservices that make up your application</li>
+<li>Storage can be used as another way to tier the SaaS solution</li>
+<li>Each tier can leverage a separate storage strategy, offering varying levels of performance and SLAs</li>
+</ul>
+<h2 id="developer-experience">Developer Experience</h2>
+<ul>
+<li>Developers typically introduce layers of frameworks that centralize and abstract away horizontal aspects of their applications</li>
+<li>Centralize and standardize policies and tenant resolution strategies</li>
+<li>Data access layer would inject tenant context into data access requests</li>
+</ul>
+<h2 id="linked-account-silo-model">Linked Account Silo Model</h2>
+<ul>
+<li>Need to provision separate <strong>Linked Account</strong> for each tenant</li>
+<li>Entire infrastructure of a tenant is isolated from other tenants</li>
+<li>Linked approach relies on Consolidated Billing</li>
+<li>More complex provisioning process</li>
+<li>Automate creation of each Linked Account and adjust any limits as needed</li>
+<li>AWS has constraints on the number of Linked Accounts - won&rsquo;t be a good strategy for creating a large number of SaaS tenants</li>
+</ul>
+<h2 id="multitenancy-on-dynamodb">Multitenancy on DynamoDB</h2>
+<ul>
+<li>Schema-less nature of DDB makes migration easy</li>
+</ul>
+<h3 id="silo-model-1">Silo Model</h3>
+<ul>
+<li>No notion of database instance, all tables are created globally in the region</li>
+<li>Requires grouping tables belonging to a single tenante, e.g. prefix by tenant identifier</li>
+<li>Access to the tables is controlled through IAM policies</li>
+<li>Provisioning process should automate generation of tables and IAM policies</li>
+<li>Tuning can be done on tenant-by-tenant basis
+<ul>
+<li>RCU and WCU, set on table level</li>
+<li>Amazon CloudWatch Metrics that are captured on table level</li>
+</ul>
+</li>
+<li>Number of tables can drastically grow in DDB with each microservice introducing new set of tables for each particular tenant</li>
+<li>Another approach to be considered is to have a single table for all data per tenant
+<ul>
+<li>Simplifies provisioning, management and migration profile of your solution</li>
+</ul>
+</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 650px;" src="/assets/images/aws/silo-model-dynamodb.png" alt="silo-model-dynamodb" />
+    
+    
+</figure>
+
+
+<h3 id="bridge-model-1">Bridge Model</h3>
+<ul>
+<li>Relaxing some isolation requirements through eliminating the introduction of any table-level IAM policies</li>
+<li>Removing IAM policies could simplify your provisioning scheme</li>
+</ul>
+<h3 id="pool-model-1">Pool Model</h3>
+<ul>
+<li>For evenly distributed data across tenant performance optimization can be achieved by simply relying on underlying partioning scheme</li>
+<li>For SaaS environments which don&rsquo;t have uniform multi-tenant data distribution you need to introduce a mechanism to better control the distribution of your data
+<ul>
+<li>One way would be to introduce shards per tenant and make it a parition key</li>
+<li>Gives us control on how much data a shard should contain and make the distribution of data uniform across partitions</li>
+<li>Tenants with large data footprint will be given more shards</li>
+<li>Introduces level of indirection that has to be addressed in data access layers (tenant-shard resolution)</li>
+</ul>
+</li>
+</ul>
+<p>Introducing a tenant lookup table:
+
+<figure >
+    
+        <img style="max-width: 650px;" src="/assets/images/aws/pool-ddb-sharding.png" alt="pool-ddb-sharding" />
+    
+    
+</figure>
+
+</p>
+<h2 id="mutlitenancy-on-rds">Mutlitenancy on RDS</h2>
+<h3 id="silo-model-2">Silo Model</h3>
+<ul>
+<li>Creating separate instances for each tenant</li>
+<li>Typically satisfies the compliance needs of customers without the overhead of provisioning entirely separate account</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 450px;" src="/assets/images/aws/silo-pattern-rds.png" alt="silo-pattern-rds" />
+    
+    
+</figure>
+
+
+<h3 id="bridge-model-2">Bridge Model</h3>
+<ul>
+<li>Leverage a single instance for all tenants</li>
+<li>Create separate representation for each tenant</li>
+<li>Requires provisioning and runtime resolution for each tenant</li>
+<li>Requires adopting policies to limit schema changes</li>
+<li>Some RDS containers limit the number of database/schemas that you can create for an instance</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 500px;" src="/assets/images/aws/bridge-model-rds.png" alt="bridge-model-rds" />
+    
+    
+</figure>
+
+
+<h3 id="pool-model-2">Pool Model</h3>
+<ul>
+<li>Tenant data is stored in a single RDS instance</li>
+<li>Tenants share custom tables</li>
+<li>Tenant identifier is used to access each tenant&rsquo;s data</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 500px;" src="/assets/images/aws/pool-model-rds.png" alt="pool-model-rds" />
+    
+    
+</figure>
+
+
+<h3 id="single-instance-limits">Single Instance Limits</h3>
+<ul>
+<li>Storage Amount Limits
+<ul>
+<li>MySQL, MariaDB, Oracle, PostgreSQL - 6TB</li>
+<li>SQL Server - 4TB</li>
+<li>Aurora - 64TB</li>
+</ul>
+</li>
+<li>Consider sharding tenants data and distributing accross multiple instances</li>
+</ul>
+<h2 id="mutlitenancy-on-amazon-redshift">Mutlitenancy on Amazon Redshift</h2>
+<ul>
+<li>Focuses on building high-performance clusters to house large-scale data warehouses</li>
+<li>Places some limits on the constructs that you can create for each cluster
+<ul>
+<li>60 databases per cluster, 250 schemas per db, etc&hellip;</li>
+</ul>
+</li>
+</ul>
+<h3 id="silo-model-3">Silo Model</h3>
+<ul>
+<li>Requires provisioning separate clusters for each tenant</li>
+<li>Access can be controlled and restricted using IAM policies and database priveleges</li>
+<li>Ability to create tuned experience per tenant</li>
+<li>Per tenant provisioning process adds extra complexity to your deployment footprint</li>
+</ul>
+<h3 id="bridge-model-3">Bridge Model</h3>
+<ul>
+<li>Create separate schemas for each tenant</li>
+<li>You will run into 256 limit with Redshift</li>
+<li>Redshift security grants all access to databases inside the cluster
+<ul>
+<li>SaaS application will be responsible for enforcing finer-grained access controls</li>
+</ul>
+</li>
+<li>The isolation profile of this solution is likely unacceptbale by customers</li>
+</ul>
+<h3 id="pool-model-3">Pool Model</h3>
+<ul>
+<li>All tenants share databases and tables</li>
+<li>Overall management, monitoring and agility are improved by using a single Redshift Cluster</li>
+<li>Upper limit of 500 concurrent connections can be a bottleneck
+<ul>
+<li>SaaS developer defines an effective strategy to manage the connection, e.g. implementing client-based caching</li>
+</ul>
+</li>
+</ul>
+<h2 id="agility">Agility</h2>
+<p>Storage technology and isolation model directly impacts your ability to easily deploy new features. Underlying storage model must accomodate the required changes without requiring downtime. The storage model picked today might not be a good fit for tomorrow.</p>
 
 
 <footer class="footline">
@@ -3035,9 +3444,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -3045,6 +3451,25 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -5037,7 +5462,7 @@
 			<a class="nav nav-prev" href="/aws/" title="AWS WhitePapers"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/aws-cmls/" title="AWS Certified MLS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/aws/elasticache-at-scale/" title="Performance at Scale with Amazon ElastiCache" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -5047,19 +5472,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1595798915"></script>
-    <script src="/js/perfect-scrollbar.min.js?1595798915"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1595798915"></script>
-    <script src="/js/jquery.sticky.js?1595798915"></script>
-    <script src="/js/featherlight.min.js?1595798915"></script>
-    <script src="/js/highlight.pack.js?1595798915"></script>
+    <script src="/js/clipboard.min.js?1595887179"></script>
+    <script src="/js/perfect-scrollbar.min.js?1595887179"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1595887179"></script>
+    <script src="/js/jquery.sticky.js?1595887179"></script>
+    <script src="/js/featherlight.min.js?1595887179"></script>
+    <script src="/js/highlight.pack.js?1595887179"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1595798915"></script>
-    <script src="/js/learn.js?1595798915"></script>
-    <script src="/js/hugo-learn.js?1595798915"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1595887179"></script>
+    <script src="/js/learn.js?1595887179"></script>
+    <script src="/js/hugo-learn.js?1595887179"></script>
 
-    <link href="/mermaid/mermaid.css?1595798915" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1595798915"></script>
+    <link href="/mermaid/mermaid.css?1595887179" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1595887179"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
