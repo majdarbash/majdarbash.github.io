@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management</title>
+      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</guid>
+      <description>Storage Management on S3  User Permission Management By Tagging S3 Inventory Storage Class Analysis Object-Level Logging Cross-Region Replication (CRR) Automate with Trigger-Based Workflow Amazon S3 event notifications Default Encryption Amazon Macie   AlertLogic S3 use-case on AWS  S3 Object Management Tags with Lifecycle Expiration Policies Tags with Lifecycle Transition Policies Demonstrate Scale of Storage Solution (AWS re:Invent 2017)    Storage Management on S3  Organize  Object Tagging   Monitor and Analyze  S3 Inventory Amazon CloudWatch Storage Class Analysis AWS CloudTrail   Act  Cross Region replications Event Notification Lifecycle Policy   Security Management  AWS KMS AWS IAM Bucket Permissions Check Encryption Status in S3 Inventory Default Encryption Trusted advisor Amazon Macie    User Permission Management By Tagging { &amp;#34;version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Action&amp;#34;: [ &amp;#34;s3:GetObject&amp;#34; ], &amp;#34;Resource&amp;#34;: &amp;#34;arn:aws:s3:::Project-bucket/*&amp;#34;, &amp;#34;Condition&amp;#34;: {&amp;#34;StringEquals&amp;#34;: {&amp;#34;s3:RequestObjectTag/Project&amp;#34;: &amp;#34;x&amp;#34;}} } ] } S3 Inventory  Generates a CSV / ORC file based of all objects in S3 bucket with respect to filter criteria.</description>
+    </item>
+    
+    <item>
       <title>Multi-Tenant SaaS Storage Strategies</title>
       <link>https://majdarbash.github.io/aws/multi-tenant-saas-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25,9 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws/elasticache-at-scale/</guid>
-      <description>Memcached vs Redis ElastiCache for Memcached  Caching Design Patterns    Overview
- ElastiCache deploys one or more cache clusters for your application ElastiCache automates resources provisioning, failure detection and recovery, and software patching Supports Redis and Memcached engines  Alternatives to ElastiCache
- Amazon CloudFront - cache images, web pages, static data at the edge Amazon RDS Read Replicas - distributing data to remote apps On-host caching - this approach lacks of efficiency - cannot reuse existing cache entries and maintain consistency in validation of the cache keys across all hosts  Memcached vs Redis  Due to replication and persistence features of Redis, Redis is managed as relational database Memcached is designed as pure caching solution with no persistence - is managed as pool of nodes that can grow and shrink, similar to Amazon EC2 Auto Scaling Group  Important questions to consider impacting the choice of the caching engine:</description>
+      <description>Memcached vs Redis ElastiCache for Memcached  Caching Design Patterns Consistent Caching (Sharding) Lazy Caching Write On Through Expiration Date The Thundering Herd Cache (Almost) Everything   Elastic Cache for Redis  Distributing Reads and Writes Mutli-AZ with Auto Failover Sharding with Redis Advanced Datasets with Redis   Monitoring and Tuning  Monitoring Cache Efficiency Watching for Hotspots Memory Optimization Redis Backup and Restore Cluster Scaling and Auto Discovery    Overview</description>
     </item>
     
   </channel>

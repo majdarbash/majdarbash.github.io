@@ -185,11 +185,6 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/2019/04/17/aws-cloud-best-practices/</loc>
-    <lastmod>2019-04-17T23:11:40+04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://majdarbash.github.io/2019/04/17/aws-certification-solution-architect-iam-s3/</loc>
     <lastmod>2019-04-17T23:11:01+04:00</lastmod>
   </url>
@@ -409,6 +404,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/aws-csaa/databases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</loc>
   </url>
   
   <url>

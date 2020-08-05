@@ -22,21 +22,21 @@
     <title>Performance at Scale with Amazon ElastiCache :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1595887179" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1595887179" rel="stylesheet">
-    <link href="/css/hybrid.css?1595887179" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1595887179" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1595887179" rel="stylesheet">
-    <link href="/css/auto-complete.css?1595887179" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1595887179" rel="stylesheet">
-    <link href="/css/theme.css?1595887179" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1595887179" rel="stylesheet">
+    <link href="/css/nucleus.css?1596671067" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1596671067" rel="stylesheet">
+    <link href="/css/hybrid.css?1596671067" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1596671067" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1596671067" rel="stylesheet">
+    <link href="/css/auto-complete.css?1596671067" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1596671067" rel="stylesheet">
+    <link href="/css/theme.css?1596671067" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1596671067" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1595887179" rel="stylesheet">
+    <link href="/css/theme-blue.css?1596671067" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1595887179"></script>
+    <script src="/js/jquery-3.3.1.min.js?1596671067"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -81,14 +81,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1595887179"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1595887179"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1596671067"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1596671067"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1595887179"></script>
+<script type="text/javascript" src="/js/search.js?1596671067"></script>
 
     
   </div>
@@ -123,6 +123,27 @@
           
           
         
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1901,27 +1922,6 @@
  
   
     
-      <li data-nav-id="/2019/04/17/aws-cloud-best-practices/" title="AWS Cloud Best Practices" class="dd-item ">
-        <a href="/2019/04/17/aws-cloud-best-practices/">
-        AWS Cloud Best Practices
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/2019/04/17/aws-certification-solution-architect-iam-s3/" title="S3" class="dd-item ">
         <a href="/2019/04/17/aws-certification-solution-architect-iam-s3/">
         S3
@@ -2975,6 +2975,29 @@
     <li><a href="#elasticache-for-memcached">ElastiCache for Memcached</a>
       <ul>
         <li><a href="#caching-design-patterns">Caching Design Patterns</a></li>
+        <li><a href="#consistent-caching-sharding">Consistent Caching (Sharding)</a></li>
+        <li><a href="#lazy-caching">Lazy Caching</a></li>
+        <li><a href="#write-on-through">Write On Through</a></li>
+        <li><a href="#expiration-date">Expiration Date</a></li>
+        <li><a href="#the-thundering-herd">The Thundering Herd</a></li>
+        <li><a href="#cache-almost-everything">Cache (Almost) Everything</a></li>
+      </ul>
+    </li>
+    <li><a href="#elastic-cache-for-redis">Elastic Cache for Redis</a>
+      <ul>
+        <li><a href="#distributing-reads-and-writes">Distributing Reads and Writes</a></li>
+        <li><a href="#mutli-az-with-auto-failover">Mutli-AZ with Auto Failover</a></li>
+        <li><a href="#sharding-with-redis">Sharding with Redis</a></li>
+        <li><a href="#advanced-datasets-with-redis">Advanced Datasets with Redis</a></li>
+      </ul>
+    </li>
+    <li><a href="#monitoring-and-tuning">Monitoring and Tuning</a>
+      <ul>
+        <li><a href="#monitoring-cache-efficiency">Monitoring Cache Efficiency</a></li>
+        <li><a href="#watching-for-hotspots">Watching for Hotspots</a></li>
+        <li><a href="#memory-optimization">Memory Optimization</a></li>
+        <li><a href="#redis-backup-and-restore">Redis Backup and Restore</a></li>
+        <li><a href="#cluster-scaling-and-auto-discovery">Cluster Scaling and Auto Discovery</a></li>
       </ul>
     </li>
   </ul>
@@ -3006,6 +3029,29 @@
 <li><a href="#elasticache-for-memcached">ElastiCache for Memcached</a>
 <ul>
 <li><a href="#caching-design-patterns">Caching Design Patterns</a></li>
+<li><a href="#consistent-caching-sharding">Consistent Caching (Sharding)</a></li>
+<li><a href="#lazy-caching">Lazy Caching</a></li>
+<li><a href="#write-on-through">Write On Through</a></li>
+<li><a href="#expiration-date">Expiration Date</a></li>
+<li><a href="#the-thundering-herd">The Thundering Herd</a></li>
+<li><a href="#cache-almost-everything">Cache (Almost) Everything</a></li>
+</ul>
+</li>
+<li><a href="#elastic-cache-for-redis">Elastic Cache for Redis</a>
+<ul>
+<li><a href="#distributing-reads-and-writes">Distributing Reads and Writes</a></li>
+<li><a href="#mutli-az-with-auto-failover">Mutli-AZ with Auto Failover</a></li>
+<li><a href="#sharding-with-redis">Sharding with Redis</a></li>
+<li><a href="#advanced-datasets-with-redis">Advanced Datasets with Redis</a></li>
+</ul>
+</li>
+<li><a href="#monitoring-and-tuning">Monitoring and Tuning</a>
+<ul>
+<li><a href="#monitoring-cache-efficiency">Monitoring Cache Efficiency</a></li>
+<li><a href="#watching-for-hotspots">Watching for Hotspots</a></li>
+<li><a href="#memory-optimization">Memory Optimization</a></li>
+<li><a href="#redis-backup-and-restore">Redis Backup and Restore</a></li>
+<li><a href="#cluster-scaling-and-auto-discovery">Cluster Scaling and Auto Discovery</a></li>
 </ul>
 </li>
 </ul>
@@ -3077,6 +3123,330 @@
 <span style="color:#75715e"># will return 0 if connection was successful (the exist code of last command)</span>
 echo $?
 </code></pre></div><h3 id="caching-design-patterns">Caching Design Patterns</h3>
+<p>Some questions you need to think of:</p>
+<ul>
+<li>Is it safe to use a cached value?</li>
+<li>Is caching effective for that data?</li>
+<li>Is the data structured well for caching?</li>
+</ul>
+<p><strong>Problem Overview</strong>
+Objective: Splitting cache keys across multiple nodes to make use of multiple ElastiCache nodes</p>
+<ul>
+<li>Naive approach is to randomly distribute cache keys
+<ul>
+<li>Based on this approach hash key is generated from random CRC32</li>
+<li>Node corresponding to hash key % (modulo) number of nodes will contain the key</li>
+<li>In the event of scaling, you will have to remap some keys, i.e. old count / new count</li>
+<li>If Scaling from 9 to 10 nodes, you will have to remap 90% of your keys</li>
+<li>Bad approach as scaling the nodes introduces more load on the database</li>
+</ul>
+</li>
+</ul>
+<h3 id="consistent-caching-sharding">Consistent Caching (Sharding)</h3>
+<ul>
+<li>Consistent Hashing
+<ul>
+<li>Alternative approach to spreading cache keys across your cache nodes</li>
+<li>Creating internal ring with a pre-allocated number of partitions that can hold hash keys</li>
+<li>There&rsquo;s mathematical calculation involved to preallocate a set of random integers and assign cache nodes to the random integers</li>
+<li>In this case you find the closest integer in the ring for a given cache key and use the associated cache node</li>
+<li>Many Client Libraries support consistent hashing
+<ul>
+<li>Make sure that consistent hashing is enabled in the client library
+<ul>
+<li>For example in PHP: <code>$memcached-&gt;setOption(Memcached::OPT_LIBKETAMA_COMPATIBLE, true);</code></li>
+</ul>
+</li>
+<li>If possible use ElastiCache Clients with <strong>Auto Discovery</strong> to support Auto Discovery of new nodes as they are added to the cluster</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<figure >
+    
+        <img style="max-width: 650px;" src="/assets/images/aws/consistent-hashing.png"  />
+    
+    
+</figure>
+
+
+<h3 id="lazy-caching">Lazy Caching</h3>
+<ul>
+<li>Populate the cache only when an object is requested by the application</li>
+<li>Cache only contains objects that application requests, keeping the cache size managable</li>
+<li>Cache expiration is easily handled by deleting the cached object</li>
+</ul>
+<h3 id="write-on-through">Write On Through</h3>
+<ul>
+<li>Cache is updated realtime when the database is updated</li>
+<li>Advantages
+<ul>
+<li>Avoids cache misses</li>
+<li>Shifts any application delay to the write operation, which maps better with user expectations</li>
+<li>Simplifies cache expiration (cache is always up to date)</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Cache may be filled with unnecessary objects and may evict more frequently accessed objects out of cache</li>
+<li>If cache node fails you need to apply lazy cache mechanism to populate the cache</li>
+</ul>
+</li>
+</ul>
+<h3 id="expiration-date">Expiration Date</h3>
+<ul>
+<li>Always apply TTL for all cache keys, except those updated by write-through caching</li>
+<li>For rapidly changing data add a TTL of few seconds to minimize the load on database</li>
+<li>Russian doll caching pattern: Nested records are managed with their own cache key and top-level resource is a collection of those cache keys</li>
+<li>When not sure, delete a cache key - Lazy Caching should refresh the key when needed</li>
+</ul>
+<h3 id="the-thundering-herd">The Thundering Herd</h3>
+<ul>
+<li>The Thundering Herd effect happens when high number of users request the same piece of data with a cache miss</li>
+<li>Usually happens in highly concurrent environment</li>
+<li>This effect can also happen when adding a new cache node - as it has an empty memory</li>
+<li>Possible Solutions
+<ul>
+<li>Prewarm the cache using a script that hits a set of URLs
+<ul>
+<li>Prewarming can be automated by triggering the script to run whenever the app receives a cluster reconfiguration event through Amazon SNS</li>
+</ul>
+</li>
+<li>Add a bit of randomness to cache TTLs to mitigate simultaneous expiry event
+<ul>
+<li><code>ttl = 3600 + rand() * 120</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cache-almost-everything">Cache (Almost) Everything</h3>
+<ul>
+<li>Caching should be applied for the heavy queries of database</li>
+<li>Consider caching other less heavy queries as well, whenever appropriate</li>
+<li>Monitor cache misses to determine the effectiveness of your cache</li>
+</ul>
+<h2 id="elastic-cache-for-redis">Elastic Cache for Redis</h2>
+<ul>
+<li>Redis data structures cannot be sharded
+<ul>
+<li>Redis ElastiCache clusters are always a single node</li>
+</ul>
+</li>
+<li>Primary node can have one or more read replica
+<ul>
+<li>Replication group consists of a primary and up to five read replicas</li>
+<li>Number of replicas attached will affect the performance of primary node</li>
+<li>One or two read replicas in a different Availability Zone are sufficient for availability</li>
+</ul>
+</li>
+<li>With Multi-AZ enabled will automatically failover
+<ul>
+<li>Primary Endpoint is a DNS name of current Redis primary node</li>
+<li>In event of failover Primary Endpoint will be updated to point to new node</li>
+</ul>
+</li>
+<li>Supports persistence, backup and recovery</li>
+</ul>
+<h3 id="distributing-reads-and-writes">Distributing Reads and Writes</h3>
+<ul>
+<li>Requires configuring the application to write to primary endpoint and read from read replicas endpoint</li>
+<li>Read workloads can be separated from write workloads</li>
+<li>Read Replicas may return data slightly out of date from the primary node
+<ul>
+<li>There&rsquo;s a short lag between the write operation to be reflected on the read replicas</li>
+</ul>
+</li>
+</ul>
+<p><strong>Reading data from replica?</strong></p>
+<ul>
+<li>Is the value being used only for display purposes?</li>
+<li>Is the value a cached value, for example a page fragment?</li>
+<li>Is the value being used on the screen where the user might have just edited it?  - using outdated value will look like a bug</li>
+<li>Is the value being used for application logic? - using outdated value can be risky</li>
+<li>Are multiple processes using the value simultaneously, such as a lock or queue?  - using outdated value can be risky</li>
+</ul>
+<h3 id="mutli-az-with-auto-failover">Mutli-AZ with Auto Failover</h3>
+<ul>
+<li>AWS ElastiCache will detect a failure of the primary node and transfer the <strong>primary endpoint</strong> to point into failover instance</li>
+<li>Failover process can take several minutes</li>
+<li>All production systems should use multi-az with auto-failover</li>
+<li>In case of the failover, the read replica selected to be promoted may be slightly behind master</li>
+<li>Slight data loss may be expected in case of rapidly changing data</li>
+</ul>
+<h3 id="sharding-with-redis">Sharding with Redis</h3>
+<ul>
+<li>Simple keys and counters - support sharding</li>
+<li>Multidimensional sets, lists and hashes - don&rsquo;t support sharding</li>
+<li>Redis client has to be configured to shard between redis clusters</li>
+<li>Horizontal sharding can be combined with split reads and writes
+<ul>
+<li>Sharded masters and sharded replicas</li>
+</ul>
+</li>
+<li>Designing the application to support read/write design in future you can add multiple clusters in future</li>
+</ul>
+<h3 id="advanced-datasets-with-redis">Advanced Datasets with Redis</h3>
+<p><strong>Game Leaderboards</strong></p>
+<ul>
+<li>Redis sorted sets simultaneously guarantee both uniqueness and ordering of elements</li>
+<li>Commnads start with <code>Z</code>, e.g. <code>ZADD</code>, <code>ZRANGE</code>, <code>ZRANK</code></li>
+<li>On insertion element is reranked and assigned a numeric position</li>
+</ul>
+<p><strong>Recommendation Engines</strong></p>
+<ul>
+<li>Some recommendation algorithmns, e.g. Slope One, require in-memory access to every item ever rated before by anyone in the system</li>
+<li>Data should be loaded in the memory to run the algorithm</li>
+<li>Redis counters can be used to increment / decrement the number of likes or dislikes for a given item</li>
+<li>Redis hashes can be used to manitain a list of everyone who liked / disliked an item</li>
+<li>Open source projects like <strong>Recommendify</strong> and <strong>Recommendable</strong> use Redis this way</li>
+<li>Persistence can be used to move keep this data in Redis</li>
+</ul>
+<pre><code class="language-redis-cli" data-lang="redis-cli">INCR &quot;item:89287:likes&quot;
+
+HSET &quot;item:89287:ratings&quot; &quot;Susan&quot; 1
+INCR &quot;item:89287:dislikes&quot;
+
+HSET &quot;item:89287:ratings&quot; &quot;Tommy&quot; -1
+</code></pre><p><strong>Chat and Messaging</strong></p>
+<ul>
+<li>Provides lightweight pub/sub mechanism</li>
+<li>Well-suited to simple chat and messaging needs</li>
+<li>In-app messaging, real-time comment streams</li>
+<li>Use <code>PUBLISH</code> and <code>SUBSCRIBE</code> commands</li>
+<li>Pub/sub messaging doesn&rsquo;t get persisted to disk
+<ul>
+<li>You will loose the data if the cache node fails</li>
+</ul>
+</li>
+<li>Amazon SNS can be considered as a reliable alternative topic-based system</li>
+</ul>
+<pre><code class="language-redis-cli" data-lang="redis-cli">SUBSCRIBE &quot;chat:15&quot;
+
+PUBLISH &quot;chat:15&quot; &quot;How are you?&quot;
+
+UNSUBSCRIBE &quot;chat:15&quot;
+</code></pre><p><strong>Queues</strong></p>
+<ul>
+<li>Redis lists can be used to hold items in a queue</li>
+<li>When process picks up an item, item is pushed to in-progress queue and then deleted when the work is done</li>
+<li><code>Resque</code> open source project (uses by Github) uses Redis as a queue.</li>
+<li>Redis queue has certain advantages
+<ul>
+<li>Very fast speed</li>
+<li>Once and only once delivery</li>
+<li>Guaranteed message orderding</li>
+</ul>
+</li>
+<li>ElastiCache for Redis backup and recovery options should be configured with Queue persistence in mind</li>
+</ul>
+<p><strong>Client Libraries and Consistent Hashing</strong></p>
+<ul>
+<li>Redis client libraries support most popular programming languages</li>
+<li>Redis libraries rarely support consistent hashing as advanced types cannot be horizontally sharded</li>
+<li>Redis cannot be horizontally scaled easily</li>
+<li>Redis can only scale up to a larger node size, because its data structures must reside in a single memory image in order to perform properly</li>
+</ul>
+<h2 id="monitoring-and-tuning">Monitoring and Tuning</h2>
+<h3 id="monitoring-cache-efficiency">Monitoring Cache Efficiency</h3>
+<ul>
+<li>Use CloudWatch Metrics</li>
+<li>Watch CPU Usage
+<ul>
+<li>CPUUtilization</li>
+<li>EngineCPUUtilization</li>
+<li>Evictions
+<ul>
+<li>Large number of evictions indicates that your cache is running out of space</li>
+</ul>
+</li>
+<li>CacheMisses
+<ul>
+<li>Large number of CacheMissed combined with large number of Evictions indicates that the cache is thrashing due to the lack of memory</li>
+</ul>
+</li>
+<li>BytesUsedForCacheItems
+<ul>
+<li>Indicates the total amount of memory used by Memcahced / Redis. Both try to use as much memory as possible.</li>
+</ul>
+</li>
+<li>SwapUsage
+<ul>
+<li>In normal usage, neither Redis nor Memcached should be performing swaps.</li>
+</ul>
+</li>
+<li>Currconnections
+<ul>
+<li>An increasing number of connections might indicate a problem with your application. This value can be used as a threshold for alarm.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Scaling
+<ul>
+<li>For read intensive workloads, consider adding read replicas</li>
+<li>For write intensive workloads, consider adding more shards to distribute the workloads</li>
+</ul>
+</li>
+</ul>
+<h3 id="watching-for-hotspots">Watching for Hotspots</h3>
+<ul>
+<li>Hotspots are nodes in your cache that receive higher load than other nodes</li>
+<li>Hotkeys - are cached keys that are access more frequently than others</li>
+<li>To investigate the hotspots is to track cache key access counts in application log
+<ul>
+<li>Will significantly affect performance, so should not be done unless you are very suspicious of hotspots</li>
+<li>One possible solution is to create a mapping table to remap very hot keys to separate set of cache nodes</li>
+<li>Another is to add additional layer of smaller caches in front of your main nodes to act as a buffer - gives more flexibility but introduces additional latency</li>
+</ul>
+</li>
+<li>Papers for researching on Hotspot issues:
+<ul>
+<li>Relieving Hot Spots on the World Wide Web</li>
+<li>Characterizing Load Imbalance in Real-World Networked Caches</li>
+</ul>
+</li>
+</ul>
+<h3 id="memory-optimization">Memory Optimization</h3>
+<p><strong>Memcached</strong></p>
+<ul>
+<li>Uses slab allocator, allocates memory in fixed chunks</li>
+<li>When launching ElastiCache cluster, <code>max_cache_memory</code> parameter is set automatically</li>
+<li><code>chunk_size</code> and <code>chunk_size_growth_factor</code> parameters work together to control how memory chunks are allocated</li>
+</ul>
+<p><strong>Redis</strong></p>
+<ul>
+<li>Redis exposes a number of Redis configuraiton variables that will affect how Redis balances CPU and memory</li>
+</ul>
+<h3 id="redis-backup-and-restore">Redis Backup and Restore</h3>
+<ul>
+<li>AWS automatically takes snapshots of your Redis Cluster and saves them to AWS S3</li>
+<li>Redis backups require more memory to be available for the background Redis backup process</li>
+<li>For production - enable Redis backup with minimum 7 days retention</li>
+</ul>
+<h3 id="cluster-scaling-and-auto-discovery">Cluster Scaling and Auto Discovery</h3>
+<ul>
+<li>AWS does not currently support auto-scaling</li>
+<li>Number of cluster nodes can be changed from AWS console/API</li>
+<li>During changing the cluster nodes, some of the cache keys will be remapped to new nodes - impacting performance of your application</li>
+<li>ElastiCache clients support auto-discovery of Memcached nodes</li>
+<li>Auto-discovery enables your application to auto-locate and connect to the Memcached nodes</li>
+</ul>
+<p><strong>Cluster Reconfiguration Events from Amazon SNS</strong></p>
+<ul>
+<li>Your application can be configured to dynamically detect nodes being added or removed by reacting to Events through SNS</li>
+<li><code>ElastiCache:AddCacheNodeComplete</code> and <code>ElastiCache:RemoveCacheNodeComplete</code> events are published when nodes are added and removed to the cluster</li>
+<li>Follow the steps:
+<ol>
+<li>Create AWS SNS topic for ElastiCache node additional and removal</li>
+<li>Modify application code to subscribe to the SNS topic</li>
+<li>When node is added or removed, re-run auto-discovery code to get the updated cache list</li>
+<li>Application adds the new list of cache nodes and reconfigured Memcached client accordingly</li>
+</ol>
+</li>
+</ul>
 
 
 <footer class="footline">
@@ -3147,6 +3517,22 @@ echo $?
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -4281,22 +4667,6 @@ echo $?
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -5171,19 +5541,19 @@ echo $?
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1595887179"></script>
-    <script src="/js/perfect-scrollbar.min.js?1595887179"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1595887179"></script>
-    <script src="/js/jquery.sticky.js?1595887179"></script>
-    <script src="/js/featherlight.min.js?1595887179"></script>
-    <script src="/js/highlight.pack.js?1595887179"></script>
+    <script src="/js/clipboard.min.js?1596671067"></script>
+    <script src="/js/perfect-scrollbar.min.js?1596671067"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1596671067"></script>
+    <script src="/js/jquery.sticky.js?1596671067"></script>
+    <script src="/js/featherlight.min.js?1596671067"></script>
+    <script src="/js/highlight.pack.js?1596671067"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1595887179"></script>
-    <script src="/js/learn.js?1595887179"></script>
-    <script src="/js/hugo-learn.js?1595887179"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1596671067"></script>
+    <script src="/js/learn.js?1596671067"></script>
+    <script src="/js/hugo-learn.js?1596671067"></script>
 
-    <link href="/mermaid/mermaid.css?1595887179" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1595887179"></script>
+    <link href="/mermaid/mermaid.css?1596671067" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1596671067"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

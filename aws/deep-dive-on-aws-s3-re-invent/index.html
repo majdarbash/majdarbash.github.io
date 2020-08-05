@@ -19,24 +19,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>AWS Cloud Best Practices :: My New Hugo Site</title>
+    <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1595887179" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1595887179" rel="stylesheet">
-    <link href="/css/hybrid.css?1595887179" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1595887179" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1595887179" rel="stylesheet">
-    <link href="/css/auto-complete.css?1595887179" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1595887179" rel="stylesheet">
-    <link href="/css/theme.css?1595887179" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1595887179" rel="stylesheet">
+    <link href="/css/nucleus.css?1596671067" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1596671067" rel="stylesheet">
+    <link href="/css/hybrid.css?1596671067" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1596671067" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1596671067" rel="stylesheet">
+    <link href="/css/auto-complete.css?1596671067" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1596671067" rel="stylesheet">
+    <link href="/css/theme.css?1596671067" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1596671067" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1595887179" rel="stylesheet">
+    <link href="/css/theme-blue.css?1596671067" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1595887179"></script>
+    <script src="/js/jquery-3.3.1.min.js?1596671067"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -46,7 +46,7 @@
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   </head>
-  <body class="" data-url="/2019/04/17/aws-cloud-best-practices/">
+  <body class="" data-url="/aws/deep-dive-on-aws-s3-re-invent/">
     <nav id="sidebar" class="">
 
 
@@ -81,14 +81,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1595887179"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1595887179"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1596671067"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1596671067"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1595887179"></script>
+<script type="text/javascript" src="/js/search.js?1596671067"></script>
 
     
   </div>
@@ -107,7 +107,7 @@
   
     
     <li data-nav-id="/aws/" title="AWS WhitePapers" class="dd-item 
-        
+        parent
         
         
         ">
@@ -123,6 +123,27 @@
           
           
         
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item active">
+        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1749,7 +1770,7 @@
   
     
     <li data-nav-id="/random/" title="Random" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1883,27 +1904,6 @@
       <li data-nav-id="/2019/04/17/serverless/" title="Serverless" class="dd-item ">
         <a href="/2019/04/17/serverless/">
         Serverless
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/2019/04/17/aws-cloud-best-practices/" title="AWS Cloud Best Practices" class="dd-item active">
-        <a href="/2019/04/17/aws-cloud-best-practices/">
-        AWS Cloud Best Practices
         
         </a>
     </li>
@@ -2956,7 +2956,7 @@
             
           
           
-            <a href='/'>Docs</a> > <a href='/random/'>Random</a> > AWS Cloud Best Practices
+            <a href='/'>Docs</a> > <a href='/aws/'>AWS WhitePapers</a> > Deep Dive on Amazon S3 & Amazon Glacier Storage Management
           
         
           
@@ -2969,7 +2969,30 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#storage-management-on-s3">Storage Management on S3</a>
+      <ul>
+        <li><a href="#user-permission-management-by-tagging">User Permission Management By Tagging</a></li>
+        <li><a href="#s3-inventory">S3 Inventory</a></li>
+        <li><a href="#storage-class-analysis">Storage Class Analysis</a></li>
+        <li><a href="#object-level-logging">Object-Level Logging</a></li>
+        <li><a href="#cross-region-replication-crr">Cross-Region Replication (CRR)</a></li>
+        <li><a href="#automate-with-trigger-based-workflow-amazon-s3-event-notifications">Automate with Trigger-Based Workflow Amazon S3 event notifications</a></li>
+        <li><a href="#default-encryption">Default Encryption</a></li>
+        <li><a href="#amazon-macie">Amazon Macie</a></li>
+      </ul>
+    </li>
+    <li><a href="#alertlogic-s3-use-case-on-aws">AlertLogic S3 use-case on AWS</a>
+      <ul>
+        <li><a href="#s3-object-management">S3 Object Management</a></li>
+        <li><a href="#tags-with-lifecycle-expiration-policies">Tags with Lifecycle Expiration Policies</a></li>
+        <li><a href="#tags-with-lifecycle-transition-policies">Tags with Lifecycle Transition Policies</a></li>
+        <li><a href="#demonstrate-scale-of-storage-solution-aws-reinvent-2017">Demonstrate Scale of Storage Solution (AWS re:Invent 2017)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -2985,15 +3008,249 @@
           
             <h1>
               
-              AWS Cloud Best Practices
+              Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
             </h1>
           
 
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<ul>
+<li><a href="#storage-management-on-s3">Storage Management on S3</a>
+<ul>
+<li><a href="#user-permission-management-by-tagging">User Permission Management By Tagging</a></li>
+<li><a href="#s3-inventory">S3 Inventory</a></li>
+<li><a href="#storage-class-analysis">Storage Class Analysis</a></li>
+<li><a href="#object-level-logging">Object-Level Logging</a></li>
+<li><a href="#cross-region-replication-crr">Cross-Region Replication (CRR)</a></li>
+<li><a href="#automate-with-trigger-based-workflow-amazon-s3-event-notifications">Automate with Trigger-Based Workflow Amazon S3 event notifications</a></li>
+<li><a href="#default-encryption">Default Encryption</a></li>
+<li><a href="#amazon-macie">Amazon Macie</a></li>
+</ul>
+</li>
+<li><a href="#alertlogic-s3-use-case-on-aws">AlertLogic S3 use-case on AWS</a>
+<ul>
+<li><a href="#s3-object-management">S3 Object Management</a></li>
+<li><a href="#tags-with-lifecycle-expiration-policies">Tags with Lifecycle Expiration Policies</a></li>
+<li><a href="#tags-with-lifecycle-transition-policies">Tags with Lifecycle Transition Policies</a></li>
+<li><a href="#demonstrate-scale-of-storage-solution-aws-reinvent-2017">Demonstrate Scale of Storage Solution (AWS re:Invent 2017)</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="storage-management-on-s3">Storage Management on S3</h2>
+<ul>
+<li>Organize
+<ul>
+<li>Object Tagging</li>
+</ul>
+</li>
+<li>Monitor and Analyze
+<ul>
+<li>S3 Inventory</li>
+<li>Amazon CloudWatch</li>
+<li>Storage Class Analysis</li>
+<li>AWS CloudTrail</li>
+</ul>
+</li>
+<li>Act
+<ul>
+<li>Cross Region replications</li>
+<li>Event Notification</li>
+<li>Lifecycle Policy</li>
+</ul>
+</li>
+<li>Security Management
+<ul>
+<li>AWS KMS</li>
+<li>AWS IAM</li>
+<li>Bucket Permissions Check</li>
+<li>Encryption Status in S3 Inventory</li>
+<li>Default Encryption</li>
+<li>Trusted advisor</li>
+<li>Amazon Macie</li>
+</ul>
+</li>
+</ul>
+<h3 id="user-permission-management-by-tagging">User Permission Management By Tagging</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+    <span style="color:#f92672">&#34;Statement&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+            <span style="color:#f92672">&#34;Action&#34;</span>: [
+                <span style="color:#e6db74">&#34;s3:GetObject&#34;</span>
+            ],
+            <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:s3:::Project-bucket/*&#34;</span>,
+            <span style="color:#f92672">&#34;Condition&#34;</span>: {<span style="color:#f92672">&#34;StringEquals&#34;</span>: {<span style="color:#f92672">&#34;s3:RequestObjectTag/Project&#34;</span>: <span style="color:#e6db74">&#34;x&#34;</span>}}
+            
+        }
+    ]
+}
+</code></pre></div><h3 id="s3-inventory">S3 Inventory</h3>
+<ul>
+<li>Generates a CSV / ORC file based of all objects in S3 bucket with respect to filter criteria.</li>
+<li>Triggers business workflows and applications such as secondary index, garbage collection, data auditing and offline analytics.</li>
+</ul>
+<p>Features:</p>
+<ul>
+<li>Save time</li>
+<li>Daily or Weekly delivery</li>
+<li>Delivery notification</li>
+<li>Delivery to S3 bucket</li>
+<li>Same set of metadata as the LIST API</li>
+<li>Can add size, last modified date, storage class, etag or replication status</li>
+<li>Object-level Encryption Status</li>
+<li>Encrypt Inventory with SSE-S3 or SSE-KMS</li>
+<li>CSV or ORC output format</li>
+<li>Query with Athena, Redshift Spectrum or any Hive tools</li>
+</ul>
+<p>S3 Inventory can be queried with Amazon Athena:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">EXTERNAL</span> <span style="color:#66d9ef">TABLE</span> my_inventory_table(
+    <span style="color:#f92672">`</span>bucket<span style="color:#f92672">`</span> string,
+    <span style="color:#f92672">`</span><span style="color:#66d9ef">key</span><span style="color:#f92672">`</span> string,
+    <span style="color:#f92672">`</span>version_id<span style="color:#f92672">`</span> string,
+    <span style="color:#f92672">`</span>is_latest<span style="color:#f92672">`</span> boolean, 
+    <span style="color:#f92672">`</span>is_delete_marker<span style="color:#f92672">`</span> boolean, 
+    <span style="color:#f92672">`</span><span style="color:#66d9ef">size</span><span style="color:#f92672">`</span> bigint, 
+    <span style="color:#f92672">`</span>last_modified_date<span style="color:#f92672">`</span> <span style="color:#66d9ef">timestamp</span>, 
+    <span style="color:#f92672">`</span>e_tag<span style="color:#f92672">`</span> string,
+    <span style="color:#f92672">`</span>storage_class<span style="color:#f92672">`</span> string, 
+    <span style="color:#f92672">`</span>is_multipart_uploaded<span style="color:#f92672">`</span> boolean,
+    <span style="color:#f92672">`</span>replication_status<span style="color:#f92672">`</span> string,
+    <span style="color:#f92672">`</span>encryption_status<span style="color:#f92672">`</span> string
+)
+PARTITIONED <span style="color:#66d9ef">BY</span> (dt string)
+<span style="color:#66d9ef">ROW</span> FORMAT SERDE <span style="color:#e6db74">&#39;org.apache.hadoop.hive.ql.io.orc.OrcSerde&#39;</span>
+STORED <span style="color:#66d9ef">AS</span> INPUTFORMAT <span style="color:#e6db74">&#39;org.apache.hadoop.hive.ql.io.SymLinkTextInputFormat&#39;</span>
+<span style="color:#66d9ef">LOCATION</span> <span style="color:#e6db74">&#39;s3://bucketname/inventory/output_destination/hive&#39;</span>
+</code></pre></div><h3 id="storage-class-analysis">Storage Class Analysis</h3>
+<ul>
+<li>Data-driven storage management for S3</li>
+<li>Daily Storage Class Analysis</li>
+<li>Export Analysis data to your S3 Bucket</li>
+<li>Filter by Bucket, Prefix, or Object Tags</li>
+</ul>
+<p>Process:</p>
+<ol>
+<li>Monitors access patterns to understand your storage usage</li>
+<li>After 30 days, recommends when to move objects to Standard - Infrequent Access</li>
+<li>Export file includes a daily report of storage, retrieved bytes, and GETs by object age</li>
+</ol>
+<h3 id="object-level-logging">Object-Level Logging</h3>
+<ul>
+<li>Allows Logging CloudTrail for Read / Write Events on the Objects</li>
+</ul>
+<h3 id="cross-region-replication-crr">Cross-Region Replication (CRR)</h3>
+<p>Use cases:</p>
+<ul>
+<li>Compliance</li>
+<li>Lower latency</li>
+<li>Security</li>
+</ul>
+<p>Features:</p>
+<ul>
+<li>Ownership overwrite for cross-account CRR</li>
+<li>Support SSE-KMS Encrypted objects</li>
+<li>Choose any S3 Storage Class as target</li>
+<li>Choose any AWS region as target</li>
+<li>Bi-directional replication</li>
+<li>Lifecycle Policy</li>
+</ul>
+<h3 id="automate-with-trigger-based-workflow-amazon-s3-event-notifications">Automate with Trigger-Based Workflow Amazon S3 event notifications</h3>
+<ul>
+<li>Notifications when objects are created via Put, Post, Copy, Multipart Upload, or Delete</li>
+<li>Filter on prefixes and suffixes</li>
+<li>Trigger workflow with Amazon SNS, Amazon SQS, and Amazon Lambda functions</li>
+</ul>
+<h3 id="default-encryption">Default Encryption</h3>
+<ul>
+<li>Automatically encrypts all objects written to your Amazon S3 bucket</li>
+<li>Choose SSE-S3 or SSE-KMS</li>
+<li>Makes it easy to satisfy compliance needs</li>
+</ul>
+<h3 id="amazon-macie">Amazon Macie</h3>
+<ul>
+<li>Security service that uses machine learning to automatically discover, classify and protect sensitive data in AWS</li>
+<li>Recognizes sensitive data</li>
+<li>Continously monitors data access</li>
+<li>Provides dashboards and alerts</li>
+</ul>
+<h2 id="alertlogic-s3-use-case-on-aws">AlertLogic S3 use-case on AWS</h2>
+<h3 id="s3-object-management">S3 Object Management</h3>
+<ul>
+<li>S3 Object Keys use hash prefix for performance: <code>logmsgs-001:/X-OGA/11543.2016-03/...</code></li>
+<li>S3 Objects written with two Tags
+<ul>
+<li>Customer identitfier (cid=1234567890)</li>
+<li>Date (date=2017-06)</li>
+</ul>
+</li>
+<li>AWS KMS used to generate data encryptionkeys
+<ul>
+<li>Customer Master Key (CMK) for each data type with automatic rotation enabeld</li>
+<li>Data Keys generated per-customer/per-month</li>
+</ul>
+</li>
+</ul>
+<h3 id="tags-with-lifecycle-expiration-policies">Tags with Lifecycle Expiration Policies</h3>
+<ul>
+<li>Per Customer Expiration Rule</li>
+<li>Uses <code>cid</code> and <code>date</code> tags as filter</li>
+<li>Indepdendent of object create time</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Rule&gt;</span>
+    <span style="color:#f92672">&lt;ID&gt;</span>expiration-12345<span style="color:#f92672">&lt;/ID&gt;</span>
+    <span style="color:#f92672">&lt;Status&gt;</span>Enabled<span style="color:#f92672">&lt;/Status&gt;</span>
+    <span style="color:#f92672">&lt;Filter&gt;</span>
+        <span style="color:#f92672">&lt;And&gt;</span>
+            <span style="color:#f92672">&lt;Tag&gt;</span>
+                <span style="color:#f92672">&lt;Name&gt;</span>cid<span style="color:#f92672">&lt;/Name&gt;</span>
+                <span style="color:#f92672">&lt;Value&gt;</span>12345<span style="color:#f92672">&lt;/Value&gt;</span>
+            <span style="color:#f92672">&lt;/Tag&gt;</span>
+            <span style="color:#f92672">&lt;Tag&gt;</span>
+                <span style="color:#f92672">&lt;Name&gt;</span>date<span style="color:#f92672">&lt;/Name&gt;</span>
+                <span style="color:#f92672">&lt;Value&gt;</span>2015-09<span style="color:#f92672">&lt;/Value&gt;</span>
+            <span style="color:#f92672">&lt;/Tag&gt;</span>
+        <span style="color:#f92672">&lt;/And&gt;</span>
+    <span style="color:#f92672">&lt;/Filter&gt;</span>
+    <span style="color:#f92672">&lt;Expiration&gt;</span>
+        <span style="color:#75715e">&lt;!-- Depends entirely on the tag values --&gt;</span>
+        <span style="color:#f92672">&lt;Days&gt;</span>0<span style="color:#f92672">&lt;/Days&gt;</span>
+    <span style="color:#f92672">&lt;/Expiration&gt;</span>
+<span style="color:#f92672">&lt;/Rule&gt;</span>
+</code></pre></div><h3 id="tags-with-lifecycle-transition-policies">Tags with Lifecycle Transition Policies</h3>
+<ul>
+<li>One Transition Rule per month</li>
+<li>Uses <code>date</code> tag as filter</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Rule&gt;</span>
+    <span style="color:#f92672">&lt;ID&gt;</span>transition-ia-3months<span style="color:#f92672">&lt;/ID&gt;</span>
+    <span style="color:#f92672">&lt;Status&gt;</span>Enabled<span style="color:#f92672">&lt;/Status&gt;</span>
+    <span style="color:#f92672">&lt;Filter&gt;</span>
+        <span style="color:#f92672">&lt;And&gt;</span>
+            <span style="color:#f92672">&lt;Tag&gt;</span>
+                <span style="color:#f92672">&lt;Name&gt;</span>date<span style="color:#f92672">&lt;/Name&gt;</span>
+                <span style="color:#f92672">&lt;Value&gt;</span>2016-07<span style="color:#f92672">&lt;/Value&gt;</span>
+            <span style="color:#f92672">&lt;/Tag&gt;</span>
+        <span style="color:#f92672">&lt;/And&gt;</span>
+    <span style="color:#f92672">&lt;/Filter&gt;</span>
+    <span style="color:#f92672">&lt;Transition&gt;</span>
+        <span style="color:#f92672">&lt;StorageClass&gt;</span>STANDARD_IA<span style="color:#f92672">&lt;/StorageClass&gt;</span>
+    <span style="color:#f92672">&lt;/Transition&gt;</span>
+<span style="color:#f92672">&lt;/Rule&gt;</span>
+</code></pre></div><h3 id="demonstrate-scale-of-storage-solution-aws-reinvent-2017">Demonstrate Scale of Storage Solution (AWS re:Invent 2017)</h3>
+<ul>
+<li>Scaled wrokload 100x successfully
+<ul>
+<li>140PB/month of customer data</li>
+<li>30k writes/second sustained</li>
+<li>Write latency 200ms at 95th percentile</li>
+<li>Read latency 125ms at 95th percentile</li>
+</ul>
+</li>
+<li>Limited only by resources driving traffic</li>
+</ul>
+
 
 <footer class="footline">
 	
@@ -3030,9 +3287,21 @@
             
                 
                     
-                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
+            
+            
+                
                     
+                    
                 
                 
 
@@ -3040,11 +3309,17 @@
                     
                     
 
+                    
+            
+        
                     
                         
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -4293,26 +4568,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -5073,10 +5328,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2019/04/17/serverless/" title="Serverless"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/aws/" title="AWS WhitePapers"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2019/04/17/aws-certification-solution-architect-iam-s3/" title="S3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/aws/multi-tenant-saas-storage/" title="Multi-Tenant SaaS Storage Strategies" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -5086,19 +5341,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1595887179"></script>
-    <script src="/js/perfect-scrollbar.min.js?1595887179"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1595887179"></script>
-    <script src="/js/jquery.sticky.js?1595887179"></script>
-    <script src="/js/featherlight.min.js?1595887179"></script>
-    <script src="/js/highlight.pack.js?1595887179"></script>
+    <script src="/js/clipboard.min.js?1596671067"></script>
+    <script src="/js/perfect-scrollbar.min.js?1596671067"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1596671067"></script>
+    <script src="/js/jquery.sticky.js?1596671067"></script>
+    <script src="/js/featherlight.min.js?1596671067"></script>
+    <script src="/js/highlight.pack.js?1596671067"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1595887179"></script>
-    <script src="/js/learn.js?1595887179"></script>
-    <script src="/js/hugo-learn.js?1595887179"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1596671067"></script>
+    <script src="/js/learn.js?1596671067"></script>
+    <script src="/js/hugo-learn.js?1596671067"></script>
 
-    <link href="/mermaid/mermaid.css?1595887179" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1595887179"></script>
+    <link href="/mermaid/mermaid.css?1596671067" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1596671067"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
