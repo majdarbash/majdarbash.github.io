@@ -22,21 +22,21 @@
     <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1596671067" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1596671067" rel="stylesheet">
-    <link href="/css/hybrid.css?1596671067" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1596671067" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1596671067" rel="stylesheet">
-    <link href="/css/auto-complete.css?1596671067" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1596671067" rel="stylesheet">
-    <link href="/css/theme.css?1596671067" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1596671067" rel="stylesheet">
+    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
+    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
+    <link href="/css/theme.css?1597023520" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1596671067" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1596671067"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -81,14 +81,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1596671067"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1596671067"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1596671067"></script>
+<script type="text/javascript" src="/js/search.js?1597023520"></script>
 
     
   </div>
@@ -106,13 +106,13 @@
  
   
     
-    <li data-nav-id="/aws/" title="AWS WhitePapers" class="dd-item 
+    <li data-nav-id="/aws/" title="AWS WhitePapers &amp; Deep Dives" class="dd-item 
         parent
         
         
         ">
       <a href="/aws/">
-          AWS WhitePapers
+          AWS WhitePapers &amp; Deep Dives
           
       </a>
       
@@ -123,6 +123,27 @@
           
           
         
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds/">
+        Deep Dive on Amazon Relational Database Service
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -2956,7 +2977,7 @@
             
           
           
-            <a href='/'>Docs</a> > <a href='/aws/'>AWS WhitePapers</a> > Deep Dive on Amazon S3 & Amazon Glacier Storage Management
+            <a href='/'>Docs</a> > <a href='/aws/'>AWS WhitePapers & Deep Dives</a> > Deep Dive on Amazon S3 & Amazon Glacier Storage Management
           
         
           
@@ -2983,7 +3004,7 @@
         <li><a href="#amazon-macie">Amazon Macie</a></li>
       </ul>
     </li>
-    <li><a href="#alertlogic-s3-use-case-on-aws">AlertLogic S3 use-case on AWS</a>
+    <li><a href="#alertlogic-use-case-on-aws-s3">AlertLogic Use Case on AWS S3</a>
       <ul>
         <li><a href="#s3-object-management">S3 Object Management</a></li>
         <li><a href="#tags-with-lifecycle-expiration-policies">Tags with Lifecycle Expiration Policies</a></li>
@@ -3028,7 +3049,7 @@
 <li><a href="#amazon-macie">Amazon Macie</a></li>
 </ul>
 </li>
-<li><a href="#alertlogic-s3-use-case-on-aws">AlertLogic S3 use-case on AWS</a>
+<li><a href="#alertlogic-use-case-on-aws-s3">AlertLogic Use Case on AWS S3</a>
 <ul>
 <li><a href="#s3-object-management">S3 Object Management</a></li>
 <li><a href="#tags-with-lifecycle-expiration-policies">Tags with Lifecycle Expiration Policies</a></li>
@@ -3175,7 +3196,7 @@ STORED <span style="color:#66d9ef">AS</span> INPUTFORMAT <span style="color:#e6d
 <li>Continously monitors data access</li>
 <li>Provides dashboards and alerts</li>
 </ul>
-<h2 id="alertlogic-s3-use-case-on-aws">AlertLogic S3 use-case on AWS</h2>
+<h2 id="alertlogic-use-case-on-aws-s3">AlertLogic Use Case on AWS S3</h2>
 <h3 id="s3-object-management">S3 Object Management</h3>
 <ul>
 <li>S3 Object Keys use hash prefix for performance: <code>logmsgs-001:/X-OGA/11543.2016-03/...</code></li>
@@ -3301,6 +3322,25 @@ STORED <span style="color:#66d9ef">AS</span> INPUTFORMAT <span style="color:#e6d
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -5328,7 +5368,7 @@ STORED <span style="color:#66d9ef">AS</span> INPUTFORMAT <span style="color:#e6d
 	 
 	 
 		
-			<a class="nav nav-prev" href="/aws/" title="AWS WhitePapers"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/aws/multi-tenant-saas-storage/" title="Multi-Tenant SaaS Storage Strategies" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -5341,19 +5381,19 @@ STORED <span style="color:#66d9ef">AS</span> INPUTFORMAT <span style="color:#e6d
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1596671067"></script>
-    <script src="/js/perfect-scrollbar.min.js?1596671067"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1596671067"></script>
-    <script src="/js/jquery.sticky.js?1596671067"></script>
-    <script src="/js/featherlight.min.js?1596671067"></script>
-    <script src="/js/highlight.pack.js?1596671067"></script>
+    <script src="/js/clipboard.min.js?1597023520"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
+    <script src="/js/jquery.sticky.js?1597023520"></script>
+    <script src="/js/featherlight.min.js?1597023520"></script>
+    <script src="/js/highlight.pack.js?1597023520"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1596671067"></script>
-    <script src="/js/learn.js?1596671067"></script>
-    <script src="/js/hugo-learn.js?1596671067"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
+    <script src="/js/learn.js?1597023520"></script>
+    <script src="/js/hugo-learn.js?1597023520"></script>
 
-    <link href="/mermaid/mermaid.css?1596671067" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1596671067"></script>
+    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597023520"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

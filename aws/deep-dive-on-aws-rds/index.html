@@ -19,24 +19,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>review :: My New Hugo Site</title>
+    <title>Deep Dive on Amazon Relational Database Service :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023521" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023521" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023521" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023521" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023521" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023521" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023521" rel="stylesheet">
-    <link href="/css/theme.css?1597023521" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023521" rel="stylesheet">
+    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
+    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
+    <link href="/css/theme.css?1597023520" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023521" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023521"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -46,7 +46,7 @@
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   </head>
-  <body class="" data-url="/tags/review/">
+  <body class="" data-url="/aws/deep-dive-on-aws-rds/">
     <nav id="sidebar" class="">
 
 
@@ -81,14 +81,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023521"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023521"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023521"></script>
+<script type="text/javascript" src="/js/search.js?1597023520"></script>
 
     
   </div>
@@ -107,7 +107,7 @@
   
     
     <li data-nav-id="/aws/" title="AWS WhitePapers &amp; Deep Dives" class="dd-item 
-        
+        parent
         
         
         ">
@@ -133,7 +133,7 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
+      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item active">
         <a href="/aws/deep-dive-on-aws-rds/">
         Deep Dive on Amazon Relational Database Service
         
@@ -2977,7 +2977,7 @@
             
           
           
-            <a href='/'>Docs</a> > <a href='/tags/'>Tags</a> > review
+            <a href='/'>Docs</a> > <a href='/aws/'>AWS WhitePapers & Deep Dives</a> > Deep Dive on Amazon Relational Database Service
           
         
           
@@ -2990,7 +2990,24 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-use-amazon-rds">Why use Amazon RDS?</a></li>
+    <li><a href="#which-instance-type-should-i-choose">Which instance type should I choose?</a></li>
+    <li><a href="#which-storage-type-should-i-choose">Which storage type should I choose?</a></li>
+    <li><a href="#how-do-i-decide-between-gp2-and-io1">How do I decide between GP2 and IO1?</a></li>
+    <li><a href="#how-do-i-scale-my-database-instance">How do I scale my database instance?</a></li>
+    <li><a href="#what-happens-during-a-multi-az-failover">What happens during a Multi-AZ failover?</a></li>
+    <li><a href="#why-would-i-use-read-replicas">Why would I use Read Replicas?</a></li>
+    <li><a href="#how-does-amazon-rds-manage-backups">How does Amazon RDS manage backups?</a></li>
+    <li><a href="#when-should-i-use-multi-az-as-opposed-to-read-replicas">When should I use Multi-AZ as opposed to Read Replicas?</a></li>
+    <li><a href="#how-do-i-secure-my-amazon-rds-database">How do I secure my Amazon RDS database?</a></li>
+    <li><a href="#how-do-i-monitor-my-amazon-rds-database">How do I monitor my Amazon RDS database?</a></li>
+    <li><a href="#how-do-you-maintain-my-database">How do you maintain my database?</a></li>
+    <li><a href="#how-am-i-charged-for-amazon-rds">How am I charged for Amazon RDS?</a></li>
+    <li><a href="#how-do-i-understand-my-bill">How do I understand my bill?</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -3006,26 +3023,300 @@
           
             <h1>
               
-                taxonomy ::
-              
-              review
+              Deep Dive on Amazon Relational Database Service
             </h1>
           
 
         
 
 
-
-
-
 <ul>
-	
-		<li><a href="/random/travis-ci/">Travis CI Review</a></li>
-	
+<li><a href="#why-use-amazon-rds">Why use Amazon RDS?</a></li>
+<li><a href="#which-instance-type-should-i-choose">Which instance type should I choose?</a></li>
+<li><a href="#which-storage-type-should-i-choose">Which storage type should I choose?</a></li>
+<li><a href="#how-do-i-decide-between-gp2-and-io1">How do I decide between GP2 and IO1?</a></li>
+<li><a href="#how-do-i-scale-my-database-instance">How do I scale my database instance?</a></li>
+<li><a href="#what-happens-during-a-multi-az-failover">What happens during a Multi-AZ failover?</a></li>
+<li><a href="#why-would-i-use-read-replicas">Why would I use Read Replicas?</a></li>
+<li><a href="#how-does-amazon-rds-manage-backups">How does Amazon RDS manage backups?</a></li>
+<li><a href="#when-should-i-use-multi-az-as-opposed-to-read-replicas">When should I use Multi-AZ as opposed to Read Replicas?</a></li>
+<li><a href="#how-do-i-secure-my-amazon-rds-database">How do I secure my Amazon RDS database?</a></li>
+<li><a href="#how-do-i-monitor-my-amazon-rds-database">How do I monitor my Amazon RDS database?</a></li>
+<li><a href="#how-do-you-maintain-my-database">How do you maintain my database?</a></li>
+<li><a href="#how-am-i-charged-for-amazon-rds">How am I charged for Amazon RDS?</a></li>
+<li><a href="#how-do-i-understand-my-bill">How do I understand my bill?</a></li>
+</ul>
+<h2 id="why-use-amazon-rds">Why use Amazon RDS?</h2>
+<ul>
+<li>Lower TCO
+<ul>
+<li>Get more leverage from your teams</li>
+<li>Focus on the things that differentiate you</li>
+</ul>
+</li>
+<li>Built-in high availability and cross region replication across multiple data centers</li>
+<li>Even a small startup can leverage multiple data centers to design highly available apps with over <strong>99.95%</strong> availability</li>
+</ul>
+<h2 id="which-instance-type-should-i-choose">Which instance type should I choose?</h2>
+<ul>
+<li>T2 Family
+<ul>
+<li>Burstable instances</li>
+<li>Moderate networking performance</li>
+<li>Good for smaller or variable workloads</li>
+<li>Monitor CPU credit metrics in Amazon CloudWatch</li>
+<li>T2.micro is eligible for free tier</li>
+</ul>
+</li>
+<li>M3/M4 Family
+<ul>
+<li>General-purpose instances</li>
+<li>High-performance networking</li>
+<li>Good for running CPU intensive workloads</li>
+</ul>
+</li>
+<li>R3/R4 Family
+<ul>
+<li>Memory-optimized instances</li>
+<li>High-performance networking</li>
+<li>Good for query intensive workloads or high connection counts</li>
+</ul>
+</li>
+</ul>
+<h2 id="which-storage-type-should-i-choose">Which storage type should I choose?</h2>
+<ul>
+<li>General purpose (GP2)
+<ul>
+<li>SSD storage</li>
+<li>Maximum of 16 TB!</li>
+<li>Leverages Amazon EBS Elastic Volumes</li>
+<li>IOPS determined by volume size</li>
+<li>Minimum of 100 IOPS (below 33.33GiB)</li>
+<li>Bursts to 3,000 IOPS (applicable below 1.3 TB)</li>
+<li>Baseline of 10,000 IOPS (at 3.3 TB and above)</li>
+<li>Affordable performance</li>
+</ul>
+</li>
+<li>Provisioned IOPS (IO1)
+<ul>
+<li>SSD storage</li>
+<li>Maximum of 16 TB!</li>
+<li>Leverages Amazon EBS Elastic Volumes</li>
+<li>Maximum of 40K IOPS (20K on SQL Server)</li>
+<li>Delivers within 10% of the IOPS performance 99.9% of the time</li>
+<li>High performance and consistency</li>
+</ul>
+</li>
+<li>Magnetic
+<ul>
+<li>Magnetic storage</li>
+<li>Maximum of 1TB</li>
+<li>Supported for legacy databases</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-do-i-decide-between-gp2-and-io1">How do I decide between GP2 and IO1?</h2>
+<ul>
+<li><strong>GP2 is a great choice, but be aware of burst credits on volumes &lt; 1TB</strong>
+<ul>
+<li>Hitting credit-depletion results in IOPS drop - latency and queue depth metrics will spike until credits are replenished</li>
+<li>Monitor <code>BurstBalance</code> to see percent of burst-bucket I/O credits available</li>
+<li>Monitor read/write IOPS to see if average IOPS is greater than the baseline</li>
+</ul>
+</li>
+<li>Think of GP2 burst rate and PIOPS stated as maximum I/O rates</li>
+</ul>
+<h2 id="how-do-i-scale-my-database-instance">How do I scale my database instance?</h2>
+<ul>
+<li>Scale compute/memory vertically up or down
+<ul>
+<li>Handle higher load to grow over time</li>
+<li>Lower usage to control costs</li>
+<li>New host is attached to existing storage with minimal downtime</li>
+</ul>
+</li>
+<li>Scale  up Amazon ECS storage (up to 16TB!)
+<ul>
+<li>Amazon ECS engines now support Elastic Volumes for fast scaling (now including SQL Server)</li>
+<li>No downtime for storage scaling</li>
+<li>Initial scaling operation may take longer, because storage is reconfigured on older instances</li>
+<li>Can re-provision IOPS on the fly</li>
+</ul>
+</li>
+</ul>
+<h2 id="what-happens-during-a-multi-az-failover">What happens during a Multi-AZ failover?</h2>
+<ul>
+<li>Each host manages set of Amazon EBS volumes with a full copy of the data</li>
+<li>Instances are monitored by an external observer to maintain consensus over quorum</li>
+<li>Failover initiated by automation or through the Amazon RDS API</li>
+<li>Redirection to the new primary instance is provided through DNS (watch for TTLs)</li>
+</ul>
+<h2 id="why-would-i-use-read-replicas">Why would I use Read Replicas?</h2>
+<ul>
+<li>Relieve pressure on your source database with additional read capacity</li>
+<li>Bring data close to your applications in different regions</li>
+<li>Promote a Read Replica to a master for faster recovery in the event of disaster</li>
+<li>Upgrade a Read Replica to a new engine version</li>
+<li>Supported for MySQL, MariaDB, and PostgreSQL</li>
+</ul>
+<h2 id="how-does-amazon-rds-manage-backups">How does Amazon RDS manage backups?</h2>
+<ul>
+<li>Two options - automated backups and manual snapshots</li>
+<li>Backups leverage Amazon EBS snapshots stored in S3</li>
+<li>Transaction logs are stored every 5 minutes in Amazon S3 to support point-in-time recovery (PITR)</li>
+<li>No performance penalty for backups</li>
+<li>Snapshots can be copied across regions or shared with other accounts</li>
+</ul>
+<p><strong>When to use Automated vs Manual backups?</strong></p>
+<ul>
+<li>Automated
+<ul>
+<li>Specify backup retention window per instance (7-day default)</li>
+<li>Kept until outside of window (35-day maximum) or instance is deleted</li>
+<li>Support PITR</li>
+<li>Good for disaster recovery</li>
+</ul>
+</li>
+<li>Manual
+<ul>
+<li>Manually created through AWS console, AWS CLI, or Amazon RDS API</li>
+<li>Kept until you delete them</li>
+<li>Restores to saved snapshot</li>
+<li>Use for checkpoint before making large changes, non-production/test environments, final copy before deleting a database</li>
+</ul>
+</li>
+</ul>
+<p><strong>Restoring Backups</strong></p>
+<ul>
+<li>Restoring creates an entirely new database instance</li>
+<li>New volumes are hydrated from Amazon S3
+<ul>
+<li>While the volume is usable immediately, full performance requires the volume to warm up until fully instantiated</li>
+<li>Migrate to a DB instance class with high I/O capacity</li>
+<li>Maximize I/O during restore process</li>
+</ul>
+</li>
+</ul>
+<h2 id="when-should-i-use-multi-az-as-opposed-to-read-replicas">When should I use Multi-AZ as opposed to Read Replicas?</h2>
+<ul>
+<li>Multi-AZ
+<ul>
+<li>Synchronous replication - highly durable</li>
+<li>Only primary  instance is active at any point in time</li>
+<li>Backups can be taken from secondary</li>
+<li>Always in two Availability Zones within a Region</li>
+<li><strong>Database engine version upgrades happen on primary</strong></li>
+<li>Automate failover when a problem is detected</li>
+</ul>
+</li>
+<li>Read Replicas
+<ul>
+<li>Asynchronous replication - highly scalable</li>
+<li>All replicas are active and can be used for read scaling</li>
+<li>No backups configured by default</li>
+<li>Can be within an AZ, cross-AZ or cross-region</li>
+<li>Database engine version upgrades independently from source instance</li>
+<li>Can be manually promoted to a standalone database</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-do-i-secure-my-amazon-rds-database">How do I secure my Amazon RDS database?</h2>
+<ul>
+<li>Designed to be secure by default: patches, updates, etc&hellip;</li>
+<li>NEtwork isolation with VPC</li>
+<li>AWS IAM based resource-level permission controls</li>
+<li>Encryption at rest using AWS KMS (all engines) or Oracle/Microsoft TDE
+<ul>
+<li>No performance penalty for encryption data</li>
+<li>Encryption cannot be removed from DB instances</li>
+<li>If source is encrypted, Read Replicas must be encrypted</li>
+<li>Add encryption to an unencrypted DB instance by encryption a snapshot copy</li>
+</ul>
+</li>
+<li>Use SSL protection for data in transit</li>
+<li>Do not use AWS root credentials to manage RDS resources - create IAM user for everyone, including yourself</li>
+<li>Can use AWS Multi-Factor Authentication (MFA) to provide extra level of protection</li>
+</ul>
+<h2 id="how-do-i-monitor-my-amazon-rds-database">How do I monitor my Amazon RDS database?</h2>
+<ul>
+<li>Amazon CloudWatch Metrics
+<ul>
+<li>CPU/Storage/Memory</li>
+<li>Swap Usage</li>
+<li>I/O (read and write)</li>
+<li>Latency</li>
+<li>Throughput</li>
+<li>Replica lag</li>
+</ul>
+</li>
+<li>Amazon CloudWatch Alarms</li>
+<li>Enhanced monitoring for RDS
+<ul>
+<li>Access to over 50 CPU, memory, file system and disk I/O metrics</li>
+<li>Low as 1-second intervals</li>
+</ul>
+</li>
+<li>Integration with third-party monitoring tools</li>
+<li><strong>Amazon RDS Performance Insights</strong>
+<ul>
+<li>Measures DB Load - Average Active Sessions (AAS)</li>
+<li>Identifies database bottlenecks (TOP SQL)</li>
+<li>Identifies source of bottlenecks</li>
+<li>Enables problem discovery</li>
+<li>Adjustable time frame (hour, day, week and longer)</li>
+</ul>
+</li>
+<li>Subscribe to SNS notifications on events</li>
+</ul>
+<h2 id="how-do-you-maintain-my-database">How do you maintain my database?</h2>
+<ul>
+<li>Any maintenance that cases downtime will be scheduled in your maintenance window</li>
+<li>Operating system or Amazon RDS software patches are usually performed without restarting databases</li>
+<li>Database engine upgrades require downtime
+<ul>
+<li>Minor version upgrades - automate or manually applied</li>
+<li>Major version upgrades - manually applied</li>
+<li>Version deprecations - three to six-month notification before scheduled upgrades</li>
+<li><strong>View upcoming maintenance events in your AWS Personal Health Dashboard</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="how-am-i-charged-for-amazon-rds">How am I charged for Amazon RDS?</h2>
+<ul>
+<li>Database instance (instance hours)</li>
+<li>Database storage (GB-mo)</li>
+<li>Backup storage
+<ul>
+<li>No charge for backup storage up to 100% of total database storage</li>
+</ul>
+</li>
+<li>Data transfer (GB-mo)
+<ul>
+<li>Uses AWS regional data-transfer pricing</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-do-i-understand-my-bill">How do I understand my bill?</h2>
+<ul>
+<li>Amazon RDS charges are grouped by region</li>
+<li>Instances are grouped by engine</li>
+<li>Storage and backup charges are cross-engine</li>
+<li>Use AWS Cost Explorer for graphical comparison</li>
+<li>Use the AWS Cost &amp; Usage Report for billing details
+<ul>
+<li>Must be enabled for account</li>
+<li>Stored in your Amazon S3 bucket</li>
+</ul>
+</li>
+</ul>
+<p><strong>Saving Money</strong></p>
+<ul>
+<li>Use Reserved Instances</li>
+<li>Stop database when not in use</li>
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -3060,8 +3351,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -3075,6 +3364,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -3091,6 +3381,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -5115,8 +5408,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/aws/" title="AWS WhitePapers &amp; Deep Dives"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/aws/" title="AWS WhitePapers &amp; Deep Dives" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -5126,19 +5421,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023521"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023521"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023521"></script>
-    <script src="/js/jquery.sticky.js?1597023521"></script>
-    <script src="/js/featherlight.min.js?1597023521"></script>
-    <script src="/js/highlight.pack.js?1597023521"></script>
+    <script src="/js/clipboard.min.js?1597023520"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
+    <script src="/js/jquery.sticky.js?1597023520"></script>
+    <script src="/js/featherlight.min.js?1597023520"></script>
+    <script src="/js/highlight.pack.js?1597023520"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023521"></script>
-    <script src="/js/learn.js?1597023521"></script>
-    <script src="/js/hugo-learn.js?1597023521"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
+    <script src="/js/learn.js?1597023520"></script>
+    <script src="/js/hugo-learn.js?1597023520"></script>
 
-    <link href="/mermaid/mermaid.css?1597023521" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023521"></script>
+    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597023520"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
@@ -5149,3 +5444,4 @@
 </script>
   </body>
 </html>
+
