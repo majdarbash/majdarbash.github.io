@@ -22,21 +22,21 @@
     <title>How to upgrade Wordpress? Best and safest way to upgrade :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2017/08/19/best-safest-way-upgrade-wordpress-site/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,18 +3036,47 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<p>Upgrading wordpress can be a bit of a hassle especially if you are doing so using the wp-admin section. Here is the list of possible issues you may encounter during the core upgrade and quick ways to resolve these issues:</p>
+<ul>
+<li>Wordpress is asking you for your ftp credentials during the update process<br />
+It may be possible that the process running your web application is unable to write to the files . This can be either apache2, nginx or php-fpm. The issue can be resolved by granting write access to the user running your web server application.</li>
+<li>Message appears: another upgrade is in progress - but upgrade was not accomplished<br />
+This clearly indicates that the upgrade attempt was not successful. In order to retry the upgrade, you have to unlock the system. This can be done using the query:</p>
+<pre>delete from wp_options where option_name="core_updater.lock";</pre>
+</li>
+<li>Wordpress is stuck on "Site is under maintenance".<br />
+When doing upgrade, system will be switched to maintenance mode. This will be identified by adding a ".maintenance" file in your project root. If you are sure that the maintenance did not succeed and want to continue running your wordpress application, this can be done, by removing the ".maintenance" file, located in your project look.</li>
+</ul>
+<p>The easiest and most preferable way to perform an update would be by having shell access to your host. &nbsp;I would recommend downloading the latest version of the wordpress. After this wordpress files should be extracted to substitute the existing files and update.php script should be executed from your domain name.&nbsp;<strong><u>Do not forget to backup your existing code and database before the upgrade!</u></strong><u></u></p>
+<p>Follow the instructions below to upgrade your wordpress:</p>
+<ol>
+<li>Backup your existing files and database:
+<pre>mkdir /tmp/backup
+cd /tmp/backup
 <p>tar czf backup.tgz /var/www/[your site directory]
-mysqldump -uroot -p [database name] &gt; database.sql<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+mysqldump -uroot -p [database name] &gt; database.sql</pre></p>
+</li>
+<li>Download and extract the contents of the latest wordpress code
+<pre>cd /tmp
+wget http://wordpress.org/latest.zip
+unzip latest.zip
 <p>cd /var/www/[your site directory]
 cp -avr /tmp/wordpress/* .
-rm -rf /tmp/wordpress /tmp/latest.zip<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+rm -rf /tmp/wordpress /tmp/latest.zip</pre></p>
+</li>
+<li>Run the upgrade script:
+<pre>http://[your wordpress site]/wp-admin/upgrade.php</pre>
+</li>
+</ol>
+<p>If something goes wrong, you can always locate your backup files in /tmp/backup , extract them , recover the database dump and go back to the previous state.</p>
+<p>During the migration process and for other cases of wordpress troubleshooting it may be useful to turn on debugging. This can be achieved by switching these parameters in wp-config.php file:</p>
+<pre>// turns on debugging, output is displayed on the web page
+define('WP_DEBUG', true);
 <p>// the debug log will be saved to wp-content/debug.log
-define( &lsquo;WP_DEBUG_LOG&rsquo;, false);<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+define( &lsquo;WP_DEBUG_LOG&rsquo;, false);</pre></p>
+<p>Hope this helps :) enjoy migrating your wordpress site successfully !</p>
 
 <footer class="footline">
 	
@@ -3071,6 +3123,22 @@ define( &lsquo;WP_DEBUG_LOG&rsquo;, false);<!-- raw HTML omitted --></p>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5133,19 +5201,19 @@ define( &lsquo;WP_DEBUG_LOG&rsquo;, false);<!-- raw HTML omitted --></p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

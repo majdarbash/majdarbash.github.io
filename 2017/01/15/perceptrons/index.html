@@ -22,21 +22,21 @@
     <title>First Generation of Neural Networks: Perceptrons :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2017/01/15/perceptrons/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,85 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>We will look into how perceptrons are structured and what they actually do. Perceptrons are the first generation of neural networks. Research on perceptrons was conducted since 1960s.</p>
+<p>
+</p>
+<h1>Network Architecture Types</h1>
+<h2>Feed-forward network</h2>
+<ul>
+<li>Information flows from the input layer in one direction to the output layer</li>
+<li>"deep" neural network term is used to indicate existing of more than one hidden layer.</li>
+</ul>
+<p>[caption id="attachment_1312" align="aligncenter" width="277"]<img class="aligncenter size-medium wp-image-1312" src="/wp-content/uploads/2017/01/feed-forward-network-277x300.jpg" alt="feed-forward-network" width="277" height="300" /> Feed-forward Neural Network[/caption]</p>
+<h2>Recurrent neural network</h2>
+<ul>
+<li><span style="font-size: 15px; font-weight: 400; line-height: 1.7;">Information can flow around in cycles</span></li>
+<li>They are more biologically realistic</li>
+<li>Difficult to train</li>
+<li>Are able to remember information in the hidden state</li>
+</ul>
+<p>In 2011 Ilya Sutskever designed a recurrent neural network which was generating one character at a time.</p>
+<p>[caption id="attachment_1317" align="aligncenter" width="292"]<img class="aligncenter size-medium wp-image-1317" src="/wp-content/uploads/2017/01/recurrent-neural-network-292x300.jpg" alt="recurrent-neural-network" width="292" height="300" /> Recurrent Neural Network[/caption]</p>
+<h2>Symetrically connected network</h2>
+<ul>
+<li>Similar to recurrent networks</li>
+<li>They have symmetrical connections between units (same weight in both directions)</li>
+<li>Easier to analyze than recurrent networks</li>
+</ul>
+<h1>Perceptrons</h1>
+<ul>
+<li>Perceptrons are the first generation of neural networks</li>
+<li>Have some limitation (published in 1969 Minsky and Papert, "Perceptrons" book)</li>
+<li>Is still widely used today for tasks with huge feature vectors, containg many million of features.</li>
+<li>Binary threshold unit is used as a decision unit</li>
+</ul>
+<p>Statistical Pattern Recognition Approach:</p>
+<ul>
+<li>convert raw input into a vector or feature activations</li>
+<li>learn how to weight each feature activation to get a single scalar quantity</li>
+<li>if this quantity is above a certain threshold, we decide that the input vector is a positive example of a target class</li>
+</ul>
+<p>[caption id="attachment_1346" align="aligncenter" width="300"]<img class=" size-medium wp-image-1346 aligncenter" src="/wp-content/uploads/2017/01/perceptron-architecture-300x251.jpg" alt="perceptron-architecture" width="300" height="251" /> Standard Perceptron Architecture[/caption]</p>
+<h3>Binary Threshold Neurons (with bias)</h3>
+<p>\begin{equation} z = b + \sum_{i}{x_i w_i} \end{equation}</p>
+<p>\begin{equation} y = &nbsp;\begin{cases} 1, &nbsp;if &nbsp;z \geq&nbsp;$\Theta$ \\ 0, otherwise \end{cases} \end{equation}</p>
+<p>z - total input calculation<br />
+y - output of the neuron</p>
+<p>[caption id="attachment_1166" align="aligncenter" width="322"]<img class=" size-full wp-image-1166 aligncenter" src="/wp-content/uploads/2016/12/BinaryThresholdNeurons.gif" alt="binarythresholdneurons" width="322" height="207" /> Binary Threshold Neuron[/caption]</p>
+<h4>Learning biases</h4>
+<p>Biases can be treated like weight, and can be trained accordingly. We can provide input "1" to the "bias neuron" and include it in training like any other neuron.</p>
+<p>[caption id="attachment_1366" align="aligncenter" width="300"]<img class="aligncenter size-medium wp-image-1366" src="/wp-content/uploads/2017/01/binary-threshold-neuron-bias-training-300x255.jpg" alt="binary-threshold-neuron-bias-training" width="300" height="255" /> Binary Threshold Neuron - Training Biases[/caption]</p>
+<h3>Training&nbsp;Perceptrons</h3>
+<p>Using this training algorithm it is guaranteed that the right answer will be found for each training case <span style="text-decoration: underline;"><strong>if any such set exists</strong></span>.</p>
+<ul>
+<li>add extra component with the constant value of "1" to the input vector. The weight of this component is minus the threshold.</li>
+<li>pick the training cases using policy which makes sure that every training case will keep getting picked (i.e. don't change as we go)
+<ul>
+<li>output unit correct: leave its weights</li>
+<li>output unit incorrecly outputs to "0": add the input vector to the weight vector</li>
+<li>output unit incorrectly outputs to "1": subtract&nbsp;the input vector from the weight vector</li>
+</ul>
+</li>
+</ul>
+<h3>Geometrical View</h3>
+<p>If we would imagine the weight space as n-dimensional space where each dimension corresponds to the value of a certain weight, then a point in this space would represent a set of weight values. Training cases in this sense would correspond to the planes.</p>
+<ol>
+<li>Considering a training case in which the correct answer is one, the weight vector&nbsp;needs to be on the correct side of hyperplane in order to get the answer right. Having the weight vector on the same side as input vector, means the angle between these two should be less than 90 degrees, implies that the scaler product on the input vector with a weight vector will be positive.<br />
+When the weight vector is on the wrong side of the plane, the angle of the weight vector and the input vector will be negative, and the scalar product will be less than zero and we will get a wrong answer.</li>
+<li>Looking from the other perspective: for any input vector with the correct answer = 0, any weight vector which lies on the angle of < 90 with the input vector, will cause a positive scalar product, causing the answer to be = 1. This weight vector is considered bad. All "good weights" vectors are vectors which have angle to input vector > 90.</li>
+</ol>
+<p>Inputs can be thought of as constains. This means that inputs constrain the set of weights that give the correct classification results by paritioning the space into two halves.</p>
+<p><em><span style="text-decoration: underline;"><strong>There are mathematics proofs that learning of perceptrons would lead to a feasible space if there is any feasible space.</strong></span></em></p>
+<p>&nbsp;</p>
+<h2>Limitations of Perceptrons</h2>
+<p>Binary threshold neurons cannot sometimes satisfy easiest cases:</p>
+<h3>1.&nbsp;Cases that are not linearly separable</h3>
+<p>Imagine the case of sets of 2D inputs, where we want to classify the same feature inputs. In these terms, the points (0,0) and (1,1) should lead to the answer = 1, while (0,1) and (1,0) would lead to the answer = 0.&nbsp;In this example, there's no single set of weights which would satisfy all the constraints.</p>
+<p>We can notice that there's a set of training cases which are not linearly separable and would lead to non-existence of weight plane which can properly classify the input.</p>
+<h3>2. Translations with wrap-arounds</h3>
+<p>Another case which perceptrons could not resolve is the case of discrimination of simple patterns when you translate them with wrap-around.</p>
+<p>Based on this, Minskys and Papert's paper "Group Invariance Theorem" (1960s) says that the part of a Perceptron that learns cannot learn to do this if the transformations form a group. (Translations with wrap-around form a group)</p>
+<p>Networks withou hidden units are very limited in what they can learn to model. What is required is multiple layers of adaptive, non-linear hidden units. We need the way to adapt all the weights, and not just the last layer.</p>
 
 <footer class="footline">
 	
@@ -3061,6 +3161,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5239,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

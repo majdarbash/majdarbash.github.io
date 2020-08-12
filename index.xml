@@ -43,7 +43,7 @@ Released whitepaper:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-cmls/2019-11-7-elements-of-data-science/</guid>
-      <description>What is Data Science?  Types of Learning Key Issues in ML Supervised Methods  Linear Methods Logistic Regression and Linear Separability Linear Separability     Problem Formulation and Exploratory Data Analysis  Data collection  Data Sampling Data Labeling   Exploratory Data Analysis  Domain Knowledge Data Schema Data Statistics Correlations Data Issues     Data Processing and Feature Engineering  Encoding Categorical Variables  Encoding Ordinals Encoding Nominals   Handling Missing Values Feature Engineering  Filtering and Scaling Transformation Text-Based Features     Model Training, Tuning, and Debugging  Supervised Learning: Neural Networks Supervised Learning: K-Nearest Neighbors Supervised Learning: Linear and Non-Linear Support Vector Machines Supervised Learning: Decision Trees and Random Forests Model Training: Validation Set  Splitting Data: Training, Testing, Validation**   Model Training: Bias Variance Tradeoff Model Debugging: Error Analysis Model Tuning: Regularization  Regularization Techniques   Model Tuning: Hyperparameter Tuning Model Tuning  Training Data Tuning Feature Set Tuning   Model Tuning: Feature Extraction Model Tuning: Bagging/Boosting   Model Evaluation and Model Productionizing  Using ML Models in Production Model Evaluation Metrics  Confusion Matrix Metrics Cross Validation K-Fold Cross Validation Leave-one Out Cross Validation Stratified K-fold Cross Validation   Metrics for Linear Regression Using ML Models in Production: Storage  Model and Pipeline Persistence Model Deployment   Using ML Models in Production: Monitoring and Maintenance Using ML Models in Production: Using AWS Common Mistakes    What is Data Science?</description>
+      <description>What is Data Science?  Types of Learning Key Issues in ML Supervised Methods  Linear Methods Logistic Regression and Linear Separability Linear Separability     Problem Formulation and Exploratory Data Analysis  Data collection  Data Sampling Data Labeling   Exploratory Data Analysis  Domain Knowledge Data Schema Data Statistics Correlations Data Issues     Data Processing and Feature Engineering  Encoding Categorical Variables  Encoding Ordinals Encoding Nominals   Handling Missing Values Feature Engineering  Filtering and Scaling Transformation Text-Based Features     Model Training, Tuning, and Debugging  Supervised Learning: Neural Networks Supervised Learning: K-Nearest Neighbors Supervised Learning: Linear and Non-Linear Support Vector Machines Supervised Learning: Decision Trees and Random Forests Model Training: Validation Set  Splitting Data: Training, Testing, Validation**   Model Training: Bias Variance Tradeoff Model Debugging: Error Analysis Model Tuning: Regularization  Regularization Techniques   Model Tuning: Hyperparameter Tuning Model Tuning  Training Data Tuning Feature Set Tuning   Model Tuning: Feature Extraction Model Tuning: Bagging/Boosting   Model Evaluation and Model Productionizing  Using ML Models in Production Model Evaluation Metrics  Confusion Matrix Metrics Cross Validation K-Fold Cross Validation Leave-one Out Cross Validation Stratified K-fold Cross Validation   Metrics for Linear Regression Using ML Models in Production: Storage  Model and Pipeline Persistence Model Deployment   Using ML Models in Production: Monitoring and Maintenance Using ML Models in Production: Using AWS Common Mistakes    Non-Linear support vector machines ](#ul-linon-linear-support-vector-machinesli-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing)  ](#ul-lili-ul) - [Model Evaluation and Model Productionizing](#model-evaluation-and-model-productionizing) What is Data Science?</description>
     </item>
     
     <item>
@@ -262,7 +262,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:14:05 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/aws-applications/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -271,7 +271,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:12:01 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/ha-arhictecture-high-availability/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -280,7 +280,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:11:58 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/route53/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -289,7 +289,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:11:56 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/iam/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -298,7 +298,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:11:53 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/databases/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -307,7 +307,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:11:51 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/serverless/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -316,7 +316,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 17 Apr 2019 23:11:01 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2019/04/17/aws-certification-solution-architect-iam-s3/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -325,7 +325,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Sat, 30 Sep 2017 18:38:38 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -334,7 +334,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Sat, 30 Sep 2017 18:35:27 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/09/30/docker-provisioning-docker-container-with-chef-solo/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -343,7 +343,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Sat, 30 Sep 2017 00:25:45 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/09/30/markdown-cheat-sheet/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -352,7 +352,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Fri, 29 Sep 2017 23:58:24 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/09/29/docker-cheat-sheet/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -361,7 +361,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Sat, 19 Aug 2017 13:49:34 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/08/19/best-safest-way-upgrade-wordpress-site/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;</description>
     </item>
     
     <item>
@@ -370,7 +370,8 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Tue, 27 Jun 2017 22:49:42 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/06/27/angularjs-seo-implications/</guid>
-      <description></description>
+      <description>Building a completely AngularJS based frontend can be really fun. Frontend developers enjoy having complete control of the routing, views, reusability of components and&amp;nbsp;testing the frontend as a stand-alone entity. At the same time, backend developers provide the frontend app with APIs and effectively invest the time into building reliable and cleaner API structures with having a clear separation of frontend and backend.
+However a lot of SEO specialists are still arguing about the impact of SEO with AngularJS.</description>
     </item>
     
     <item>
@@ -379,7 +380,12 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 15 Mar 2017 12:39:27 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/03/15/php-coding-style-fixer/</guid>
-      <description></description>
+      <description>This tool will automatically fix your PHP code style. You can run it manually, or set it as pre-commit hook and it will run automatically.
+Installation
+{% raw %}composer require friendsofphp/php-cs-fixer {% endraw %} Usage:
+Default configuration will apply PSR1 and PSR2 rules. To run the default configuration:
+If you would like to apply specific rules, you can set the rules argument of these command.
+{% raw %}--dry-run lets you run the fixer without making changes.</description>
     </item>
     
     <item>
@@ -388,7 +394,8 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Wed, 08 Feb 2017 00:41:19 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/02/08/testing-installed-ssl-certificate/</guid>
-      <description></description>
+      <description>You can test the installed SSL certificate using this command:
+openssl s_client -connect hostname:443 -showcerts | grep &#34;^ &#34;</description>
     </item>
     
     <item>
@@ -397,7 +404,13 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Mon, 23 Jan 2017 23:17:13 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/01/23/learning-algorithm-neuron/</guid>
-      <description></description>
+      <description>[latexpage]
+In perceptron model weights are changed to get a better set of weights. In multi-layer neural network this algorithm won&#39;t work and we don&#39;t use&amp;nbsp;perceptron learning algorithm.
+For multi-layer nets the objective is the&amp;nbsp;actual&amp;nbsp;outputs values reaching target output values.
+Linear Neurons The neuron has a real-valued output which is weighted sum of its inputs:
+\begin{equation} &amp;nbsp;y = \sum_{i}{x_i w_i} = W^T X &amp;nbsp;\end{equation}
+$W$ - Weight vector
+$X$ - input vector</description>
     </item>
     
     <item>
@@ -406,7 +419,8 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Sun, 15 Jan 2017 23:31:43 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/01/15/perceptrons/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;We will look into how perceptrons are structured and what they actually do. Perceptrons are the first generation of neural networks. Research on perceptrons was conducted since 1960s.&lt;/p&gt;
+&lt;p&gt;</description>
     </item>
     
     <item>
@@ -415,7 +429,7 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Mon, 05 Dec 2016 00:12:32 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2016/12/05/downloading-m3u8-videos/</guid>
-      <description></description>
+      <description>Ubuntu: sudo apt-get install ffmpeg ffmpeg -i http://.../playlist.m3u8 -c copy -bsf:a aac_adtstoasc output.mp4 Mac: brew install ffmpeg ffmpeg -i http://.../playlist.m3u8 -c copy -bsf:a aac_adtstoasc output.</description>
     </item>
     
     <item>
@@ -424,17 +438,95 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Thu, 20 Oct 2016 10:18:13 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2016/10/20/react-native-the-shoe-app/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;I was recently experimenting building a react native app. After&amp;nbsp;digging a bit deeper into hybrid development, I have got attracted to the concept of producing a native code, in contrast to the web view approach in most of hybrid apps.&lt;/p&gt;
+&lt;p&gt;So here&#39;s what we&#39;ve got. Setting it up:&lt;/p&gt;
+&lt;p&gt;If you go to &lt;a href=&#34;https://facebook.github.io/react-native/docs/getting-started.html&#34;&gt;https://facebook.github.io/react-native/docs/getting-started.html&lt;/a&gt;&amp;nbsp;you&#39;ll get some instructions how to set it up.&lt;/p&gt;
+&lt;h2&gt;Android installation&lt;/h2&gt;
+&lt;ul&gt;
+ &lt;li&gt;Install JDK&lt;/li&gt;
+ &lt;li&gt;Install Android SDK&lt;/li&gt;
+ &lt;li&gt;Adding android SDK path to the ~/.bashrc
+  &lt;ul&gt;
+   &lt;li&gt;export ANDROID_HOME=/usr/local/opt/android-sdk&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;JDK can be installed using this link:&lt;br /&gt;
+ http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html&lt;/p&gt;
+&lt;p&gt;Android SDK can be installed using:&lt;br /&gt;
+ brew install android-sdk&lt;/p&gt;
+&lt;p&gt;After finishing these 3 steps, we would need to install some android packages.&lt;/p&gt;
+&lt;p&gt;Open Android package manager:&lt;/p&gt;
+&lt;pre&gt;android&lt;/pre&gt;
+&lt;p&gt;These packages will be required to run the android simulator:&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;Android SDK Build-tools version 23.0.1&lt;/li&gt;
+ &lt;li&gt;Android 6.0 (API 23)&lt;/li&gt;
+ &lt;li&gt;Android Support Repository&lt;/li&gt;
+ &lt;li&gt;Intel x86 Atom System Image (for Android 5.1.1 - API 22)&lt;/li&gt;
+ &lt;li&gt;Intel x86 Emulator Accelerator (HAXM installer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You would also require to download IntelHAXM.dmg file, which you can do from:&lt;/p&gt;
+&lt;p&gt;https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager&lt;/p&gt;
+&lt;p&gt;Run the installation file after download dmg.&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;Install IntelHAXM.dmg
+  &lt;ul&gt;
+   &lt;li&gt;&lt;sdk&gt;/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM.dmg&lt;/li&gt;
+   &lt;li&gt;&lt;sdk&gt; is&amp;nbsp;/usr/local/opt/android-sdk on OS X&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;To check that configuration is done correctly
+  &lt;ul&gt;
+   &lt;li&gt;kextstat | grep intel&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;You should see message
+  &lt;ul&gt;
+   &lt;li&gt;com.intel.kext.intelhaxm&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At this point we would like to create an android virtual device (AVD):&lt;/p&gt;
+&lt;pre&gt;# launching avd manager
+android avd
+&lt;/pre&gt;
+&lt;p&gt;Click &#34;Create&#34; and choose the following options for your AVD:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://majdarbash.github.io/wp-content/uploads/2016/09/Screen-Shot-2016-10-18-at-11.13.16-PM-e1476818078568.png&#34;&gt;&lt;img class=&#34;wp-image-418 size-large aligncenter&#34; src=&#34;https://majdarbash.github.io/wp-content/uploads/2016/09/Screen-Shot-2016-10-18-at-11.13.16-PM-1024x767.png&#34; alt=&#34;screen-shot-2016-10-18-at-11-13-16-pm&#34; width=&#34;648&#34; height=&#34;485&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now your AVD is created and you can start your emulator using:&lt;/p&gt;
+&lt;pre&gt;emulator -avd &lt;avd name&gt;
+# in our example: emulator -avd reactnative&lt;/pre&gt;
+&lt;h2&gt;iOS installation&lt;/h2&gt;
+&lt;p&gt;iOS emulator will be installed automatically as part of Xcode installation. You can install Xcode from the the app store and choose the particular emulator to start from within Xcode.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Before proceeding let&#39;s make sure that we have the following tools in place:&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;brew&lt;/li&gt;
+ &lt;li&gt;android&lt;/li&gt;
+ &lt;li&gt;node&lt;/li&gt;
+ &lt;li&gt;watchman (brew install watchman)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out the &lt;a href=&#34;https://majdarbash.github.io/digging-react-native/&#34;&gt;installation post&lt;/a&gt; for more information about&amp;nbsp;how to install these tools.&lt;/p&gt;
+&lt;pre&gt;# install the react native cli
+npm install -g react-native-cli&lt;/pre&gt;
+&lt;p&gt;Run this script to create your first app (our app is called &#34;Shoes&#34;):&lt;/p&gt;
+&lt;pre&gt;react-native init Shoes&lt;/pre&gt;
+&lt;p&gt;At any point throughout this tutorial, you can run your app using these commands:&lt;/p&gt;
+&lt;pre&gt;# run your app on iOS
+react-native run-ios
 &lt;h1 id=&#34;run-your-app-on-android&#34;&gt;run your app on Android&lt;/h1&gt;
-&lt;p&gt;react-native run-android&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;react-native run-android&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;It&#39;s time for fun now, let&#39;s start coding to build our beautiful shoe app !&lt;/p&gt;
+&lt;h2&gt;The &#34;Shoes&#34; App&lt;/h2&gt;
+&lt;p&gt;Everything is in place now, time to start the work!&lt;/p&gt;
+&lt;p&gt;Let&#39;s navigate to the directory where we initialized the shoe app:&lt;/p&gt;
+&lt;pre&gt;cd Shoes
 &lt;h1 id=&#34;directory--listing&#34;&gt;directory  listing&lt;/h1&gt;
-&lt;p&gt;ls -F&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
+&lt;p&gt;ls -F&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://majdarbash.github.io/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.13.29-PM.png&#34;&gt;&lt;img class=&#34;size-large wp-image-439 aligncenter&#34; src=&#34;https://majdarbash.github.io/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.13.29-PM-1024x781.png&#34; alt=&#34;screen-shot-2016-10-19-at-10-13-29-pm&#34; width=&#34;648&#34; height=&#34;494&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have got several files here. T0 give possibility to distinguish the code based on the version used, we have 2 entry scripts: index.ios.js and index.android.js which will be parsed and executed based on the corresponding app platform.&lt;/p&gt;
+&lt;p&gt;</description>
     </item>
     
     <item>
@@ -443,7 +535,9 @@ class Person(object): &amp;quot;&amp;quot;&amp;quot;Person class&amp;quot;&amp;q
       <pubDate>Thu, 29 Sep 2016 13:25:20 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2016/09/29/facebook-developers-29th-september-2016-dubai/</guid>
-      <description></description>
+      <description>Hi there,
+Here are couple of notes for the even I attended. We had a beautiful session starting from 9.50 am talking about how to monetize and distribute the facebook apps and some open source tools. Afterwards, there was a drill down into some technical topics explored in details in sort of a workshop.
+Interesting Technologies:  Facebook Analytics for App - an free tool&amp;nbsp;to track and analyze the behavior of the users within the facebook app.</description>
     </item>
     
     <item>
@@ -527,6 +621,15 @@ In addition to EC2 instances, you can benefit from a lot of great services which
     </item>
     
     <item>
+      <title>AWS global network infrastructure (reInvent 2019)</title>
+      <link>https://majdarbash.github.io/aws/aws-global-network-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-global-network-reinvent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>AWS Organizations - Setting Up and Configuring User Accounts</title>
       <link>https://majdarbash.github.io/random/aws-organizations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -564,20 +667,20 @@ In addition to EC2 instances, you can benefit from a lot of great services which
     </item>
     
     <item>
-      <title>Deep Dive on Amazon Relational Database Service</title>
-      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-rds/</link>
+      <title>Deep Dive on Amazon Relational Database Service (reInvent 2017)</title>
+      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-rds-reinvent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-rds/</guid>
+      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-rds-reinvent/</guid>
       <description>Why use Amazon RDS? Which instance type should I choose? Which storage type should I choose? How do I decide between GP2 and IO1? How do I scale my database instance? What happens during a Multi-AZ failover? Why would I use Read Replicas? How does Amazon RDS manage backups? When should I use Multi-AZ as opposed to Read Replicas? How do I secure my Amazon RDS database? How do I monitor my Amazon RDS database?</description>
     </item>
     
     <item>
-      <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management</title>
-      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</link>
+      <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)</title>
+      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-reinvent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</guid>
+      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-reinvent/</guid>
       <description>Storage Management on S3  User Permission Management By Tagging S3 Inventory Storage Class Analysis Object-Level Logging Cross-Region Replication (CRR) Automate with Trigger-Based Workflow Amazon S3 event notifications Default Encryption Amazon Macie   AlertLogic Use Case on AWS S3  S3 Object Management Tags with Lifecycle Expiration Policies Tags with Lifecycle Transition Policies Demonstrate Scale of Storage Solution (AWS re:Invent 2017)    Storage Management on S3  Organize  Object Tagging   Monitor and Analyze  S3 Inventory Amazon CloudWatch Storage Class Analysis AWS CloudTrail   Act  Cross Region replications Event Notification Lifecycle Policy   Security Management  AWS KMS AWS IAM Bucket Permissions Check Encryption Status in S3 Inventory Default Encryption Trusted advisor Amazon Macie    User Permission Management By Tagging { &amp;#34;version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Action&amp;#34;: [ &amp;#34;s3:GetObject&amp;#34; ], &amp;#34;Resource&amp;#34;: &amp;#34;arn:aws:s3:::Project-bucket/*&amp;#34;, &amp;#34;Condition&amp;#34;: {&amp;#34;StringEquals&amp;#34;: {&amp;#34;s3:RequestObjectTag/Project&amp;#34;: &amp;#34;x&amp;#34;}} } ] } S3 Inventory  Generates a CSV / ORC file based of all objects in S3 bucket with respect to filter criteria.</description>
     </item>
     

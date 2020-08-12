@@ -11,20 +11,29 @@
     
     
     <item>
-      <title>Deep Dive on Amazon Relational Database Service</title>
-      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-rds/</link>
+      <title>AWS global network infrastructure (reInvent 2019)</title>
+      <link>https://majdarbash.github.io/aws/aws-global-network-reinvent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-rds/</guid>
+      <guid>https://majdarbash.github.io/aws/aws-global-network-reinvent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Dive on Amazon Relational Database Service (reInvent 2017)</title>
+      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-rds-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-rds-reinvent/</guid>
       <description>Why use Amazon RDS? Which instance type should I choose? Which storage type should I choose? How do I decide between GP2 and IO1? How do I scale my database instance? What happens during a Multi-AZ failover? Why would I use Read Replicas? How does Amazon RDS manage backups? When should I use Multi-AZ as opposed to Read Replicas? How do I secure my Amazon RDS database? How do I monitor my Amazon RDS database?</description>
     </item>
     
     <item>
-      <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management</title>
-      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</link>
+      <title>Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)</title>
+      <link>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-reinvent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-re-invent/</guid>
+      <guid>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-reinvent/</guid>
       <description>Storage Management on S3  User Permission Management By Tagging S3 Inventory Storage Class Analysis Object-Level Logging Cross-Region Replication (CRR) Automate with Trigger-Based Workflow Amazon S3 event notifications Default Encryption Amazon Macie   AlertLogic Use Case on AWS S3  S3 Object Management Tags with Lifecycle Expiration Policies Tags with Lifecycle Transition Policies Demonstrate Scale of Storage Solution (AWS re:Invent 2017)    Storage Management on S3  Organize  Object Tagging   Monitor and Analyze  S3 Inventory Amazon CloudWatch Storage Class Analysis AWS CloudTrail   Act  Cross Region replications Event Notification Lifecycle Policy   Security Management  AWS KMS AWS IAM Bucket Permissions Check Encryption Status in S3 Inventory Default Encryption Trusted advisor Amazon Macie    User Permission Management By Tagging { &amp;#34;version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Action&amp;#34;: [ &amp;#34;s3:GetObject&amp;#34; ], &amp;#34;Resource&amp;#34;: &amp;#34;arn:aws:s3:::Project-bucket/*&amp;#34;, &amp;#34;Condition&amp;#34;: {&amp;#34;StringEquals&amp;#34;: {&amp;#34;s3:RequestObjectTag/Project&amp;#34;: &amp;#34;x&amp;#34;}} } ] } S3 Inventory  Generates a CSV / ORC file based of all objects in S3 bucket with respect to filter criteria.</description>
     </item>
     

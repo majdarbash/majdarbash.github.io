@@ -22,21 +22,21 @@
     <title>How to build Docker Image for NGINX using Chef (chef-solo)? :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2017/09/30/docker-building-nginx-cookbook-in-dockerized-container/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,30 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<h1>Docker + Chef-solo + Your Cookbooks</h1>
+<p>The <a href="/docker-chef/">previous example</a> runs nginx stack on ubuntu:14.04 from the recipes obtained from the chef supermarket. The requirements to be downloaded are mentioned in the Berksfile.</p>
+<p>So, how do we add custom build recipes?<br />
+Let's build our custom nginx recipe which will be provisioned in docker container using chef-solo.</p>
+<h3>1. Download chef-dk to your local machine</h3>
+<h3>2. Create the skeleton</h3>
+<p>|_ Berksfile \<br />
+(will specify the dependencies to be downloaded from the supermarket.io > currently we don't need any, but would still the file for potential use)<br />
+|_ solo.rb<br />
+|_ solo.json<br />
+|_ Dockerfile<br />
+|_ cookbooks/ (will contain your cookbooks, initialized using chef commands)</p>
+<h3>3. Tailor made cookbook - special for you!</h3>
+<p><strong>chef generate cookbook cookbooks/nginx</strong></p>
+<p>At this stage you may want to populate your recipe with necesary commands.</p>
+<p><strong>cookbooks/nginx/recipes/default.rb</strong></p>
+<pre>
+#
+# Cookbook:: nginx
+# Recipe:: default
+#
+# Copyright:: 2017, The Authors, All Rights Reserved.
 <p>package [&lsquo;nginx&rsquo;] do
 action :install
 end</p>
@@ -3030,8 +3075,10 @@ end</p>
 <p>template &lsquo;/etc/nginx/sites-enabled/default&rsquo; do
 source &lsquo;default.conf&rsquo;
 end
-<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+</pre></p>
+<p><strong>cookbooks/nginx/templates/default.conf</strong></p>
+<pre>
+##
 <h1 id="default-server-configuration">Default server configuration</h1>
 <h1 id="heading"></h1>
 <p>server {
@@ -3103,8 +3150,36 @@ location ~ \.php$ {
 <h1 id="try_files-uri-uri-404">try_files $uri $uri/ =404;</h1>
 <h1 id="heading-6">}</h1>
 <p>#}
-<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+</pre></p>
+<h3>4. File adjustments for ubuntu:16.04</h3>
+<p><strong>solo.rb</strong></p>
+<pre>
+# Solo.rb
+root = File.absolute_path(File.dirname(__FILE__))
+file_cache_path root
+cookbook_path root + '/cookbooks'
+</pre>
+<p><strong>solo.json</strong></p>
+<pre>
+{
+    "run_list": [
+    "recipe[nginx::default]"
+    ]
+}
+</pre>
+<p><strong>Berksfile</strong></p>
+<pre>
+#Berksfile
+source 'https://supermarket.chef.io'
+</pre>
+<p><strong>Dockerfile</strong></p>
+<pre>
+FROM ubuntu:16.04
+RUN apt-get -y update
+RUN apt-get -y install curl build-essential libxml2-dev libxslt-dev git
+RUN curl -L https://www.opscode.com/chef/install.sh | bash
+RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+RUN /opt/chef/embedded/bin/gem install berkshelf
 <p>RUN apt-get -y update
 RUN apt-get -y install python-software-properties
 RUN apt-get -y update</p>
@@ -3115,19 +3190,39 @@ ADD ./cookbooks /var/chef/cookbooks</p>
 <p>RUN cd / &amp;&amp; /opt/chef/embedded/bin/berks vendor /var/chef/cookbooks
 RUN chef-solo -c /var/chef/solo.rb -j /var/chef/solo.json</p>
 <p>CMD service php7.0-fpm start &amp;&amp; nginx -g &ldquo;daemon off;&rdquo;
-<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+</pre></p>
+<h3>5. Good to go: build, run, enjoy !</h3>
+<p>in order to experiment the setup I included a www/ directory in the project root with some files. We will mount this directory to the docker container after building our image !</p>
+<p>Image is build and stored locally:</p>
+<pre>
+docker build -t majdarbash/nginx .
+</pre>
+<p>Running our image:</p>
+<pre>
+# running our image with default command (CMD will be executed)
+docker run -d -p 8080:80 majdarbash/nginx 
 <h1 id="docker-run--d--p-808080-majdarbashnginx-bash-overriding-cmd-entry-point-to-access-bash-eg-troubleshopt">docker run -d -p 8080:80 majdarbash/nginx bash (overriding CMD entry point, to access bash, e.g. troubleshopt)</h1>
 <h1 id="running-with-mounted-volume-in-www-note-that-nginx-will-serve-from-app-based-on-the-chef-template-above">running with mounted volume in www (note that nginx will serve from /app based on the chef template above)</h1>
 <p>docker run -v ~/Developer/docker-chef-solo-skeleton/www:/app -p 8080:80 -d majdarbash/nginx</p>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p></pre></p>
+<p>You can find the full git code on:</p>
+<p><a href="https://github.com/majdarbash/docker-chef-solo-skeleton" target="_blank"><br />
+https://github.com/majdarbash/docker-chef-solo-skeleton<br />
+</a></p>
+<h3>6. From open-source to open-source</h3>
+<p>Time to share it back !</p>
+<p>Use the following commands to publish your image to the docker hub:</p>
+<pre>
+# logged in to docker hub (enter credentials for hub.docker.io)
+docker login 
 <h1 id="pushing-the-image-to-the-repository">pushing the image to the repository</h1>
 <p>docker push majdarbash/nginx
-<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+</pre></p>
+<p>Next time you or someone needs an image, all you need to do is:</p>
+<pre>
+docker pull majdarbash/nginx
 <p>docker run -v [local_directory]:/app -p 8080:80 -d majdarbash/nginx
-<!-- raw HTML omitted --></p>
+</pre></p>
 
 <footer class="footline">
 	
@@ -3174,6 +3269,22 @@ RUN chef-solo -c /var/chef/solo.rb -j /var/chef/solo.json</p>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5236,19 +5347,19 @@ RUN chef-solo -c /var/chef/solo.rb -j /var/chef/solo.json</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -22,21 +22,21 @@
     <title>React Native: Building the &#34;Shoes&#34; App :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2016/10/20/react-native-the-shoe-app/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,18 +3036,102 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h2>Overview</h2>
+<p>I was recently experimenting building a react native app. After&nbsp;digging a bit deeper into hybrid development, I have got attracted to the concept of producing a native code, in contrast to the web view approach in most of hybrid apps.</p>
+<p>So here's what we've got. Setting it up:</p>
+<p>If you go to <a href="https://facebook.github.io/react-native/docs/getting-started.html">https://facebook.github.io/react-native/docs/getting-started.html</a>&nbsp;you'll get some instructions how to set it up.</p>
+<h2>Android installation</h2>
+<ul>
+ <li>Install JDK</li>
+ <li>Install Android SDK</li>
+ <li>Adding android SDK path to the ~/.bashrc
+  <ul>
+   <li>export ANDROID_HOME=/usr/local/opt/android-sdk</li>
+  </ul>
+ </li>
+</ul>
+<p>JDK can be installed using this link:<br />
+ http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html</p>
+<p>Android SDK can be installed using:<br />
+ brew install android-sdk</p>
+<p>After finishing these 3 steps, we would need to install some android packages.</p>
+<p>Open Android package manager:</p>
+<pre>android</pre>
+<p>These packages will be required to run the android simulator:</p>
+<ul>
+ <li>Android SDK Build-tools version 23.0.1</li>
+ <li>Android 6.0 (API 23)</li>
+ <li>Android Support Repository</li>
+ <li>Intel x86 Atom System Image (for Android 5.1.1 - API 22)</li>
+ <li>Intel x86 Emulator Accelerator (HAXM installer)</li>
+</ul>
+<p>You would also require to download IntelHAXM.dmg file, which you can do from:</p>
+<p>https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager</p>
+<p>Run the installation file after download dmg.</p>
+<ul>
+ <li>Install IntelHAXM.dmg
+  <ul>
+   <li><sdk>/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM.dmg</li>
+   <li><sdk> is&nbsp;/usr/local/opt/android-sdk on OS X</li>
+  </ul>
+ </li>
+ <li>To check that configuration is done correctly
+  <ul>
+   <li>kextstat | grep intel</li>
+  </ul>
+ </li>
+ <li>You should see message
+  <ul>
+   <li>com.intel.kext.intelhaxm</li>
+  </ul>
+ </li>
+</ul>
+<p>At this point we would like to create an android virtual device (AVD):</p>
+<pre># launching avd manager
+android avd
+</pre>
+<p>Click "Create" and choose the following options for your AVD:</p>
+<p><a href="/wp-content/uploads/2016/09/Screen-Shot-2016-10-18-at-11.13.16-PM-e1476818078568.png"><img class="wp-image-418 size-large aligncenter" src="/wp-content/uploads/2016/09/Screen-Shot-2016-10-18-at-11.13.16-PM-1024x767.png" alt="screen-shot-2016-10-18-at-11-13-16-pm" width="648" height="485" /></a></p>
+<p>Now your AVD is created and you can start your emulator using:</p>
+<pre>emulator -avd <avd name>
+# in our example: emulator -avd reactnative</pre>
+<h2>iOS installation</h2>
+<p>iOS emulator will be installed automatically as part of Xcode installation. You can install Xcode from the the app store and choose the particular emulator to start from within Xcode.</p>
+<h2>Installation</h2>
+<p>Before proceeding let's make sure that we have the following tools in place:</p>
+<ul>
+ <li>brew</li>
+ <li>android</li>
+ <li>node</li>
+ <li>watchman (brew install watchman)</li>
+</ul>
+<p>Check out the <a href="/digging-react-native/">installation post</a> for more information about&nbsp;how to install these tools.</p>
+<pre># install the react native cli
+npm install -g react-native-cli</pre>
+<p>Run this script to create your first app (our app is called "Shoes"):</p>
+<pre>react-native init Shoes</pre>
+<p>At any point throughout this tutorial, you can run your app using these commands:</p>
+<pre># run your app on iOS
+react-native run-ios
 <h1 id="run-your-app-on-android">run your app on Android</h1>
-<p>react-native run-android<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>react-native run-android</pre></p>
+<p>It's time for fun now, let's start coding to build our beautiful shoe app !</p>
+<h2>The "Shoes" App</h2>
+<p>Everything is in place now, time to start the work!</p>
+<p>Let's navigate to the directory where we initialized the shoe app:</p>
+<pre>cd Shoes
 <h1 id="directory--listing">directory  listing</h1>
-<p>ls -F<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>ls -F</pre></p>
+<p><a href="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.13.29-PM.png"><img class="size-large wp-image-439 aligncenter" src="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.13.29-PM-1024x781.png" alt="screen-shot-2016-10-19-at-10-13-29-pm" width="648" height="494" /></a></p>
+<p>We have got several files here. T0 give possibility to distinguish the code based on the version used, we have 2 entry scripts: index.ios.js and index.android.js which will be parsed and executed based on the corresponding app platform.</p>
+<p>
+</p>
+<p>This is how the default index.ios.js script would look like:</p>
+<pre>/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
 <p>import React, { Component } from &lsquo;react&rsquo;;
 import {
 AppRegistry,
@@ -3035,18 +3142,18 @@ View
 <p>export default class Shoes extends Component {
 render() {
 return (
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<View style={styles.container}>
+<Text style={styles.welcome}>
 Welcome to React Native!
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</Text>
+<Text style={styles.instructions}>
 To get started, edit index.ios.js
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</Text>
+<Text style={styles.instructions}>
 Press Cmd+R to reload,{'\n&rsquo;}
 Cmd+D or shake for dev menu
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</Text>
+</View>
 );
 }
 }</p>
@@ -3068,8 +3175,44 @@ color: &lsquo;#333333&rsquo;,
 marginBottom: 5,
 },
 });</p>
-<p>AppRegistry.registerComponent(&lsquo;Shoes&rsquo;, () =&gt; Shoes);<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p>AppRegistry.registerComponent(&lsquo;Shoes&rsquo;, () =&gt; Shoes);</pre></p>
+<p>We can notice here that our script&nbsp;consists from several&nbsp;sections.</p>
+<p>In the top&nbsp;we are importing couple of components which will be needed to run the script. Some components are imported from react, while others from react native modules.</p>
+<ul>
+<li>AppRegistry<br />
+will be used at the end of the file to register the entry script</li>
+<li>StyleSheet<br />
+We are able to define the stylesheet rules by using StyleSheet.create() and passing object of styles as argument</li>
+<li>View<br />
+This components acts like container to our app</li>
+<li>Text<br />
+Label components, accepts styling</li>
+</ul>
+<p>You will notice also that the default class has render() function which is supposed to return the objects to be parsed and rendered in the native app.</p>
+<p>Notation used in return statement of render function() is called JSX - a Javascript syntax&nbsp;extension which make it&nbsp;look like XML.&nbsp;Of course you don't have to write using JSX and can use a plain javascript, however JSX will be much more comfortable.</p>
+<p>You can read more about JSX here:</p>
+<p><a href="https://facebook.github.io/react/docs/jsx-in-depth.html">https://facebook.github.io/react/docs/jsx-in-depth.html</a></p>
+<p>As mentioned in the previous section, we will use the following command to run our code as we developer:</p>
+<pre>react-native run ios</pre>
+<h2>Building the Home Page</h2>
+<p>We will start by creating a folder called src in our project root.</p>
+<p><a href="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.34.33-PM.png"><img class="wp-image-440 size-medium aligncenter" src="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.34.33-PM-187x300.png" alt="screen-shot-2016-10-19-at-10-34-33-pm" width="187" height="300" /></a></p>
+<p>Within the <strong>src/</strong> folder we will place our Home page script called <strong>home.js</strong>.&nbsp;In addition, let's create a file called <strong>shoes.js</strong> which will be our root components which can be used both within <strong>index.ios.js</strong> and <strong>index.android.js</strong>. This is what I expected to have at this point:</p>
+<p>src/<br />
+|__ &nbsp;src/shoes.js<br />
+|__ &nbsp;src/home.js</p>
+<p>Let's start working on our beautiful home page. At this point I would like to achieve a blank page with some text in the middle, let's say "Hello world!". This won't be a great achievement in comparison to what&nbsp;was already generated in index.ios.js, however it will give as an ideas about how to better organize the code and wrap the default components into more complex&nbsp;reusable components.</p>
+<p>This is how my home.js&nbsp;file would look like at this point:</p>
+<p><a href="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.51.29-PM.png"><img class="size-large wp-image-443 aligncenter" src="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.51.29-PM-1024x640.png" alt="screen-shot-2016-10-19-at-10-51-29-pm" width="648" height="405" /></a></p>
+<p>&nbsp;</p>
+<p>In the <strong>shoes.js</strong> file we would like to refer to import <strong>home.js</strong> file and import it:</p>
+<p><a href="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.51.52-PM.png"><img class="size-large wp-image-444 aligncenter" src="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.51.52-PM-1024x746.png" alt="screen-shot-2016-10-19-at-10-51-52-pm" width="648" height="472" /></a></p>
+<p>At this point we have got the <strong>Shoes</strong> components ready and it's using the <strong>Home</strong> component. Placing <Home/> tags within the Shoes component indicates that rendering Shoes component, will require to instantiate and render Home components. All we want to do now in index.ios.js is to include the&nbsp;<strong>Shoes</strong> component and set it as an entry point to our app.</p>
+<p><a href="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.51.38-PM.png"><img class="size-large wp-image-445 aligncenter" src="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.51.38-PM-1024x647.png" alt="screen-shot-2016-10-19-at-10-51-38-pm" width="648" height="409" /></a></p>
+<p>Now, try to run using:</p>
+<pre>react-native run-ios</pre>
+<p><a href="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.52.08-PM.png"><img class="size-large wp-image-446 aligncenter" src="/wp-content/uploads/2016/10/Screen-Shot-2016-10-19-at-10.52.08-PM-623x1024.png" alt="screen-shot-2016-10-19-at-10-52-08-pm" width="623" height="1024" /></a></p>
+<p>Great ! First step accomplished, we got something working!</p>
 
 <footer class="footline">
 	
@@ -3116,6 +3259,22 @@ marginBottom: 5,
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5178,19 +5337,19 @@ marginBottom: 5,
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

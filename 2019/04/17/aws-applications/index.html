@@ -22,21 +22,21 @@
     <title>AWS Applications :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2019/04/17/aws-applications/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,212 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<h2>SQS (Simple Queue Service)</h2>
+<ul>
+<li>the first AWS service</li>
+<li>distributed queue system</li>
+<li>temporary repository for messages that are waiting for processing</li>
+<li>one component in the application queues messages to be consumed by another component in the application</li>
+<li><strong>can be used to decouple the components of an application</strong></li>
+<li>messages can contain up to 256 kb of text<br />you can store up to 2GB per message, however, it will be stored and retrieved from S3 in this case</li>
+<li>messages can be retrieved using AWS SQS API</li>
+<li>auto-scaling events can be configured based on queue sizes as well</li>
+<li>pull-based, not pushed based<br />messages should be consumed from the queues, SQS will not push the messages</li>
+<li>messages can be kept in the queue from 1 minute to 14 days</li>
+<li>the default retention period is 4 days</li>
+<li><strong>visibility timeout</strong> - the amount of time that the message is invisible in the SQS queue after a <span style="text-decoration: underline;"><strong>reader picks up</strong></span> that message. If the job is not processed within visibility timeout, the message will become visible again and can be processed by another reader.</li>
+<li>maximum visibility timeout is 12 hours</li>
+<li>polling types:
+<ul>
+<li>short polling - returns immediately even if the message queue being polled is empty</li>
+<li>long polling - doesn't return a response until a message arrived in the message queue or the long poll times out</li>
+</ul>
+</li>
+<li>queue types:
+<ul>
+<li>Standard Queue
+<ul>
+<li>nearly unlimited number of transactions per second</li>
+<li>a message is delivered at least once<br />occasionally <span style="text-decoration: underline;"><strong>more than one copy of a message might be delivered out of order</strong></span></li>
+<li>allows high throughput</li>
+<li>provides <span style="text-decoration: underline;"><strong>best-effort</strong></span> ordering<br />ensures that messages are generally delivered in the same order as they are sent</li>
+</ul>
+</li>
+<li>FIFO Queue
+<ul>
+<li>first-in-first-out</li>
+<li>ordered queues</li>
+<li>the order is strictly preserved and guaranteed</li>
+<li>the message remains available until a consumer processes and deletes it; duplicates are not introduced into the queue</li>
+<li>support message groups that allow multiple ordered message groups within a single queue</li>
+<li>limited to 300 transactions per second (TPS)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>SWF (Simple Workflow Service)</h2>
+<ul>
+<li>makes it easy to coordinate work across distributed application components</li>
+<li>workflow executions can last up to 1 year</li>
+<li>presents a <span style="text-decoration: underline;"><strong>task-oriented</strong></span> API</li>
+<li>ensures that the task is assigned only once</li>
+<li>keeps track of all the tasks and events in an application</li>
+<li>SWF actors:
+<ul>
+<li>Workflow Starters<br />An application initiating a workflow.<br />(e.g. an e-commerce website following the placement of order)</li>
+<li>Deciders<br />Control the flow of activity tasks in a workflow execution. If something has finished (or failed) in a workflow, a Decider decides what to do next.</li>
+<li>Activity Workers<br />Carry out the activity tasks</li>
+</ul>
+</li>
+</ul>
+<h2>SNS (Simple Notification Service)</h2>
+<ul>
+<li>Service for sending notifications from the cloud</li>
+<li>Can deliver notifications to devices (via Push notifications), SMS, Email, SQS queues or to any other HTTP endpoint</li>
+<li>Push notifications to Apple, Google, FireOS, Windows devices and Android devices in China with Baidu Cloud Push</li>
+<li>Recipients are grouped using Topics</li>
+<li>One topic can support deliveries to multiple endpoint types</li>
+<li>The message published to a topic will be delivered to each subscriber</li>
+<li>Messages published to SNS are stored across different AZs</li>
+<li>Push-based delivery (no polling)</li>
+<li>Simple APIs and easy integration with applications</li>
+<li>Inexpensive, pay-as-you-go model with no up-front costs</li>
+</ul>
+<h2>SNS vs SQS</h2>
+<ul>
+<li>Both Messaging Services in AWS</li>
+<li>SNS - Push</li>
+<li>SQS - Polls (Pulls)</li>
+</ul>
+<h2>Elastic Transcoder</h2>
+<ul>
+<li>Media Transcoder in the cloud</li>
+<li>Convert media files from their original source format into different formats that will play on smartphones, tablets, PCs, etc.</li>
+<li>Provides transcoding presets for popular output formats</li>
+<li>Pay based on the minutes that you transcode and the resolution at which you transcode</li>
+</ul>
+<h2>API Gateway</h2>
+<ul>
+<li>Fully managed service that makes it easy for developers to publish, maintain, monitor and secure APIs at any scale.</li>
+<li>Features
+<ul>
+<li>Expose HTTPS endpoints to define a RESTful API</li>
+<li><strong>Serverless-ly connect to services like Lambda &amp; DynamoDB</strong></li>
+<li>Send each API endpoint to a different target</li>
+<li>Run efficiently with low cost</li>
+<li>Scales automatically</li>
+<li>Track and control usage by API key</li>
+<li><strong>Throttle requests to prevent attacks</strong></li>
+<li>Connect to CloudWatch to log all requests for monitoring</li>
+<li>Maintain multiple versions of your API</li>
+</ul>
+</li>
+<li>Configuration
+<ul>
+<li>Define an API</li>
+<li>Define Resources and nested Resources (URL Paths)</li>
+<li>For each resource:
+<ul>
+<li>Select supported HTTP methods (verbs)</li>
+<li>Set security</li>
+<li>Choose target (such as EC2, Lambda, DynamoDB, etc.)</li>
+<li>Set request and response transformations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Deployment
+<ul>
+<li>Uses API Gateway domain, by default</li>
+<li>Can use a custom domain</li>
+<li>Now supports AWS Certificate Manager: free SSL/TLS certs</li>
+</ul>
+</li>
+<li>API Caching (TTL specified)<br />Will help you reduce the number of requests made to your endpoint, improving the latency of the requests to your API.</li>
+<li><strong>Same Origin Policy</strong><br />Web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin. This prevents XSS attacks.</li>
+<li><strong>CORS can be enabled on the API Gateway</strong>
+<ul>
+<li>CORS (Cross-Origin Resource Sharing)<br />allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
+<p>&nbsp;</p>
+<ul>
+<li>The browser makes HTTP OPTIONS call</li>
+<li>The server returns a response listing other domains that are approved to GET this URL</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Kinesis</h2>
+<ul>
+<li>Service working with the streaming data</li>
+<li>Makes it easy to load and analyze streaming data</li>
+<li>Streaming Data is data that is generated continuously by thousands of data sources, which typically send in the data records simultaneously, and in small sizes (order of Kilobytes).</li>
+<li>Types
+<ul>
+<li>Kinesis Streams</li>
+<li>Kinesis Firehose</li>
+<li>Kinesis Analytics</li>
+</ul>
+</li>
+<li>Kinesis Streams
+<ul>
+<li>Receive data from producers and retain it until consumed</li>
+<li>Producers - Produce streaming data and stream it to Kinesis streams</li>
+<li>Consumers - receive data from Kinesis Streams and act on it</li>
+<li>Retention: 24 hours - 7 days</li>
+<li>Consists of Shards
+<ul>
+<li>5 transactions per second for reads</li>
+<li>a maximum total data read rate of 2MB per second</li>
+<li>up to 1000 records per second for writes</li>
+<li>maximum total write rate of 1MB per second</li>
+</ul>
+</li>
+<li><strong>Data capacity of the stream is determined by the number of shards and their capacities</strong></li>
+</ul>
+</li>
+<li>Kinesis Firehose
+<ul>
+<li>Data received could optionally execute a lambda function and will be output to it's the destination which could be S3, ElasticSearch</li>
+<li><strong>There's no data persistence</strong></li>
+<li>Data will be forwarded immediately to the target destination</li>
+</ul>
+</li>
+<li>Kinesis Analytics
+<ul>
+<li>analyzes the data inside both of Kinesis Firehose and Kinesis Streams, with on-the-fly analysis capability</li>
+</ul>
+</li>
+</ul>
+<h2>FAQs</h2>
+<ul>
+<li>SQS Billing is calculated per request, plus data transfer charges for data transferred out of Amazon SQS</li>
+<li>1 million requests per month - fall under the free tier</li>
+<li>Batch operations cost the same as other SQS requests. Grouping messages into batches, you can reduce the SQS costs.</li>
+<li>All the messages in SQS have a globally unique ID that SQS returns when the message is delivered to the message queue. This ID&nbsp; is useful for tracking the receipt of a particular message in the message queue.</li>
+<li>Dead letter queues receive messages from other source queues after a maximum number of processing attempts cannot be completed.</li>
+<li>SQS message can contain up to 10 metadata attributes - applications can determine how to process the message based on the metadata instead of inspecting the entire message. (attributes: name-type-value triples)</li>
+<li>SentTimestamp attribute - contains information when the message was sent by a producer and queued by SQS.</li>
+<li>SenderId attribute - contains either the AWS account ID or the IP address for the sender.</li>
+<li>Amazon SQS APIs provide deduplication functionality for FIFO queues that prevents your message producer from sending duplicates. Any duplicates introduced by the message producer are removed within a 5-minute deduplication interval.</li>
+<li>If using standard queues you may experience duplicates - the application must be designed to be idempotent - not affected when processing the same message more than once).</li>
+<li>Queue type can be chosen only on creation. If you want to convert from one type to another you will have to recreate the queue.</li>
+<li>In FIFO queues, messages are ordered based on the message group ID. It's a required field when sending a message to the queue.</li>
+<li>After you're done processing the message, you are responsible for deleting it.</li>
+<li>Server-side encryption (SSE) - SSE encrypts messages as soon as Amazon SQS receives them using keys in AWS KSM (AWS Key Management Service). The messages are stored in encrypted form and are decrypted when sending a message to an authorized consumer.</li>
+<li>SSE encrypts the body of the message. The queue metadata, message metadata, and per-queue metrics are not encrypted.</li>
+<li>SSE uses AES-GCM 256 algorithm.</li>
+<li>Amazon SQS is PCI DSS Level 1 certified and HIPAA Eligible Service.</li>
+<li>SQS messages can contain text data, including XML, JSON and unformatted text.</li>
+<li>The number of inflight messages is limited to 120k for standard queue and 20k for FIFO queue.</li>
+<li>Inflight messages are those messages that have been received by a consuming component but have not yet been deleted.&nbsp;</li>
+<li>Queue names are limited to 80 characters.</li>
+</ul>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
 
 <footer class="footline">
 	
@@ -3061,6 +3288,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5366,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

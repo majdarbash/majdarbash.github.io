@@ -1,0 +1,22 @@
+.aboutme{
+    margin-right: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.aboutme .name{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.aboutme .small{
+    font-size: 14px;
+    color: #666666;
+}
+
+
+.categorylist a{
+    font-weight: bold;
+}

@@ -17,7 +17,13 @@
       <pubDate>Mon, 23 Jan 2017 23:17:13 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/01/23/learning-algorithm-neuron/</guid>
-      <description></description>
+      <description>[latexpage]
+In perceptron model weights are changed to get a better set of weights. In multi-layer neural network this algorithm won&#39;t work and we don&#39;t use&amp;nbsp;perceptron learning algorithm.
+For multi-layer nets the objective is the&amp;nbsp;actual&amp;nbsp;outputs values reaching target output values.
+Linear Neurons The neuron has a real-valued output which is weighted sum of its inputs:
+\begin{equation} &amp;nbsp;y = \sum_{i}{x_i w_i} = W^T X &amp;nbsp;\end{equation}
+$W$ - Weight vector
+$X$ - input vector</description>
     </item>
     
     <item>
@@ -26,7 +32,8 @@
       <pubDate>Sun, 15 Jan 2017 23:31:43 +0400</pubDate>
       
       <guid>https://majdarbash.github.io/2017/01/15/perceptrons/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;We will look into how perceptrons are structured and what they actually do. Perceptrons are the first generation of neural networks. Research on perceptrons was conducted since 1960s.&lt;/p&gt;
+&lt;p&gt;</description>
     </item>
     
   </channel>

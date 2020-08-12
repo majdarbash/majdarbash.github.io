@@ -22,21 +22,21 @@
     <title>Closer look into Learning Algorithm of a Neuron :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2017/01/23/learning-algorithm-neuron/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,111 @@
         
 
 
-<!-- raw HTML omitted -->
-
+<p>[latexpage]</p>
+<p>In perceptron model weights are changed to get a better set of weights. In multi-layer neural network this algorithm won't work and we don't use&nbsp;<span style="text-decoration: underline;"><strong>perceptron learning algorithm</strong></span>.</p>
+<p>For multi-layer nets the objective is the&nbsp;actual&nbsp;outputs values reaching target output values.</p>
+<h3>Linear Neurons</h3>
+<p>The neuron has a real-valued output which is weighted sum of its inputs:</p>
+<p>\begin{equation} &nbsp;y = \sum_{i}{x_i w_i} = W^T X &nbsp;\end{equation}</p>
+<p>$W$ - Weight vector<br />
+$X$ - input vector</p>
+<p>The aim will be to&nbsp;<span style="text-decoration: underline;"><strong>minimize the error</strong></span>. Error in this case is the squared difference between the desired output and the actual output.</p>
+<h3>Delta Rule &amp; Iterative Algorithm</h3>
+<p>\begin{equation}&nbsp;\Delta w_i = \varepsilon x_i (t - y) \end{equation}</p>
+<p>where:</p>
+<p>$\varepsilon$ - learning rate</p>
+<p>$t - y$ - (difference between the target and the estimate, i.e. the residual error)</p>
+<p>Based on iterative algorithm delta rule adjustments will be done in the system to ensure that weights are adjusted by $ \Delta w_i $ with each iteration which should lead with&nbsp;to better result in case of Linear Neuron.</p>
+<p><em><span style="text-decoration: underline;">Note: (Deriving Delta Rule is explained separately)</span></em></p>
+<h2>Error Surface of a Linear Neuron</h2>
+<p>Assume&nbsp;the space where "all the horizontal dimensions" correspond to the weights and a vertical dimension corresponds to the error.</p>
+<p>In this case errors made on each set of weights would define the error surface, which is a quadratic bowl.</p>
+<p>&nbsp;</p>
+<p><a href="/wp-content/uploads/2017/01/Error_surface_of_a_linear_neuron_with_two_input_weights.png"><img class="size-full wp-image-1497 aligncenter" src="/wp-content/uploads/2017/01/Error_surface_of_a_linear_neuron_with_two_input_weights.png" alt="" width="560" height="420" /></a></p>
+<p>You can get the same on octave, using the source code:</p>
+<pre><span class="n">vx</span> <span class="p">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:</span><span class="mf">0.5</span><span class="p">:</span><span class="mi">5</span><span class="p">];</span>
+<span class="n">vy</span> <span class="p">=</span> <span class="n">vx</span><span class="p">;</span>
+<span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span> <span class="p">=</span> <span class="nb">meshgrid</span><span class="p">(</span><span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">);</span>
+<span class="n">z</span> <span class="p">=</span> <span class="n">x</span><span class="o">.^</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">.^</span><span class="mi">2</span><span class="p">;</span>
+<span class="n">surfc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">'w1'</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">'w2'</span><span class="p">)</span>
+<span class="n">zlabel</span><span class="p">(</span><span class="s">'E'</span><span class="p">)</span>
+<span class="n">title</span><span class="p">(</span><span class="s">'Error Surface of a Linear Neuron with Two Input Weights'</span><span class="p">)</span></pre>
+<h2>Logistic Neurons</h2>
+<p>\begin{equation} z = b + \sum_{i}{x_i w_i} \end{equation}</p>
+<p>\begin{equation} y = \dfrac{1}{1+e^{-z}} \end{equation}</p>
+<h3>Deducing the delta rule</h3>
+<p>In order to find the derivatives needed for learning the weights of a logistic unit we need to find the quation for the following:</p>
+<p>\begin{equation} \Delta w_i = \dfrac{\partial E}{\partial w_i} \end{equation}</p>
+<p>using the chain rule, we would get:</p>
+<p>\begin{equation} \dfrac{\partial E}{\partial w_i} = \sum_{n}{\dfrac{\partial y^n}{\partial w_i} \dfrac{\partial E}{\partial y^n}} \end{equation}</p>
+<p>Another usage of chain rule and we would get:</p>
+<p>\begin{equation} \dfrac{\partial y}{\partial w_i} = \dfrac{\partial z}{\partial w_i} \dfrac{d y}{d z} \end{equation}</p>
+<p>By definition of $y$ and $z$ we would obtain that:</p>
+<p>\begin{equation} \dfrac{\partial z}{\partial w_i} = x_i \end{equation}</p>
+<p>\begin{equation} \dfrac{d y}{d z} = y (1 - y) \end{equation}</p>
+<p>which means that:</p>
+<p>\begin{equation} \dfrac{\partial y}{\partial w_i} = \dfrac{\partial z}{\partial w_i} \dfrac{d y}{d z} =&nbsp;x_i y (1 - y) \end{equation}</p>
+<p>wrapping this up to the main question:</p>
+<p>\begin{equation} \Delta w_i = \dfrac{\partial E}{\partial w_i} = - \sum_{n}{x_i ^n y^n (1 - y^n)(t^n - y^n) } \end{equation}</p>
+<p>By original delta rule, applied on linear neuron we can interpret this result as a delta rule, adjusted by $y^n (1 - y^n)$ - the slope of the logistic function.</p>
+<h3>Learning by Randomly perturbing weights</h3>
+<p>One way to adjust the&nbsp;weights would be to do a random change on one of the weight and investigate if this improves the performance of the network. If so, save the weight and repeat again.</p>
+<p>This is a form of reinforcement learning.</p>
+<p>It is not efficient: we need to run the network on the whole training data to determine whether the performance was improved or not by the weight change.</p>
+<h3>Finite difference approximation</h3>
+<p>This method is considered more efficient and also relies on perturbing weights. Here we don't perturb the weights randomly, however we adjust the weights one by one and measure the impact.</p>
+<p>for each weight:</p>
+<ul>
+<li>add to $w_i$&nbsp;a small constant $\epsilon$ and evaluate the error : $E_i^+$. Then we subtract the same constant $\epsilon$ &nbsp;and evaluate the error again $E_i^-$</li>
+<li>reset $w_i$ to original value and proceed to the next weight</li>
+<li>when done, update the weights vector by:<br />
+\begin{equation} \Delta w_i &nbsp;= - \mu \dfrac{E_i^ + E_i^-}{2 \epsilon}&nbsp;\end{equation}</li>
+</ul>
+<h2>The Backpropagation&nbsp;algorithm</h2>
+<p>In &nbsp;contrast to the previously mentioned algorithms, the back propagation algorithm is the algorithm for taking one training case, and computing efficiently for every weight in the network, how the error will change as, on that particular training case, as you change the weight.</p>
+<p>Main topics will affect the performance of&nbsp;BP algorithm:</p>
+<ul>
+<li>derivatives to be applied on the weights - how much to update the weights?</li>
+<li>frequency of weight updating</li>
+<li>how to prevent the network from overfitting</li>
+</ul>
+<p>Frequency of weight update:</p>
+<ul>
+<li>online: after each training case<br />
+Error will be going low and high, jumping around and zig-zagging&nbsp;after each training case. If there's enough training data, the weights should eventually converge to better results.</li>
+<li>full batch: after running the whole training data<br />
+Weight changes $\Delta w_i$ performed on the network will be more stable and will be more into the right direction towards optimal&nbsp;$W^*$. Disadvantage is however that this operation is costly if the training data is big</li>
+<li>mini-batch: after a small sample of training cases<br />
+Helps do certain weight adjustment before waiting for the whole training data, and not too soon, in contrast to online weight adjustment.</li>
+</ul>
+<p>How much to update:</p>
+<ul>
+<li>Use a fixed learning rate</li>
+<li>Adapt the global learning rate<br />
+Take bigger steps when we are moving in the right direction, and make the steps smaller when the improvement is converging (performance is changing less)</li>
+<li>Don't use steepest descent</li>
+</ul>
+<p>Overfitting:</p>
+<p>Training data contains useful relations which we want to model, and a lot of regularities which come in form of noise.&nbsp;In any set of chosen cases there is a sampling error, due to the choice of these particular cases. When fitting a model we may overfit: i.e. we can be modeling the sampling error along other regularities. This can lead to really poor network design.</p>
+<p>Overfitting can be reduced by using the following methods:</p>
+<ul>
+<li>weight-decay<br />
+keeping the weights of the network small, or some weights close to zero</li>
+<li>weight-sharing<br />
+giving the same values to certain weights</li>
+<li>early stopping<br />
+starting training,&nbsp;monitor the network training and stop when the training is getting worse</li>
+<li>model averaging<br />
+training different neural nets and averaging them to reduce the error</li>
+<li>Bayesian fitting of neural nets<br />
+another method of model averaging</li>
+<li>dropout<br />
+making model more robust by randomly emitting hidden units when training</li>
+<li>generative pre-training</li>
+</ul>
+<p><em>Backpropagation cannot be used with binary threshold neurons: Backpropagation works with derivatives. In a binary threshold neuron the derivatives of the output function are zero so the error signal will not be able to propagate through it.</em></p>
 
 <footer class="footline">
 	
@@ -3061,6 +3187,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5265,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

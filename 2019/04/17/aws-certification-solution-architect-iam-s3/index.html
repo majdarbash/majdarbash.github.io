@@ -22,21 +22,21 @@
     <title>S3 :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2019/04/17/aws-certification-solution-architect-iam-s3/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,252 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<h2>Billing</h2>
+<ul>
+<li>Billing Alarms can be created from CloudWatch.</li>
+<li>Billing Notifications should be enabled from the Billing Preferences section.</li>
+</ul>
+<h2>S3 (Simple Storage Service)</h2>
+<ul>
+<li>Provides developers and IT teams with secure, durable, highly scalable object storage</li>
+<li>Provides simple web services interface to store and retrieve data</li>
+<li>S3 is a safe place to store the files</li>
+<li>S3 and Glacier are not block storages</li>
+<li>S3 is <strong>Object-Based</strong> - allows you to upload files</li>
+<li>Files can be 0 bytes to 5TB</li>
+<li>Successful uploads will generate an HTTP 200 code</li>
+<li>Unlimited storage</li>
+<li>Files are stored in Buckets</li>
+<li>Objects consist of:
+<ul>
+<li>Key (name of the object)</li>
+<li>Value (the data)</li>
+<li>Version ID (important for versioning)</li>
+<li>Metadata (data about data you are storing)</li>
+<li>Subresources
+<ul>
+<li>Access Control List</li>
+<li>Torrent</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Files can be from 0 Bytes to 5TB</li>
+<li>There is unlimited storage</li>
+<li>Files are stored in Buckets</li>
+<li>S3 is a universal namespace. Names must be unique globally.</li>
+<li>Data Consistency
+<ul>
+<li>Read after Write consistency for PUTS of new Objects<br />
+If you write a new file and read it immediately after, you will be able to view that data</li>
+<li>Eventual Consistency for overwrite PUTS and DELETEs (can take some time to propagate)<br />
+If you update an <strong>existing file</strong> or delete a file and read it immediately, you may get the older version, or you may not. Changes to objects can take a little bit of time to propagate.</li>
+</ul>
+</li>
+<li>Tiered Storage Available</li>
+<li>Lifecycle Management</li>
+<li>Versioning</li>
+<li>Encryption</li>
+<li>MFA Delete</li>
+<li>Secure your data using Access Control Lists and Bucket Policies</li>
+<li>Storage Classes
+<ul>
+<li>S3 Standard
+<ul>
+<li>99.99% availability</li>
+<li>99.999999999% durability for S3 information. (11x9s)</li>
+<li>Stored redundantly across multiple devices in multiple facilities</li>
+<li>Designed to sustain a loss of 2 facilities concurrently</li>
+</ul>
+</li>
+<li>S3 - IA (Infrequently Accessed)
+<ul>
+<li>For data that is accessed less frequently but requires rapid access when needed</li>
+<li>Lower fee that S3, but you are charged a retrieval fee</li>
+</ul>
+</li>
+<li>S3 One Zone - IA (Infrequently Accessed, was called before RRS - Reduced Redundancy Storage)
+<ul>
+<li>Lower-cost option for infrequently accessed data, but do not require the multiple Availability Zone data resilience.</li>
+</ul>
+</li>
+<li>S3 - Intelligent Tiering
+<ul>
+<li>Uses machine learning</li>
+<li>Optimizes costs automatically by moving data to the most cost-effective access tier, without performance impact or operational overhead</li>
+</ul>
+</li>
+<li>S3 Glacier
+<ul>
+<li>secure, durable and low-cost storage class for backup and data archiving</li>
+<li>retrieval times are configurable from minutes to hours</li>
+<li>expedited, standard and bulk retrievals</li>
+<li>data is encrypted by default</li>
+</ul>
+</li>
+<li>S3 Glacier Deep Archive
+<ul>
+<li>lowest-cost storage class where a retrieval time of 12 hours is acceptable</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>S3 Billing</h2>
+<ul>
+<li>Storage</li>
+<li>Number of requests</li>
+<li>Storage Management Pricing</li>
+<li>Data Transfer Pricing</li>
+<li>Transfer Acceleration</li>
+<li>Cross-Region Replication</li>
+</ul>
+<h2>Access &amp; Encryption</h2>
+<ul>
+<li>By default, all newly created buckets are PRIVATE</li>
+<li>Control access to the buckets using:
+<ul>
+<li>Bucket Policies</li>
+<li>Access Control Lists</li>
+</ul>
+</li>
+<li>Encryption in Transit
+<ul>
+<li>SSL/TLS (HTTPS)</li>
+</ul>
+</li>
+<li>Encryption At Rest (Server Side)<br />
+(SSE = Server Side Encryption)</p>
+<ul>
+<li>SSE-S3, S3 Managed Keys - AES-256</li>
+<li>SSE-KMS, AWS Key Management Service</li>
+<li>SSE-C, Customer Provided Keys</li>
+</ul>
+</li>
+</ul>
+<h2>Versioning</h2>
+<ul>
+<li>Stores all versions of an object (including all writes and even if you delete an object)</li>
+<li>Great backup tool</li>
+<li>Once enabled, Versioning cannot be disabled, only suspended.</li>
+<li>Integrates with Lifecycle rules</li>
+<li>Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.</li>
+<li>Size of the bucket is a sum of all versions of the files stored in the bucket</li>
+<li>A specific version of the file can be deleted</li>
+<li>Deletion of a file will place a delete marker</li>
+</ul>
+<h2>Lifecycle Management Tools &amp; Glacier</h2>
+<ul>
+<li>Allows you to automate moving your objects between the different storage tiers</li>
+<li>Can be used in conjunction with versioning</li>
+<li>Can be applied to current versions and previous versions</li>
+</ul>
+<h2>Cross Region Replication</h2>
+<ul>
+<li>Versioning must be enabled on both the source and destination buckets for CRR to work</li>
+<li>Regions must be unique</li>
+<li>CRR will not replicate the objects created before the CRR Rule was added</li>
+<li>Delete markers are not replicated</li>
+<li>Deleting individual versions or delete markers will not be replicated</li>
+<li>All subsequently updated files will be replicated automatically</li>
+</ul>
+<h2>Transfer Acceleration</h2>
+<ul>
+<li>takes advantage of CloudFront's globally distributed edge locations</li>
+<li>can improve upload and access times</li>
+<li>can be tested using speed comparison tool:<br />
+(http://s3-accelerate-speedtest.s3-accelerate.amazonaws.com)</li>
+</ul>
+<h2>CloudFront</h2>
+<ul>
+<li><strong>Edge Location</strong> - the location where the content will be cached</li>
+<li><strong>Origin</strong> - the origin of all the files that the CDN will distribute. It can be an S3 Bucket, an EC2 Instance, an Elastic Load Balancer, or Route 53</li>
+<li><strong>Distribution</strong> - The name that is given to the CDN which consists of a collection of Edge Locations</li>
+<li>If Edge Location does not have a file in the cache, it will download it from the Origin using optimized networks</li>
+<li>Objects are cached for the life of the TTL (Time to Live)</li>
+<li>Edge locations are not just read-only, you can write to them to</li>
+<li>Types of Distribution supported:
+<ul>
+<li>Web Distribution</li>
+<li>RTMP - Used for Media Streaming</li>
+</ul>
+</li>
+<li>Invalidation
+<ul>
+<li>Clears the cache from the Edge Locations</li>
+</ul>
+</li>
+<li>You can invalidate cached objects, but you will be charged</li>
+</ul>
+<h2>Snowball</h2>
+<p>Petabyte-scale data transporter solution that uses secure appliances to transfer large amounts of data into and out of AWS.</p>
+<ul>
+<li>Snowball
+<ul>
+<li>Import to S3</li>
+<li>Export from S3</li>
+<li>Types
+<ul>
+<li>50TB</li>
+<li>80TB</li>
+</ul>
+</li>
+<li>Using it can be cheaper than using high-speed internet</li>
+</ul>
+</li>
+<li>Snowball Edge
+<ul>
+<li>is a 100TB data transfer device with on-board storage and compute capabilities. Can be used to move large amounts of data into and out of AWS.</li>
+<li>Applications will continue to run even when they are not able to access the cloud</li>
+</ul>
+</li>
+<li>Snowmobile
+<ul>
+<li>Exabyte-scale data transfer service used to move extremely large amounts of data to AWS.</li>
+<li>Can transfer up to 100 PB per SnowMobile, 45-foot long ruggedized shipping container, pulled by a semi-trailer truck.</li>
+</ul>
+</li>
+</ul>
+<h2>Storage Gateway</h2>
+<p>Connects on-premise software appliance with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and AWS's storage infrastructure.</p>
+<p>The service enables you to securely store data to the AWS cloud for scalable and cost-effective storage.</p>
+<p>Can be installed as a VM image on a host in a data center. Supports either VMware ESXi or Microsoft Hyper-V hypervisors.</p>
+<p>Physical appliances are available as well.</p>
+<p>Types of Storage Gateways:</p>
+<ul>
+<li>File Gateway (NFS)<br />
+For files: files are stored as objects in your S3 buckets and accessed through an NFS mount point. Ownership, permissions, and timestamps are stored in S3 user-metadata.</li>
+<li>Volume Gateway (iSCSI)<br />
+An application can use the disk volumes using iSCSI block protocol.<br />
+Data written to the volumes can be asynchronously backed up as point-in-time snapshots of your volumes, and stored in the cloud as Amazon EBS snapshots.<br />
+Snapshots are incremental backups and only changed blocks will be charged.</p>
+<ul>
+<li>Stored Volumes<br />
+DAta will be stored locally and asynchronously backed-up to S3 in the form of EBS. (1GB - 16TB volume size)</li>
+<li>Cached Volumes<br />
+Data is stored on AWS S3, while retianing frequently accessed data locally in your storage gateway. This minimizes the need to scale on-premises storage infrastructure, while still providing your applications with low-latency access to their frequently accessed data. (1GB - 32TB volume size)</li>
+</ul>
+</li>
+<li>Tape Gateway (TPL)<br />
+Data archiving to AWS Cloud. Lets you leverage your existing tape-based backup application infrastructure to store data on virtual tape cartridges that you create on your tape gateway.<br />
+Tape gateway is preconfigured with a media changer and tape drives, which are available to your existing client backup applications as iSCSI devices.</li>
+</ul>
+<h2>FAQs</h2>
+<ul>
+<li>The total volume of data is unlimited</li>
+<li>Individual objects can have a max size of 5Tb</li>
+<li>Largest object uploaded in a single put is 5Gb</li>
+<li>For objects larger then 100Mb users should consider using multi-part upload functionality</li>
+<li>Amazon uses S3 for its developers and a wide variety of projects</li>
+<li>Amazon S3 is a simple key-based object store. Tags can be added to the objects to organized the data.</li>
+<li>Pricing components include: storage used, data transfer and data requests</li>
+<li>Amazon Macie - AI-powered security service that helps you prevent data loss by discovering, classifying, and protecting sensitive data stored in Amazon S3</li>
+<li>Amazon S3 uses a combination of Content-MD5 checksums and cyclic redundancy checks (CRCs) to detect data corruption</li>
+<li>AZs are automatically assigned in Amazon S3 based on the storage class used</li>
+<li>If the source object is uploaded using the multipart upload feature, then it is replicated using the same number of parts and part size. For example, a 100 GB object uploaded using the multipart upload feature (800 parts of 128 MB each) will incur request cost associated with 802 requests (800 Upload Part requests + 1 Initiate Multipart Upload request + 1 Complete Multipart Upload request) when replicated. You will incur a request charge of $0.00401 (802 requests x $0.005 per 1,000 requests) and a charge of $2.00 ($0.020 per GB transferred x 100 GB) for inter-region data transfer. After replication, the 100 GB will incur storage charges based on the destination region.</li>
+</ul>
 
 <footer class="footline">
 	
@@ -3061,6 +3328,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5406,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

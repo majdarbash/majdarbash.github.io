@@ -22,21 +22,21 @@
     <title>Databases :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2019/04/17/databases/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,243 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<h2>Relational Database on AWS: (RDS) used for OLTP (Online Transaction Processing)</h2>
+<ul>
+<li>Supported Types
+<ul>
+<li>SQL Server</li>
+<li>Oracle</li>
+<li>MySQL Server</li>
+<li>PostgreSQL</li>
+<li>Aurora</li>
+<li>MariaDB</li>
+</ul>
+</li>
+<li>Run on virtual machines</li>
+<li>You cannot log in to these operating systems however</li>
+<li>Patching of the RDS Operating System and DB is Amazon's responsibility</li>
+<li>RDS is NOT Serverless</li>
+<li>Aurora Serverless is Serverless</li>
+</ul>
+<h2>Read-Replicas vs Muti-AZ</h2>
+<ul>
+<li>Multi-AZ
+<ul>
+<li><strong>For Disaster Recovery</strong></li>
+<li>AWS handles cross-region replication</li>
+<li>AWS does an automatic failover of the instance</li>
+<li>Available for SQL Server, Oracle, MySQL Server, PostgreSQL, MariaDB</li>
+<li>You can force a failover from one AZ to another by rebooting the RDS instance.</li>
+</ul>
+</li>
+<li>Read Replicas
+<ul>
+<li><strong>Improves Performance</strong></li>
+<li>Up to 5 copies of Read-Replicas</li>
+<li>All read traffic can be going to read replica</li>
+<li>Available for MySQL Server, PostgreSQL, MariaDB, Aurora</li>
+<li>You can create read replicas of read replica as well, however, the latency will be greater then.</li>
+<li>Read replicas can be promoted to be their own databases - this will break the replication.</li>
+<li>Read replica can be in a second region.</li>
+<li>Automated backups should be turned on in order to be able to create read replicas.</li>
+</ul>
+</li>
+</ul>
+<p>RDS Backups</p>
+<ul>
+<li>Automated Backups
+<ul>
+<li>Allow you to recover your database to any point in time within a "retention period". Retention period can be between 1 and 35 days.</li>
+<li>Enabled by default</li>
+<li>Backups stored in S3</li>
+<li>Free storage space equal to the size of your database</li>
+<li>On recovery, RDS will choose the most recent daily backup (full snapshot) and then apply transaction logs relevant to the restore "point in time".</li>
+<li>Backups are taken within the defined window.</li>
+<li>During the backup window, storage I/O may be suspended and latency may be elevated.</li>
+<li>Deleted when RDS instance is deleted</li>
+</ul>
+</li>
+<li>Snapshots
+<ul>
+<li>Done manually</li>
+<li>Stored even after deletion of RDS instance</li>
+</ul>
+</li>
+<li>Restoring snapshots or automated backups will create a new RDS instance with a new DNS endpoint.</li>
+</ul>
+<p>Encryption:</p>
+<ul>
+<li>Encryption at rest is supported.</li>
+<li>Encryption is done using AWS Key Management Service (KMS).</li>
+<li>Automated backups, snapshots and read replicas of encrypted storage will be encrypted as well.</li>
+<li>Is available for all RDS supported types</li>
+</ul>
+<h2>DynamoDB (NoSQL database, Non-Relational Databases)</h2>
+<ul>
+<li>Terms:
+<ul>
+<li>Collection</li>
+<li>Document</li>
+<li>Key Value Pairs</li>
+</ul>
+</li>
+<li>Fast and flexible NoSQL database service</li>
+<li>Single-digit millisecond latency at any scale</li>
+<li>Fully managed database</li>
+<li>Great fit for mobile, web, gaming, ad-tech, IoT and many other applications</li>
+<li>Stored on SSD storage</li>
+<li>Spread across 3 geographically distinct data centers</li>
+<li>Eventual Consistent Reads (Default)</li>
+<li>Strongly Consistent Reads (1-second rule)</li>
+</ul>
+<p>Allocated resources:</p>
+<ul>
+<li>Read Capacity Unit (for an item up to 4 KB)
+<ul>
+<li>One strongly consistent read per second</li>
+<li>Two eventual consistent reads per second</li>
+</ul>
+</li>
+<li>Write Capacity Unit (for an item up to 1KB)
+<ul>
+<li>One write per second</li>
+</ul>
+</li>
+</ul>
+<h2>AWS Redshift</h2>
+<p>Data Warehousing</p>
+<ul>
+<li>Business Intelligence Tools</li>
+<li>Pulling very large and complex data sets. Usually used by management to do queries on data</li>
+<li>OLTP vs OLAP<br />
+(Online Transaction Processing vs Online Analytics Processing)</li>
+<li>Data Warehousing databases use a different type of architecture both from a database perspective and infrastructure layer.</li>
+</ul>
+<p>Amazon Redshift (OLAP)</p>
+<ul>
+<li>Amazon's Data Warehouse Solution</li>
+<li>Fast and powerful, fully managed, petabyte-scale data warehouse service in the cloud</li>
+<li>Configuration
+<ul>
+<li>Single Node (160GB)</li>
+<li>Multi-Node
+<ul>
+<li>Leader Node (manages client connections and receives queries)</li>
+<li>Compute Node (store data and perform queries and computations). Up to 128 Compute Nodes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Advanced Compression
+<ul>
+<li>Columnar data stores can be compressed much more than row-based data stores because similar data is stored sequentially on disk.</li>
+<li>Does not require indexes or materialized views, so uses less space than traditional relational database systems. When loading data into an empty table, Amazon Redshift automatically samples your data and selects the most appropriate compression scheme.</li>
+</ul>
+</li>
+<li>Massive Parallel Processing (MPP)
+<ul>
+<li>Distributes data and query load across all nodes.</li>
+<li>Makes it easy to add odes to your data warehouse and enables you to maintain fast query performance as your data warehouse grows.</li>
+</ul>
+</li>
+<li>Backups
+<ul>
+<li>By default 1 day retention period, up to 35 days.</li>
+<li>Always attempts to maintain at least three copies of your data (the original and replica on the compute nodes and a backup in Amazon S3)</li>
+<li>Can also asynchronously replicate your snapshots to S3 in another region for disaster recovery.</li>
+</ul>
+</li>
+<li>Pricing
+<ul>
+<li>Compute Node Hours</li>
+<li>You will not be charged for leader node hours.</li>
+<li>Backup charges</li>
+<li>Data transfer (only within a VPC, not outside it)</li>
+</ul>
+</li>
+<li>Security Considerations
+<ul>
+<li>Encrypted in transit using SSL</li>
+<li>Encrypted at rest using AES-256 encryption</li>
+<li>Redshift takes care of key management
+<ul>
+<li>Manage your key through HSM (Hardware Security Module)</li>
+<li>AWS Key Management Service</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Availability
+<ul>
+<li>Available in 1AZ</li>
+<li>Can restore snapshots to the new availability zone</li>
+</ul>
+</li>
+</ul>
+<h2>Aurora</h2>
+<ul>
+<li>Amazon's own proprietary database that is compatible with MySQL and PostgreSQL</li>
+<li>2 copies of your data are contained in each AZ with a minimum of 3 AZs. 6 copies of your data.</li>
+<li>You can share Aurora Snapshots with other AWS accounts.</li>
+<li>2 types of replicas available
+<ul>
+<li>Aurora Replicas</li>
+<li>MySQL replicas</li>
+</ul>
+</li>
+<li>Automated failover is only available with Aurora Replicas.</li>
+<li>You can do migrations from MySQL to Aurora only by creating an Aurora read replica and promoting it.</li>
+<li>Provides up to 5 times better performance than MySQL.</li>
+<li>Start with 10GB, Scales in 10GB increments to 64TB (Storage Autoscaling)</li>
+<li>Compute resources can scale up to 32vCPU and 244GB of Memory</li>
+<li>Designed to transparently handle the loss of up to two copies of data without affecting database write availability and up to three copies without affecting read availability.</li>
+<li>Automated backups are always enabled and they do not impact database performance.</li>
+<li>Taking snapshots does not impact performance.</li>
+</ul>
+<h2>ElasticCache</h2>
+<p>Web service that makes it easy to deploy, operate and scale an in-memory cache in the cloud. Improves the performance of web applications. Retrieves information from fast, managed, in-memory caches.</p>
+<ul>
+<li>Memcached
+<ul>
+<li>Can be scaled horizontally</li>
+</ul>
+</li>
+<li>Redis
+<ul>
+<li>Multi-AZ</li>
+<li>You can do backups and restores of Redis</li>
+</ul>
+</li>
+</ul>
+<h2>FAQs</h2>
+<ul>
+<li>By default customers are allowed to have up to a total of 40 Amazon RDS DB instances.</li>
+<li>Database limits per RDS instance are imposed based on software limitation.</li>
+<li>Maintenance windows - defines the time range when DB instance modifications, database engine version upgrades, and software patching occurs, in the event they are requested or required.</li>
+<li>Auto Minor Version Upgrade setting will automatically schedule the minor version upgrade in the next maintenance window.</li>
+<li>When a major version is deprecated in RDS a minimum 6 month period will be granted to upgrade to a supporter major version.</li>
+<li>Billing components include: DB instance hours, Storage, I/O requests per month, Provisioned IOPS per month, Backup Storage, Data transfer.</li>
+<li>Amazon RDS supported storage types are: Provisioned IOPS (SSD) Storage (OLTP workloads) and General Purpose (SSD) Storage (for moderate I/O requirements)</li>
+<li>RDS Automated Backups - allows point in time recovery using transaction logs.</li>
+<li>Snapshots - are user-initiated backups - backing up your DB instance.</li>
+<li>RDS master user account is a native database user account which you can use to connect to your DB Instance.</li>
+<li>You can encrypt connections between your application and the DB instance using SSL/TLS. Amazon RDS generates an SSL/TLS certificate for each DB Instance. Once an encrypted connection is established, data transferred between the DB Instance and your application will be encrypted during transfer.</li>
+<li>Amazon RDS supports encryption at rest for all database engines, using keys you manage using AWS Key Management Service (KMS).</li>
+<li>By default, Amazon RDS chooses the optimal configuration parameters for your DB Instance taking into account the instance class and storage capacity.</li>
+<li>When you create or modify your DB instance to run as a Multi-AZ deployment, Amazon RDS automatically provisions and maintains a synchronous &ldquo;standby&rdquo; replica in a different Availability Zone.</li>
+<li>When you run a DB instance as a Multi-AZ deployment, the &ldquo;primary&rdquo; serves database writes and reads. In addition, Amazon RDS provisions and maintains a &ldquo;standby&rdquo; behind the scenes, which is an up-to-date replica of the primary. The standby is &ldquo;promoted&rdquo; in failover scenarios. After failover, the standby becomes the primary and accepts your database operations.</li>
+<li>You may observe elevated latencies relative to a standard DB instance deployment in a single Availability Zone as a result of the synchronous data replication performed on your behalf.</li>
+<li>Multi-AZ standby cannot serve read requests. Multi-AZ deployments are designed to provide enhanced database availability and durability, rather than read scaling benefits.</li>
+<li>RDS initiates failover in these events: &nbsp;Loss of availability in primary Availability Zone, Loss of network connectivity to primary, Compute unit failure on primary, Storage failure on primary.</li>
+<li>AWS will emit a DB instance event in case of failover. You can alsouse RDS Event Notifications to be notified of specific events.</li>
+<li>You can initiate a forced failover when rebooting your instance.</li>
+<li>Automatic Backups must be enabled on instance to be able to create read replicas.</li>
+<li>Amazon RDS for MySQL, MariaDB, PostgreSQL, and Oracle allow you to create up to 5 read replicas for a given source DB instance.</li>
+<li>Amazon RDS for MySQL, MariaDB, PostgreSQL, and Oracle allow you to enable Multi-AZ configuration on read replicas to support disaster recovery and minimize downtime from engine upgrades.</li>
+<li>Amazon Aurora, Amazon RDS for MySQL and MariaDB: You can create a second-tier read replica from an existing first-tier read replica. By creating a second-tier read replica, you may be able to move some of the replication load from the master database instance to a first-tier Read Replica. Please note that a second-tier Read Replica may lag further behind the master because of additional replication latency introduced as transactions are replicated from the master to the first tier replica and then to the second-tier replica.</li>
+</ul>
 
 <footer class="footline">
 	
@@ -3061,6 +3319,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5397,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

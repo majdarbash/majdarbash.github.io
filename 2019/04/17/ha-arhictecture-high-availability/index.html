@@ -22,21 +22,21 @@
     <title>HA Arhictecture: High Availability :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2019/04/17/ha-arhictecture-high-availability/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,188 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<h2>ELB, ALB (Elastic Load Balancer, Application Load Balancer)</h2>
+<ul>
+<li>a physical/virtual device designed to balance network load across multiple web servers</li>
+<li><strong>at least 2 public Subnets are required when provisioning a load balancer</strong></li>
+<li>ELBs do not have a pre-defined IPv4 addresses; you resolve to them using a DNS name</li>
+<li>types of load balancers
+<ul>
+<li>Application Load Balancers
+<ul>
+<li>Best suited for HTTP / HTTPS traffic</li>
+<li>Operates at Layer 7</li>
+<li>Application-aware</li>
+<li>Advanced request routing, sending specified requests to specific web servers</li>
+<li>Register target groups</li>
+<li>Load balancing rules are supported</li>
+</ul>
+</li>
+<li>Network Load Balancers
+<ul>
+<li>Load balancing TCP traffic</li>
+<li>Operates at Layer 4</li>
+<li>Capable of handling millions of requests per seconds with ultra-low latencies</li>
+</ul>
+</li>
+<li>Classic Load Balancers
+<ul>
+<li>Legacy / previous generation load balancers</li>
+<li>HTTP / HTTPS / TCP traffic</li>
+<li>Operates at layer 4, supports</li>
+<li>Layer-7 specific features, such as X-Forwarded and sticky sessions</li>
+<li>Errors: 504 - Gateway timeout - ec2 instances are not responding</li>
+<li>Registers instances</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Health Checks
+<ul>
+<li>Checks the instance health by talking to it</li>
+<li>Instances are reported as InService, OutofService</li>
+<li>LBs have their own DNS name. You are never given an IP address</li>
+<li>Connection Draining - the number of seconds to allow traffic to be flowing (300 seconds by default)</li>
+</ul>
+</li>
+</ul>
+<h2>Auto-Scaling</h2>
+<ul>
+<li>Auto-Scaling Group
+<ul>
+<li>subnets should be assigned - instances will be distributed on these subnets</li>
+<li>Scaling Policy
+<ul>
+<li>Target tracking scaling policy</li>
+<li>Simple scaling policy</li>
+<li>Scaling policy with steps</li>
+</ul>
+</li>
+<li><strong>Scaling warm-up time</strong><br />
+the time required to warm up an instance - during this time instance won't contribute to the metrics</li>
+<li>When deleting the auto-scaling group, the instances beneath it will be deleted as well.</li>
+</ul>
+</li>
+<li>Launch Configuration
+<ul>
+<li>IP Address Type
+<ul>
+<li>Default public IP assignment (as per subnet)</li>
+<li>Assign public IP to every instance</li>
+<li>Do not assign a public IP to an instance</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>HA Architecture</h2>
+<ul>
+<li>You should plan for failure</li>
+<li>Netflix (Simian Army Projects)<br />
+Injecting failure into production systems<br />
+(https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116)</li>
+<li>More than one AZ should be used (2 AZs at least)</li>
+<li>Always Design for failure</li>
+<li>Use Multiple AZ's and Multiple Regions wherever you can</li>
+<li>In RSD Read Replica - creates a replica of AWS for performance purposes and not for HA</li>
+<li>Multi-AZ configuration means replication across different AZs supporting seamless failover</li>
+<li>Scaling out - adding ec2 instances using ASGs</li>
+<li>Scaling up - increasing resources of ec2 instances (modifying instance type)</li>
+<li>S3 storage classes
+<ul>
+<li>Highly Available
+<ul>
+<li>Standard S3</li>
+<li>Standard S3 Infrequently access</li>
+</ul>
+</li>
+<li>Non-HA
+<ul>
+<li>Reduced redundancy storage</li>
+<li>S3 single AZ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>HA Wordpress Site</h2>
+<ul>
+<li>2 x Cloud Front distributions
+<ul>
+<li>Cloud Front distribution for static media content</li>
+<li>Cloud Front distribution for the main site</li>
+</ul>
+</li>
+<li>2 x S3 Buckets
+<ul>
+<li>S3 Bucket for media</li>
+<li>S3 Bucket for code synchronization</li>
+</ul>
+</li>
+<li>RDS MySQL/Aurora with Mutli-AZ enabled</li>
+<li>Writer Node
+<ul>
+<li>LAMP installed</li>
+<li>CRON commands
+<ul>
+<li>Sync/var/www/html/wp-content/uploads to media bucket<br />
+aws s3 sync --delete /var/www/html/wp-content/uploads s3://bucket-for-media-name/</li>
+<li>Sync /var/www/html to code bucket<br />
+aws s3 sync --delete /var/www/html s3://bucket-for-code-name/</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reader Node(s)
+<ul>
+<li>LAMP installed</li>
+<li>Scales in 3 AZs using ASG, min size is 2 instances</li>
+<li>Traffic received by Cloud Front distribution for the main site
+<ul>
+<li>Route 53 domain record points at Cloud Front distrbution</li>
+<li>ALB is defined as an origin</li>
+<li>ALB forwards traffic to Target Groups</li>
+</ul>
+</li>
+<li>On user-data instances will pull the code content from S3 bucket-for-code</li>
+<li>Periodically instances will run sync commands to get any updates done to the code from the Writer Node</li>
+<li>CRON command
+<ul>
+<li>aws s3 sync --delete s3://bucket-for-code-name/ /var/www/html</li>
+</ul>
+</li>
+<li>.htaccess rewrite rule is added to serve the wp-content/uploads files from Cloud Front distribution serving the static media bucket from bucket-for-media-name</li>
+</ul>
+</li>
+<li>Simulating failure
+<ul>
+<li>Terminate an EC2 instance</li>
+<li>RDS, Multi-az
+<ul>
+<li>You may reboot with failover to simulate the failure</li>
+<li>This may still take your site offline for a couple of minutes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Cloud Formation</h2>
+<ul>
+<li>Is a way of completely scripting your cloud environment</li>
+<li>From AWS website:
+<ul>
+<li>"AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment."</li>
+</ul>
+</li>
+<li>https://aws.amazon.com/quickstart/
+<ul>
+<li>Built by solution architects and partners</li>
+<li>Cloud Formation templates to help you build your production or test environment quickly and starting using it immediately</li>
+</ul>
+</li>
+</ul>
 
 <footer class="footline">
 	
@@ -3061,6 +3264,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5342,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

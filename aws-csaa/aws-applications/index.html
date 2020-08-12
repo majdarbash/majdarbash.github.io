@@ -22,21 +22,21 @@
     <title>AWS Applications :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023519" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023519" rel="stylesheet">
-    <link href="/css/theme.css?1597023519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023519" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243946" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243946" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243946" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243946" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243946" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243946" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243946" rel="stylesheet">
+    <link href="/css/theme.css?1597243946" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243946" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023519" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243946" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243946"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243946" rel="stylesheet">
   </head>
   <body class="" data-url="/aws-csaa/aws-applications/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243946"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243946"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023519"></script>
+<script type="text/javascript" src="/js/search.js?1597243946"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3039,7 +3062,7 @@ you can store up to 2GB per message, however, it will be stored and retrieved fr
 messages should be consumed from the queues, SQS will not push the messages</li>
 <li>messages can be kept in the queue from 1 minute to 14 days</li>
 <li>the default retention period is 4 days</li>
-<li><strong>visibility timeout</strong> - the amount of time that the message is invisible in the SQS queue after a <!-- raw HTML omitted --><strong>reader picks up</strong><!-- raw HTML omitted --> that message. If the job is not processed within visibility timeout, the message will become visible again and can be processed by another reader.</li>
+<li><strong>visibility timeout</strong> - the amount of time that the message is invisible in the SQS queue after a <span style="text-decoration: underline;"><strong>reader picks up</strong></span> that message. If the job is not processed within visibility timeout, the message will become visible again and can be processed by another reader.</li>
 <li>maximum visibility timeout is 12 hours</li>
 <li>polling types:
 <ul>
@@ -3053,9 +3076,9 @@ messages should be consumed from the queues, SQS will not push the messages</li>
 <ul>
 <li>nearly unlimited number of transactions per second</li>
 <li>a message is delivered at least once<br>
-occasionally <!-- raw HTML omitted --><strong>more than one copy of a message might be delivered out of order</strong><!-- raw HTML omitted --></li>
+occasionally <span style="text-decoration: underline;"><strong>more than one copy of a message might be delivered out of order</strong></span></li>
 <li>allows high throughput</li>
-<li>provides <!-- raw HTML omitted --><strong>best-effort</strong><!-- raw HTML omitted --> ordering<br>
+<li>provides <span style="text-decoration: underline;"><strong>best-effort</strong></span> ordering<br>
 ensures that messages are generally delivered in the same order as they are sent</li>
 </ul>
 </li>
@@ -3076,7 +3099,7 @@ ensures that messages are generally delivered in the same order as they are sent
 <ul>
 <li>makes it easy to coordinate work across distributed application components</li>
 <li>workflow executions can last up to 1 year</li>
-<li>presents a <!-- raw HTML omitted --><strong>task-oriented</strong><!-- raw HTML omitted --> API</li>
+<li>presents a <span style="text-decoration: underline;"><strong>task-oriented</strong></span> API</li>
 <li>ensures that the task is assigned only once</li>
 <li>keeps track of all the tasks and events in an application</li>
 <li>SWF actors:
@@ -3283,6 +3306,22 @@ allows restricted resources on a web page to be requested from another domain ou
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5346,19 +5385,19 @@ allows restricted resources on a web page to be requested from another domain ou
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243946"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243946"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243946"></script>
+    <script src="/js/jquery.sticky.js?1597243946"></script>
+    <script src="/js/featherlight.min.js?1597243946"></script>
+    <script src="/js/highlight.pack.js?1597243946"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243946"></script>
+    <script src="/js/learn.js?1597243946"></script>
+    <script src="/js/hugo-learn.js?1597243946"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243946" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243946"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -22,21 +22,21 @@
     <title>Route53 :: My New Hugo Site</title>
 
     
-    <link href="/css/nucleus.css?1597023520" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1597023520" rel="stylesheet">
-    <link href="/css/hybrid.css?1597023520" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1597023520" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1597023520" rel="stylesheet">
-    <link href="/css/auto-complete.css?1597023520" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1597023520" rel="stylesheet">
-    <link href="/css/theme.css?1597023520" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1597023520" rel="stylesheet">
+    <link href="/css/nucleus.css?1597243947" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1597243947" rel="stylesheet">
+    <link href="/css/hybrid.css?1597243947" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1597243947" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1597243947" rel="stylesheet">
+    <link href="/css/auto-complete.css?1597243947" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1597243947" rel="stylesheet">
+    <link href="/css/theme.css?1597243947" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1597243947" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1597023520" rel="stylesheet">
+    <link href="/css/theme-blue.css?1597243947" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1597023520"></script>
+    <script src="/js/jquery-3.3.1.min.js?1597243947"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,6 +45,8 @@
       
     </style>
     <script src="/assets/js/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<link href="/css/custom.css?1597243947" rel="stylesheet">
   </head>
   <body class="" data-url="/2019/04/17/route53/">
     <nav id="sidebar" class="">
@@ -81,14 +83,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1597023520"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1597023520"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1597243947"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1597243947"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/majdarbash.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1597023520"></script>
+<script type="text/javascript" src="/js/search.js?1597243947"></script>
 
     
   </div>
@@ -133,9 +135,9 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-rds/" title="Deep Dive on Amazon Relational Database Service" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-rds/">
-        Deep Dive on Amazon Relational Database Service
+      <li data-nav-id="/aws/aws-global-network-reinvent/" title="AWS global network infrastructure (reInvent 2019)" class="dd-item ">
+        <a href="/aws/aws-global-network-reinvent/">
+        AWS global network infrastructure (reInvent 2019)
         
         </a>
     </li>
@@ -154,9 +156,30 @@
  
   
     
-      <li data-nav-id="/aws/deep-dive-on-aws-s3-re-invent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management" class="dd-item ">
-        <a href="/aws/deep-dive-on-aws-s3-re-invent/">
-        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management
+      <li data-nav-id="/aws/deep-dive-on-aws-rds-reinvent/" title="Deep Dive on Amazon Relational Database Service (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-rds-reinvent/">
+        Deep Dive on Amazon Relational Database Service (reInvent 2017)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/aws/deep-dive-on-aws-s3-reinvent/" title="Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)" class="dd-item ">
+        <a href="/aws/deep-dive-on-aws-s3-reinvent/">
+        Deep Dive on Amazon S3 &amp; Amazon Glacier Storage Management (reInvent 2017)
         
         </a>
     </li>
@@ -3013,8 +3036,108 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+</p>
+<ul>
+<li>Route53 gets its name from port 53 of DNS server</li>
+<li>IPv4 space is 32 bit fields having over 4 billion different addresses.</li>
+<li>IPv6 solves the depletion issue and has as address space of 128 bits</li>
+<li>For each public hosted zone Route 53 automatically created NS record and SOA record (Start of Authority Record)</li>
+<li>NS Record - is used by Top Level Domain servers to direct traffic to the Content DNS server which contains the authoritative DNS records</li>
+<li>When creating a public hosted zone, Route 53 gives you NS records in different Top-Level Domains.</li>
+<li>The start of authority (SOA) record identifies the based DNS information about the domain.</li>
+<li>SOA record components
+<ul>
+<li>NS that created the SOA record</li>
+<li>Email of the administrator</li>
+<li>The current version of the data file</li>
+<li>The default number of seconds for the time-to-live file on resource records</li>
+</ul>
+</li>
+<li>Domain to IP request flow
+<ul>
+<li>Top Level Domain</li>
+<li>NS Records</li>
+<li>SOA</li>
+</ul>
+</li>
+<li>The lower the TTL (time to live), the faster changes to DNS records take to propagate through the internet</li>
+<li>CNAME records can't be used for naked domain names (zone apex record). It must be either A record or an Alias</li>
+<li>Given a choice between Alias record and CNAME always choose an Alias record</li>
+<li>Common DNS Types
+<ul>
+<li>SOA Records</li>
+<li>NS Records</li>
+<li>A Records</li>
+<li>CNAMES</li>
+<li>MX Records</li>
+<li>PTR Records</li>
+</ul>
+</li>
+<li>You can buy domain names directly with AWS</li>
+<li>It can take up to 3 days to register depending on the circumstances</li>
+<li>Routing Policies
+<ul>
+<li><strong>Simple Routing</strong><br />
+You can only have one record with multiple IP addresses. If you specify multiple values in a record, Route 53 returns all values to the user in a random order.<br />
+Simple routing cannot be associated with a health check.</li>
+<li><strong>Weighted Routing</strong><br />
+Traffic can be split based on different weights assigned.</li>
+<li><strong>Latency-based Routing</strong><br />
+Allows you to route your traffic based on the lowest network latency for your end user.</li>
+<li><strong>Failover Routing</strong>
+<ul>
+<li>Active/passive set up</li>
+<li>Specifying primary and secondary records</li>
+<li>Health check is associated with the primary record</li>
+</ul>
+</li>
+<li><strong>Geolocation Routing</strong><br />
+Lets you choose where your traffic will be sent based on the geographic location of your users.</p>
+<ul>
+<li>This is not a latency based routing - the routes are locked down based on geolocation.</li>
+</ul>
+</li>
+<li><strong>Geoproximity Routing (Traffic Flow Only)</strong><br />
+Georproximity routing lets Route53 route traffic to your resources based on the geographic location of your users and your resources. You can optionally choose to route more traffic or less to a given resource by specifying a value, know as bias. A bias expands or shrinks the size of the geographic region from which traffic is routed to a resource. To use this you must use Route53 Traffic flow.</li>
+<li><strong>Multivalue Answer Routing</strong><br />
+Exactly the same as Simple Routing, however, allows you to use health checks on each record. Route53 will return values for healthy resources.</li>
+</ul>
+</li>
+<li>Health Checks
+<ul>
+<li>You can set health checks on individual record sets</li>
+<li>If a record set fails a health check it will be removed from Route53 until it passes the health check</li>
+<li>You can set SNS notifications to alert you if a health check is failed</li>
+</ul>
+</li>
+<li>Health Checks can be created and associated with Route 53 records</li>
+</ul>
+<h2>FAQs</h2>
+<ul>
+<li>Route 53 is built using AWS's highly available and reliable infrastructure.</li>
+<li>Each Amazon Route 53 hosted zone is served by its own set of virtual DNS servers. They are assigned by the system when the hosted zone is created.</li>
+<li>Amazon Route 53 charges are based on actual usage of the service for Hosted Zones, Queries, Health Checks, and Domain Names.</li>
+<li>Access to Route53 can be controlled using IAM.</li>
+<li>You can configure Amazon Route 53 to log information about the queries that Amazon Route 53 receives including date-time stamp, domain name, query type, location etc. to CloudWatch Logs.</li>
+<li>Amazon Route53 uses anycast network - is a networking and routing technology that helps your end users' DNS queries get asnwered from the optimal Route53 location given network conditions.</li>
+<li>Route53 account is limited to a maximum of 500 hosted zones and 10,000 resource record sets per hosted zone and 50 domains.</li>
+<li>Multiple hosted zones can be created for domain.</li>
+<li>In addition to standard record types supported by Route53, alias records are supported, which is Route 53-specific extension to DNS. Alias can be used to map your entires to AWS Resources.</li>
+<li>Wildcard entries are supported.</li>
+<li>Zone apex can be mapped to AWS Resources by using alias records.</li>
+<li>Traffic Flow makes it easy for developers to create policies that route traffic based on constraints like: latency, endpoint health, multivalue; answers, weighted round robin, and geo. In addition to these, Traffic Flow also supports geoproximity based routing with traffic biasing.</li>
+<li>Traffic Policy is the set of rules that routes end users' request to one of the application's endpoints.</li>
+<li>Policy Record associates the traffic policy with the appropriate DNS name within an Amazon Route 53 hosted zone that you own.</li>
+<li>You are billed from Traffic Flow per Policy Record.</li>
+<li>Private DNS should be attached to a VPC</li>
+<li>Route53 Health checks could verify the expected content of the web server by using the "Enable String Matching" option.</li>
+<li>Amazon Route 53&rsquo;s metric based health checks let you perform DNS failover based on any metric that is available within Amazon CloudWatch, including AWS-provided metrics and custom metrics from your own application.</li>
+<li>Domains registered are configured to renewal automatically. Route53 provides privacy protection at no additional charge.</li>
+<li>Route53 registers top-level domains through either Amazon Registar or Gandi.</li>
+<li>Route53 Resolver is a regional DNS service that provides recursive DNS lookups for names hosted in EC2 as well as public names on the internet.</li>
+<li>Route 53 is Authoritative and Recursive DNS. Authoritative DNS - contains the final answer to a DNS query. Recursive DNS - forwards the query directly to a specific recursive DNS server.</li>
+</ul>
 
 <footer class="footline">
 	
@@ -3061,6 +3184,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -5123,19 +5262,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.min.js?1597023520"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1597023520"></script>
-    <script src="/js/jquery.sticky.js?1597023520"></script>
-    <script src="/js/featherlight.min.js?1597023520"></script>
-    <script src="/js/highlight.pack.js?1597023520"></script>
+    <script src="/js/clipboard.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.min.js?1597243947"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1597243947"></script>
+    <script src="/js/jquery.sticky.js?1597243947"></script>
+    <script src="/js/featherlight.min.js?1597243947"></script>
+    <script src="/js/highlight.pack.js?1597243947"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1597023520"></script>
-    <script src="/js/learn.js?1597023520"></script>
-    <script src="/js/hugo-learn.js?1597023520"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1597243947"></script>
+    <script src="/js/learn.js?1597243947"></script>
+    <script src="/js/hugo-learn.js?1597243947"></script>
 
-    <link href="/mermaid/mermaid.css?1597023520" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1597023520"></script>
+    <link href="/mermaid/mermaid.css?1597243947" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1597243947"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
