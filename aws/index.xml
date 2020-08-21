@@ -16,7 +16,25 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws/aws-global-network-reinvent/</guid>
-      <description></description>
+      <description>Network Aspects Nitro Network Architecture Building a scalable data center Availability Zones Transit Centers Physical Network Encryption AWS global network backbone Inside an Edge POP Summary  Network Aspects  Security Availability Scalability Performance Global Reach  Nitro Network Architecture  Nitro controller offloads in hardware lot of network features  ACL, Security Groups, VPC Peering, etc..   Gives consistent network performance VPC encryption - hardware accelerated encryption   Building a scalable data center  Networking building blocks  Make it easy to scale in right-sized segments Strong isolation boundaries Large amounts of network capacity   Networking technology  Routes  Single-chip routers  Constrained failure domain Fixed port types Many devices to manage Simpler forwarding architecture     Connectivity  Host Rack Networking  Partition placement groups  Ensures that all of instances in a partition group do not share any of underlying hardware with a resource in another partition group   Spread placement groups  Guarantee that each instance on the placement group is placed on distinct rack, with each rack having its own network and power source       Control plane  Using Single-chip-based platforms over large chassis-based platforms      Network Pattern</description>
+    </item>
+    
+    <item>
+      <title>AWS Security Best Practices</title>
+      <link>https://majdarbash.github.io/aws/aws-security-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-security-best-practices/</guid>
+      <description>AWS Shared Responsibility Model  Infrastructure services Container services Abstracted services   AWS Trusted Advisor Define and categorize assets on AWS Design your ISMS to protect your assets on AWS Manage AWS Accounts, IAM Users, Groups, and Roles  Strategies for Using Multiple AWS Accounts Managing AWS Credentials Delegation Using IAM Roles and Temporary Security Credentials   Managing OS-level Access to Amazon EC2 Instances Secure Your Data  Resource Access Authorization Storing and Managing Encryption Keys in the Cloud Protecting Data at Rest Decommission Data and Media Securely Protect Data in Transit   Secure Your Operating Systems and Applications  Creating Custom AMIs Using Additional Application Security Practices   Secure Your Infrastructure  Using Secure Zoning and Network Segmentation Strengthening Network Security Securing Periphery Systems: User Repositories, DNS, NTP Building Threat Protection Layers Test Security    AWS Shared Responsibility Model  IAM Service  Centrally manage users, security credentials such as passwords, access keys, and permission policies that control which AWS services and resources users can access   Regions, AZs and Endpoints  Network latency and regulatory compliance   Facilities Physical security of hardware Network infrastructure Virtualization infrastructure  Infrastructure services  EC2, EBS, ASG, VPC Services for building a cloud infrastructure similar to on-premise You control the operating system You configure and operate any identity management system that provides access to the user layer of the virtualization stack  AWS Manages:</description>
+    </item>
+    
+    <item>
+      <title>Best Practices for Managing Security Operations on AWS (re:Invent 2017)</title>
+      <link>https://majdarbash.github.io/aws/best-practices-security-operations-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/best-practices-security-operations-reinvent/</guid>
+      <description>Boundaries Consistent Controls Test often, fail early Closed-Loop Mechanisms Full Stack Practice Visibility  Netflix Usecase    Boundaries  In-VPC boundaries  SGs, NACLs AWS IAM Resource level constraints   VPC as the boundary (single account)  Equivalent to separate networks Peering, routing   AWS account as the boundary  Highest degree of segregation  By data classification Business unit Workload Functional      Considerations:</description>
     </item>
     
     <item>
@@ -38,6 +56,15 @@
     </item>
     
     <item>
+      <title>IAM Policy Master on AWS (re:Invent 2018)</title>
+      <link>https://majdarbash.github.io/aws/iam-policies-on-aws-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/iam-policies-on-aws-reinvent/</guid>
+      <description>Policy Types and use cases Policy resolution within an account Policy resolution across accounts Example use cases  1. Set permission guardrails across accounts 2. Control creation of resources to regions 3. Enable developers to create roles safely 4. Use tags to scale permission management 5. Utilize PrincipalTags in IAM policies    Policy Types and use cases  AWS Organizations  Use: Guardrails to disable service access on the principals of the account Service control policies (SCP)   AWS Identity and Access Management  Use: Grant granular permissions on IAM principals (users and roles) and control the maximum permissions they can set Permission policies Permission boundaries  Scale and delegate permissions management to developers safely Control the maximum permissions employees can grant     AWS Security Token Service (STS)  Use: Reduce general shared permissions further Scoped-down policies   Specific AWS Resources  Use: Cross-account access and to control access from the resource Resource-based policies   VPC Endpoints  Use: Controls access to the service with a VPC endpoint Endpoint policies    Policy resolution within an account Final Policy = [SCP] AND ([IAM Policies] OR [Resource-based Policies]) where: [IAM Policies] = ?</description>
+    </item>
+    
+    <item>
       <title>Multi-Tenant SaaS Storage Strategies</title>
       <link>https://majdarbash.github.io/aws/multi-tenant-saas-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,6 +80,17 @@
       
       <guid>https://majdarbash.github.io/aws/elasticache-at-scale/</guid>
       <description>Memcached vs Redis ElastiCache for Memcached  Caching Design Patterns Consistent Caching (Sharding) Lazy Caching Write On Through Expiration Date The Thundering Herd Cache (Almost) Everything   Elastic Cache for Redis  Distributing Reads and Writes Mutli-AZ with Auto Failover Sharding with Redis Advanced Datasets with Redis   Monitoring and Tuning  Monitoring Cache Efficiency Watching for Hotspots Memory Optimization Redis Backup and Restore Cluster Scaling and Auto Discovery    Overview</description>
+    </item>
+    
+    <item>
+      <title>Security Anti-Patterns: Mistakes to Avoid (re:Invent 2017)</title>
+      <link>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</guid>
+      <description>Account Structure Anti-Patterns Network Design Anti-Patterns InfoSec Auditing Example: Amazon RDS At-Rest Encryption Audit Software Delivery Anti-Patterns CFN-NAG  Anti-Pattern: A common response to a recurring problem that is usually ineffective and risks being high counterproductive.
+Risks associated with Security Anti-Patterns
+ Lack of SecOps agility  Slow threat assessments Can&amp;rsquo;t patch fast enough Reactive security posture   Lack of business agility  Slow to onboard new customers Hard to practice true DevOps Rogue dev projects    Types of Security Anti-Patterns</description>
     </item>
     
   </channel>

@@ -134,7 +134,9 @@ x_int = 1 x_float = 1.23 x_bool = True Note that booleans should have an upperc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-cmls/2019-11-6-crisp-dm-on-aws/</guid>
-      <description>CRISP-DM  Stands for Cross Industry Standard Process - Data Mining Is a framework to Data Science Project  Phases of CRISP-DM  Business Understanding Data Understanding Data Preparation Modeling Evaluation Deployment   Business Understanding  Understanding business requirements   Questions from the business perspective which need answering Highlight project&amp;rsquo;s critical features People and resources required  Analyzing supporting information   List required resources and assumptions Analyze associated risks Plan for contengencies Compare costs and benefits  Converting to a Data Mining or Machine Learning problem   Review machine learning question Create technical data mining objective Define the criteria for successful outcome of the project  Preparing a preliminar plan   Number and duration of stages Dependencies Risks Goals Evaluation methods Tools and techniques   Data Understanding  Data collection  Detail Various sources and steps to extract data Analyze data for additional requirements Consider other data sources   Data properties  Describe the data, amount of data used, and metadata properties Fidn key features and relationshps in the data Use tools and techniques to explore data properties   Quality  Verifying attributes Identifying missing data Reveal inconsitencies Report solution    AWS tools for Data Understanding</description>
+      <description>CRISP-DM  Stands for Cross Industry Standard Process - Data Mining Is a framework to Data Science Project  Phases of CRISP-DM  Business Understanding Data Understanding Data Preparation Modeling Evaluation Deployment   Business Understanding 1. Understanding business requirements
+ Questions from the business perspective which need answering Highlight project&amp;rsquo;s critical features People and resources required  2. Analyzing supporting information
+ List required resources and assumptions Analyze associated risks Plan for contingencies Compare costs and benefits  3.</description>
     </item>
     
     <item>
@@ -611,6 +613,15 @@ you can store up to 2GB per message, however, it will be stored and retrieved fr
     </item>
     
     <item>
+      <title>AWS CDK</title>
+      <link>https://majdarbash.github.io/random/aws-cdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/random/aws-cdk/</guid>
+      <description>Open source software framework to model and provision your cloud application resources using familiar languages.  Supported Languages  TypeScript/Javascript Python Java C#  Workflow  Initialize CDK project: cdk init --language=typescript Write Code - code your infrastructure using one of supported languages above Synthesize - produces CloudFormation templates for the written code: cdk synth Deploy - deploys CloudFormation template as stack to your AWS account: cdk deploy  Examples Github: Creating Highly Available Network using AWS CDK + TypeScript</description>
+    </item>
+    
+    <item>
       <title>AWS Cloud Best Practices</title>
       <link>https://majdarbash.github.io/aws-csaa/aws-cloud-best-practices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -626,7 +637,7 @@ In addition to EC2 instances, you can benefit from a lot of great services which
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws/aws-global-network-reinvent/</guid>
-      <description></description>
+      <description>Network Aspects Nitro Network Architecture Building a scalable data center Availability Zones Transit Centers Physical Network Encryption AWS global network backbone Inside an Edge POP Summary  Network Aspects  Security Availability Scalability Performance Global Reach  Nitro Network Architecture  Nitro controller offloads in hardware lot of network features  ACL, Security Groups, VPC Peering, etc..   Gives consistent network performance VPC encryption - hardware accelerated encryption   Building a scalable data center  Networking building blocks  Make it easy to scale in right-sized segments Strong isolation boundaries Large amounts of network capacity   Networking technology  Routes  Single-chip routers  Constrained failure domain Fixed port types Many devices to manage Simpler forwarding architecture     Connectivity  Host Rack Networking  Partition placement groups  Ensures that all of instances in a partition group do not share any of underlying hardware with a resource in another partition group   Spread placement groups  Guarantee that each instance on the placement group is placed on distinct rack, with each rack having its own network and power source       Control plane  Using Single-chip-based platforms over large chassis-based platforms      Network Pattern</description>
     </item>
     
     <item>
@@ -636,6 +647,24 @@ In addition to EC2 instances, you can benefit from a lot of great services which
       
       <guid>https://majdarbash.github.io/random/aws-organizations/</guid>
       <description>Setting Up Organizations on AWS Account Granting User Permissions to Access Resources Accessing Cross-Account Resources using AWS CLI Example  1. Creating AWS Accounts Hierarchy under Organization 2. Create Users and Groups in the Root Account 3. Managing Root Account User Permissions in the Child Account 4. Accessing Child Account resources using AWSCLI    Setting Up Organizations on AWS Account AWS Orgnizations provides you with an efficient way to better manage and organize your AWS accounts.</description>
+    </item>
+    
+    <item>
+      <title>AWS Security Best Practices</title>
+      <link>https://majdarbash.github.io/aws/aws-security-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-security-best-practices/</guid>
+      <description>AWS Shared Responsibility Model  Infrastructure services Container services Abstracted services   AWS Trusted Advisor Define and categorize assets on AWS Design your ISMS to protect your assets on AWS Manage AWS Accounts, IAM Users, Groups, and Roles  Strategies for Using Multiple AWS Accounts Managing AWS Credentials Delegation Using IAM Roles and Temporary Security Credentials   Managing OS-level Access to Amazon EC2 Instances Secure Your Data  Resource Access Authorization Storing and Managing Encryption Keys in the Cloud Protecting Data at Rest Decommission Data and Media Securely Protect Data in Transit   Secure Your Operating Systems and Applications  Creating Custom AMIs Using Additional Application Security Practices   Secure Your Infrastructure  Using Secure Zoning and Network Segmentation Strengthening Network Security Securing Periphery Systems: User Repositories, DNS, NTP Building Threat Protection Layers Test Security    AWS Shared Responsibility Model  IAM Service  Centrally manage users, security credentials such as passwords, access keys, and permission policies that control which AWS services and resources users can access   Regions, AZs and Endpoints  Network latency and regulatory compliance   Facilities Physical security of hardware Network infrastructure Virtualization infrastructure  Infrastructure services  EC2, EBS, ASG, VPC Services for building a cloud infrastructure similar to on-premise You control the operating system You configure and operate any identity management system that provides access to the user layer of the virtualization stack  AWS Manages:</description>
+    </item>
+    
+    <item>
+      <title>Best Practices for Managing Security Operations on AWS (re:Invent 2017)</title>
+      <link>https://majdarbash.github.io/aws/best-practices-security-operations-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/best-practices-security-operations-reinvent/</guid>
+      <description>Boundaries Consistent Controls Test often, fail early Closed-Loop Mechanisms Full Stack Practice Visibility  Netflix Usecase    Boundaries  In-VPC boundaries  SGs, NACLs AWS IAM Resource level constraints   VPC as the boundary (single account)  Equivalent to separate networks Peering, routing   AWS account as the boundary  Highest degree of segregation  By data classification Business unit Workload Functional      Considerations:</description>
     </item>
     
     <item>
@@ -878,6 +907,15 @@ This line is placed to make sure that redirection does not occur on your localho
     </item>
     
     <item>
+      <title>IAM Policy Master on AWS (re:Invent 2018)</title>
+      <link>https://majdarbash.github.io/aws/iam-policies-on-aws-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/iam-policies-on-aws-reinvent/</guid>
+      <description>Policy Types and use cases Policy resolution within an account Policy resolution across accounts Example use cases  1. Set permission guardrails across accounts 2. Control creation of resources to regions 3. Enable developers to create roles safely 4. Use tags to scale permission management 5. Utilize PrincipalTags in IAM policies    Policy Types and use cases  AWS Organizations  Use: Guardrails to disable service access on the principals of the account Service control policies (SCP)   AWS Identity and Access Management  Use: Grant granular permissions on IAM principals (users and roles) and control the maximum permissions they can set Permission policies Permission boundaries  Scale and delegate permissions management to developers safely Control the maximum permissions employees can grant     AWS Security Token Service (STS)  Use: Reduce general shared permissions further Scoped-down policies   Specific AWS Resources  Use: Cross-account access and to control access from the resource Resource-based policies   VPC Endpoints  Use: Controls access to the service with a VPC endpoint Endpoint policies    Policy resolution within an account Final Policy = [SCP] AND ([IAM Policies] OR [Resource-based Policies]) where: [IAM Policies] = ?</description>
+    </item>
+    
+    <item>
       <title>Important Concepts Every Developer should know</title>
       <link>https://majdarbash.github.io/software-architecture-and-design/important-concepts-every-dev-should-know/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -975,6 +1013,16 @@ Instead of retuning values for the functions and determining the program-flow, y
       <guid>https://majdarbash.github.io/aws-csap/notes/</guid>
       <description>Datastore
  Files stored in S3 can be served over Bittorrent to decrease costs File Gateway (Storage Gateway) can expose S3 bucket files in the office through NFS http://registry.opendata.aws contains publically open databases AWS Glue allows you to extract data from S3 Bucket to a Table that can be queried using AWS Athena Graph databases are best a storing complex relationship data and AWS Neptune is a graph database. While other options might be able to work, none would work as well as a true graph database and we can run such a database like SAP HANA or Neo4j on EC2.</description>
+    </item>
+    
+    <item>
+      <title>OSI Model</title>
+      <link>https://majdarbash.github.io/random/osi-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/random/osi-model/</guid>
+      <description>7. Application 6. Presentation 5. Session 4. Transport 3. Network 2. Data Link 1. Physical  Overview:
+ Stands for Open Systems Interconnection model 7-Layer Model Standardizes the communication functions of a telecommunication or computing system Conceptual model enables diverse communication systems to communicate using standard protocols  7. Application  Protocol Data Unit (PDU): Data Human-computer interaction layer, where applications can access the network services Examples: Web browsers (Chrome, Safari, IE), Apps: Skype, Zoom, Telnet, FTP  Functions of the layer:</description>
     </item>
     
     <item>
@@ -1134,6 +1182,17 @@ Basically the tool offered as capability to configure SSH connection to statical
       
       <guid>https://majdarbash.github.io/aws-csaa/exam-overview/</guid>
       <description>Intended for people performing a Solutions Architect role. Valid for 2 years. Question Domains  Design Resilient Architectures Define Performant Solutions Specify Secure Applications and Architectures Design Cost-optimized Architectures Define Operationally Excellent Architectures   Multiple choice questions  single selection multiple selection    Design Resilient Architectures  Choose reliable/resilient storage Determine how to design decoupling mechanisms using AWS services Determine how to design a multi-tier arhictecture solution Determine how to design high availability and/or fault tolerant solutions  High Availability vs Fault Tolerance</description>
+    </item>
+    
+    <item>
+      <title>Security Anti-Patterns: Mistakes to Avoid (re:Invent 2017)</title>
+      <link>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</guid>
+      <description>Account Structure Anti-Patterns Network Design Anti-Patterns InfoSec Auditing Example: Amazon RDS At-Rest Encryption Audit Software Delivery Anti-Patterns CFN-NAG  Anti-Pattern: A common response to a recurring problem that is usually ineffective and risks being high counterproductive.
+Risks associated with Security Anti-Patterns
+ Lack of SecOps agility  Slow threat assessments Can&amp;rsquo;t patch fast enough Reactive security posture   Lack of business agility  Slow to onboard new customers Hard to practice true DevOps Rogue dev projects    Types of Security Anti-Patterns</description>
     </item>
     
     <item>

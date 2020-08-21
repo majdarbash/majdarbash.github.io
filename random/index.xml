@@ -317,6 +317,15 @@ What is happening is that docker client is communicating with the engine using s
     </item>
     
     <item>
+      <title>AWS CDK</title>
+      <link>https://majdarbash.github.io/random/aws-cdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/random/aws-cdk/</guid>
+      <description>Open source software framework to model and provision your cloud application resources using familiar languages.  Supported Languages  TypeScript/Javascript Python Java C#  Workflow  Initialize CDK project: cdk init --language=typescript Write Code - code your infrastructure using one of supported languages above Synthesize - produces CloudFormation templates for the written code: cdk synth Deploy - deploys CloudFormation template as stack to your AWS account: cdk deploy  Examples Github: Creating Highly Available Network using AWS CDK + TypeScript</description>
+    </item>
+    
+    <item>
       <title>AWS Organizations - Setting Up and Configuring User Accounts</title>
       <link>https://majdarbash.github.io/random/aws-organizations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -556,6 +565,16 @@ NPM modes of operation global / local - Node modules can be installed locally or
 The main features of Node JS area:
 Event-driven / asynchronous programming
 Instead of retuning values for the functions and determining the program-flow, you basically define functions that are called by the system when an interesting event occurs (event callbacks).</description>
+    </item>
+    
+    <item>
+      <title>OSI Model</title>
+      <link>https://majdarbash.github.io/random/osi-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/random/osi-model/</guid>
+      <description>7. Application 6. Presentation 5. Session 4. Transport 3. Network 2. Data Link 1. Physical  Overview:
+ Stands for Open Systems Interconnection model 7-Layer Model Standardizes the communication functions of a telecommunication or computing system Conceptual model enables diverse communication systems to communicate using standard protocols  7. Application  Protocol Data Unit (PDU): Data Human-computer interaction layer, where applications can access the network services Examples: Web browsers (Chrome, Safari, IE), Apps: Skype, Zoom, Telnet, FTP  Functions of the layer:</description>
     </item>
     
     <item>

@@ -343,6 +343,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/random/aws-cdk/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/aws-csaa/aws-cloud-best-practices/</loc>
   </url>
   
@@ -355,7 +359,15 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/aws-security-best-practices/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/backlinks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/best-practices-security-operations-reinvent/</loc>
   </url>
   
   <url>
@@ -563,6 +575,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/iam-policies-on-aws-reinvent/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/software-architecture-and-design/important-concepts-every-dev-should-know/</loc>
   </url>
   
@@ -640,6 +656,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/notice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/random/osi-model/</loc>
   </url>
   
   <url>
@@ -740,6 +760,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/security/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</loc>
   </url>
   
   <url>
