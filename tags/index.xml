@@ -92,11 +92,47 @@
     </item>
     
     <item>
+      <title>aurora</title>
+      <link>https://majdarbash.github.io/tags/aurora/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/aurora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>aws</title>
       <link>https://majdarbash.github.io/tags/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws-advanced</title>
+      <link>https://majdarbash.github.io/tags/aws-advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/aws-advanced/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws-beginner</title>
+      <link>https://majdarbash.github.io/tags/aws-beginner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/aws-beginner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws-best-practices</title>
+      <link>https://majdarbash.github.io/tags/aws-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/aws-best-practices/</guid>
       <description></description>
     </item>
     
@@ -110,11 +146,29 @@
     </item>
     
     <item>
+      <title>backup</title>
+      <link>https://majdarbash.github.io/tags/backup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>browser</title>
       <link>https://majdarbash.github.io/tags/browser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caf</title>
+      <link>https://majdarbash.github.io/tags/caf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/caf/</guid>
       <description></description>
     </item>
     
@@ -133,6 +187,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/clock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud-adoption-framework</title>
+      <link>https://majdarbash.github.io/tags/cloud-adoption-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/cloud-adoption-framework/</guid>
       <description></description>
     </item>
     
@@ -196,6 +259,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ddos</title>
+      <link>https://majdarbash.github.io/tags/ddos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/ddos/</guid>
       <description></description>
     </item>
     
@@ -344,6 +416,15 @@
     </item>
     
     <item>
+      <title>gaming-patterns</title>
+      <link>https://majdarbash.github.io/tags/gaming-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/gaming-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>genetics algorithm</title>
       <link>https://majdarbash.github.io/tags/genetics-algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -425,6 +506,15 @@
     </item>
     
     <item>
+      <title>microservices</title>
+      <link>https://majdarbash.github.io/tags/microservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>migration</title>
       <link>https://majdarbash.github.io/tags/migration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -466,6 +556,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/notice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>overview</title>
+      <link>https://majdarbash.github.io/tags/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/overview/</guid>
       <description></description>
     </item>
     
@@ -533,11 +632,38 @@
     </item>
     
     <item>
+      <title>recovery</title>
+      <link>https://majdarbash.github.io/tags/recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/recovery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>reinforced</title>
       <link>https://majdarbash.github.io/tags/reinforced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/reinforced/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relational-database</title>
+      <link>https://majdarbash.github.io/tags/relational-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/relational-database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resiliency</title>
+      <link>https://majdarbash.github.io/tags/resiliency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/resiliency/</guid>
       <description></description>
     </item>
     
@@ -821,11 +947,29 @@
     </item>
     
     <item>
+      <title>web-hosting</title>
+      <link>https://majdarbash.github.io/tags/web-hosting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/web-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>webpack</title>
       <link>https://majdarbash.github.io/tags/webpack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/tags/webpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>whitepaper</title>
+      <link>https://majdarbash.github.io/tags/whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/tags/whitepaper/</guid>
       <description></description>
     </item>
     

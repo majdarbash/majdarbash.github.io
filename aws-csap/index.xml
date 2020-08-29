@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-csap/migrations/</guid>
-      <description>Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase Abandon existing and purchase new. (Drop and Shop) Rearchitect Redesign application in a cloud-native manner, e.</description>
+      <description>Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host: Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform: Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase: Abandon existing and purchase new. (Drop and Shop) Rearchitect: Redesign application in a cloud-native manner, e.</description>
     </item>
     
     <item>

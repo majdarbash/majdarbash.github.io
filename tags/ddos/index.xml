@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ddos on My New Hugo Site</title>
+    <link>https://majdarbash.github.io/tags/ddos/</link>
+    <description>Recent content in ddos on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://majdarbash.github.io/tags/ddos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Best Practices for DDoS Resiliency (2019)</title>
+      <link>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</guid>
+      <description>Denial of Service Attacks Infrastructure Layer Attacks Mitigation Techniques Monitoring Support  Protecting the business from the impact of Distributed Denial of Service attacks (DDoS):
+ Maintaining availability and responsiveness of your application Avoid unnecessary cost of scaling infrastructure in response to an attack  Denial of Service Attacks DDoS attacks:
+ Uses multiple sources, distributed groups of malware infected devices to orchestrate an attack against a target Hosts generate a flood of packets or requests to overwhelm the target DDoS are most common at layers 3,4,6 and 7 of the OSI model  Examples of attacks:</description>
+    </item>
+    
+  </channel>
+</rss>

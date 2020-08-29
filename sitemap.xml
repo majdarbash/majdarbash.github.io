@@ -307,6 +307,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/overview-caf-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/angular/</loc>
   </url>
   
@@ -335,11 +339,23 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/aurora/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/automating-elasticity-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/aws/</loc>
   </url>
   
   <url>
     <loc>https://majdarbash.github.io/aws-csaa/aws-applications/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</loc>
   </url>
   
   <url>
@@ -355,6 +371,14 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/aws-migration-whitepaper/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/aws-multiple-account-security/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/random/aws-organizations/</loc>
   </url>
   
@@ -363,7 +387,27 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/aws-advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/aws-beginner/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/aws-best-practices/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/backlinks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/backup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</loc>
   </url>
   
   <url>
@@ -375,11 +419,19 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/caf/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/ci/</loc>
   </url>
   
   <url>
     <loc>https://majdarbash.github.io/tags/clock/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/cloud-adoption-framework/</loc>
   </url>
   
   <url>
@@ -420,6 +472,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/aws-csaa/databases/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/ddos/</loc>
   </url>
   
   <url>
@@ -507,7 +563,15 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/gaming-patterns/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/genetics-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</loc>
   </url>
   
   <url>
@@ -579,6 +643,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/software-architecture-and-design/important-concepts-every-dev-should-know/</loc>
   </url>
   
@@ -592,6 +660,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/random/ubuntu-vsftpd-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/scalable-gaming-patterns/</loc>
   </url>
   
   <url>
@@ -620,6 +692,14 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/machine-learning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/microservices/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/migrating-applications-to-aws/</loc>
   </url>
   
   <url>
@@ -660,6 +740,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/random/osi-model/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/overview/</loc>
   </url>
   
   <url>
@@ -727,11 +811,23 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/recovery/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/reinforced/</loc>
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/relational-database/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/random/remove-svn-files-unverison-subversion-working-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/resiliency/</loc>
   </url>
   
   <url>
@@ -955,7 +1051,15 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/web-server/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/web-hosting/</loc>
   </url>
   
   <url>
@@ -964,6 +1068,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/random/how-captcha-works/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/whitepaper/</loc>
   </url>
   
   <url>

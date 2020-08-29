@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>backup on My New Hugo Site</title>
+    <link>https://majdarbash.github.io/tags/backup/</link>
+    <description>Recent content in backup on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://majdarbash.github.io/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backup and Recovery Approaches using AWS Whitepaper (2016)</title>
+      <link>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</guid>
+      <description>AWS Storage Services for Data Protection Designing a Backup and Recovery Solution Cloud-Native Infrastructure On-Premises to AWS Infrastructure Hybrid Environments Securing Backup Data in AWS  AWS Storage Services for Data Protection  Amazon S3  Single object limit of 5 TB Range of storage classes: standard, standard IA, glacier   Amazon Glacier  Extremely low-cost, cloud archive service Secure and durable storage for archiving and online backup Infrequently accessed data, retrieval times of several hours   AWS Storage Gateway  Connects on-premises software appliance with cloud-based storage   AWS Transfer Services  AWS Direct Connect, AWS Snowball, AWS Storage Gateway, Amazon S3 Transfer Acceleration to quickly transfer your data    Designing a Backup and Recovery Solution  Backup process should meet the RTO and RPO of the business, including:  File-level recovery Volume-level recovery Application-level recovery (e.</description>
+    </item>
+    
+  </channel>
+</rss>

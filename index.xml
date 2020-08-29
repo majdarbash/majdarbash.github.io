@@ -187,7 +187,7 @@ In the example below, based on pybrain.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws-csap/migrations/</guid>
-      <description>Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase Abandon existing and purchase new. (Drop and Shop) Rearchitect Redesign application in a cloud-native manner, e.</description>
+      <description>Migration Strategies Cloud Adoption Framework  TOGAF Cloud Adoption Phases   Hybrid Architectures Migration Tools Network Migrations and Cutovers Amazon Snow Family  Migration Strategies  Re-Host: Simply move assets without change, e.g. on-prem MySQL to EC2. (Lift and Shift) Re-Platform: Move assets but change underlying platform, e.g. Migrate MySQL DB to RDS MySQL. (Lift and Reshape) Re-Purchase: Abandon existing and purchase new. (Drop and Shop) Rearchitect: Redesign application in a cloud-native manner, e.</description>
     </item>
     
     <item>
@@ -593,6 +593,15 @@ What is happening is that docker client is communicating with the engine using s
     </item>
     
     <item>
+      <title>An Overview of the AWS Cloud Adoption Framework (2017)</title>
+      <link>https://majdarbash.github.io/aws/overview-caf-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/overview-caf-whitepaper/</guid>
+      <description>Six Perspective of AWS CAF Mapping the Journey to the Cloud AWS CAF Perspectives: Additional Detail  Business Perspective: Value Realization People Perspective: Roles and Readiness Governance Perspective: Prioritization and Control Platform Perspective: Applications and Infrastructure Security Perspective: Risk and Compliance Operations Perspective: Manage and Scale    Six Perspective of AWS CAF The perspective below describe the common roles and objectives to update staff skills and organizational processes.</description>
+    </item>
+    
+    <item>
       <title>AngularJS 1: Core concepts</title>
       <link>https://majdarbash.github.io/random/angular-js-core-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -603,6 +612,15 @@ What is happening is that docker client is communicating with the engine using s
     </item>
     
     <item>
+      <title>Automatic Elasticity Whitepaper (2018)</title>
+      <link>https://majdarbash.github.io/aws/automating-elasticity-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/automating-elasticity-whitepaper/</guid>
+      <description>Types of Elasticity** Monitoring AWS Service Usage and Costs** Tagging Resources Automating Elasticity  Automating Time-Based Elasticity Automatic Volume-Based Elasticity    Types of Elasticity**  Time-based elasticity  Turning off resources when they are not being used   Volume-based elasticity  Matching scale to the intensity of demand, whether that&amp;rsquo;s compute cores, storage sizes, or throughput    Monitoring AWS Service Usage and Costs**  Cost Optimization Monitor  Detailed billing reports Break down by period, account, resource, or custom resource tags   Cost Explorer  View data up to the last 13 months Get recommendations on what Reserved Instances to purchase See trends that can help you understand your costs    Tagging Resources  Tagging resources helps get better visibility and control over cloud IT costs down  Automating Elasticity Automating Time-Based Elasticity  AWS Instance Scheduler  Start and stop schedules for your EC2 instances Deployed using an AWS CloudFormation template Specify the required parameter during the deployment Recurring AWS Lambda function will automatically start and stop appropriately tagged EC2 instances   Amazon EC2 API tools  Instances can be terminated programmatically using EC2 APIs Use StopInstances and TerminateInstances   AWS Lambda  Serverless functions can be used to shutdown instances that are not being used Trigger Lambda by Amazon CloudWatch Events   AWS Data Pipeline  Run AWS CLI commands on a set schedule   Amazon CloudWatch  Collect and track metrics and log files, set alarms and automatically react to changes in your AWS resources    Automatic Volume-Based Elasticity Auto-Scaling can be used for::</description>
+    </item>
+    
+    <item>
       <title>AWS Applications</title>
       <link>https://majdarbash.github.io/aws-csaa/aws-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -610,6 +628,17 @@ What is happening is that docker client is communicating with the engine using s
       <guid>https://majdarbash.github.io/aws-csaa/aws-applications/</guid>
       <description>SQS (Simple Queue Service)  the first AWS service distributed queue system temporary repository for messages that are waiting for processing one component in the application queues messages to be consumed by another component in the application can be used to decouple the components of an application messages can contain up to 256 kb of text
 you can store up to 2GB per message, however, it will be stored and retrieved from S3 in this case messages can be retrieved using AWS SQS API auto-scaling events can be configured based on queue sizes as well pull-based, not pushed based</description>
+    </item>
+    
+    <item>
+      <title>AWS Best Practices for DDoS Resiliency (2019)</title>
+      <link>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</guid>
+      <description>Denial of Service Attacks Infrastructure Layer Attacks Mitigation Techniques Monitoring Support  Protecting the business from the impact of Distributed Denial of Service attacks (DDoS):
+ Maintaining availability and responsiveness of your application Avoid unnecessary cost of scaling infrastructure in response to an attack  Denial of Service Attacks DDoS attacks:
+ Uses multiple sources, distributed groups of malware infected devices to orchestrate an attack against a target Hosts generate a flood of packets or requests to overwhelm the target DDoS are most common at layers 3,4,6 and 7 of the OSI model  Examples of attacks:</description>
     </item>
     
     <item>
@@ -641,6 +670,24 @@ In addition to EC2 instances, you can benefit from a lot of great services which
     </item>
     
     <item>
+      <title>AWS Migration Whitepaper (2018)</title>
+      <link>https://majdarbash.github.io/aws/aws-migration-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-migration-whitepaper/</guid>
+      <description>The Cloud Adoption Framework (AWS CAF) Organization Change Management Business Drivers Migration Strategies  Choosing the Right Migration Strategy   Building a Business case for Migration People and Organization  Creating a Cloud Center of Excellence (CCoE)   Migration Readiness and Planning (MRP)  Assessing Migration Readiness Application Discovery Application Portfolio Analysis Migration Planning Technical Planning The Virtual Private Cloud Environment   Migrating  First Migrations - Build Experience Application Migration Process Team Models    The Cloud Adoption Framework (AWS CAF) The business plan should consider and incorporate the following areas:</description>
+    </item>
+    
+    <item>
+      <title>AWS Multiple Account Security Strategy</title>
+      <link>https://majdarbash.github.io/aws/aws-multiple-account-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-multiple-account-security/</guid>
+      <description>General Best Practices  Clearly define an AWS account-creation process  Who is creating an account? What is the account used for?   Define a company-wide AWS usage policy  Should include minimal security baseline requirements for the different ways they will use AWS Which services are approved for use What security or encryption features must be enabled   Create a security account structure for managing multiple accounts  Centralize security monitoring and management Manage identity and access Provide audit and compliance monitoring services   Leverage AWS APIs and scripts  Consistently apply baseline configurations across multiple AWS accounts Compliance-monitoring scripts    Implementation Considerations When to Create Multiple Accounts Multiple accounts provide highest level of security and resource isolation in AWS.</description>
+    </item>
+    
+    <item>
       <title>AWS Organizations - Setting Up and Configuring User Accounts</title>
       <link>https://majdarbash.github.io/random/aws-organizations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -655,7 +702,16 @@ In addition to EC2 instances, you can benefit from a lot of great services which
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws/aws-security-best-practices/</guid>
-      <description>AWS Shared Responsibility Model  Infrastructure services Container services Abstracted services   AWS Trusted Advisor Define and categorize assets on AWS Design your ISMS to protect your assets on AWS Manage AWS Accounts, IAM Users, Groups, and Roles  Strategies for Using Multiple AWS Accounts Managing AWS Credentials Delegation Using IAM Roles and Temporary Security Credentials   Managing OS-level Access to Amazon EC2 Instances Secure Your Data  Resource Access Authorization Storing and Managing Encryption Keys in the Cloud Protecting Data at Rest Decommission Data and Media Securely Protect Data in Transit   Secure Your Operating Systems and Applications  Creating Custom AMIs Using Additional Application Security Practices   Secure Your Infrastructure  Using Secure Zoning and Network Segmentation Strengthening Network Security Securing Periphery Systems: User Repositories, DNS, NTP Building Threat Protection Layers Test Security    AWS Shared Responsibility Model  IAM Service  Centrally manage users, security credentials such as passwords, access keys, and permission policies that control which AWS services and resources users can access   Regions, AZs and Endpoints  Network latency and regulatory compliance   Facilities Physical security of hardware Network infrastructure Virtualization infrastructure  Infrastructure services  EC2, EBS, ASG, VPC Services for building a cloud infrastructure similar to on-premise You control the operating system You configure and operate any identity management system that provides access to the user layer of the virtualization stack  AWS Manages:</description>
+      <description>AWS Shared Responsibility Model  Infrastructure services Container services Abstracted services   AWS Trusted Advisor Define and categorize assets on AWS Design your ISMS to protect your assets on AWS Manage AWS Accounts, IAM Users, Groups, and Roles  Strategies for Using Multiple AWS Accounts Managing AWS Credentials Delegation Using IAM Roles and Temporary Security Credentials   Managing OS-level Access to Amazon EC2 Instances Secure Your Data  Resource Access Authorization Storing and Managing Encryption Keys in the Cloud Protecting Data at Rest Decommission Data and Media Securely Protect Data in Transit   Secure Your Operating Systems and Applications  Creating Custom AMIs Using Additional Application Security Practices   Secure Your Infrastructure  Using Secure Zoning and Network Segmentation Strengthening Network Security Securing Periphery Systems: User Repositories, DNS, NTP Building Threat Protection Layers Test Security Managing Metrics and Improvements Mitigating and Protecting Against DoS &amp;amp; DDoS Attacks   Manage Security Monitoring, Alerting, Audit Trail and Incident Response  Using Change Management Logs Protecting Log Information    AWS Shared Responsibility Model  IAM Service  Centrally manage users, security credentials such as passwords, access keys, and permission policies that control which AWS services and resources users can access   Regions, AZs and Endpoints  Network latency and regulatory compliance   Facilities Physical security of hardware Network infrastructure Virtualization infrastructure  Infrastructure services  EC2, EBS, ASG, VPC Services for building a cloud infrastructure similar to on-premise You control the operating system You configure and operate any identity management system that provides access to the user layer of the virtualization stack  AWS Manages:</description>
+    </item>
+    
+    <item>
+      <title>Backup and Recovery Approaches using AWS Whitepaper (2016)</title>
+      <link>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</guid>
+      <description>AWS Storage Services for Data Protection Designing a Backup and Recovery Solution Cloud-Native Infrastructure On-Premises to AWS Infrastructure Hybrid Environments Securing Backup Data in AWS  AWS Storage Services for Data Protection  Amazon S3  Single object limit of 5 TB Range of storage classes: standard, standard IA, glacier   Amazon Glacier  Extremely low-cost, cloud archive service Secure and durable storage for archiving and online backup Infrequently accessed data, retrieval times of several hours   AWS Storage Gateway  Connects on-premises software appliance with cloud-based storage   AWS Transfer Services  AWS Direct Connect, AWS Snowball, AWS Storage Gateway, Amazon S3 Transfer Acceleration to quickly transfer your data    Designing a Backup and Recovery Solution  Backup process should meet the RTO and RPO of the business, including:  File-level recovery Volume-level recovery Application-level recovery (e.</description>
     </item>
     
     <item>
@@ -745,6 +801,15 @@ public function \_\_construct($isbn, $title, $author) { $this-&amp;gt;isbn = $is
  Event Notification
 Will help decouple received from the sender, however it makes it difficult to understand overall behavior of the system. Event-carried State Transfer
 Decouples and reduces load from supplier by each system keeping a copy of the data it requires in its storage. Due to the fact that data is replicated, higher availability will lead to Eventual Consistency.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Amazon Aurora Whitepaper (2016)</title>
+      <link>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</guid>
+      <description>Amazon Aurora Amazon Aurora Architecture Monitoring Migrating to Amazon Aurora  Amazon Aurora  Fully managed, cloud-native database service Scalability, reliability, performance Cost-effective Highly durable  Database volumes are divided into 10GB segments Each segment is replicated six ways across 3 AZs   Fault-tolerant  Transparently handles loss of 2 out of 6 copies without losing write availability or three out of six copies without losing read availability   Self-healing  Automatically replaces or repairs failed disks and nodes   Storage autoscaling  Volume grows in increments of 10GB up to a maximum of 64TB   Continuous backup  No impact on performance, 99.</description>
     </item>
     
     <item>
@@ -916,6 +981,17 @@ This line is placed to make sure that redirection does not occur on your localho
     </item>
     
     <item>
+      <title>Implementing Microservices on AWS (2019)</title>
+      <link>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</guid>
+      <description>Simple Microservices Architecture on AWS Reducing Operational Complexity Distributed Systems Components  Service Discovery Distributed Data Management Asynchronous Communication and Lightweight Messaging Distributed Monitoring    Microservices are a combination of various successful and proven concepts such as:
+ Agile software development Service-oriented architectures API-first design Continuous Integration/Continuous Delivery (CI/CD)  Serverless operational model tenets:
+ No infrastructure to provision or manage Automatically scaling by unit of consumption &amp;ldquo;Pay for value&amp;rdquo; billing model Built-in availability and fault tolerance  Simple Microservices Architecture on AWS User Interface</description>
+    </item>
+    
+    <item>
       <title>Important Concepts Every Developer should know</title>
       <link>https://majdarbash.github.io/software-architecture-and-design/important-concepts-every-dev-should-know/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -953,6 +1029,15 @@ Please follow these steps to install vsftpd service on your ubuntu machine.
     </item>
     
     <item>
+      <title>Introduction to Scalable Gaming Patterns on AWS (2017)</title>
+      <link>https://majdarbash.github.io/aws/scalable-gaming-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/scalable-gaming-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ionic app testing - Cross domain issues</title>
       <link>https://majdarbash.github.io/random/hybrid-app-development-testing-on-google-chrome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -970,6 +1055,15 @@ Please follow these steps to install vsftpd service on your ubuntu machine.
       <description>Found it useful to include these command I&amp;rsquo;m always using whenever I need to create an ec2 instance:
 sudo apt-get update sudo apt-get install apache2 sudo apt-get install libapache2-mod-php5 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql # installing php / curl sudo apt-get install php5-curl other php modules sudo apt-get update sudo apt-cache search php5  Publish Date: 2014-10-04
  </description>
+    </item>
+    
+    <item>
+      <title>Migrating Applications Running Relational Databases to AWS: Best Practices Guide (2019)</title>
+      <link>https://majdarbash.github.io/aws/migrating-applications-to-aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/migrating-applications-to-aws/</guid>
+      <description>Migration Steps and Tools  Development Environment Setup Prerequisites Step 1: Migration Assessment Step 2: Schema Conversion Step 3: Conversion of Embedded SQL and Application Code Step 4: Data Migration Step 5: Testing Converted Code Step 6: Data Replication Step 7: Deployment to AWS and Go Live   Best Practices  Migration Steps and Tools  Migration assessment analysis Schema conversion to target database platform SQL statement and application code conversion Data migration Testing of converted database and application code Setting up replication and failover scenarios for data migration to the target platform Setting up monitoring for a new production environment and go live with the target environment  Tools to automate migration steps:</description>
     </item>
     
     <item>
@@ -1409,6 +1503,15 @@ search for a line &amp;ldquo;root ALL=(ALL:ALL) ALL&amp;rdquo; and add a new lin
       
       <guid>https://majdarbash.github.io/aws-csaa/vpcs/</guid>
       <description>VPC Components  Virtual Private Cloud Subnet Internet Gateway NAT Gateway Virtual Private Gateway Peering Connection VPC Endpoints Egress-only Internet Gateway  VPC (Virtual Private Cloud)  VPC (Virtual Private Cloud) is a virtual private network dedicated to your AWS account. Logically isolated from other virtual networks in AWS Cloud VPC is defined on Region level VPC Tenancy  Default Dedicated   By default, VPC is created with Route Table, Network ACL and Security Group Availability Zones a, b and c are randomized per account Default VPC  All Subnets in default VPC have a route out to the internet Each EC2 instance has both a public and private IP address    Subnet  Subnet is defined on AZ level IP Ranges which can be assigned to Subnets  10.</description>
+    </item>
+    
+    <item>
+      <title>Web Application Hosting in the AWS Cloud Whitepaper (2019)</title>
+      <link>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</guid>
+      <description>Benefits of using AWS over a traditional hosting model Classic web application architecture on AWS Cloud Key Components of AWS Web Hosting Architecture Key Considerations When Using AWS for Web Hosting  Benefits of using AWS over a traditional hosting model  A cost effective alternative to oversized fleets needed to handle peaks  Traditional hosting: provision servers to handle peak capacity  Unused cycles are wasted outside of peak periods   AWS auto-scaling based on actual traffic trends will result in less wasted capacity and a greater reduction in cost   A scalable solution to handling unexpected traffic peaks  Traditional hosting: inability to respond in time to unexpected traffic spikes   An On-demand solution for test, load, beta and pre-production environments  Traditional hosting: a lot of expensive hardware sits unused for long periods of time    Classic web application architecture on AWS Cloud  Load Balancing with Elastic Load Balancing (ELB) / Application Load Balancing (ALB) Firewalls with Security Groups Caching with Amazon ElastiCache Managed Database with Amazon RDS DNS Services with Amazon Route 53 Edge Caching with Amazon CloudFront Edge Security for Amazon CloudFront with AWS WAF DDoS Protection with AWS Shield Static Storage and Backup with Amazon S3  Key Components of AWS Web Hosting Architecture  Network Management (VPC, Subnets, NACLs, etc&amp;hellip;) Content Delivery (Amazon CloudFront) Managing Public DNS (Route53) Host Security (EC2 Security Groups) Load Balancing Across Clusters (ALB /ELB / Software load-balancing packages, e.</description>
     </item>
     
     <item>

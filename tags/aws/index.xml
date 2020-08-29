@@ -11,12 +11,97 @@
     
     
     <item>
+      <title>An Overview of the AWS Cloud Adoption Framework (2017)</title>
+      <link>https://majdarbash.github.io/aws/overview-caf-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/overview-caf-whitepaper/</guid>
+      <description>Six Perspective of AWS CAF Mapping the Journey to the Cloud AWS CAF Perspectives: Additional Detail  Business Perspective: Value Realization People Perspective: Roles and Readiness Governance Perspective: Prioritization and Control Platform Perspective: Applications and Infrastructure Security Perspective: Risk and Compliance Operations Perspective: Manage and Scale    Six Perspective of AWS CAF The perspective below describe the common roles and objectives to update staff skills and organizational processes.</description>
+    </item>
+    
+    <item>
+      <title>Automatic Elasticity Whitepaper (2018)</title>
+      <link>https://majdarbash.github.io/aws/automating-elasticity-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/automating-elasticity-whitepaper/</guid>
+      <description>Types of Elasticity** Monitoring AWS Service Usage and Costs** Tagging Resources Automating Elasticity  Automating Time-Based Elasticity Automatic Volume-Based Elasticity    Types of Elasticity**  Time-based elasticity  Turning off resources when they are not being used   Volume-based elasticity  Matching scale to the intensity of demand, whether that&amp;rsquo;s compute cores, storage sizes, or throughput    Monitoring AWS Service Usage and Costs**  Cost Optimization Monitor  Detailed billing reports Break down by period, account, resource, or custom resource tags   Cost Explorer  View data up to the last 13 months Get recommendations on what Reserved Instances to purchase See trends that can help you understand your costs    Tagging Resources  Tagging resources helps get better visibility and control over cloud IT costs down  Automating Elasticity Automating Time-Based Elasticity  AWS Instance Scheduler  Start and stop schedules for your EC2 instances Deployed using an AWS CloudFormation template Specify the required parameter during the deployment Recurring AWS Lambda function will automatically start and stop appropriately tagged EC2 instances   Amazon EC2 API tools  Instances can be terminated programmatically using EC2 APIs Use StopInstances and TerminateInstances   AWS Lambda  Serverless functions can be used to shutdown instances that are not being used Trigger Lambda by Amazon CloudWatch Events   AWS Data Pipeline  Run AWS CLI commands on a set schedule   Amazon CloudWatch  Collect and track metrics and log files, set alarms and automatically react to changes in your AWS resources    Automatic Volume-Based Elasticity Auto-Scaling can be used for::</description>
+    </item>
+    
+    <item>
+      <title>AWS Best Practices for DDoS Resiliency (2019)</title>
+      <link>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</guid>
+      <description>Denial of Service Attacks Infrastructure Layer Attacks Mitigation Techniques Monitoring Support  Protecting the business from the impact of Distributed Denial of Service attacks (DDoS):
+ Maintaining availability and responsiveness of your application Avoid unnecessary cost of scaling infrastructure in response to an attack  Denial of Service Attacks DDoS attacks:
+ Uses multiple sources, distributed groups of malware infected devices to orchestrate an attack against a target Hosts generate a flood of packets or requests to overwhelm the target DDoS are most common at layers 3,4,6 and 7 of the OSI model  Examples of attacks:</description>
+    </item>
+    
+    <item>
       <title>AWS Organizations - Setting Up and Configuring User Accounts</title>
       <link>https://majdarbash.github.io/random/aws-organizations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/random/aws-organizations/</guid>
       <description>Setting Up Organizations on AWS Account Granting User Permissions to Access Resources Accessing Cross-Account Resources using AWS CLI Example  1. Creating AWS Accounts Hierarchy under Organization 2. Create Users and Groups in the Root Account 3. Managing Root Account User Permissions in the Child Account 4. Accessing Child Account resources using AWSCLI    Setting Up Organizations on AWS Account AWS Orgnizations provides you with an efficient way to better manage and organize your AWS accounts.</description>
+    </item>
+    
+    <item>
+      <title>Backup and Recovery Approaches using AWS Whitepaper (2016)</title>
+      <link>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</guid>
+      <description>AWS Storage Services for Data Protection Designing a Backup and Recovery Solution Cloud-Native Infrastructure On-Premises to AWS Infrastructure Hybrid Environments Securing Backup Data in AWS  AWS Storage Services for Data Protection  Amazon S3  Single object limit of 5 TB Range of storage classes: standard, standard IA, glacier   Amazon Glacier  Extremely low-cost, cloud archive service Secure and durable storage for archiving and online backup Infrequently accessed data, retrieval times of several hours   AWS Storage Gateway  Connects on-premises software appliance with cloud-based storage   AWS Transfer Services  AWS Direct Connect, AWS Snowball, AWS Storage Gateway, Amazon S3 Transfer Acceleration to quickly transfer your data    Designing a Backup and Recovery Solution  Backup process should meet the RTO and RPO of the business, including:  File-level recovery Volume-level recovery Application-level recovery (e.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Amazon Aurora Whitepaper (2016)</title>
+      <link>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</guid>
+      <description>Amazon Aurora Amazon Aurora Architecture Monitoring Migrating to Amazon Aurora  Amazon Aurora  Fully managed, cloud-native database service Scalability, reliability, performance Cost-effective Highly durable  Database volumes are divided into 10GB segments Each segment is replicated six ways across 3 AZs   Fault-tolerant  Transparently handles loss of 2 out of 6 copies without losing write availability or three out of six copies without losing read availability   Self-healing  Automatically replaces or repairs failed disks and nodes   Storage autoscaling  Volume grows in increments of 10GB up to a maximum of 64TB   Continuous backup  No impact on performance, 99.</description>
+    </item>
+    
+    <item>
+      <title>Implementing Microservices on AWS (2019)</title>
+      <link>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</guid>
+      <description>Simple Microservices Architecture on AWS Reducing Operational Complexity Distributed Systems Components  Service Discovery Distributed Data Management Asynchronous Communication and Lightweight Messaging Distributed Monitoring    Microservices are a combination of various successful and proven concepts such as:
+ Agile software development Service-oriented architectures API-first design Continuous Integration/Continuous Delivery (CI/CD)  Serverless operational model tenets:
+ No infrastructure to provision or manage Automatically scaling by unit of consumption &amp;ldquo;Pay for value&amp;rdquo; billing model Built-in availability and fault tolerance  Simple Microservices Architecture on AWS User Interface</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Scalable Gaming Patterns on AWS (2017)</title>
+      <link>https://majdarbash.github.io/aws/scalable-gaming-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/scalable-gaming-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migrating Applications Running Relational Databases to AWS: Best Practices Guide (2019)</title>
+      <link>https://majdarbash.github.io/aws/migrating-applications-to-aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/migrating-applications-to-aws/</guid>
+      <description>Migration Steps and Tools  Development Environment Setup Prerequisites Step 1: Migration Assessment Step 2: Schema Conversion Step 3: Conversion of Embedded SQL and Application Code Step 4: Data Migration Step 5: Testing Converted Code Step 6: Data Replication Step 7: Deployment to AWS and Go Live   Best Practices  Migration Steps and Tools  Migration assessment analysis Schema conversion to target database platform SQL statement and application code conversion Data migration Testing of converted database and application code Setting up replication and failover scenarios for data migration to the target platform Setting up monitoring for a new production environment and go live with the target environment  Tools to automate migration steps:</description>
+    </item>
+    
+    <item>
+      <title>Web Application Hosting in the AWS Cloud Whitepaper (2019)</title>
+      <link>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</guid>
+      <description>Benefits of using AWS over a traditional hosting model Classic web application architecture on AWS Cloud Key Components of AWS Web Hosting Architecture Key Considerations When Using AWS for Web Hosting  Benefits of using AWS over a traditional hosting model  A cost effective alternative to oversized fleets needed to handle peaks  Traditional hosting: provision servers to handle peak capacity  Unused cycles are wasted outside of peak periods   AWS auto-scaling based on actual traffic trends will result in less wasted capacity and a greater reduction in cost   A scalable solution to handling unexpected traffic peaks  Traditional hosting: inability to respond in time to unexpected traffic spikes   An On-demand solution for test, load, beta and pre-production environments  Traditional hosting: a lot of expensive hardware sits unused for long periods of time    Classic web application architecture on AWS Cloud  Load Balancing with Elastic Load Balancing (ELB) / Application Load Balancing (ALB) Firewalls with Security Groups Caching with Amazon ElastiCache Managed Database with Amazon RDS DNS Services with Amazon Route 53 Edge Caching with Amazon CloudFront Edge Security for Amazon CloudFront with AWS WAF DDoS Protection with AWS Shield Static Storage and Backup with Amazon S3  Key Components of AWS Web Hosting Architecture  Network Management (VPC, Subnets, NACLs, etc&amp;hellip;) Content Delivery (Amazon CloudFront) Managing Public DNS (Route53) Host Security (EC2 Security Groups) Load Balancing Across Clusters (ALB /ELB / Software load-balancing packages, e.</description>
     </item>
     
   </channel>
