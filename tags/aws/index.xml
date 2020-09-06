@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Amazon Virtual Private Cloud Connectivity Options Whitepaper (2018)</title>
+      <link>https://majdarbash.github.io/aws/aws-vpc-connectivity-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/aws-vpc-connectivity-whitepaper/</guid>
+      <description> Network-to-Amazon VPC Connectivity Options  AWS Managed VPN AWS Direct Connect AWS Direct Connect + VPN AWS VPN CloudHub Software VPN Transit VPC   Amazon VPC-to-Amazon VPC Connectivity Options  VPC Peering Software VPN Software-to-AWS Managed VPN AWS Managed VPN AWS Direct Connect AWS Private Link (VPC endpoint)   Internal User-to-Amazon VPC Connectivity Options  Software Remote-Access VPN    Network-to-Amazon VPC Connectivity Options AWS Managed VPN  AWS managed IPSec VPN connection over the internet Advantages  Reuse existing VPN equipment and processes Reuse existing internet connections AWS managed endpoint include multi-data center redundancy and automated failover Supports static routes and BGP peering and routing policies   Limitations  Network latency, variability and availability Customer managed endpoint for implementing redundancy and failover Customer device must support BGP if required     Redundant AWS managed VPN connections   AWS Direct Connect  Dedicated network connection over private lines Advantages  More predictable network performance, reduced bandwidth cost 1 or 10 Gbps provision connections Supports BGP peering and routing policies You can connect to VPCs in different regions using AWS Direct Connect Gateway   Disadvantages  May require additional telecom and hosting provide relationship or new network circuits to be provisioned     AWS Direct Connect Gateway   AWS Direct Connect + VPN  IPSec VPN connection over private lines Advantages  AWS Direct Connect features with the addition of secure IPSec VPN connection   Disadvantages  Additional VPN complexity added on top of AWS Direct Connect    AWS VPN CloudHub  Connect remote branch offices in hub-and-spoke model for primary or backup connectivity AWS VPN CloudHub leverages an Amazon VPC virtual private gateway with multiple gateways, each using unique BGP autonomous system numbers (ASNs) Advantages  Reuse existing internet connections and AWS VPN connections AWS managed virtual private gateway include multi-data center redundancy and automated failover Support BGP for exchanging routes and routing policies   Disadvantages  Network latency,variability and availability are dependent on the internet User managed branch office endpoints are responsible for implementing redundancy and failover    Software VPN  Software application-based VPN connection over the internet Advantages  Supports a wider array of VPN vendors, products, and protocols Fully customer-managed solution   Disadvantages  Customer is responsible for implementing HA solutions for all VPN endpoints     Software VPN   Transit VPC  Software appliance-based VPN connection with hub VPC Common strategy for connecting multiple, geographically disperse VPCs and remote networks in order to create a global network transit center AWS managed IPSec VPN connection for spoke VPC connection Advantages  Supports a wider array of VPN vendors, products, and protocols Fully customer-managed solution AWS managed VPN connection between hub and spoke VPCs   Disadvantages  Customer is responsible for implementing HA solutions for all VPN endpoints     Software VPN and Transit VPC   Amazon VPC-to-Amazon VPC Connectivity Options VPC Peering  AWS-provided network connectivity between two VPCs Advantages  Leverages AWS network infrastructure No single point of failure No bandwidth bottleneck   Disadvantages  VPC peering does nto support transitive peering relationships     VPC Peering   Software VPN  Software appliance-based VPN connections between VPCs Advantages  Leverages AWS networking equipment in-region adn internet pipes between regions Supports a wider array of VPN vendors, products and protocols Managed entirely by you   Disadvantages  You are responsible for implementing HA solutions for all VPN endpoints (if required) VPN instances could become a network bottleneck    Software-to-AWS Managed VPN  Software appliance to VPN connection between VPCs Advantages  Leverages AWS networking in-region and internet pipes between regions AWS managed endpoint includes multi-data center redundancy and automated failover   Disadvantages  You are responsible for implementing HA solutions for the software appliance VPN endpoints (if required) VPN instances could become a network bottleneck     Software to AWS Managed VPN   AWS Managed VPN  VPC-to-VPC routing managed by you over IPSec VPN connections using your equipment and the internet Advantages  Reuse existing Amazon VPC VPN connections AWS managed endpoint include multi-data center redundancy and automatic failover Supports static routes and dynamic BGP peering and routing policies   Disadvantages  Network latency, variability and availability depends on internet conditions The endpoint you manage is responsible for implementing redundancy and failover (if required)     VPC to VPC through AWS Managed VPN   AWS Direct Connect  VPC-to-VPC routing managed by you using your equipment in an AWS Direct Connect location and private lines Advantages  Consistent network performance Reduced bandwidth costs Supports static routes and BGP peering and routing policies   Disadvantages  May require additional telecom and hosting provide relationships     VPC to VPC through AWS Direct Connect   AWS Private Link (VPC endpoint)  AWS-provided network connectivity between two VPCs using interface endpoints Advantages  Leverages AWS networking infrastructure No single point of failure   Disadvantages  VPC endpoint services only available in AWS region in which they are created     AWS Private Link   Internal User-to-Amazon VPC Connectivity Options  Virtual extension of your data center into AWS Leverages existing end-user internal and remove access policies and technologies Requires existing end-user internal and remove access implementations  Software Remote-Access VPN  Cloud-based remote access solution to Amazon VPC and/or internal networks Advantages  Leverages low-cost, elastic, and secure web services provided by AWS for implementing a remote access solution   Disadvantages  Could be redundancy if internal and remote access implementations already exist     Remote Access VPN Solutions   </description>
+    </item>
+    
+    <item>
       <title>An Overview of the AWS Cloud Adoption Framework (2017)</title>
       <link>https://majdarbash.github.io/aws/overview-caf-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -37,6 +46,17 @@
       <description>Denial of Service Attacks Infrastructure Layer Attacks Mitigation Techniques Monitoring Support  Protecting the business from the impact of Distributed Denial of Service attacks (DDoS):
  Maintaining availability and responsiveness of your application Avoid unnecessary cost of scaling infrastructure in response to an attack  Denial of Service Attacks DDoS attacks:
  Uses multiple sources, distributed groups of malware infected devices to orchestrate an attack against a target Hosts generate a flood of packets or requests to overwhelm the target DDoS are most common at layers 3,4,6 and 7 of the OSI model  Examples of attacks:</description>
+    </item>
+    
+    <item>
+      <title>AWS Cloud Transformation Maturity Model Whitepaper (2017)</title>
+      <link>https://majdarbash.github.io/aws/cloud-transformation-maturity-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/cloud-transformation-maturity-model/</guid>
+      <description>Project Stage Foundation Stage Migration Stage Optimization Stage  AWS Cloud Transformation Maturity Model (CTMM):
+ Tool used by enterprise customers to assess the maturity of their cloud adoption Realizing the vision of IT-as-a-Service (ITaaS) Whole organization has to transform and adopt the cloud   Project Stage Challenges and Barriers
+ Limited knowledge and training  Raise level of AWS awareness via education and training   Executive support and funding  Seek case studies of proven ROI, participate in AWS executive briefings   Purchasing public cloud services  Educate procurement and legal staff about new purchasing paradigms Consider purchasing options  Direct purchase from AWS Indirect purchase from an AWS Partner     Limited confidence in cloud service models  Execute one or more pilot/POC projects Explore accelerator services, such as AWS Migration Jumpstart AWS POC is another venue to get funding for POC projects executed via eligible AWS Partners, check Partner Funding webpage   IT ownership and direction  Conduct a Kickoff and Discovery Workshop    Educational resources for roles in your organization</description>
     </item>
     
     <item>
@@ -78,6 +98,37 @@
     </item>
     
     <item>
+      <title>Infrastructure as Code Whitepaper (2017)</title>
+      <link>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</guid>
+      <description>Infrastructure Resource Lifecycle Resource Provisioning Configuration Management  Amazon EC2 Systems Manager AWS OpsWorks for Chef Automate   Monitoring and Performance Governance and Compliance Resource Optimization Key Actions to Implement IaaC  Infrastructure Resource Lifecycle IaaC Features:
+ Both administrator and developers can instantiate infrastructure using configuration files Code can be used to produce compute, storage, network and application services Eliminates configuration drift through automation Increases the speed and agility of infrastructure deployments  Lifecycle:</description>
+    </item>
+    
+    <item>
+      <title>Integrating AWS with Multiprotocol Label Switching Whitepaper (2016)</title>
+      <link>https://majdarbash.github.io/aws/mutlprotocol-label-switching-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/mutlprotocol-label-switching-whitepaper/</guid>
+      <description>MPLS and Managed MPLS Services AWS Networking Services and Core Technologies BGP Protocol Overview AWS APN Partners - Direct Connect as a Service Colocation with AWS Direct Connect  MPLS and Managed MPLS Services MLPS:
+ MPLS predetermines the routing path and uses a label swapping push, pop, and swap method to direct the traffic to its destination CAn be provisioned as Layer 3 (IP-based) or Layer 2 (single broadcast domain) Provides a logical extension of a customer’s network  Business reasons for integration MPLS into your existing infrastructure:</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AWS Economics (2015)</title>
+      <link>https://majdarbash.github.io/aws/introduction-to-aws-economics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/introduction-to-aws-economics/</guid>
+      <description>Reducing Costs and Complexity  Advantages of Cloud Technology AWS Economics    Reducing Costs and Complexity Investments Considered:
+ Capital expenditures Operational expenditures Staffing Opportunity costs Licensing Facilities overhead  Expansion of Data Center or colocation footprint:
+ Capacity planning  Servers, hardware maintenance, pricing   Utilization  Average utilization rate Provisioning for peak load   Operations  Facilities, international expansion, utilities (electricity, cooling), and budgetting for peak time   Optimization  Automatic scaling, capacity reservation, quick infrastructure expansion costs    Advantages of Cloud Technology  Decrease your TCO Reduce complexity Adjust capacity on the fly Reduce time to market Deploy quickly, event worldwide Increase efficiencies Innovate more Spend your resource strategically Enhanced security  AWS Economics Benefits to the AWS users:</description>
+    </item>
+    
+    <item>
       <title>Introduction to Scalable Gaming Patterns on AWS (2017)</title>
       <link>https://majdarbash.github.io/aws/scalable-gaming-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,12 +138,51 @@
     </item>
     
     <item>
+      <title>Maximizing Value with AWS Whitepaper (2017)</title>
+      <link>https://majdarbash.github.io/aws/maximizing-value-with-aws-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/maximizing-value-with-aws-whitepaper/</guid>
+      <description>Achieve Total Cost of Operation Benefits Using Cloud Computing  Create a Culture of Cost Management Driving Cost of Operation Employ Best Practices    Achieve Total Cost of Operation Benefits Using Cloud Computing Create a Culture of Cost Management  Use tools like AWS Trusted Advisor and AWS Billing Explorer  Put data in the hands of everyone  Reduces feedback loop between information/data and the action to correct usage and sizing issues   Enact policies and evangelize  Best practices to drive operational excellence   Spend time training  Educate staff on the items affecting the cost and steps to eliminate waste   Create incentives for good behavior  Encourage cost effectiveness throughout the organization      Driving Cost of Operation Funding Models</description>
+    </item>
+    
+    <item>
       <title>Migrating Applications Running Relational Databases to AWS: Best Practices Guide (2019)</title>
       <link>https://majdarbash.github.io/aws/migrating-applications-to-aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://majdarbash.github.io/aws/migrating-applications-to-aws/</guid>
       <description>Migration Steps and Tools  Development Environment Setup Prerequisites Step 1: Migration Assessment Step 2: Schema Conversion Step 3: Conversion of Embedded SQL and Application Code Step 4: Data Migration Step 5: Testing Converted Code Step 6: Data Replication Step 7: Deployment to AWS and Go Live   Best Practices  Migration Steps and Tools  Migration assessment analysis Schema conversion to target database platform SQL statement and application code conversion Data migration Testing of converted database and application code Setting up replication and failover scenarios for data migration to the target platform Setting up monitoring for a new production environment and go live with the target environment  Tools to automate migration steps:</description>
+    </item>
+    
+    <item>
+      <title>Overview of Deployment Options on AWS Whitepaper (2020)</title>
+      <link>https://majdarbash.github.io/aws/deployment-options-overview-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/deployment-options-overview-whitepaper/</guid>
+      <description>AWS CloudFormation AWS Elastic Beanstalk AWS CodeDeploy Amazon Elastic Container Service Amazon Elastic Kubernetes Service AWS OpsWorks Additional Deployment Services Deployment Strategies  Deployment solution capabilities:
+ Provision Configure Deploy Scale Monitor  AWS CloudFormation  Provisioning and managing almost any AWS resource Uses YAML / JSON Extensions to CloudFormation  AWS Cloud Development Kit (AWS CDK) - programmatically model AWS infrastructure with TypeScript, Python, Java, or .NET AWS Serverless Application Model (AWS SAM) - open source framework to simplify building serverless applications on AWS   CloudFormation supports package installation on EC2 using AWS::CloudFormation::Init section You may need to use additional deployment service to update the application version running on your infra Monitoring using Stack / Change Set state change, as well as &amp;ldquo;drift detection&amp;rdquo; mechanism.</description>
+    </item>
+    
+    <item>
+      <title>Practicing Continuous Integration and Continuous Delivery on AWS (2017)</title>
+      <link>https://majdarbash.github.io/aws/ci-cd-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/ci-cd-whitepaper/</guid>
+      <description>What is CI/CD? Benefits of Continuous Delivery Implementing CI/CD Deployment Methods Summary of Best Practices  AWS offerings:
+ AWS CodeStar AWS CodeCommit AWS CopePipeline AWS CodeBuild AWS CodeDeploy  What is CI/CD? Continuous Integration
+ Developers regularly merge their code to a central repository Refers to the build/integration stage of the software release lifecycle Smaller commits and smaller code changes to integrate Developer commits to repo minimum once a day Goals: find and address bugs faster, improve software quality, reduce the time to validate and relase new changes Automating builds, testing Similar testing environments to production  Continuous Delivery</description>
+    </item>
+    
+    <item>
+      <title>Security in Amazon Virtual Private Cloud</title>
+      <link>https://majdarbash.github.io/aws/security-in-aws-vpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/security-in-aws-vpc/</guid>
+      <description>Security: Shared Responsibility Model Data protection in Amazon VPC IAM for Amazon VPC Logging and Monitoring for Amazon VPC Resilience in Amazon VPC Compliance validation for Amazon VPC SG for your VPC NACLs Security Best Practices for your VPC  Security: Shared Responsibility Model  Security of the Cloud - AWS responsibility Security in the Cloud - customer responsibility  Data protection in Amazon VPC  Use MFA for each account Use SSL/TLS to communicate with AWS resources Set up API and user activity logging with AWS CloudTrail Use AWS encryption solutions, along with all default security controls provided by AWS Use advanced managed security services, such as Amazon Macie, which assist in discovering and securing personal data that is stored in Amazon S3  IAM for Amazon VPC  Amazon VPC shares its API namespace with Amazon EC2 Policy actions in Amazon VPC use the ec2: prefix Use authorization based on Resource, Conditions and Tags for granular control  Logging and Monitoring for Amazon VPC  Flow logs  Capture information about the IP traffic going to and from network interfaces in your VPC Data is published to CloudWatch Logs or Amazon S3, and can help you diagnose overly restrictive or overly permissive security group and network ACL rules   Monitoring NAT gateways  Monitor your NAT gateway using CloudWatch Readable, near real-time metrics    Resilience in Amazon VPC  AWS Regions and Availability Zones Low-latency, high-throughput, and highly redundant networking Connectivity Options  Amazon VPC-to-Amazon VPC Connectivity Network-to-Amazon VPC Connectivity    Compliance validation for Amazon VPC  Third party vendors compliance of Amazon VPC: SOC, PCI, FedRAMP, DoD CCSRG, HIPAA BAA, IRAP, MTCS, C5, K-ISMS, ENS-High, OSPAR, and HITRUST-CSF Third-party audit reports are available in AWS Artifact AWS Security Hub - This AWS service provides a comprehensive view of your security state within AWS that helps you check your compliance with open standards and best practices for security  SG for your VPC  Statefull For inbound and outbound rules the source or the destination can be another security group, an IPv4 or IPv6 CIDR block, a single IPv4 or IPv6 address, or a prefix list ID When you specify a security group as the source for a rule, traffic is allowed from the network interfaces that are associated with the source security group for the specified protocol and port In VPC peering connection with another VPC, a security group rule can reference another security group in the peer VPC If the owner of the peer VPC deletes the referenced security group, or if you or the owner of the peer VPC deletes the VPC peering connection, the security group rule is marked as stale You can&amp;rsquo;t use the security groups that you&amp;rsquo;ve created for use with EC2-Classic with instances in your VPC  NACLs  Stateless By default, it allows all inbound and outbound IPv4 traffic and, if applicable, IPv6 traffic Each subnet in your VPC must be associated with a network ACL Rules are evaluated starting with the lowest numbered rule.</description>
     </item>
     
     <item>

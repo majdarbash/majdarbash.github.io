@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iaac on My New Hugo Site</title>
+    <link>https://majdarbash.github.io/tags/iaac/</link>
+    <description>Recent content in iaac on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://majdarbash.github.io/tags/iaac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infrastructure as Code Whitepaper (2017)</title>
+      <link>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</guid>
+      <description>Infrastructure Resource Lifecycle Resource Provisioning Configuration Management  Amazon EC2 Systems Manager AWS OpsWorks for Chef Automate   Monitoring and Performance Governance and Compliance Resource Optimization Key Actions to Implement IaaC  Infrastructure Resource Lifecycle IaaC Features:
+ Both administrator and developers can instantiate infrastructure using configuration files Code can be used to produce compute, storage, network and application services Eliminates configuration drift through automation Increases the speed and agility of infrastructure deployments  Lifecycle:</description>
+    </item>
+    
+  </channel>
+</rss>

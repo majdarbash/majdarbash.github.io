@@ -307,6 +307,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/aws-vpc-connectivity-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/aws/overview-caf-whitepaper/</loc>
   </url>
   
@@ -364,6 +368,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/aws-csaa/aws-cloud-best-practices/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/cloud-transformation-maturity-model/</loc>
   </url>
   
   <url>
@@ -427,11 +435,19 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/ci-cd/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/clock/</loc>
   </url>
   
   <url>
     <loc>https://majdarbash.github.io/tags/cloud-adoption-framework/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/cloud-transformation/</loc>
   </url>
   
   <url>
@@ -444,6 +460,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/continuous-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/cost/</loc>
   </url>
   
   <url>
@@ -484,6 +504,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-reinvent/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/deployment/</loc>
   </url>
   
   <url>
@@ -635,6 +659,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/tags/iaac/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/aws-csaa/iam/</loc>
   </url>
   
@@ -651,6 +679,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/random/quickbooks-php-integration/</loc>
   </url>
   
@@ -660,6 +692,14 @@
   
   <url>
     <loc>https://majdarbash.github.io/random/ubuntu-vsftpd-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/mutlprotocol-label-switching-whitepaper/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/introduction-to-aws-economics/</loc>
   </url>
   
   <url>
@@ -695,6 +735,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/maximizing-value-with-aws-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/microservices/</loc>
   </url>
   
@@ -704,6 +748,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/migration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/mpls/</loc>
   </url>
   
   <url>
@@ -747,6 +795,10 @@
   </url>
   
   <url>
+    <loc>https://majdarbash.github.io/aws/deployment-options-overview-whitepaper/</loc>
+  </url>
+  
+  <url>
     <loc>https://majdarbash.github.io/tags/password-protect/</loc>
   </url>
   
@@ -760,6 +812,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/random/php-running-scripts-as-root/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/ci-cd-whitepaper/</loc>
   </url>
   
   <url>
@@ -860,6 +916,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/aws/security-in-aws-vpc/</loc>
   </url>
   
   <url>
@@ -1040,6 +1100,10 @@
   
   <url>
     <loc>https://majdarbash.github.io/tags/version-control-system/</loc>
+  </url>
+  
+  <url>
+    <loc>https://majdarbash.github.io/tags/vpc/</loc>
   </url>
   
   <url>
