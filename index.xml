@@ -824,6 +824,15 @@ Decouples and reduces load from supplier by each system keeping a copy of the da
     </item>
     
     <item>
+      <title>Exam Outline</title>
+      <link>https://majdarbash.github.io/aws-csap/exam-outline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/aws-csap/exam-outline/</guid>
+      <description>Design for Organization Complexity [12.5%]  Cross-account authentication and access strategies Networks Multi-account AWS environments  Group billing, tagging, automate baseline configuration AWS Organizations     Design for New Solutions [31%]  Implementation strategies for reliability requirements Ensuring business continuity Meeting performance objectives Security requirements and controls Deployment strategies for business requirements   Migration Planning [15%]  Existing workloads and processes for potential migration to the cloud Migration tools and/or services for new and migrated solutions based on detailed AWS knowledge Strategies for migrating existing on-premises workloads to the cloud New cloud architectures for existing solutions   Cost Control [12.</description>
+    </item>
+    
+    <item>
       <title>Getting Started with Amazon Aurora Whitepaper (2016)</title>
       <link>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1550,6 +1559,22 @@ A bundle is simply a structured set of files within a directory that implement a
       
       <guid>https://majdarbash.github.io/random/the-netflix-simian-army/</guid>
       <description>Along with price and scalability, redundancy and fault-tolerance are possibly the most important triggers driving cloud migration. The cloud architecture should allow failure without affecting the availability of the entire system. We want to be able to test the failure scenarios.  Chaos Monkey  Randomly disables production instances Testing ability to survive the failure without overall impact on the service Leads to building automatic recovery mechanism to deal with system failures  Latency Monkey  Induces artificial delays to RESTful client-server communication layer to simulate service degradation.</description>
+    </item>
+    
+    <item>
+      <title>The Twelve Factors</title>
+      <link>https://majdarbash.github.io/software-architecture-and-design/12-factors-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/software-architecture-and-design/12-factors-app/</guid>
+      <description>Factor 1. Codebase One codebase tracked in revision control, many deploys
+Factor 2. Dependencies Explicitly declare and isolate dependencies
+Factor 3. Config Store config in the environment
+Factor 4. Backing services Treat backing services as attached resources
+Factor 5. Build, release, run Strictly separate build and run stages
+Factor 6. Processes Execute the app as one or more stateless processes
+Factor 7. Port binding Export services via port binding
+Factor 8.</description>
     </item>
     
     <item>
