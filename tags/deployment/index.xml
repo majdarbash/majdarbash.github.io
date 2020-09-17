@@ -12,10 +12,10 @@
     
     <item>
       <title>Overview of Deployment Options on AWS Whitepaper (2020)</title>
-      <link>https://majdarbash.github.io/aws/deployment-options-overview-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/deployment-options-overview-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/deployment-options-overview-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/deployment-options-overview-whitepaper/</guid>
       <description>AWS CloudFormation AWS Elastic Beanstalk AWS CodeDeploy Amazon Elastic Container Service Amazon Elastic Kubernetes Service AWS OpsWorks Additional Deployment Services Deployment Strategies  Deployment solution capabilities:
  Provision Configure Deploy Scale Monitor  AWS CloudFormation  Provisioning and managing almost any AWS resource Uses YAML / JSON Extensions to CloudFormation  AWS Cloud Development Kit (AWS CDK) - programmatically model AWS infrastructure with TypeScript, Python, Java, or .NET AWS Serverless Application Model (AWS SAM) - open source framework to simplify building serverless applications on AWS   CloudFormation supports package installation on EC2 using AWS::CloudFormation::Init section You may need to use additional deployment service to update the application version running on your infra Monitoring using Stack / Change Set state change, as well as &amp;ldquo;drift detection&amp;rdquo; mechanism.</description>
     </item>

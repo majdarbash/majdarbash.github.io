@@ -12,10 +12,10 @@
     
     <item>
       <title>Web Application Hosting in the AWS Cloud Whitepaper (2019)</title>
-      <link>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/web-application-hosting-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/web-application-hosting-whitepaper/</guid>
       <description>Benefits of using AWS over a traditional hosting model Classic web application architecture on AWS Cloud Key Components of AWS Web Hosting Architecture Key Considerations When Using AWS for Web Hosting  Benefits of using AWS over a traditional hosting model  A cost effective alternative to oversized fleets needed to handle peaks  Traditional hosting: provision servers to handle peak capacity  Unused cycles are wasted outside of peak periods   AWS auto-scaling based on actual traffic trends will result in less wasted capacity and a greater reduction in cost   A scalable solution to handling unexpected traffic peaks  Traditional hosting: inability to respond in time to unexpected traffic spikes   An On-demand solution for test, load, beta and pre-production environments  Traditional hosting: a lot of expensive hardware sits unused for long periods of time    Classic web application architecture on AWS Cloud  Load Balancing with Elastic Load Balancing (ELB) / Application Load Balancing (ALB) Firewalls with Security Groups Caching with Amazon ElastiCache Managed Database with Amazon RDS DNS Services with Amazon Route 53 Edge Caching with Amazon CloudFront Edge Security for Amazon CloudFront with AWS WAF DDoS Protection with AWS Shield Static Storage and Backup with Amazon S3  Key Components of AWS Web Hosting Architecture  Network Management (VPC, Subnets, NACLs, etc&amp;hellip;) Content Delivery (Amazon CloudFront) Managing Public DNS (Route53) Host Security (EC2 Security Groups) Load Balancing Across Clusters (ALB /ELB / Software load-balancing packages, e.</description>
     </item>
     

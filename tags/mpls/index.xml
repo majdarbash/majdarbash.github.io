@@ -12,10 +12,10 @@
     
     <item>
       <title>Integrating AWS with Multiprotocol Label Switching Whitepaper (2016)</title>
-      <link>https://majdarbash.github.io/aws/mutlprotocol-label-switching-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/mutlprotocol-label-switching-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/mutlprotocol-label-switching-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/mutlprotocol-label-switching-whitepaper/</guid>
       <description>MPLS and Managed MPLS Services AWS Networking Services and Core Technologies BGP Protocol Overview AWS APN Partners - Direct Connect as a Service Colocation with AWS Direct Connect  MPLS and Managed MPLS Services MLPS:
  MPLS predetermines the routing path and uses a label swapping push, pop, and swap method to direct the traffic to its destination CAn be provisioned as Layer 3 (IP-based) or Layer 2 (single broadcast domain) Provides a logical extension of a customer’s network  Business reasons for integration MPLS into your existing infrastructure:</description>
     </item>

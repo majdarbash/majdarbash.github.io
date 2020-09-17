@@ -95,7 +95,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/</loc>
   </url>
   
   <url>
@@ -307,11 +307,11 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/aws-vpc-connectivity-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/aws-vpc-connectivity-whitepaper/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/overview-caf-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/overview-caf-whitepaper/</loc>
   </url>
   
   <url>
@@ -347,7 +347,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/automating-elasticity-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/automating-elasticity-whitepaper/</loc>
   </url>
   
   <url>
@@ -359,7 +359,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/best-practices-ddos-resiliency-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/best-practices-ddos-resiliency-whitepaper/</loc>
   </url>
   
   <url>
@@ -371,19 +371,19 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/cloud-transformation-maturity-model/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/cloud-transformation-maturity-model/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/aws-global-network-reinvent/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/aws-global-network-reinvent/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/aws-migration-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/aws-migration-whitepaper/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/aws-multiple-account-security/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/aws-multiple-account-security/</loc>
   </url>
   
   <url>
@@ -391,7 +391,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/aws-security-best-practices/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/aws-security-best-practices/</loc>
   </url>
   
   <url>
@@ -415,11 +415,11 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/backup-and-recovery-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/backup-and-recovery-whitepaper/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/best-practices-security-operations-reinvent/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/best-practices-security-operations-reinvent/</loc>
   </url>
   
   <url>
@@ -499,11 +499,11 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/deep-dive-on-aws-rds-reinvent/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/deep-dive-on-aws-rds-reinvent/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/deep-dive-on-aws-s3-reinvent/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/deep-dive-on-aws-s3-reinvent/</loc>
   </url>
   
   <url>
@@ -599,7 +599,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/getting-started-with-amazon-aurora-whitepaper/</loc>
   </url>
   
   <url>
@@ -671,11 +671,11 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/iam-policies-on-aws-reinvent/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/iam-policies-on-aws-reinvent/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/microservices-on-aws-whitepaper/</loc>
   </url>
   
   <url>
@@ -683,7 +683,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/infrastructure-as-a-code-whitepaper/</loc>
   </url>
   
   <url>
@@ -699,15 +699,15 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/mutlprotocol-label-switching-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/mutlprotocol-label-switching-whitepaper/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/introduction-to-aws-economics/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/introduction-to-aws-economics/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/scalable-gaming-patterns/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/scalable-gaming-patterns/</loc>
   </url>
   
   <url>
@@ -739,7 +739,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/maximizing-value-with-aws-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/maximizing-value-with-aws-whitepaper/</loc>
   </url>
   
   <url>
@@ -747,7 +747,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/migrating-applications-to-aws/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/migrating-applications-to-aws/</loc>
   </url>
   
   <url>
@@ -759,7 +759,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/multi-tenant-saas-storage/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/multi-tenant-saas-storage/</loc>
   </url>
   
   <url>
@@ -799,7 +799,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/deployment-options-overview-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/deployment-options-overview-whitepaper/</loc>
   </url>
   
   <url>
@@ -807,7 +807,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/elasticache-at-scale/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/elasticache-at-scale/</loc>
   </url>
   
   <url>
@@ -819,7 +819,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/ci-cd-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/ci-cd-whitepaper/</loc>
   </url>
   
   <url>
@@ -919,11 +919,11 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/aws-security-anipatterns-reinvent/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/aws-security-anipatterns-reinvent/</loc>
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/security-in-aws-vpc/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/security-in-aws-vpc/</loc>
   </url>
   
   <url>
@@ -1123,7 +1123,7 @@
   </url>
   
   <url>
-    <loc>https://majdarbash.github.io/aws/web-application-hosting-whitepaper/</loc>
+    <loc>https://majdarbash.github.io/aws-posts/web-application-hosting-whitepaper/</loc>
   </url>
   
   <url>

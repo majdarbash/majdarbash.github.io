@@ -12,10 +12,10 @@
     
     <item>
       <title>AWS Cloud Transformation Maturity Model Whitepaper (2017)</title>
-      <link>https://majdarbash.github.io/aws/cloud-transformation-maturity-model/</link>
+      <link>https://majdarbash.github.io/aws-posts/cloud-transformation-maturity-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/cloud-transformation-maturity-model/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/cloud-transformation-maturity-model/</guid>
       <description>Project Stage Foundation Stage Migration Stage Optimization Stage  AWS Cloud Transformation Maturity Model (CTMM):
  Tool used by enterprise customers to assess the maturity of their cloud adoption Realizing the vision of IT-as-a-Service (ITaaS) Whole organization has to transform and adopt the cloud   Project Stage Challenges and Barriers
  Limited knowledge and training  Raise level of AWS awareness via education and training   Executive support and funding  Seek case studies of proven ROI, participate in AWS executive briefings   Purchasing public cloud services  Educate procurement and legal staff about new purchasing paradigms Consider purchasing options  Direct purchase from AWS Indirect purchase from an AWS Partner     Limited confidence in cloud service models  Execute one or more pilot/POC projects Explore accelerator services, such as AWS Migration Jumpstart AWS POC is another venue to get funding for POC projects executed via eligible AWS Partners, check Partner Funding webpage   IT ownership and direction  Conduct a Kickoff and Discovery Workshop    Educational resources for roles in your organization</description>

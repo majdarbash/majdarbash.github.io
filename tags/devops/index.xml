@@ -21,10 +21,10 @@
     
     <item>
       <title>Practicing Continuous Integration and Continuous Delivery on AWS (2017)</title>
-      <link>https://majdarbash.github.io/aws/ci-cd-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/ci-cd-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/ci-cd-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/ci-cd-whitepaper/</guid>
       <description>What is CI/CD? Benefits of Continuous Delivery Implementing CI/CD Deployment Methods Summary of Best Practices  AWS offerings:
  AWS CodeStar AWS CodeCommit AWS CopePipeline AWS CodeBuild AWS CodeDeploy  What is CI/CD? Continuous Integration
  Developers regularly merge their code to a central repository Refers to the build/integration stage of the software release lifecycle Smaller commits and smaller code changes to integrate Developer commits to repo minimum once a day Goals: find and address bugs faster, improve software quality, reduce the time to validate and relase new changes Automating builds, testing Similar testing environments to production  Continuous Delivery</description>

@@ -12,10 +12,10 @@
     
     <item>
       <title>An Overview of the AWS Cloud Adoption Framework (2017)</title>
-      <link>https://majdarbash.github.io/aws/overview-caf-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/overview-caf-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/overview-caf-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/overview-caf-whitepaper/</guid>
       <description>Six Perspective of AWS CAF Mapping the Journey to the Cloud AWS CAF Perspectives: Additional Detail  Business Perspective: Value Realization People Perspective: Roles and Readiness Governance Perspective: Prioritization and Control Platform Perspective: Applications and Infrastructure Security Perspective: Risk and Compliance Operations Perspective: Manage and Scale    Six Perspective of AWS CAF The perspective below describe the common roles and objectives to update staff skills and organizational processes.</description>
     </item>
     

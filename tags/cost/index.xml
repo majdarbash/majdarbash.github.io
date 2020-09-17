@@ -12,10 +12,10 @@
     
     <item>
       <title>Introduction to AWS Economics (2015)</title>
-      <link>https://majdarbash.github.io/aws/introduction-to-aws-economics/</link>
+      <link>https://majdarbash.github.io/aws-posts/introduction-to-aws-economics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/introduction-to-aws-economics/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/introduction-to-aws-economics/</guid>
       <description>Reducing Costs and Complexity  Advantages of Cloud Technology AWS Economics    Reducing Costs and Complexity Investments Considered:
  Capital expenditures Operational expenditures Staffing Opportunity costs Licensing Facilities overhead  Expansion of Data Center or colocation footprint:
  Capacity planning  Servers, hardware maintenance, pricing   Utilization  Average utilization rate Provisioning for peak load   Operations  Facilities, international expansion, utilities (electricity, cooling), and budgetting for peak time   Optimization  Automatic scaling, capacity reservation, quick infrastructure expansion costs    Advantages of Cloud Technology  Decrease your TCO Reduce complexity Adjust capacity on the fly Reduce time to market Deploy quickly, event worldwide Increase efficiencies Innovate more Spend your resource strategically Enhanced security  AWS Economics Benefits to the AWS users:</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Maximizing Value with AWS Whitepaper (2017)</title>
-      <link>https://majdarbash.github.io/aws/maximizing-value-with-aws-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/maximizing-value-with-aws-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/maximizing-value-with-aws-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/maximizing-value-with-aws-whitepaper/</guid>
       <description>Achieve Total Cost of Operation Benefits Using Cloud Computing  Create a Culture of Cost Management Driving Cost of Operation Employ Best Practices    Achieve Total Cost of Operation Benefits Using Cloud Computing Create a Culture of Cost Management  Use tools like AWS Trusted Advisor and AWS Billing Explorer  Put data in the hands of everyone  Reduces feedback loop between information/data and the action to correct usage and sizing issues   Enact policies and evangelize  Best practices to drive operational excellence   Spend time training  Educate staff on the items affecting the cost and steps to eliminate waste   Create incentives for good behavior  Encourage cost effectiveness throughout the organization      Driving Cost of Operation Funding Models</description>
     </item>
     

@@ -12,10 +12,10 @@
     
     <item>
       <title>Implementing Microservices on AWS (2019)</title>
-      <link>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/microservices-on-aws-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/microservices-on-aws-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/microservices-on-aws-whitepaper/</guid>
       <description>Simple Microservices Architecture on AWS Reducing Operational Complexity Distributed Systems Components  Service Discovery Distributed Data Management Asynchronous Communication and Lightweight Messaging Distributed Monitoring    Microservices are a combination of various successful and proven concepts such as:
  Agile software development Service-oriented architectures API-first design Continuous Integration/Continuous Delivery (CI/CD)  Serverless operational model tenets:
  No infrastructure to provision or manage Automatically scaling by unit of consumption &amp;ldquo;Pay for value&amp;rdquo; billing model Built-in availability and fault tolerance  Simple Microservices Architecture on AWS User Interface</description>

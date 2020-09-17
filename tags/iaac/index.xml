@@ -12,10 +12,10 @@
     
     <item>
       <title>Infrastructure as Code Whitepaper (2017)</title>
-      <link>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/infrastructure-as-a-code-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/infrastructure-as-a-code-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/infrastructure-as-a-code-whitepaper/</guid>
       <description>Infrastructure Resource Lifecycle Resource Provisioning Configuration Management  Amazon EC2 Systems Manager AWS OpsWorks for Chef Automate   Monitoring and Performance Governance and Compliance Resource Optimization Key Actions to Implement IaaC  Infrastructure Resource Lifecycle IaaC Features:
  Both administrator and developers can instantiate infrastructure using configuration files Code can be used to produce compute, storage, network and application services Eliminates configuration drift through automation Increases the speed and agility of infrastructure deployments  Lifecycle:</description>
     </item>

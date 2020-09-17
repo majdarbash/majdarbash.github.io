@@ -22,10 +22,10 @@
     
     <item>
       <title>Getting Started with Amazon Aurora Whitepaper (2016)</title>
-      <link>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</link>
+      <link>https://majdarbash.github.io/aws-posts/getting-started-with-amazon-aurora-whitepaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://majdarbash.github.io/aws/getting-started-with-amazon-aurora-whitepaper/</guid>
+      <guid>https://majdarbash.github.io/aws-posts/getting-started-with-amazon-aurora-whitepaper/</guid>
       <description>Amazon Aurora Amazon Aurora Architecture Monitoring Migrating to Amazon Aurora  Amazon Aurora  Fully managed, cloud-native database service Scalability, reliability, performance Cost-effective Highly durable  Database volumes are divided into 10GB segments Each segment is replicated six ways across 3 AZs   Fault-tolerant  Transparently handles loss of 2 out of 6 copies without losing write availability or three out of six copies without losing read availability   Self-healing  Automatically replaces or repairs failed disks and nodes   Storage autoscaling  Volume grows in increments of 10GB up to a maximum of 64TB   Continuous backup  No impact on performance, 99.</description>
     </item>
     
