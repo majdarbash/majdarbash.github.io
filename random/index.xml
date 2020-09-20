@@ -354,6 +354,16 @@ What is happening is that docker client is communicating with the engine using s
     </item>
     
     <item>
+      <title>Distributed Data Management Concepts</title>
+      <link>https://majdarbash.github.io/random/distributed-data-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/random/distributed-data-management/</guid>
+      <description>CAP Theorem ACID Transactions Saga Pattern  CAP Theorem &amp;ldquo;Distributed data management, raises new challenges. As a consequence of the CAP Theorem, distributed microservices architectures inherently trade off consistency for performance and need to embrace eventual consistency.&amp;rdquo; AWS Documentation
+ Consistency  Every read receives the most recent write / error   Availability  Every request receives the a non-error response   Partition Tolerance  System continues to operate despite an arbitrary number of messages being dropped by the network between nodes    Network Partition Failure</description>
+    </item>
+    
+    <item>
       <title>Event-Driven Architecture</title>
       <link>https://majdarbash.github.io/random/event-driven-architectures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -598,6 +608,16 @@ Done !</description>
       <description>ipython - Interactive Python Interpreter
 Variables  type(var_name) returns the type of the variable, e.g. float, string, &amp;hellip;  Type Conversion  str(var_name) float(var_name)  Math  Exponentiation 4**2 will give 16 Modulo 18 % 7 will give 4  Generating Output  print(string)  Publish Date: 2019-12-02
  </description>
+    </item>
+    
+    <item>
+      <title>RACI Matrix</title>
+      <link>https://majdarbash.github.io/random/raci-matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://majdarbash.github.io/random/raci-matrix/</guid>
+      <description> Responsibility assignment chart Used to assign role and responsibilities for each task, mileston, or decision on a project  RACI Stands for:
+ Responsible  Team member(s) doing the work Responsible to complete the task At least 1 member   Accountable  Delegating work Last one to review the work Have only one accountable person to each task   Consulted  Review and consultation from more than one team member   Informed  Team members to be kept in the loop on project progress Doesn&amp;rsquo;t need to drill down into details of every deliverable    </description>
     </item>
     
     <item>
